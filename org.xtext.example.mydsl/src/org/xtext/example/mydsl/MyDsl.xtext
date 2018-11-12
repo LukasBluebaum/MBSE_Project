@@ -8,15 +8,15 @@ Solid:
 	name = ID
 	(facets+=Facet)+
 	'endsolid'
-	 ID
+	ID
 ;
 
 Facet:
     'facet' 
     normal=Normalvector 
-     'outer' 'loop' 
+    'outer' 'loop' 
     v1=Vector v2=Vector v3=Vector
-     'endloop' 
+    'endloop' 
     'endfacet' 
 ;
 
@@ -29,4 +29,4 @@ Normalvector :
 	
 
 terminal DOUBLE returns ecore::EDouble:
-	('-' | '.' | '0'..'9')+ ;
+	('-' | '.' | 'e' | '0'..'9')+ ;

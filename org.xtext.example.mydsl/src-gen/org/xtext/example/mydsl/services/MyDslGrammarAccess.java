@@ -311,7 +311,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//terminal DOUBLE returns ecore::EDouble:
-	//	'-' | '.' | '0'..'9'+;
+	//	'-' | '.' | 'e' | '0'..'9'+;
 	public TerminalRule getDOUBLERule() {
 		return tDOUBLE;
 	}

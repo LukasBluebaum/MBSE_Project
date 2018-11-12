@@ -1,8 +1,6 @@
 package org.xtext.example.mydsl.api;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,8 +24,6 @@ public class RunParser {
 	
 	public RunParser(String filePath) throws IOException {
 		fileURI = URI.createFileURI(filePath);
-		List<String> lines = Files.readAllLines(Paths.get(filePath));
-		System.out.println(lines);
 	}
 	
 	public Optional<Solid> parse() {
@@ -50,7 +46,9 @@ public class RunParser {
 	}
 	
 	public static void main(String[] args) throws IOException {		
-		RunParser r = new RunParser("test2.mydsl");
-		System.out.println(r.parse());
+		RunParser r = new RunParser("test.stl");
+		Optional<Solid> solid = r.parse();
+		System.out.println("Name: " + solid.get().getName());
+		System.out.println("Number of facets: " + solid.get().getFacets().size());
 	}
 }
