@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'endfacet'=12
 'endloop'=13
 'endsolid'=14
@@ -16,8 +15,6 @@ RULE_ML_COMMENT=8
 RULE_SL_COMMENT=9
 RULE_STRING=10
 RULE_WS=11
-=======
->>>>>>> 03f2ebd8fa6fc7703ab2dfa1a939d00ef9e3e661
 T__12=12
 T__13=13
 T__14=14
@@ -27,20 +24,3 @@ T__17=17
 T__18=18
 T__19=19
 T__20=20
-RULE_ANY_OTHER=4
-RULE_DOUBLE=5
-RULE_ID=6
-RULE_INT=7
-RULE_ML_COMMENT=8
-RULE_SL_COMMENT=9
-RULE_STRING=10
-RULE_WS=11
-'endfacet'=12
-'endloop'=13
-'endsolid'=14
-'facet'=15
-'loop'=16
-'normal'=17
-'outer'=18
-'solid'=19
-'vertex'=20

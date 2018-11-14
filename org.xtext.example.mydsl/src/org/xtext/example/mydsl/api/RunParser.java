@@ -25,10 +25,6 @@ public class RunParser {
 	private URI fileURI;
 	
 	private SYNC sync;
-<<<<<<< HEAD
-=======
-
->>>>>>> 03f2ebd8fa6fc7703ab2dfa1a939d00ef9e3e661
 	
 	public RunParser(String filePath) throws IOException {
 		fileURI = URI.createFileURI(filePath);
@@ -56,44 +52,6 @@ public class RunParser {
 	public static void main(String[] args) throws IOException {		
 		RunParser parser = new RunParser("test.stl");
 		parser.loadSTLFile("test.stl");
-<<<<<<< HEAD
-	}
-	
-	
-	public void loadSTLFile(String filePath) throws IOException {
-		RunParser parser = new RunParser(filePath);
-		Optional<Solid> solid = parser.parse();
-
-		solid.ifPresent(b -> {
-			try {
-				initialiseFwdSynchroniser();
-
-				sync.getSourceResource().getContents().add(b);
-				System.out.println(sync.getSourceResource().getContents());
-			
-				sync.forward();
-				
-				Metamodell.Solid solid2 = (Metamodell.Solid) sync.getTargetResource().getContents().get(0);
-				System.out.println(solid2.getFacets().get(0).getEdges().get(0).getA());
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		});
-	}
-
-	
-	private void initialiseFwdSynchroniser() throws IOException {
-		if (sync != null)
-			sync.terminate();
-
-		sync = new SYNC_App();
-	}
-
-	private void initialiseBwdSynchroniser() throws IOException {
-		if (sync == null)
-			sync = new SYNC_App();
-=======
->>>>>>> 03f2ebd8fa6fc7703ab2dfa1a939d00ef9e3e661
 	}
 	
 	
@@ -130,8 +88,4 @@ public class RunParser {
 		if (sync == null)
 			sync = new SYNC_App();
 	}
-
-	
-	
-	
 }

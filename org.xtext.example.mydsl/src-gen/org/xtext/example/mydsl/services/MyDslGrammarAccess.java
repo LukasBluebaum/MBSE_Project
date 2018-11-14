@@ -33,11 +33,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cIDTerminalRuleCall_4 = (RuleCall)cGroup.eContents().get(4);
 		
 		//Solid:
-		//	'solid'
-		//	name=ID
-		//	facets+=Facet+
-		//	'endsolid'
-		//	ID;
+		//	'solid' name=ID facets+=Facet+ 'endsolid' ID;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'solid' name=ID facets+=Facet+ 'endsolid' ID
@@ -82,12 +78,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cEndfacetKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		
 		//Facet:
-		//	'facet'
-		//	normal=Normalvector
-		//	'outer' 'loop'
-		//	v1=Vector v2=Vector v3=Vector
-		//	'endloop'
-		//	'endfacet';
+		//	'facet' normal=Normalvector 'outer' 'loop' v1=Vector v2=Vector v3=Vector 'endloop' 'endfacet';
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'facet' normal=Normalvector 'outer' 'loop' v1=Vector v2=Vector v3=Vector 'endloop' 'endfacet'
@@ -262,11 +253,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//Solid:
-	//	'solid'
-	//	name=ID
-	//	facets+=Facet+
-	//	'endsolid'
-	//	ID;
+	//	'solid' name=ID facets+=Facet+ 'endsolid' ID;
 	public SolidElements getSolidAccess() {
 		return pSolid;
 	}
@@ -276,12 +263,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//Facet:
-	//	'facet'
-	//	normal=Normalvector
-	//	'outer' 'loop'
-	//	v1=Vector v2=Vector v3=Vector
-	//	'endloop'
-	//	'endfacet';
+	//	'facet' normal=Normalvector 'outer' 'loop' v1=Vector v2=Vector v3=Vector 'endloop' 'endfacet';
 	public FacetElements getFacetAccess() {
 		return pFacet;
 	}
