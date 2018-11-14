@@ -14,7 +14,9 @@ Require-Bundle: org.eclipse.xtext,
  org.eclipse.xtext.util,
  org.eclipse.emf.common,
  org.eclipse.xtend.lib;bundle-version="2.14.0",
- org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)",
+ org.emoflon.ibex.tgg.core.runtime,
+ STLImportExport
 Bundle-RequiredExecutionEnvironment: JavaSE-9
 Export-Package: org.xtext.example.mydsl.myDsl.util,
  org.xtext.example.mydsl.parser.antlr.internal,
@@ -27,4 +29,5 @@ Export-Package: org.xtext.example.mydsl.myDsl.util,
  org.xtext.example.mydsl.myDsl,
  org.xtext.example.mydsl.serializer,
  org.xtext.example.mydsl.parser.antlr
-Import-Package: org.apache.log4j
+Import-Package: org.apache.log4j,
+ org.emoflon.ibex.tgg.operational.strategies.sync
