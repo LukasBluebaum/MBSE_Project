@@ -16,6 +16,10 @@ Require-Bundle: org.eclipse.xtext,
  org.eclipse.xtend.lib;bundle-version="2.14.0",
  org.antlr.runtime;bundle-version="[3.2.0,3.2.1)",
  org.emoflon.ibex.tgg.core.runtime,
+<<<<<<< HEAD
+=======
+ Metamodell;bundle-version="0.0.1",
+>>>>>>> 03f2ebd8fa6fc7703ab2dfa1a939d00ef9e3e661
  STLImportExport
 Bundle-RequiredExecutionEnvironment: JavaSE-9
 Export-Package: org.xtext.example.mydsl.myDsl.util,
