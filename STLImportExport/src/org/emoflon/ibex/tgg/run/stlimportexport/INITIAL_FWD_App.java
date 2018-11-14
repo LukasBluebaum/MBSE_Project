@@ -45,7 +45,7 @@ public class INITIAL_FWD_App extends SYNC {
 	
 	@Override
 	public void loadModels() throws IOException {
-		s = loadResource(options.projectPath() + "/instances/src.xmi");
+		s = createResource(options.projectPath() + "/instances/src.xmi");
 		t = createResource(options.projectPath() + "/instances/trg.xmi");
 		c = createResource(options.projectPath() + "/instances/corr.xmi");
 		p = createResource(options.projectPath() + "/instances/protocol.xmi");

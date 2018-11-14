@@ -45,7 +45,7 @@ public class INITIAL_BWD_App extends SYNC {
 	
 	@Override
 	public void loadModels() throws IOException {
-		t = loadResource(options.projectPath() + "/instances/trg.xmi");
+		t = createResource(options.projectPath() + "/instances/trg.xmi");
 		s = createResource(options.projectPath() + "/instances/src.xmi");
 		c = createResource(options.projectPath() + "/instances/corr.xmi");
 		p = createResource(options.projectPath() + "/instances/protocol.xmi");

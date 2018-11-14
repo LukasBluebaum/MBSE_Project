@@ -65,10 +65,10 @@ public class RunParser {
 				initialiseFwdSynchroniser();
 
 				sync.getSourceResource().getContents().add(b);
-
+				System.out.println(sync.getSourceResource().getContents());
 			
 				sync.forward();
-				System.out.println(sync.getTargetResource().getContents());
+				
 				Metamodell.Solid solid2 = (Metamodell.Solid) sync.getTargetResource().getContents().get(0);
 				System.out.println(solid2.getFacets().get(0).getEdges().get(0).getA());
 			} catch (IOException e) {

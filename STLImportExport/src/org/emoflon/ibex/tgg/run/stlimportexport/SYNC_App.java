@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.apache.log4j.BasicConfigurator;
 
 import org.emoflon.ibex.tgg.operational.defaults.IbexOptions;
@@ -47,5 +48,20 @@ public class SYNC_App extends SYNC {
 	
 	private static IbexOptions createIbexOptions() {
 		return _RegistrationHelper.createIbexOptions();
+	}
+	
+	@Override
+	public void loadModels() throws IOException {
+		s = createResource(options.projectPath() + "/instances/src.xmi");
+		t = createResource(options.projectPath() + "/instances/trg.xmi");
+		c = createResource(options.projectPath() + "/instances/corr.xmi");
+		p = createResource(options.projectPath() + "/instances/protocol.xmi");
+
+		EcoreUtil.resolveAll(rs);
+	}
+	
+	@Override
+	public void saveModels() throws IOException {
+		
 	}
 }
