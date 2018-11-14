@@ -12,8 +12,6 @@ import org.eclipse.xtext.util.CancelIndicator;
 import org.eclipse.xtext.validation.CheckMode;
 import org.eclipse.xtext.validation.IResourceValidator;
 import org.eclipse.xtext.validation.Issue;
-import org.emoflon.ibex.tgg.operational.strategies.sync.SYNC;
-import org.emoflon.ibex.tgg.run.stlimportexport.SYNC_App;
 import org.xtext.example.mydsl.MyDslStandaloneSetup;
 import org.xtext.example.mydsl.myDsl.Solid;
 
@@ -23,9 +21,6 @@ public class RunParser {
 	private final static Injector injector = new MyDslStandaloneSetup().createInjectorAndDoEMFRegistration();
 	
 	private URI fileURI;
-	
-	private SYNC sync;
-
 	
 	public RunParser(String filePath) throws IOException {
 		fileURI = URI.createFileURI(filePath);
@@ -51,46 +46,9 @@ public class RunParser {
 	}
 	
 	public static void main(String[] args) throws IOException {		
-		RunParser parser = new RunParser("test.stl");
-		parser.loadSTLFile("test.stl");
+		RunParser r = new RunParser("test.stl");
+		Optional<Solid> solid = r.parse();
+		System.out.println("Name: " + solid.get().getName());
+		System.out.println("Number of facets: " + solid.get().getFacets().size());
 	}
-	
-	
-	public void loadSTLFile(String filePath) throws IOException {
-		RunParser parser = new RunParser(filePath);
-		Optional<Solid> solid = parser.parse();
-
-		solid.ifPresent(b -> {
-			try {
-				initialiseFwdSynchroniser();
-
-				sync.getSourceResource().getContents().add(b);
-				System.out.println(sync.getSourceResource().getContents());
-			
-				sync.forward();
-				
-				Metamodell.Solid solid2 = (Metamodell.Solid) sync.getTargetResource().getContents().get(0);
-				System.out.println(solid2.getFacets().get(0).getEdges().get(0).getA());
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		});
-	}
-
-	
-	private void initialiseFwdSynchroniser() throws IOException {
-		if (sync != null)
-			sync.terminate();
-
-		sync = new SYNC_App();
-	}
-
-	private void initialiseBwdSynchroniser() throws IOException {
-		if (sync == null)
-			sync = new SYNC_App();
-	}
-
-	
-	
-	
 }
