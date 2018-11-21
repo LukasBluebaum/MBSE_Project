@@ -114,40 +114,13 @@ public interface MyDslPackage extends EPackage
   int FACET__NORMAL = 0;
 
   /**
-   * The feature id for the '<em><b>V1</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int FACET__V1 = 1;
-
-  /**
-   * The feature id for the '<em><b>V2</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int FACET__V2 = 2;
-
-  /**
-   * The feature id for the '<em><b>V3</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int FACET__V3 = 3;
-
-  /**
    * The number of structural features of the '<em>Facet</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int FACET_FEATURE_COUNT = 4;
+  int FACET_FEATURE_COUNT = 1;
 
   /**
    * The meta object id for the '{@link org.xtext.example.mydsl.myDsl.impl.VectorImpl <em>Vector</em>}' class.
@@ -160,31 +133,31 @@ public interface MyDslPackage extends EPackage
   int VECTOR = 2;
 
   /**
-   * The feature id for the '<em><b>X1</b></em>' attribute.
+   * The feature id for the '<em><b>X</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int VECTOR__X1 = 0;
+  int VECTOR__X = 0;
 
   /**
-   * The feature id for the '<em><b>X2</b></em>' attribute.
+   * The feature id for the '<em><b>Y</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int VECTOR__X2 = 1;
+  int VECTOR__Y = 1;
 
   /**
-   * The feature id for the '<em><b>X3</b></em>' attribute.
+   * The feature id for the '<em><b>Z</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int VECTOR__X3 = 2;
+  int VECTOR__Z = 2;
 
   /**
    * The number of structural features of the '<em>Vector</em>' class.
@@ -194,52 +167,6 @@ public interface MyDslPackage extends EPackage
    * @ordered
    */
   int VECTOR_FEATURE_COUNT = 3;
-
-  /**
-   * The meta object id for the '{@link org.xtext.example.mydsl.myDsl.impl.NormalvectorImpl <em>Normalvector</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see org.xtext.example.mydsl.myDsl.impl.NormalvectorImpl
-   * @see org.xtext.example.mydsl.myDsl.impl.MyDslPackageImpl#getNormalvector()
-   * @generated
-   */
-  int NORMALVECTOR = 3;
-
-  /**
-   * The feature id for the '<em><b>X1</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int NORMALVECTOR__X1 = 0;
-
-  /**
-   * The feature id for the '<em><b>X2</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int NORMALVECTOR__X2 = 1;
-
-  /**
-   * The feature id for the '<em><b>X3</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int NORMALVECTOR__X3 = 2;
-
-  /**
-   * The number of structural features of the '<em>Normalvector</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int NORMALVECTOR_FEATURE_COUNT = 3;
 
 
   /**
@@ -296,39 +223,6 @@ public interface MyDslPackage extends EPackage
   EReference getFacet_Normal();
 
   /**
-   * Returns the meta object for the containment reference '{@link org.xtext.example.mydsl.myDsl.Facet#getV1 <em>V1</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>V1</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Facet#getV1()
-   * @see #getFacet()
-   * @generated
-   */
-  EReference getFacet_V1();
-
-  /**
-   * Returns the meta object for the containment reference '{@link org.xtext.example.mydsl.myDsl.Facet#getV2 <em>V2</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>V2</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Facet#getV2()
-   * @see #getFacet()
-   * @generated
-   */
-  EReference getFacet_V2();
-
-  /**
-   * Returns the meta object for the containment reference '{@link org.xtext.example.mydsl.myDsl.Facet#getV3 <em>V3</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>V3</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Facet#getV3()
-   * @see #getFacet()
-   * @generated
-   */
-  EReference getFacet_V3();
-
-  /**
    * Returns the meta object for class '{@link org.xtext.example.mydsl.myDsl.Vector <em>Vector</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -339,80 +233,37 @@ public interface MyDslPackage extends EPackage
   EClass getVector();
 
   /**
-   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Vector#getX1 <em>X1</em>}'.
+   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Vector#getX <em>X</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>X1</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Vector#getX1()
+   * @return the meta object for the attribute '<em>X</em>'.
+   * @see org.xtext.example.mydsl.myDsl.Vector#getX()
    * @see #getVector()
    * @generated
    */
-  EAttribute getVector_X1();
+  EAttribute getVector_X();
 
   /**
-   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Vector#getX2 <em>X2</em>}'.
+   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Vector#getY <em>Y</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>X2</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Vector#getX2()
+   * @return the meta object for the attribute '<em>Y</em>'.
+   * @see org.xtext.example.mydsl.myDsl.Vector#getY()
    * @see #getVector()
    * @generated
    */
-  EAttribute getVector_X2();
+  EAttribute getVector_Y();
 
   /**
-   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Vector#getX3 <em>X3</em>}'.
+   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Vector#getZ <em>Z</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>X3</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Vector#getX3()
+   * @return the meta object for the attribute '<em>Z</em>'.
+   * @see org.xtext.example.mydsl.myDsl.Vector#getZ()
    * @see #getVector()
    * @generated
    */
-  EAttribute getVector_X3();
-
-  /**
-   * Returns the meta object for class '{@link org.xtext.example.mydsl.myDsl.Normalvector <em>Normalvector</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Normalvector</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Normalvector
-   * @generated
-   */
-  EClass getNormalvector();
-
-  /**
-   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Normalvector#getX1 <em>X1</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>X1</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Normalvector#getX1()
-   * @see #getNormalvector()
-   * @generated
-   */
-  EAttribute getNormalvector_X1();
-
-  /**
-   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Normalvector#getX2 <em>X2</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>X2</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Normalvector#getX2()
-   * @see #getNormalvector()
-   * @generated
-   */
-  EAttribute getNormalvector_X2();
-
-  /**
-   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Normalvector#getX3 <em>X3</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>X3</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Normalvector#getX3()
-   * @see #getNormalvector()
-   * @generated
-   */
-  EAttribute getNormalvector_X3();
+  EAttribute getVector_Z();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -482,30 +333,6 @@ public interface MyDslPackage extends EPackage
     EReference FACET__NORMAL = eINSTANCE.getFacet_Normal();
 
     /**
-     * The meta object literal for the '<em><b>V1</b></em>' containment reference feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference FACET__V1 = eINSTANCE.getFacet_V1();
-
-    /**
-     * The meta object literal for the '<em><b>V2</b></em>' containment reference feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference FACET__V2 = eINSTANCE.getFacet_V2();
-
-    /**
-     * The meta object literal for the '<em><b>V3</b></em>' containment reference feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference FACET__V3 = eINSTANCE.getFacet_V3();
-
-    /**
      * The meta object literal for the '{@link org.xtext.example.mydsl.myDsl.impl.VectorImpl <em>Vector</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -516,62 +343,28 @@ public interface MyDslPackage extends EPackage
     EClass VECTOR = eINSTANCE.getVector();
 
     /**
-     * The meta object literal for the '<em><b>X1</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>X</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute VECTOR__X1 = eINSTANCE.getVector_X1();
+    EAttribute VECTOR__X = eINSTANCE.getVector_X();
 
     /**
-     * The meta object literal for the '<em><b>X2</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Y</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute VECTOR__X2 = eINSTANCE.getVector_X2();
+    EAttribute VECTOR__Y = eINSTANCE.getVector_Y();
 
     /**
-     * The meta object literal for the '<em><b>X3</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Z</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute VECTOR__X3 = eINSTANCE.getVector_X3();
-
-    /**
-     * The meta object literal for the '{@link org.xtext.example.mydsl.myDsl.impl.NormalvectorImpl <em>Normalvector</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see org.xtext.example.mydsl.myDsl.impl.NormalvectorImpl
-     * @see org.xtext.example.mydsl.myDsl.impl.MyDslPackageImpl#getNormalvector()
-     * @generated
-     */
-    EClass NORMALVECTOR = eINSTANCE.getNormalvector();
-
-    /**
-     * The meta object literal for the '<em><b>X1</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute NORMALVECTOR__X1 = eINSTANCE.getNormalvector_X1();
-
-    /**
-     * The meta object literal for the '<em><b>X2</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute NORMALVECTOR__X2 = eINSTANCE.getNormalvector_X2();
-
-    /**
-     * The meta object literal for the '<em><b>X3</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute NORMALVECTOR__X3 = eINSTANCE.getNormalvector_X3();
+    EAttribute VECTOR__Z = eINSTANCE.getVector_Z();
 
   }
 

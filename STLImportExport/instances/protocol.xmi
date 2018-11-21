@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<STLImportExport:EdgeRule__Marker xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:STLImportExport="platform:/resource/STLImportExport/model/STLImportExport.ecore" final="true">
+  <CREATE__SRC__Name href="src.xmi#//@facets.0"/>
+  <CREATE__SRC__s1 href="src.xmi#/"/>
+  <CREATE__SRC__vec1 href="src.xmi#//@facets.0/@normal"/>
+  <CREATE__TRG__facet href="trg.xmi#//@facets.0"/>
+  <CREATE__TRG__n href="trg.xmi#//@facets.0/@normal"/>
+  <CREATE__TRG__s2 href="trg.xmi#/"/>
+  <CREATE__CORR__f1f href="corr.xmi#/0"/>
+  <CREATE__CORR__n1n href="corr.xmi#/1"/>
+  <CREATE__CORR__s1s href="corr.xmi#/2"/>
+</STLImportExport:EdgeRule__Marker>

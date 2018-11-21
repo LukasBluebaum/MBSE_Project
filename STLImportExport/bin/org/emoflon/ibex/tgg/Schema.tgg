@@ -19,19 +19,13 @@
 	
 	FacetToFacet{
 		#src->myDsl.Facet
-		#trg->Metamodell.Facet		
+		#trg->Metamodell.Facet
 	}
 	
-	VectorToVector{
+	VectorToVector {
 		#src->myDsl.Vector
 		#trg->Metamodell.Vector3f
 	}
-	
-	NormalToNormal{
-		#src->myDsl.Normalvector
-		#trg->Metamodell.Vector3f
-	}
-	
 }
 
 #attributeConditions {

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:STLImportExport="platform:/resource/STLImportExport/model/STLImportExport.ecore">
+  <STLImportExport:FacetToFacet>
+    <source href="src.xmi#//@facets.0"/>
+    <target href="trg.xmi#//@facets.0"/>
+  </STLImportExport:FacetToFacet>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#//@facets.0/@normal"/>
+    <target href="trg.xmi#//@facets.0/@normal"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:SolidToSolid>
+    <source href="src.xmi#/"/>
+    <target href="trg.xmi#/"/>
+  </STLImportExport:SolidToSolid>
+</xmi:XMI>

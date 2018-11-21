@@ -4,83 +4,47 @@
   <trg href="platform:/resource/Metamodell/model/Metamodell.ecore#/"/>
   <corr href="platform:/resource/STLImportExport/model/STLImportExport.ecore#/"/>
   <rules name="EdgeRule">
-    <nodes name="Name" bindingType="CREATE" outgoingEdges="//@rules.0/@edges.0 //@rules.0/@edges.1 //@rules.0/@edges.2">
+    <nodes name="Name" bindingType="CREATE" incomingEdges="//@rules.0/@edges.1" outgoingEdges="//@rules.0/@edges.0" incomingCorrsSource="//@rules.0/@nodes.6">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
     </nodes>
-    <nodes name="vec1" bindingType="CREATE" incomingEdges="//@rules.0/@edges.0" incomingCorrsSource="//@rules.0/@nodes.11">
+    <nodes name="s1" bindingType="CREATE" outgoingEdges="//@rules.0/@edges.1" incomingCorrsSource="//@rules.0/@nodes.8">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
+    </nodes>
+    <nodes name="vec1" bindingType="CREATE" incomingEdges="//@rules.0/@edges.0" incomingCorrsSource="//@rules.0/@nodes.7">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec2" bindingType="CREATE" incomingEdges="//@rules.0/@edges.1" incomingCorrsSource="//@rules.0/@nodes.12">
-      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
-    </nodes>
-    <nodes name="vec3" bindingType="CREATE" incomingEdges="//@rules.0/@edges.2" incomingCorrsSource="//@rules.0/@nodes.13">
-      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
-    </nodes>
-    <nodes name="a1" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.0/@edges.3 //@rules.0/@edges.8" incomingCorrsTarget="//@rules.0/@nodes.11">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
-    </nodes>
-    <nodes name="b1" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.0/@edges.4 //@rules.0/@edges.5" incomingCorrsTarget="//@rules.0/@nodes.12">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
-    </nodes>
-    <nodes name="c1" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.0/@edges.6 //@rules.0/@edges.7" incomingCorrsTarget="//@rules.0/@nodes.13">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
-    </nodes>
-    <nodes name="e1" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.0/@edges.9" outgoingEdges="//@rules.0/@edges.3 //@rules.0/@edges.4">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
-    </nodes>
-    <nodes name="e2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.0/@edges.10" outgoingEdges="//@rules.0/@edges.5 //@rules.0/@edges.6">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
-    </nodes>
-    <nodes name="e3" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.0/@edges.11" outgoingEdges="//@rules.0/@edges.7 //@rules.0/@edges.8">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
-    </nodes>
-    <nodes name="facet" domainType="TRG" bindingType="CREATE" outgoingEdges="//@rules.0/@edges.9 //@rules.0/@edges.10 //@rules.0/@edges.11">
+    <nodes name="facet" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.0/@edges.3" outgoingEdges="//@rules.0/@edges.2 //@rules.0/@edges.4" incomingCorrsTarget="//@rules.0/@nodes.6">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes xsi:type="language:TGGRuleCorr" name="v1v" domainType="CORR" bindingType="CREATE" source="//@rules.0/@nodes.1" target="//@rules.0/@nodes.4">
+    <nodes name="n" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.0/@edges.2" incomingCorrsTarget="//@rules.0/@nodes.7">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </nodes>
+    <nodes name="s2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.0/@edges.4" outgoingEdges="//@rules.0/@edges.3" incomingCorrsTarget="//@rules.0/@nodes.8">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="f1f" domainType="CORR" bindingType="CREATE" source="//@rules.0/@nodes.0" target="//@rules.0/@nodes.3">
+      <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="n1n" domainType="CORR" bindingType="CREATE" source="//@rules.0/@nodes.2" target="//@rules.0/@nodes.4">
       <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//VectorToVector"/>
     </nodes>
-    <nodes xsi:type="language:TGGRuleCorr" name="v2v" domainType="CORR" bindingType="CREATE" source="//@rules.0/@nodes.2" target="//@rules.0/@nodes.5">
-      <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//VectorToVector"/>
+    <nodes xsi:type="language:TGGRuleCorr" name="s1s" domainType="CORR" bindingType="CREATE" source="//@rules.0/@nodes.1" target="//@rules.0/@nodes.5">
+      <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//SolidToSolid"/>
     </nodes>
-    <nodes xsi:type="language:TGGRuleCorr" name="v3v" domainType="CORR" bindingType="CREATE" source="//@rules.0/@nodes.3" target="//@rules.0/@nodes.6">
-      <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//VectorToVector"/>
-    </nodes>
-    <edges name="Name__v1__vec1_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.0/@nodes.0" trgNode="//@rules.0/@nodes.1">
-      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v1"/>
+    <edges name="Name__normal__vec1_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.0/@nodes.0" trgNode="//@rules.0/@nodes.2">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/normal"/>
     </edges>
-    <edges name="Name__v2__vec2_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.0/@nodes.0" trgNode="//@rules.0/@nodes.2">
-      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v2"/>
+    <edges name="s1__facets__Name_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.0/@nodes.1" trgNode="//@rules.0/@nodes.0">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid/facets"/>
     </edges>
-    <edges name="Name__v3__vec3_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.0/@nodes.0" trgNode="//@rules.0/@nodes.3">
-      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v3"/>
+    <edges name="facet__normal__n_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.3" trgNode="//@rules.0/@nodes.4">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/normal"/>
     </edges>
-    <edges name="e1__a__a1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.7" trgNode="//@rules.0/@nodes.4">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+    <edges name="s2__facets__facet_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.5" trgNode="//@rules.0/@nodes.3">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid/facets"/>
     </edges>
-    <edges name="e1__b__b1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.7" trgNode="//@rules.0/@nodes.5">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
-    </edges>
-    <edges name="e2__a__b1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.8" trgNode="//@rules.0/@nodes.5">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
-    </edges>
-    <edges name="e2__b__c1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.8" trgNode="//@rules.0/@nodes.6">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
-    </edges>
-    <edges name="e3__a__c1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.9" trgNode="//@rules.0/@nodes.6">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
-    </edges>
-    <edges name="e3__b__a1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.9" trgNode="//@rules.0/@nodes.4">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
-    </edges>
-    <edges name="facet__edges__e1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.10" trgNode="//@rules.0/@nodes.7">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
-    </edges>
-    <edges name="facet__edges__e2_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.10" trgNode="//@rules.0/@nodes.8">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
-    </edges>
-    <edges name="facet__edges__e3_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.10" trgNode="//@rules.0/@nodes.9">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+    <edges name="facet__solid__s2_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.3" trgNode="//@rules.0/@nodes.5">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/solid"/>
     </edges>
     <attributeConditionLibrary/>
   </rules>

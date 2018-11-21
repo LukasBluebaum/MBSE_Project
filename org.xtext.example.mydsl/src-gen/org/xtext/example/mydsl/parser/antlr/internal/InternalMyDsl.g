@@ -151,9 +151,9 @@ ruleFacet returns [EObject current=null]
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getFacetAccess().getNormalNormalvectorParserRuleCall_1_0());
+					newCompositeNode(grammarAccess.getFacetAccess().getNormalVectorParserRuleCall_1_0());
 				}
-				lv_normal_1_0=ruleNormalvector
+				lv_normal_1_0=ruleVector
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getFacetRule());
@@ -162,83 +162,14 @@ ruleFacet returns [EObject current=null]
 						$current,
 						"normal",
 						lv_normal_1_0,
-						"org.xtext.example.mydsl.MyDsl.Normalvector");
-					afterParserOrEnumRuleCall();
-				}
-			)
-		)
-		otherlv_2='outer'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getFacetAccess().getOuterKeyword_2());
-		}
-		otherlv_3='loop'
-		{
-			newLeafNode(otherlv_3, grammarAccess.getFacetAccess().getLoopKeyword_3());
-		}
-		(
-			(
-				{
-					newCompositeNode(grammarAccess.getFacetAccess().getV1VectorParserRuleCall_4_0());
-				}
-				lv_v1_4_0=ruleVector
-				{
-					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getFacetRule());
-					}
-					set(
-						$current,
-						"v1",
-						lv_v1_4_0,
 						"org.xtext.example.mydsl.MyDsl.Vector");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		(
-			(
-				{
-					newCompositeNode(grammarAccess.getFacetAccess().getV2VectorParserRuleCall_5_0());
-				}
-				lv_v2_5_0=ruleVector
-				{
-					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getFacetRule());
-					}
-					set(
-						$current,
-						"v2",
-						lv_v2_5_0,
-						"org.xtext.example.mydsl.MyDsl.Vector");
-					afterParserOrEnumRuleCall();
-				}
-			)
-		)
-		(
-			(
-				{
-					newCompositeNode(grammarAccess.getFacetAccess().getV3VectorParserRuleCall_6_0());
-				}
-				lv_v3_6_0=ruleVector
-				{
-					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getFacetRule());
-					}
-					set(
-						$current,
-						"v3",
-						lv_v3_6_0,
-						"org.xtext.example.mydsl.MyDsl.Vector");
-					afterParserOrEnumRuleCall();
-				}
-			)
-		)
-		otherlv_7='endloop'
+		otherlv_2='endfacet'
 		{
-			newLeafNode(otherlv_7, grammarAccess.getFacetAccess().getEndloopKeyword_7());
-		}
-		otherlv_8='endfacet'
-		{
-			newLeafNode(otherlv_8, grammarAccess.getFacetAccess().getEndfacetKeyword_8());
+			newLeafNode(otherlv_2, grammarAccess.getFacetAccess().getEndfacetKeyword_2());
 		}
 	)
 ;
@@ -259,137 +190,60 @@ ruleVector returns [EObject current=null]
 	leaveRule();
 }:
 	(
-		otherlv_0='vertex'
-		{
-			newLeafNode(otherlv_0, grammarAccess.getVectorAccess().getVertexKeyword_0());
-		}
-		(
-			(
-				lv_x1_1_0=RULE_DOUBLE
-				{
-					newLeafNode(lv_x1_1_0, grammarAccess.getVectorAccess().getX1DOUBLETerminalRuleCall_1_0());
-				}
-				{
-					if ($current==null) {
-						$current = createModelElement(grammarAccess.getVectorRule());
-					}
-					setWithLastConsumed(
-						$current,
-						"x1",
-						lv_x1_1_0,
-						"org.xtext.example.mydsl.MyDsl.DOUBLE");
-				}
-			)
-		)
-		(
-			(
-				lv_x2_2_0=RULE_DOUBLE
-				{
-					newLeafNode(lv_x2_2_0, grammarAccess.getVectorAccess().getX2DOUBLETerminalRuleCall_2_0());
-				}
-				{
-					if ($current==null) {
-						$current = createModelElement(grammarAccess.getVectorRule());
-					}
-					setWithLastConsumed(
-						$current,
-						"x2",
-						lv_x2_2_0,
-						"org.xtext.example.mydsl.MyDsl.DOUBLE");
-				}
-			)
-		)
-		(
-			(
-				lv_x3_3_0=RULE_DOUBLE
-				{
-					newLeafNode(lv_x3_3_0, grammarAccess.getVectorAccess().getX3DOUBLETerminalRuleCall_3_0());
-				}
-				{
-					if ($current==null) {
-						$current = createModelElement(grammarAccess.getVectorRule());
-					}
-					setWithLastConsumed(
-						$current,
-						"x3",
-						lv_x3_3_0,
-						"org.xtext.example.mydsl.MyDsl.DOUBLE");
-				}
-			)
-		)
-	)
-;
-
-// Entry rule entryRuleNormalvector
-entryRuleNormalvector returns [EObject current=null]:
-	{ newCompositeNode(grammarAccess.getNormalvectorRule()); }
-	iv_ruleNormalvector=ruleNormalvector
-	{ $current=$iv_ruleNormalvector.current; }
-	EOF;
-
-// Rule Normalvector
-ruleNormalvector returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	(
 		otherlv_0='normal'
 		{
-			newLeafNode(otherlv_0, grammarAccess.getNormalvectorAccess().getNormalKeyword_0());
+			newLeafNode(otherlv_0, grammarAccess.getVectorAccess().getNormalKeyword_0());
 		}
 		(
 			(
-				lv_x1_1_0=RULE_DOUBLE
+				lv_x_1_0=RULE_DOUBLE
 				{
-					newLeafNode(lv_x1_1_0, grammarAccess.getNormalvectorAccess().getX1DOUBLETerminalRuleCall_1_0());
+					newLeafNode(lv_x_1_0, grammarAccess.getVectorAccess().getXDOUBLETerminalRuleCall_1_0());
 				}
 				{
 					if ($current==null) {
-						$current = createModelElement(grammarAccess.getNormalvectorRule());
+						$current = createModelElement(grammarAccess.getVectorRule());
 					}
 					setWithLastConsumed(
 						$current,
-						"x1",
-						lv_x1_1_0,
+						"x",
+						lv_x_1_0,
 						"org.xtext.example.mydsl.MyDsl.DOUBLE");
 				}
 			)
 		)
 		(
 			(
-				lv_x2_2_0=RULE_DOUBLE
+				lv_y_2_0=RULE_DOUBLE
 				{
-					newLeafNode(lv_x2_2_0, grammarAccess.getNormalvectorAccess().getX2DOUBLETerminalRuleCall_2_0());
+					newLeafNode(lv_y_2_0, grammarAccess.getVectorAccess().getYDOUBLETerminalRuleCall_2_0());
 				}
 				{
 					if ($current==null) {
-						$current = createModelElement(grammarAccess.getNormalvectorRule());
+						$current = createModelElement(grammarAccess.getVectorRule());
 					}
 					setWithLastConsumed(
 						$current,
-						"x2",
-						lv_x2_2_0,
+						"y",
+						lv_y_2_0,
 						"org.xtext.example.mydsl.MyDsl.DOUBLE");
 				}
 			)
 		)
 		(
 			(
-				lv_x3_3_0=RULE_DOUBLE
+				lv_z_3_0=RULE_DOUBLE
 				{
-					newLeafNode(lv_x3_3_0, grammarAccess.getNormalvectorAccess().getX3DOUBLETerminalRuleCall_3_0());
+					newLeafNode(lv_z_3_0, grammarAccess.getVectorAccess().getZDOUBLETerminalRuleCall_3_0());
 				}
 				{
 					if ($current==null) {
-						$current = createModelElement(grammarAccess.getNormalvectorRule());
+						$current = createModelElement(grammarAccess.getVectorRule());
 					}
 					setWithLastConsumed(
 						$current,
-						"x3",
-						lv_x3_3_0,
+						"z",
+						lv_z_3_0,
 						"org.xtext.example.mydsl.MyDsl.DOUBLE");
 				}
 			)

@@ -34,19 +34,12 @@ public class MyDslParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getSolidAccess().getGroup(), "rule__Solid__Group__0");
 			builder.put(grammarAccess.getFacetAccess().getGroup(), "rule__Facet__Group__0");
 			builder.put(grammarAccess.getVectorAccess().getGroup(), "rule__Vector__Group__0");
-			builder.put(grammarAccess.getNormalvectorAccess().getGroup(), "rule__Normalvector__Group__0");
 			builder.put(grammarAccess.getSolidAccess().getNameAssignment_1(), "rule__Solid__NameAssignment_1");
 			builder.put(grammarAccess.getSolidAccess().getFacetsAssignment_2(), "rule__Solid__FacetsAssignment_2");
 			builder.put(grammarAccess.getFacetAccess().getNormalAssignment_1(), "rule__Facet__NormalAssignment_1");
-			builder.put(grammarAccess.getFacetAccess().getV1Assignment_4(), "rule__Facet__V1Assignment_4");
-			builder.put(grammarAccess.getFacetAccess().getV2Assignment_5(), "rule__Facet__V2Assignment_5");
-			builder.put(grammarAccess.getFacetAccess().getV3Assignment_6(), "rule__Facet__V3Assignment_6");
-			builder.put(grammarAccess.getVectorAccess().getX1Assignment_1(), "rule__Vector__X1Assignment_1");
-			builder.put(grammarAccess.getVectorAccess().getX2Assignment_2(), "rule__Vector__X2Assignment_2");
-			builder.put(grammarAccess.getVectorAccess().getX3Assignment_3(), "rule__Vector__X3Assignment_3");
-			builder.put(grammarAccess.getNormalvectorAccess().getX1Assignment_1(), "rule__Normalvector__X1Assignment_1");
-			builder.put(grammarAccess.getNormalvectorAccess().getX2Assignment_2(), "rule__Normalvector__X2Assignment_2");
-			builder.put(grammarAccess.getNormalvectorAccess().getX3Assignment_3(), "rule__Normalvector__X3Assignment_3");
+			builder.put(grammarAccess.getVectorAccess().getXAssignment_1(), "rule__Vector__XAssignment_1");
+			builder.put(grammarAccess.getVectorAccess().getYAssignment_2(), "rule__Vector__YAssignment_2");
+			builder.put(grammarAccess.getVectorAccess().getZAssignment_3(), "rule__Vector__ZAssignment_3");
 		}
 	}
 	

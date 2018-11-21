@@ -24,8 +24,7 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 	public static final String[] tokenNames = new String[] {
 		"<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ANY_OTHER", "RULE_DOUBLE", 
 		"RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_STRING", 
-		"RULE_WS", "'endfacet'", "'endloop'", "'endsolid'", "'facet'", "'loop'", 
-		"'normal'", "'outer'", "'solid'", "'vertex'"
+		"RULE_WS", "'endfacet'", "'endsolid'", "'facet'", "'normal'", "'solid'"
 	};
 	public static final int EOF=-1;
 	public static final int T__12=12;
@@ -33,10 +32,6 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 	public static final int T__14=14;
 	public static final int T__15=15;
 	public static final int T__16=16;
-	public static final int T__17=17;
-	public static final int T__18=18;
-	public static final int T__19=19;
-	public static final int T__20=20;
 	public static final int RULE_ANY_OTHER=4;
 	public static final int RULE_DOUBLE=5;
 	public static final int RULE_ID=6;
@@ -302,88 +297,15 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 
-	// $ANTLR start "entryRuleNormalvector"
-	// InternalMyDsl.g:128:1: entryRuleNormalvector : ruleNormalvector EOF ;
-	public final void entryRuleNormalvector() throws RecognitionException {
-		try {
-			// InternalMyDsl.g:129:1: ( ruleNormalvector EOF )
-			// InternalMyDsl.g:130:1: ruleNormalvector EOF
-			{
-			 before(grammarAccess.getNormalvectorRule()); 
-			pushFollow(FOLLOW_1);
-			ruleNormalvector();
-			state._fsp--;
-
-			 after(grammarAccess.getNormalvectorRule()); 
-			match(input,EOF,FOLLOW_2); 
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-		}
-	}
-	// $ANTLR end "entryRuleNormalvector"
-
-
-
-	// $ANTLR start "ruleNormalvector"
-	// InternalMyDsl.g:137:1: ruleNormalvector : ( ( rule__Normalvector__Group__0 ) ) ;
-	public final void ruleNormalvector() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:141:2: ( ( ( rule__Normalvector__Group__0 ) ) )
-			// InternalMyDsl.g:142:2: ( ( rule__Normalvector__Group__0 ) )
-			{
-			// InternalMyDsl.g:142:2: ( ( rule__Normalvector__Group__0 ) )
-			// InternalMyDsl.g:143:3: ( rule__Normalvector__Group__0 )
-			{
-			 before(grammarAccess.getNormalvectorAccess().getGroup()); 
-			// InternalMyDsl.g:144:3: ( rule__Normalvector__Group__0 )
-			// InternalMyDsl.g:144:4: rule__Normalvector__Group__0
-			{
-			pushFollow(FOLLOW_2);
-			rule__Normalvector__Group__0();
-			state._fsp--;
-
-			}
-
-			 after(grammarAccess.getNormalvectorAccess().getGroup()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "ruleNormalvector"
-
-
-
 	// $ANTLR start "rule__Solid__Group__0"
-	// InternalMyDsl.g:152:1: rule__Solid__Group__0 : rule__Solid__Group__0__Impl rule__Solid__Group__1 ;
+	// InternalMyDsl.g:127:1: rule__Solid__Group__0 : rule__Solid__Group__0__Impl rule__Solid__Group__1 ;
 	public final void rule__Solid__Group__0() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:156:2: ( rule__Solid__Group__0__Impl rule__Solid__Group__1 )
-			// InternalMyDsl.g:157:2: rule__Solid__Group__0__Impl rule__Solid__Group__1
+			// InternalMyDsl.g:131:2: ( rule__Solid__Group__0__Impl rule__Solid__Group__1 )
+			// InternalMyDsl.g:132:2: rule__Solid__Group__0__Impl rule__Solid__Group__1
 			{
 			pushFollow(FOLLOW_3);
 			rule__Solid__Group__0__Impl();
@@ -412,20 +334,20 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Solid__Group__0__Impl"
-	// InternalMyDsl.g:164:1: rule__Solid__Group__0__Impl : ( 'solid' ) ;
+	// InternalMyDsl.g:139:1: rule__Solid__Group__0__Impl : ( 'solid' ) ;
 	public final void rule__Solid__Group__0__Impl() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:168:2: ( ( 'solid' ) )
-			// InternalMyDsl.g:169:2: ( 'solid' )
+			// InternalMyDsl.g:143:2: ( ( 'solid' ) )
+			// InternalMyDsl.g:144:2: ( 'solid' )
 			{
-			// InternalMyDsl.g:169:2: ( 'solid' )
-			// InternalMyDsl.g:170:2: 'solid'
+			// InternalMyDsl.g:144:2: ( 'solid' )
+			// InternalMyDsl.g:145:2: 'solid'
 			{
 			 before(grammarAccess.getSolidAccess().getSolidKeyword_0()); 
-			match(input,19,FOLLOW_2); 
+			match(input,16,FOLLOW_2); 
 			 after(grammarAccess.getSolidAccess().getSolidKeyword_0()); 
 			}
 
@@ -448,14 +370,14 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Solid__Group__1"
-	// InternalMyDsl.g:179:1: rule__Solid__Group__1 : rule__Solid__Group__1__Impl rule__Solid__Group__2 ;
+	// InternalMyDsl.g:154:1: rule__Solid__Group__1 : rule__Solid__Group__1__Impl rule__Solid__Group__2 ;
 	public final void rule__Solid__Group__1() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:183:2: ( rule__Solid__Group__1__Impl rule__Solid__Group__2 )
-			// InternalMyDsl.g:184:2: rule__Solid__Group__1__Impl rule__Solid__Group__2
+			// InternalMyDsl.g:158:2: ( rule__Solid__Group__1__Impl rule__Solid__Group__2 )
+			// InternalMyDsl.g:159:2: rule__Solid__Group__1__Impl rule__Solid__Group__2
 			{
 			pushFollow(FOLLOW_4);
 			rule__Solid__Group__1__Impl();
@@ -484,21 +406,21 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Solid__Group__1__Impl"
-	// InternalMyDsl.g:191:1: rule__Solid__Group__1__Impl : ( ( rule__Solid__NameAssignment_1 ) ) ;
+	// InternalMyDsl.g:166:1: rule__Solid__Group__1__Impl : ( ( rule__Solid__NameAssignment_1 ) ) ;
 	public final void rule__Solid__Group__1__Impl() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:195:2: ( ( ( rule__Solid__NameAssignment_1 ) ) )
-			// InternalMyDsl.g:196:2: ( ( rule__Solid__NameAssignment_1 ) )
+			// InternalMyDsl.g:170:2: ( ( ( rule__Solid__NameAssignment_1 ) ) )
+			// InternalMyDsl.g:171:2: ( ( rule__Solid__NameAssignment_1 ) )
 			{
-			// InternalMyDsl.g:196:2: ( ( rule__Solid__NameAssignment_1 ) )
-			// InternalMyDsl.g:197:2: ( rule__Solid__NameAssignment_1 )
+			// InternalMyDsl.g:171:2: ( ( rule__Solid__NameAssignment_1 ) )
+			// InternalMyDsl.g:172:2: ( rule__Solid__NameAssignment_1 )
 			{
 			 before(grammarAccess.getSolidAccess().getNameAssignment_1()); 
-			// InternalMyDsl.g:198:2: ( rule__Solid__NameAssignment_1 )
-			// InternalMyDsl.g:198:3: rule__Solid__NameAssignment_1
+			// InternalMyDsl.g:173:2: ( rule__Solid__NameAssignment_1 )
+			// InternalMyDsl.g:173:3: rule__Solid__NameAssignment_1
 			{
 			pushFollow(FOLLOW_2);
 			rule__Solid__NameAssignment_1();
@@ -528,14 +450,14 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Solid__Group__2"
-	// InternalMyDsl.g:206:1: rule__Solid__Group__2 : rule__Solid__Group__2__Impl rule__Solid__Group__3 ;
+	// InternalMyDsl.g:181:1: rule__Solid__Group__2 : rule__Solid__Group__2__Impl rule__Solid__Group__3 ;
 	public final void rule__Solid__Group__2() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:210:2: ( rule__Solid__Group__2__Impl rule__Solid__Group__3 )
-			// InternalMyDsl.g:211:2: rule__Solid__Group__2__Impl rule__Solid__Group__3
+			// InternalMyDsl.g:185:2: ( rule__Solid__Group__2__Impl rule__Solid__Group__3 )
+			// InternalMyDsl.g:186:2: rule__Solid__Group__2__Impl rule__Solid__Group__3
 			{
 			pushFollow(FOLLOW_5);
 			rule__Solid__Group__2__Impl();
@@ -564,24 +486,24 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Solid__Group__2__Impl"
-	// InternalMyDsl.g:218:1: rule__Solid__Group__2__Impl : ( ( ( rule__Solid__FacetsAssignment_2 ) ) ( ( rule__Solid__FacetsAssignment_2 )* ) ) ;
+	// InternalMyDsl.g:193:1: rule__Solid__Group__2__Impl : ( ( ( rule__Solid__FacetsAssignment_2 ) ) ( ( rule__Solid__FacetsAssignment_2 )* ) ) ;
 	public final void rule__Solid__Group__2__Impl() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:222:2: ( ( ( ( rule__Solid__FacetsAssignment_2 ) ) ( ( rule__Solid__FacetsAssignment_2 )* ) ) )
-			// InternalMyDsl.g:223:2: ( ( ( rule__Solid__FacetsAssignment_2 ) ) ( ( rule__Solid__FacetsAssignment_2 )* ) )
+			// InternalMyDsl.g:197:2: ( ( ( ( rule__Solid__FacetsAssignment_2 ) ) ( ( rule__Solid__FacetsAssignment_2 )* ) ) )
+			// InternalMyDsl.g:198:2: ( ( ( rule__Solid__FacetsAssignment_2 ) ) ( ( rule__Solid__FacetsAssignment_2 )* ) )
 			{
-			// InternalMyDsl.g:223:2: ( ( ( rule__Solid__FacetsAssignment_2 ) ) ( ( rule__Solid__FacetsAssignment_2 )* ) )
-			// InternalMyDsl.g:224:2: ( ( rule__Solid__FacetsAssignment_2 ) ) ( ( rule__Solid__FacetsAssignment_2 )* )
+			// InternalMyDsl.g:198:2: ( ( ( rule__Solid__FacetsAssignment_2 ) ) ( ( rule__Solid__FacetsAssignment_2 )* ) )
+			// InternalMyDsl.g:199:2: ( ( rule__Solid__FacetsAssignment_2 ) ) ( ( rule__Solid__FacetsAssignment_2 )* )
 			{
-			// InternalMyDsl.g:224:2: ( ( rule__Solid__FacetsAssignment_2 ) )
-			// InternalMyDsl.g:225:3: ( rule__Solid__FacetsAssignment_2 )
+			// InternalMyDsl.g:199:2: ( ( rule__Solid__FacetsAssignment_2 ) )
+			// InternalMyDsl.g:200:3: ( rule__Solid__FacetsAssignment_2 )
 			{
 			 before(grammarAccess.getSolidAccess().getFacetsAssignment_2()); 
-			// InternalMyDsl.g:226:3: ( rule__Solid__FacetsAssignment_2 )
-			// InternalMyDsl.g:226:4: rule__Solid__FacetsAssignment_2
+			// InternalMyDsl.g:201:3: ( rule__Solid__FacetsAssignment_2 )
+			// InternalMyDsl.g:201:4: rule__Solid__FacetsAssignment_2
 			{
 			pushFollow(FOLLOW_6);
 			rule__Solid__FacetsAssignment_2();
@@ -592,22 +514,22 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 			 after(grammarAccess.getSolidAccess().getFacetsAssignment_2()); 
 			}
 
-			// InternalMyDsl.g:229:2: ( ( rule__Solid__FacetsAssignment_2 )* )
-			// InternalMyDsl.g:230:3: ( rule__Solid__FacetsAssignment_2 )*
+			// InternalMyDsl.g:204:2: ( ( rule__Solid__FacetsAssignment_2 )* )
+			// InternalMyDsl.g:205:3: ( rule__Solid__FacetsAssignment_2 )*
 			{
 			 before(grammarAccess.getSolidAccess().getFacetsAssignment_2()); 
-			// InternalMyDsl.g:231:3: ( rule__Solid__FacetsAssignment_2 )*
+			// InternalMyDsl.g:206:3: ( rule__Solid__FacetsAssignment_2 )*
 			loop1:
 			while (true) {
 				int alt1=2;
 				int LA1_0 = input.LA(1);
-				if ( (LA1_0==15) ) {
+				if ( (LA1_0==14) ) {
 					alt1=1;
 				}
 
 				switch (alt1) {
 				case 1 :
-					// InternalMyDsl.g:231:4: rule__Solid__FacetsAssignment_2
+					// InternalMyDsl.g:206:4: rule__Solid__FacetsAssignment_2
 					{
 					pushFollow(FOLLOW_6);
 					rule__Solid__FacetsAssignment_2();
@@ -645,14 +567,14 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Solid__Group__3"
-	// InternalMyDsl.g:240:1: rule__Solid__Group__3 : rule__Solid__Group__3__Impl rule__Solid__Group__4 ;
+	// InternalMyDsl.g:215:1: rule__Solid__Group__3 : rule__Solid__Group__3__Impl rule__Solid__Group__4 ;
 	public final void rule__Solid__Group__3() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:244:2: ( rule__Solid__Group__3__Impl rule__Solid__Group__4 )
-			// InternalMyDsl.g:245:2: rule__Solid__Group__3__Impl rule__Solid__Group__4
+			// InternalMyDsl.g:219:2: ( rule__Solid__Group__3__Impl rule__Solid__Group__4 )
+			// InternalMyDsl.g:220:2: rule__Solid__Group__3__Impl rule__Solid__Group__4
 			{
 			pushFollow(FOLLOW_3);
 			rule__Solid__Group__3__Impl();
@@ -681,20 +603,20 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Solid__Group__3__Impl"
-	// InternalMyDsl.g:252:1: rule__Solid__Group__3__Impl : ( 'endsolid' ) ;
+	// InternalMyDsl.g:227:1: rule__Solid__Group__3__Impl : ( 'endsolid' ) ;
 	public final void rule__Solid__Group__3__Impl() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:256:2: ( ( 'endsolid' ) )
-			// InternalMyDsl.g:257:2: ( 'endsolid' )
+			// InternalMyDsl.g:231:2: ( ( 'endsolid' ) )
+			// InternalMyDsl.g:232:2: ( 'endsolid' )
 			{
-			// InternalMyDsl.g:257:2: ( 'endsolid' )
-			// InternalMyDsl.g:258:2: 'endsolid'
+			// InternalMyDsl.g:232:2: ( 'endsolid' )
+			// InternalMyDsl.g:233:2: 'endsolid'
 			{
 			 before(grammarAccess.getSolidAccess().getEndsolidKeyword_3()); 
-			match(input,14,FOLLOW_2); 
+			match(input,13,FOLLOW_2); 
 			 after(grammarAccess.getSolidAccess().getEndsolidKeyword_3()); 
 			}
 
@@ -717,14 +639,14 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Solid__Group__4"
-	// InternalMyDsl.g:267:1: rule__Solid__Group__4 : rule__Solid__Group__4__Impl ;
+	// InternalMyDsl.g:242:1: rule__Solid__Group__4 : rule__Solid__Group__4__Impl ;
 	public final void rule__Solid__Group__4() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:271:2: ( rule__Solid__Group__4__Impl )
-			// InternalMyDsl.g:272:2: rule__Solid__Group__4__Impl
+			// InternalMyDsl.g:246:2: ( rule__Solid__Group__4__Impl )
+			// InternalMyDsl.g:247:2: rule__Solid__Group__4__Impl
 			{
 			pushFollow(FOLLOW_2);
 			rule__Solid__Group__4__Impl();
@@ -749,17 +671,17 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Solid__Group__4__Impl"
-	// InternalMyDsl.g:278:1: rule__Solid__Group__4__Impl : ( RULE_ID ) ;
+	// InternalMyDsl.g:253:1: rule__Solid__Group__4__Impl : ( RULE_ID ) ;
 	public final void rule__Solid__Group__4__Impl() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:282:2: ( ( RULE_ID ) )
-			// InternalMyDsl.g:283:2: ( RULE_ID )
+			// InternalMyDsl.g:257:2: ( ( RULE_ID ) )
+			// InternalMyDsl.g:258:2: ( RULE_ID )
 			{
-			// InternalMyDsl.g:283:2: ( RULE_ID )
-			// InternalMyDsl.g:284:2: RULE_ID
+			// InternalMyDsl.g:258:2: ( RULE_ID )
+			// InternalMyDsl.g:259:2: RULE_ID
 			{
 			 before(grammarAccess.getSolidAccess().getIDTerminalRuleCall_4()); 
 			match(input,RULE_ID,FOLLOW_2); 
@@ -785,14 +707,14 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Facet__Group__0"
-	// InternalMyDsl.g:294:1: rule__Facet__Group__0 : rule__Facet__Group__0__Impl rule__Facet__Group__1 ;
+	// InternalMyDsl.g:269:1: rule__Facet__Group__0 : rule__Facet__Group__0__Impl rule__Facet__Group__1 ;
 	public final void rule__Facet__Group__0() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:298:2: ( rule__Facet__Group__0__Impl rule__Facet__Group__1 )
-			// InternalMyDsl.g:299:2: rule__Facet__Group__0__Impl rule__Facet__Group__1
+			// InternalMyDsl.g:273:2: ( rule__Facet__Group__0__Impl rule__Facet__Group__1 )
+			// InternalMyDsl.g:274:2: rule__Facet__Group__0__Impl rule__Facet__Group__1
 			{
 			pushFollow(FOLLOW_7);
 			rule__Facet__Group__0__Impl();
@@ -821,20 +743,20 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Facet__Group__0__Impl"
-	// InternalMyDsl.g:306:1: rule__Facet__Group__0__Impl : ( 'facet' ) ;
+	// InternalMyDsl.g:281:1: rule__Facet__Group__0__Impl : ( 'facet' ) ;
 	public final void rule__Facet__Group__0__Impl() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:310:2: ( ( 'facet' ) )
-			// InternalMyDsl.g:311:2: ( 'facet' )
+			// InternalMyDsl.g:285:2: ( ( 'facet' ) )
+			// InternalMyDsl.g:286:2: ( 'facet' )
 			{
-			// InternalMyDsl.g:311:2: ( 'facet' )
-			// InternalMyDsl.g:312:2: 'facet'
+			// InternalMyDsl.g:286:2: ( 'facet' )
+			// InternalMyDsl.g:287:2: 'facet'
 			{
 			 before(grammarAccess.getFacetAccess().getFacetKeyword_0()); 
-			match(input,15,FOLLOW_2); 
+			match(input,14,FOLLOW_2); 
 			 after(grammarAccess.getFacetAccess().getFacetKeyword_0()); 
 			}
 
@@ -857,14 +779,14 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Facet__Group__1"
-	// InternalMyDsl.g:321:1: rule__Facet__Group__1 : rule__Facet__Group__1__Impl rule__Facet__Group__2 ;
+	// InternalMyDsl.g:296:1: rule__Facet__Group__1 : rule__Facet__Group__1__Impl rule__Facet__Group__2 ;
 	public final void rule__Facet__Group__1() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:325:2: ( rule__Facet__Group__1__Impl rule__Facet__Group__2 )
-			// InternalMyDsl.g:326:2: rule__Facet__Group__1__Impl rule__Facet__Group__2
+			// InternalMyDsl.g:300:2: ( rule__Facet__Group__1__Impl rule__Facet__Group__2 )
+			// InternalMyDsl.g:301:2: rule__Facet__Group__1__Impl rule__Facet__Group__2
 			{
 			pushFollow(FOLLOW_8);
 			rule__Facet__Group__1__Impl();
@@ -893,21 +815,21 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Facet__Group__1__Impl"
-	// InternalMyDsl.g:333:1: rule__Facet__Group__1__Impl : ( ( rule__Facet__NormalAssignment_1 ) ) ;
+	// InternalMyDsl.g:308:1: rule__Facet__Group__1__Impl : ( ( rule__Facet__NormalAssignment_1 ) ) ;
 	public final void rule__Facet__Group__1__Impl() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:337:2: ( ( ( rule__Facet__NormalAssignment_1 ) ) )
-			// InternalMyDsl.g:338:2: ( ( rule__Facet__NormalAssignment_1 ) )
+			// InternalMyDsl.g:312:2: ( ( ( rule__Facet__NormalAssignment_1 ) ) )
+			// InternalMyDsl.g:313:2: ( ( rule__Facet__NormalAssignment_1 ) )
 			{
-			// InternalMyDsl.g:338:2: ( ( rule__Facet__NormalAssignment_1 ) )
-			// InternalMyDsl.g:339:2: ( rule__Facet__NormalAssignment_1 )
+			// InternalMyDsl.g:313:2: ( ( rule__Facet__NormalAssignment_1 ) )
+			// InternalMyDsl.g:314:2: ( rule__Facet__NormalAssignment_1 )
 			{
 			 before(grammarAccess.getFacetAccess().getNormalAssignment_1()); 
-			// InternalMyDsl.g:340:2: ( rule__Facet__NormalAssignment_1 )
-			// InternalMyDsl.g:340:3: rule__Facet__NormalAssignment_1
+			// InternalMyDsl.g:315:2: ( rule__Facet__NormalAssignment_1 )
+			// InternalMyDsl.g:315:3: rule__Facet__NormalAssignment_1
 			{
 			pushFollow(FOLLOW_2);
 			rule__Facet__NormalAssignment_1();
@@ -937,21 +859,17 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Facet__Group__2"
-	// InternalMyDsl.g:348:1: rule__Facet__Group__2 : rule__Facet__Group__2__Impl rule__Facet__Group__3 ;
+	// InternalMyDsl.g:323:1: rule__Facet__Group__2 : rule__Facet__Group__2__Impl ;
 	public final void rule__Facet__Group__2() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:352:2: ( rule__Facet__Group__2__Impl rule__Facet__Group__3 )
-			// InternalMyDsl.g:353:2: rule__Facet__Group__2__Impl rule__Facet__Group__3
+			// InternalMyDsl.g:327:2: ( rule__Facet__Group__2__Impl )
+			// InternalMyDsl.g:328:2: rule__Facet__Group__2__Impl
 			{
-			pushFollow(FOLLOW_9);
-			rule__Facet__Group__2__Impl();
-			state._fsp--;
-
 			pushFollow(FOLLOW_2);
-			rule__Facet__Group__3();
+			rule__Facet__Group__2__Impl();
 			state._fsp--;
 
 			}
@@ -973,21 +891,21 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Facet__Group__2__Impl"
-	// InternalMyDsl.g:360:1: rule__Facet__Group__2__Impl : ( 'outer' ) ;
+	// InternalMyDsl.g:334:1: rule__Facet__Group__2__Impl : ( 'endfacet' ) ;
 	public final void rule__Facet__Group__2__Impl() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:364:2: ( ( 'outer' ) )
-			// InternalMyDsl.g:365:2: ( 'outer' )
+			// InternalMyDsl.g:338:2: ( ( 'endfacet' ) )
+			// InternalMyDsl.g:339:2: ( 'endfacet' )
 			{
-			// InternalMyDsl.g:365:2: ( 'outer' )
-			// InternalMyDsl.g:366:2: 'outer'
+			// InternalMyDsl.g:339:2: ( 'endfacet' )
+			// InternalMyDsl.g:340:2: 'endfacet'
 			{
-			 before(grammarAccess.getFacetAccess().getOuterKeyword_2()); 
-			match(input,18,FOLLOW_2); 
-			 after(grammarAccess.getFacetAccess().getOuterKeyword_2()); 
+			 before(grammarAccess.getFacetAccess().getEndfacetKeyword_2()); 
+			match(input,12,FOLLOW_2); 
+			 after(grammarAccess.getFacetAccess().getEndfacetKeyword_2()); 
 			}
 
 			}
@@ -1008,469 +926,17 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 
-	// $ANTLR start "rule__Facet__Group__3"
-	// InternalMyDsl.g:375:1: rule__Facet__Group__3 : rule__Facet__Group__3__Impl rule__Facet__Group__4 ;
-	public final void rule__Facet__Group__3() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:379:2: ( rule__Facet__Group__3__Impl rule__Facet__Group__4 )
-			// InternalMyDsl.g:380:2: rule__Facet__Group__3__Impl rule__Facet__Group__4
-			{
-			pushFollow(FOLLOW_10);
-			rule__Facet__Group__3__Impl();
-			state._fsp--;
-
-			pushFollow(FOLLOW_2);
-			rule__Facet__Group__4();
-			state._fsp--;
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__Group__3"
-
-
-
-	// $ANTLR start "rule__Facet__Group__3__Impl"
-	// InternalMyDsl.g:387:1: rule__Facet__Group__3__Impl : ( 'loop' ) ;
-	public final void rule__Facet__Group__3__Impl() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:391:2: ( ( 'loop' ) )
-			// InternalMyDsl.g:392:2: ( 'loop' )
-			{
-			// InternalMyDsl.g:392:2: ( 'loop' )
-			// InternalMyDsl.g:393:2: 'loop'
-			{
-			 before(grammarAccess.getFacetAccess().getLoopKeyword_3()); 
-			match(input,16,FOLLOW_2); 
-			 after(grammarAccess.getFacetAccess().getLoopKeyword_3()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__Group__3__Impl"
-
-
-
-	// $ANTLR start "rule__Facet__Group__4"
-	// InternalMyDsl.g:402:1: rule__Facet__Group__4 : rule__Facet__Group__4__Impl rule__Facet__Group__5 ;
-	public final void rule__Facet__Group__4() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:406:2: ( rule__Facet__Group__4__Impl rule__Facet__Group__5 )
-			// InternalMyDsl.g:407:2: rule__Facet__Group__4__Impl rule__Facet__Group__5
-			{
-			pushFollow(FOLLOW_10);
-			rule__Facet__Group__4__Impl();
-			state._fsp--;
-
-			pushFollow(FOLLOW_2);
-			rule__Facet__Group__5();
-			state._fsp--;
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__Group__4"
-
-
-
-	// $ANTLR start "rule__Facet__Group__4__Impl"
-	// InternalMyDsl.g:414:1: rule__Facet__Group__4__Impl : ( ( rule__Facet__V1Assignment_4 ) ) ;
-	public final void rule__Facet__Group__4__Impl() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:418:2: ( ( ( rule__Facet__V1Assignment_4 ) ) )
-			// InternalMyDsl.g:419:2: ( ( rule__Facet__V1Assignment_4 ) )
-			{
-			// InternalMyDsl.g:419:2: ( ( rule__Facet__V1Assignment_4 ) )
-			// InternalMyDsl.g:420:2: ( rule__Facet__V1Assignment_4 )
-			{
-			 before(grammarAccess.getFacetAccess().getV1Assignment_4()); 
-			// InternalMyDsl.g:421:2: ( rule__Facet__V1Assignment_4 )
-			// InternalMyDsl.g:421:3: rule__Facet__V1Assignment_4
-			{
-			pushFollow(FOLLOW_2);
-			rule__Facet__V1Assignment_4();
-			state._fsp--;
-
-			}
-
-			 after(grammarAccess.getFacetAccess().getV1Assignment_4()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__Group__4__Impl"
-
-
-
-	// $ANTLR start "rule__Facet__Group__5"
-	// InternalMyDsl.g:429:1: rule__Facet__Group__5 : rule__Facet__Group__5__Impl rule__Facet__Group__6 ;
-	public final void rule__Facet__Group__5() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:433:2: ( rule__Facet__Group__5__Impl rule__Facet__Group__6 )
-			// InternalMyDsl.g:434:2: rule__Facet__Group__5__Impl rule__Facet__Group__6
-			{
-			pushFollow(FOLLOW_10);
-			rule__Facet__Group__5__Impl();
-			state._fsp--;
-
-			pushFollow(FOLLOW_2);
-			rule__Facet__Group__6();
-			state._fsp--;
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__Group__5"
-
-
-
-	// $ANTLR start "rule__Facet__Group__5__Impl"
-	// InternalMyDsl.g:441:1: rule__Facet__Group__5__Impl : ( ( rule__Facet__V2Assignment_5 ) ) ;
-	public final void rule__Facet__Group__5__Impl() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:445:2: ( ( ( rule__Facet__V2Assignment_5 ) ) )
-			// InternalMyDsl.g:446:2: ( ( rule__Facet__V2Assignment_5 ) )
-			{
-			// InternalMyDsl.g:446:2: ( ( rule__Facet__V2Assignment_5 ) )
-			// InternalMyDsl.g:447:2: ( rule__Facet__V2Assignment_5 )
-			{
-			 before(grammarAccess.getFacetAccess().getV2Assignment_5()); 
-			// InternalMyDsl.g:448:2: ( rule__Facet__V2Assignment_5 )
-			// InternalMyDsl.g:448:3: rule__Facet__V2Assignment_5
-			{
-			pushFollow(FOLLOW_2);
-			rule__Facet__V2Assignment_5();
-			state._fsp--;
-
-			}
-
-			 after(grammarAccess.getFacetAccess().getV2Assignment_5()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__Group__5__Impl"
-
-
-
-	// $ANTLR start "rule__Facet__Group__6"
-	// InternalMyDsl.g:456:1: rule__Facet__Group__6 : rule__Facet__Group__6__Impl rule__Facet__Group__7 ;
-	public final void rule__Facet__Group__6() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:460:2: ( rule__Facet__Group__6__Impl rule__Facet__Group__7 )
-			// InternalMyDsl.g:461:2: rule__Facet__Group__6__Impl rule__Facet__Group__7
-			{
-			pushFollow(FOLLOW_11);
-			rule__Facet__Group__6__Impl();
-			state._fsp--;
-
-			pushFollow(FOLLOW_2);
-			rule__Facet__Group__7();
-			state._fsp--;
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__Group__6"
-
-
-
-	// $ANTLR start "rule__Facet__Group__6__Impl"
-	// InternalMyDsl.g:468:1: rule__Facet__Group__6__Impl : ( ( rule__Facet__V3Assignment_6 ) ) ;
-	public final void rule__Facet__Group__6__Impl() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:472:2: ( ( ( rule__Facet__V3Assignment_6 ) ) )
-			// InternalMyDsl.g:473:2: ( ( rule__Facet__V3Assignment_6 ) )
-			{
-			// InternalMyDsl.g:473:2: ( ( rule__Facet__V3Assignment_6 ) )
-			// InternalMyDsl.g:474:2: ( rule__Facet__V3Assignment_6 )
-			{
-			 before(grammarAccess.getFacetAccess().getV3Assignment_6()); 
-			// InternalMyDsl.g:475:2: ( rule__Facet__V3Assignment_6 )
-			// InternalMyDsl.g:475:3: rule__Facet__V3Assignment_6
-			{
-			pushFollow(FOLLOW_2);
-			rule__Facet__V3Assignment_6();
-			state._fsp--;
-
-			}
-
-			 after(grammarAccess.getFacetAccess().getV3Assignment_6()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__Group__6__Impl"
-
-
-
-	// $ANTLR start "rule__Facet__Group__7"
-	// InternalMyDsl.g:483:1: rule__Facet__Group__7 : rule__Facet__Group__7__Impl rule__Facet__Group__8 ;
-	public final void rule__Facet__Group__7() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:487:2: ( rule__Facet__Group__7__Impl rule__Facet__Group__8 )
-			// InternalMyDsl.g:488:2: rule__Facet__Group__7__Impl rule__Facet__Group__8
-			{
-			pushFollow(FOLLOW_12);
-			rule__Facet__Group__7__Impl();
-			state._fsp--;
-
-			pushFollow(FOLLOW_2);
-			rule__Facet__Group__8();
-			state._fsp--;
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__Group__7"
-
-
-
-	// $ANTLR start "rule__Facet__Group__7__Impl"
-	// InternalMyDsl.g:495:1: rule__Facet__Group__7__Impl : ( 'endloop' ) ;
-	public final void rule__Facet__Group__7__Impl() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:499:2: ( ( 'endloop' ) )
-			// InternalMyDsl.g:500:2: ( 'endloop' )
-			{
-			// InternalMyDsl.g:500:2: ( 'endloop' )
-			// InternalMyDsl.g:501:2: 'endloop'
-			{
-			 before(grammarAccess.getFacetAccess().getEndloopKeyword_7()); 
-			match(input,13,FOLLOW_2); 
-			 after(grammarAccess.getFacetAccess().getEndloopKeyword_7()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__Group__7__Impl"
-
-
-
-	// $ANTLR start "rule__Facet__Group__8"
-	// InternalMyDsl.g:510:1: rule__Facet__Group__8 : rule__Facet__Group__8__Impl ;
-	public final void rule__Facet__Group__8() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:514:2: ( rule__Facet__Group__8__Impl )
-			// InternalMyDsl.g:515:2: rule__Facet__Group__8__Impl
-			{
-			pushFollow(FOLLOW_2);
-			rule__Facet__Group__8__Impl();
-			state._fsp--;
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__Group__8"
-
-
-
-	// $ANTLR start "rule__Facet__Group__8__Impl"
-	// InternalMyDsl.g:521:1: rule__Facet__Group__8__Impl : ( 'endfacet' ) ;
-	public final void rule__Facet__Group__8__Impl() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:525:2: ( ( 'endfacet' ) )
-			// InternalMyDsl.g:526:2: ( 'endfacet' )
-			{
-			// InternalMyDsl.g:526:2: ( 'endfacet' )
-			// InternalMyDsl.g:527:2: 'endfacet'
-			{
-			 before(grammarAccess.getFacetAccess().getEndfacetKeyword_8()); 
-			match(input,12,FOLLOW_2); 
-			 after(grammarAccess.getFacetAccess().getEndfacetKeyword_8()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__Group__8__Impl"
-
-
-
 	// $ANTLR start "rule__Vector__Group__0"
-	// InternalMyDsl.g:537:1: rule__Vector__Group__0 : rule__Vector__Group__0__Impl rule__Vector__Group__1 ;
+	// InternalMyDsl.g:350:1: rule__Vector__Group__0 : rule__Vector__Group__0__Impl rule__Vector__Group__1 ;
 	public final void rule__Vector__Group__0() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:541:2: ( rule__Vector__Group__0__Impl rule__Vector__Group__1 )
-			// InternalMyDsl.g:542:2: rule__Vector__Group__0__Impl rule__Vector__Group__1
+			// InternalMyDsl.g:354:2: ( rule__Vector__Group__0__Impl rule__Vector__Group__1 )
+			// InternalMyDsl.g:355:2: rule__Vector__Group__0__Impl rule__Vector__Group__1
 			{
-			pushFollow(FOLLOW_13);
+			pushFollow(FOLLOW_9);
 			rule__Vector__Group__0__Impl();
 			state._fsp--;
 
@@ -1497,21 +963,21 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Vector__Group__0__Impl"
-	// InternalMyDsl.g:549:1: rule__Vector__Group__0__Impl : ( 'vertex' ) ;
+	// InternalMyDsl.g:362:1: rule__Vector__Group__0__Impl : ( 'normal' ) ;
 	public final void rule__Vector__Group__0__Impl() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:553:2: ( ( 'vertex' ) )
-			// InternalMyDsl.g:554:2: ( 'vertex' )
+			// InternalMyDsl.g:366:2: ( ( 'normal' ) )
+			// InternalMyDsl.g:367:2: ( 'normal' )
 			{
-			// InternalMyDsl.g:554:2: ( 'vertex' )
-			// InternalMyDsl.g:555:2: 'vertex'
+			// InternalMyDsl.g:367:2: ( 'normal' )
+			// InternalMyDsl.g:368:2: 'normal'
 			{
-			 before(grammarAccess.getVectorAccess().getVertexKeyword_0()); 
-			match(input,20,FOLLOW_2); 
-			 after(grammarAccess.getVectorAccess().getVertexKeyword_0()); 
+			 before(grammarAccess.getVectorAccess().getNormalKeyword_0()); 
+			match(input,15,FOLLOW_2); 
+			 after(grammarAccess.getVectorAccess().getNormalKeyword_0()); 
 			}
 
 			}
@@ -1533,16 +999,16 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Vector__Group__1"
-	// InternalMyDsl.g:564:1: rule__Vector__Group__1 : rule__Vector__Group__1__Impl rule__Vector__Group__2 ;
+	// InternalMyDsl.g:377:1: rule__Vector__Group__1 : rule__Vector__Group__1__Impl rule__Vector__Group__2 ;
 	public final void rule__Vector__Group__1() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:568:2: ( rule__Vector__Group__1__Impl rule__Vector__Group__2 )
-			// InternalMyDsl.g:569:2: rule__Vector__Group__1__Impl rule__Vector__Group__2
+			// InternalMyDsl.g:381:2: ( rule__Vector__Group__1__Impl rule__Vector__Group__2 )
+			// InternalMyDsl.g:382:2: rule__Vector__Group__1__Impl rule__Vector__Group__2
 			{
-			pushFollow(FOLLOW_13);
+			pushFollow(FOLLOW_9);
 			rule__Vector__Group__1__Impl();
 			state._fsp--;
 
@@ -1569,29 +1035,29 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Vector__Group__1__Impl"
-	// InternalMyDsl.g:576:1: rule__Vector__Group__1__Impl : ( ( rule__Vector__X1Assignment_1 ) ) ;
+	// InternalMyDsl.g:389:1: rule__Vector__Group__1__Impl : ( ( rule__Vector__XAssignment_1 ) ) ;
 	public final void rule__Vector__Group__1__Impl() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:580:2: ( ( ( rule__Vector__X1Assignment_1 ) ) )
-			// InternalMyDsl.g:581:2: ( ( rule__Vector__X1Assignment_1 ) )
+			// InternalMyDsl.g:393:2: ( ( ( rule__Vector__XAssignment_1 ) ) )
+			// InternalMyDsl.g:394:2: ( ( rule__Vector__XAssignment_1 ) )
 			{
-			// InternalMyDsl.g:581:2: ( ( rule__Vector__X1Assignment_1 ) )
-			// InternalMyDsl.g:582:2: ( rule__Vector__X1Assignment_1 )
+			// InternalMyDsl.g:394:2: ( ( rule__Vector__XAssignment_1 ) )
+			// InternalMyDsl.g:395:2: ( rule__Vector__XAssignment_1 )
 			{
-			 before(grammarAccess.getVectorAccess().getX1Assignment_1()); 
-			// InternalMyDsl.g:583:2: ( rule__Vector__X1Assignment_1 )
-			// InternalMyDsl.g:583:3: rule__Vector__X1Assignment_1
+			 before(grammarAccess.getVectorAccess().getXAssignment_1()); 
+			// InternalMyDsl.g:396:2: ( rule__Vector__XAssignment_1 )
+			// InternalMyDsl.g:396:3: rule__Vector__XAssignment_1
 			{
 			pushFollow(FOLLOW_2);
-			rule__Vector__X1Assignment_1();
+			rule__Vector__XAssignment_1();
 			state._fsp--;
 
 			}
 
-			 after(grammarAccess.getVectorAccess().getX1Assignment_1()); 
+			 after(grammarAccess.getVectorAccess().getXAssignment_1()); 
 			}
 
 			}
@@ -1613,16 +1079,16 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Vector__Group__2"
-	// InternalMyDsl.g:591:1: rule__Vector__Group__2 : rule__Vector__Group__2__Impl rule__Vector__Group__3 ;
+	// InternalMyDsl.g:404:1: rule__Vector__Group__2 : rule__Vector__Group__2__Impl rule__Vector__Group__3 ;
 	public final void rule__Vector__Group__2() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:595:2: ( rule__Vector__Group__2__Impl rule__Vector__Group__3 )
-			// InternalMyDsl.g:596:2: rule__Vector__Group__2__Impl rule__Vector__Group__3
+			// InternalMyDsl.g:408:2: ( rule__Vector__Group__2__Impl rule__Vector__Group__3 )
+			// InternalMyDsl.g:409:2: rule__Vector__Group__2__Impl rule__Vector__Group__3
 			{
-			pushFollow(FOLLOW_13);
+			pushFollow(FOLLOW_9);
 			rule__Vector__Group__2__Impl();
 			state._fsp--;
 
@@ -1649,29 +1115,29 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Vector__Group__2__Impl"
-	// InternalMyDsl.g:603:1: rule__Vector__Group__2__Impl : ( ( rule__Vector__X2Assignment_2 ) ) ;
+	// InternalMyDsl.g:416:1: rule__Vector__Group__2__Impl : ( ( rule__Vector__YAssignment_2 ) ) ;
 	public final void rule__Vector__Group__2__Impl() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:607:2: ( ( ( rule__Vector__X2Assignment_2 ) ) )
-			// InternalMyDsl.g:608:2: ( ( rule__Vector__X2Assignment_2 ) )
+			// InternalMyDsl.g:420:2: ( ( ( rule__Vector__YAssignment_2 ) ) )
+			// InternalMyDsl.g:421:2: ( ( rule__Vector__YAssignment_2 ) )
 			{
-			// InternalMyDsl.g:608:2: ( ( rule__Vector__X2Assignment_2 ) )
-			// InternalMyDsl.g:609:2: ( rule__Vector__X2Assignment_2 )
+			// InternalMyDsl.g:421:2: ( ( rule__Vector__YAssignment_2 ) )
+			// InternalMyDsl.g:422:2: ( rule__Vector__YAssignment_2 )
 			{
-			 before(grammarAccess.getVectorAccess().getX2Assignment_2()); 
-			// InternalMyDsl.g:610:2: ( rule__Vector__X2Assignment_2 )
-			// InternalMyDsl.g:610:3: rule__Vector__X2Assignment_2
+			 before(grammarAccess.getVectorAccess().getYAssignment_2()); 
+			// InternalMyDsl.g:423:2: ( rule__Vector__YAssignment_2 )
+			// InternalMyDsl.g:423:3: rule__Vector__YAssignment_2
 			{
 			pushFollow(FOLLOW_2);
-			rule__Vector__X2Assignment_2();
+			rule__Vector__YAssignment_2();
 			state._fsp--;
 
 			}
 
-			 after(grammarAccess.getVectorAccess().getX2Assignment_2()); 
+			 after(grammarAccess.getVectorAccess().getYAssignment_2()); 
 			}
 
 			}
@@ -1693,14 +1159,14 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Vector__Group__3"
-	// InternalMyDsl.g:618:1: rule__Vector__Group__3 : rule__Vector__Group__3__Impl ;
+	// InternalMyDsl.g:431:1: rule__Vector__Group__3 : rule__Vector__Group__3__Impl ;
 	public final void rule__Vector__Group__3() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:622:2: ( rule__Vector__Group__3__Impl )
-			// InternalMyDsl.g:623:2: rule__Vector__Group__3__Impl
+			// InternalMyDsl.g:435:2: ( rule__Vector__Group__3__Impl )
+			// InternalMyDsl.g:436:2: rule__Vector__Group__3__Impl
 			{
 			pushFollow(FOLLOW_2);
 			rule__Vector__Group__3__Impl();
@@ -1725,29 +1191,29 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Vector__Group__3__Impl"
-	// InternalMyDsl.g:629:1: rule__Vector__Group__3__Impl : ( ( rule__Vector__X3Assignment_3 ) ) ;
+	// InternalMyDsl.g:442:1: rule__Vector__Group__3__Impl : ( ( rule__Vector__ZAssignment_3 ) ) ;
 	public final void rule__Vector__Group__3__Impl() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:633:2: ( ( ( rule__Vector__X3Assignment_3 ) ) )
-			// InternalMyDsl.g:634:2: ( ( rule__Vector__X3Assignment_3 ) )
+			// InternalMyDsl.g:446:2: ( ( ( rule__Vector__ZAssignment_3 ) ) )
+			// InternalMyDsl.g:447:2: ( ( rule__Vector__ZAssignment_3 ) )
 			{
-			// InternalMyDsl.g:634:2: ( ( rule__Vector__X3Assignment_3 ) )
-			// InternalMyDsl.g:635:2: ( rule__Vector__X3Assignment_3 )
+			// InternalMyDsl.g:447:2: ( ( rule__Vector__ZAssignment_3 ) )
+			// InternalMyDsl.g:448:2: ( rule__Vector__ZAssignment_3 )
 			{
-			 before(grammarAccess.getVectorAccess().getX3Assignment_3()); 
-			// InternalMyDsl.g:636:2: ( rule__Vector__X3Assignment_3 )
-			// InternalMyDsl.g:636:3: rule__Vector__X3Assignment_3
+			 before(grammarAccess.getVectorAccess().getZAssignment_3()); 
+			// InternalMyDsl.g:449:2: ( rule__Vector__ZAssignment_3 )
+			// InternalMyDsl.g:449:3: rule__Vector__ZAssignment_3
 			{
 			pushFollow(FOLLOW_2);
-			rule__Vector__X3Assignment_3();
+			rule__Vector__ZAssignment_3();
 			state._fsp--;
 
 			}
 
-			 after(grammarAccess.getVectorAccess().getX3Assignment_3()); 
+			 after(grammarAccess.getVectorAccess().getZAssignment_3()); 
 			}
 
 			}
@@ -1768,326 +1234,18 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 
-	// $ANTLR start "rule__Normalvector__Group__0"
-	// InternalMyDsl.g:645:1: rule__Normalvector__Group__0 : rule__Normalvector__Group__0__Impl rule__Normalvector__Group__1 ;
-	public final void rule__Normalvector__Group__0() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:649:2: ( rule__Normalvector__Group__0__Impl rule__Normalvector__Group__1 )
-			// InternalMyDsl.g:650:2: rule__Normalvector__Group__0__Impl rule__Normalvector__Group__1
-			{
-			pushFollow(FOLLOW_13);
-			rule__Normalvector__Group__0__Impl();
-			state._fsp--;
-
-			pushFollow(FOLLOW_2);
-			rule__Normalvector__Group__1();
-			state._fsp--;
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Normalvector__Group__0"
-
-
-
-	// $ANTLR start "rule__Normalvector__Group__0__Impl"
-	// InternalMyDsl.g:657:1: rule__Normalvector__Group__0__Impl : ( 'normal' ) ;
-	public final void rule__Normalvector__Group__0__Impl() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:661:2: ( ( 'normal' ) )
-			// InternalMyDsl.g:662:2: ( 'normal' )
-			{
-			// InternalMyDsl.g:662:2: ( 'normal' )
-			// InternalMyDsl.g:663:2: 'normal'
-			{
-			 before(grammarAccess.getNormalvectorAccess().getNormalKeyword_0()); 
-			match(input,17,FOLLOW_2); 
-			 after(grammarAccess.getNormalvectorAccess().getNormalKeyword_0()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Normalvector__Group__0__Impl"
-
-
-
-	// $ANTLR start "rule__Normalvector__Group__1"
-	// InternalMyDsl.g:672:1: rule__Normalvector__Group__1 : rule__Normalvector__Group__1__Impl rule__Normalvector__Group__2 ;
-	public final void rule__Normalvector__Group__1() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:676:2: ( rule__Normalvector__Group__1__Impl rule__Normalvector__Group__2 )
-			// InternalMyDsl.g:677:2: rule__Normalvector__Group__1__Impl rule__Normalvector__Group__2
-			{
-			pushFollow(FOLLOW_13);
-			rule__Normalvector__Group__1__Impl();
-			state._fsp--;
-
-			pushFollow(FOLLOW_2);
-			rule__Normalvector__Group__2();
-			state._fsp--;
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Normalvector__Group__1"
-
-
-
-	// $ANTLR start "rule__Normalvector__Group__1__Impl"
-	// InternalMyDsl.g:684:1: rule__Normalvector__Group__1__Impl : ( ( rule__Normalvector__X1Assignment_1 ) ) ;
-	public final void rule__Normalvector__Group__1__Impl() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:688:2: ( ( ( rule__Normalvector__X1Assignment_1 ) ) )
-			// InternalMyDsl.g:689:2: ( ( rule__Normalvector__X1Assignment_1 ) )
-			{
-			// InternalMyDsl.g:689:2: ( ( rule__Normalvector__X1Assignment_1 ) )
-			// InternalMyDsl.g:690:2: ( rule__Normalvector__X1Assignment_1 )
-			{
-			 before(grammarAccess.getNormalvectorAccess().getX1Assignment_1()); 
-			// InternalMyDsl.g:691:2: ( rule__Normalvector__X1Assignment_1 )
-			// InternalMyDsl.g:691:3: rule__Normalvector__X1Assignment_1
-			{
-			pushFollow(FOLLOW_2);
-			rule__Normalvector__X1Assignment_1();
-			state._fsp--;
-
-			}
-
-			 after(grammarAccess.getNormalvectorAccess().getX1Assignment_1()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Normalvector__Group__1__Impl"
-
-
-
-	// $ANTLR start "rule__Normalvector__Group__2"
-	// InternalMyDsl.g:699:1: rule__Normalvector__Group__2 : rule__Normalvector__Group__2__Impl rule__Normalvector__Group__3 ;
-	public final void rule__Normalvector__Group__2() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:703:2: ( rule__Normalvector__Group__2__Impl rule__Normalvector__Group__3 )
-			// InternalMyDsl.g:704:2: rule__Normalvector__Group__2__Impl rule__Normalvector__Group__3
-			{
-			pushFollow(FOLLOW_13);
-			rule__Normalvector__Group__2__Impl();
-			state._fsp--;
-
-			pushFollow(FOLLOW_2);
-			rule__Normalvector__Group__3();
-			state._fsp--;
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Normalvector__Group__2"
-
-
-
-	// $ANTLR start "rule__Normalvector__Group__2__Impl"
-	// InternalMyDsl.g:711:1: rule__Normalvector__Group__2__Impl : ( ( rule__Normalvector__X2Assignment_2 ) ) ;
-	public final void rule__Normalvector__Group__2__Impl() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:715:2: ( ( ( rule__Normalvector__X2Assignment_2 ) ) )
-			// InternalMyDsl.g:716:2: ( ( rule__Normalvector__X2Assignment_2 ) )
-			{
-			// InternalMyDsl.g:716:2: ( ( rule__Normalvector__X2Assignment_2 ) )
-			// InternalMyDsl.g:717:2: ( rule__Normalvector__X2Assignment_2 )
-			{
-			 before(grammarAccess.getNormalvectorAccess().getX2Assignment_2()); 
-			// InternalMyDsl.g:718:2: ( rule__Normalvector__X2Assignment_2 )
-			// InternalMyDsl.g:718:3: rule__Normalvector__X2Assignment_2
-			{
-			pushFollow(FOLLOW_2);
-			rule__Normalvector__X2Assignment_2();
-			state._fsp--;
-
-			}
-
-			 after(grammarAccess.getNormalvectorAccess().getX2Assignment_2()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Normalvector__Group__2__Impl"
-
-
-
-	// $ANTLR start "rule__Normalvector__Group__3"
-	// InternalMyDsl.g:726:1: rule__Normalvector__Group__3 : rule__Normalvector__Group__3__Impl ;
-	public final void rule__Normalvector__Group__3() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:730:2: ( rule__Normalvector__Group__3__Impl )
-			// InternalMyDsl.g:731:2: rule__Normalvector__Group__3__Impl
-			{
-			pushFollow(FOLLOW_2);
-			rule__Normalvector__Group__3__Impl();
-			state._fsp--;
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Normalvector__Group__3"
-
-
-
-	// $ANTLR start "rule__Normalvector__Group__3__Impl"
-	// InternalMyDsl.g:737:1: rule__Normalvector__Group__3__Impl : ( ( rule__Normalvector__X3Assignment_3 ) ) ;
-	public final void rule__Normalvector__Group__3__Impl() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:741:2: ( ( ( rule__Normalvector__X3Assignment_3 ) ) )
-			// InternalMyDsl.g:742:2: ( ( rule__Normalvector__X3Assignment_3 ) )
-			{
-			// InternalMyDsl.g:742:2: ( ( rule__Normalvector__X3Assignment_3 ) )
-			// InternalMyDsl.g:743:2: ( rule__Normalvector__X3Assignment_3 )
-			{
-			 before(grammarAccess.getNormalvectorAccess().getX3Assignment_3()); 
-			// InternalMyDsl.g:744:2: ( rule__Normalvector__X3Assignment_3 )
-			// InternalMyDsl.g:744:3: rule__Normalvector__X3Assignment_3
-			{
-			pushFollow(FOLLOW_2);
-			rule__Normalvector__X3Assignment_3();
-			state._fsp--;
-
-			}
-
-			 after(grammarAccess.getNormalvectorAccess().getX3Assignment_3()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Normalvector__Group__3__Impl"
-
-
-
 	// $ANTLR start "rule__Solid__NameAssignment_1"
-	// InternalMyDsl.g:753:1: rule__Solid__NameAssignment_1 : ( RULE_ID ) ;
+	// InternalMyDsl.g:458:1: rule__Solid__NameAssignment_1 : ( RULE_ID ) ;
 	public final void rule__Solid__NameAssignment_1() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:757:2: ( ( RULE_ID ) )
-			// InternalMyDsl.g:758:2: ( RULE_ID )
+			// InternalMyDsl.g:462:2: ( ( RULE_ID ) )
+			// InternalMyDsl.g:463:2: ( RULE_ID )
 			{
-			// InternalMyDsl.g:758:2: ( RULE_ID )
-			// InternalMyDsl.g:759:3: RULE_ID
+			// InternalMyDsl.g:463:2: ( RULE_ID )
+			// InternalMyDsl.g:464:3: RULE_ID
 			{
 			 before(grammarAccess.getSolidAccess().getNameIDTerminalRuleCall_1_0()); 
 			match(input,RULE_ID,FOLLOW_2); 
@@ -2113,17 +1271,17 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Solid__FacetsAssignment_2"
-	// InternalMyDsl.g:768:1: rule__Solid__FacetsAssignment_2 : ( ruleFacet ) ;
+	// InternalMyDsl.g:473:1: rule__Solid__FacetsAssignment_2 : ( ruleFacet ) ;
 	public final void rule__Solid__FacetsAssignment_2() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:772:2: ( ( ruleFacet ) )
-			// InternalMyDsl.g:773:2: ( ruleFacet )
+			// InternalMyDsl.g:477:2: ( ( ruleFacet ) )
+			// InternalMyDsl.g:478:2: ( ruleFacet )
 			{
-			// InternalMyDsl.g:773:2: ( ruleFacet )
-			// InternalMyDsl.g:774:3: ruleFacet
+			// InternalMyDsl.g:478:2: ( ruleFacet )
+			// InternalMyDsl.g:479:3: ruleFacet
 			{
 			 before(grammarAccess.getSolidAccess().getFacetsFacetParserRuleCall_2_0()); 
 			pushFollow(FOLLOW_2);
@@ -2152,24 +1310,24 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 	// $ANTLR start "rule__Facet__NormalAssignment_1"
-	// InternalMyDsl.g:783:1: rule__Facet__NormalAssignment_1 : ( ruleNormalvector ) ;
+	// InternalMyDsl.g:488:1: rule__Facet__NormalAssignment_1 : ( ruleVector ) ;
 	public final void rule__Facet__NormalAssignment_1() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:787:2: ( ( ruleNormalvector ) )
-			// InternalMyDsl.g:788:2: ( ruleNormalvector )
+			// InternalMyDsl.g:492:2: ( ( ruleVector ) )
+			// InternalMyDsl.g:493:2: ( ruleVector )
 			{
-			// InternalMyDsl.g:788:2: ( ruleNormalvector )
-			// InternalMyDsl.g:789:3: ruleNormalvector
+			// InternalMyDsl.g:493:2: ( ruleVector )
+			// InternalMyDsl.g:494:3: ruleVector
 			{
-			 before(grammarAccess.getFacetAccess().getNormalNormalvectorParserRuleCall_1_0()); 
+			 before(grammarAccess.getFacetAccess().getNormalVectorParserRuleCall_1_0()); 
 			pushFollow(FOLLOW_2);
-			ruleNormalvector();
+			ruleVector();
 			state._fsp--;
 
-			 after(grammarAccess.getFacetAccess().getNormalNormalvectorParserRuleCall_1_0()); 
+			 after(grammarAccess.getFacetAccess().getNormalVectorParserRuleCall_1_0()); 
 			}
 
 			}
@@ -2190,139 +1348,22 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
 
-	// $ANTLR start "rule__Facet__V1Assignment_4"
-	// InternalMyDsl.g:798:1: rule__Facet__V1Assignment_4 : ( ruleVector ) ;
-	public final void rule__Facet__V1Assignment_4() throws RecognitionException {
+	// $ANTLR start "rule__Vector__XAssignment_1"
+	// InternalMyDsl.g:503:1: rule__Vector__XAssignment_1 : ( RULE_DOUBLE ) ;
+	public final void rule__Vector__XAssignment_1() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:802:2: ( ( ruleVector ) )
-			// InternalMyDsl.g:803:2: ( ruleVector )
+			// InternalMyDsl.g:507:2: ( ( RULE_DOUBLE ) )
+			// InternalMyDsl.g:508:2: ( RULE_DOUBLE )
 			{
-			// InternalMyDsl.g:803:2: ( ruleVector )
-			// InternalMyDsl.g:804:3: ruleVector
+			// InternalMyDsl.g:508:2: ( RULE_DOUBLE )
+			// InternalMyDsl.g:509:3: RULE_DOUBLE
 			{
-			 before(grammarAccess.getFacetAccess().getV1VectorParserRuleCall_4_0()); 
-			pushFollow(FOLLOW_2);
-			ruleVector();
-			state._fsp--;
-
-			 after(grammarAccess.getFacetAccess().getV1VectorParserRuleCall_4_0()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__V1Assignment_4"
-
-
-
-	// $ANTLR start "rule__Facet__V2Assignment_5"
-	// InternalMyDsl.g:813:1: rule__Facet__V2Assignment_5 : ( ruleVector ) ;
-	public final void rule__Facet__V2Assignment_5() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:817:2: ( ( ruleVector ) )
-			// InternalMyDsl.g:818:2: ( ruleVector )
-			{
-			// InternalMyDsl.g:818:2: ( ruleVector )
-			// InternalMyDsl.g:819:3: ruleVector
-			{
-			 before(grammarAccess.getFacetAccess().getV2VectorParserRuleCall_5_0()); 
-			pushFollow(FOLLOW_2);
-			ruleVector();
-			state._fsp--;
-
-			 after(grammarAccess.getFacetAccess().getV2VectorParserRuleCall_5_0()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__V2Assignment_5"
-
-
-
-	// $ANTLR start "rule__Facet__V3Assignment_6"
-	// InternalMyDsl.g:828:1: rule__Facet__V3Assignment_6 : ( ruleVector ) ;
-	public final void rule__Facet__V3Assignment_6() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:832:2: ( ( ruleVector ) )
-			// InternalMyDsl.g:833:2: ( ruleVector )
-			{
-			// InternalMyDsl.g:833:2: ( ruleVector )
-			// InternalMyDsl.g:834:3: ruleVector
-			{
-			 before(grammarAccess.getFacetAccess().getV3VectorParserRuleCall_6_0()); 
-			pushFollow(FOLLOW_2);
-			ruleVector();
-			state._fsp--;
-
-			 after(grammarAccess.getFacetAccess().getV3VectorParserRuleCall_6_0()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Facet__V3Assignment_6"
-
-
-
-	// $ANTLR start "rule__Vector__X1Assignment_1"
-	// InternalMyDsl.g:843:1: rule__Vector__X1Assignment_1 : ( RULE_DOUBLE ) ;
-	public final void rule__Vector__X1Assignment_1() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:847:2: ( ( RULE_DOUBLE ) )
-			// InternalMyDsl.g:848:2: ( RULE_DOUBLE )
-			{
-			// InternalMyDsl.g:848:2: ( RULE_DOUBLE )
-			// InternalMyDsl.g:849:3: RULE_DOUBLE
-			{
-			 before(grammarAccess.getVectorAccess().getX1DOUBLETerminalRuleCall_1_0()); 
+			 before(grammarAccess.getVectorAccess().getXDOUBLETerminalRuleCall_1_0()); 
 			match(input,RULE_DOUBLE,FOLLOW_2); 
-			 after(grammarAccess.getVectorAccess().getX1DOUBLETerminalRuleCall_1_0()); 
+			 after(grammarAccess.getVectorAccess().getXDOUBLETerminalRuleCall_1_0()); 
 			}
 
 			}
@@ -2339,26 +1380,26 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 		}
 	}
-	// $ANTLR end "rule__Vector__X1Assignment_1"
+	// $ANTLR end "rule__Vector__XAssignment_1"
 
 
 
-	// $ANTLR start "rule__Vector__X2Assignment_2"
-	// InternalMyDsl.g:858:1: rule__Vector__X2Assignment_2 : ( RULE_DOUBLE ) ;
-	public final void rule__Vector__X2Assignment_2() throws RecognitionException {
+	// $ANTLR start "rule__Vector__YAssignment_2"
+	// InternalMyDsl.g:518:1: rule__Vector__YAssignment_2 : ( RULE_DOUBLE ) ;
+	public final void rule__Vector__YAssignment_2() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:862:2: ( ( RULE_DOUBLE ) )
-			// InternalMyDsl.g:863:2: ( RULE_DOUBLE )
+			// InternalMyDsl.g:522:2: ( ( RULE_DOUBLE ) )
+			// InternalMyDsl.g:523:2: ( RULE_DOUBLE )
 			{
-			// InternalMyDsl.g:863:2: ( RULE_DOUBLE )
-			// InternalMyDsl.g:864:3: RULE_DOUBLE
+			// InternalMyDsl.g:523:2: ( RULE_DOUBLE )
+			// InternalMyDsl.g:524:3: RULE_DOUBLE
 			{
-			 before(grammarAccess.getVectorAccess().getX2DOUBLETerminalRuleCall_2_0()); 
+			 before(grammarAccess.getVectorAccess().getYDOUBLETerminalRuleCall_2_0()); 
 			match(input,RULE_DOUBLE,FOLLOW_2); 
-			 after(grammarAccess.getVectorAccess().getX2DOUBLETerminalRuleCall_2_0()); 
+			 after(grammarAccess.getVectorAccess().getYDOUBLETerminalRuleCall_2_0()); 
 			}
 
 			}
@@ -2375,26 +1416,26 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 		}
 	}
-	// $ANTLR end "rule__Vector__X2Assignment_2"
+	// $ANTLR end "rule__Vector__YAssignment_2"
 
 
 
-	// $ANTLR start "rule__Vector__X3Assignment_3"
-	// InternalMyDsl.g:873:1: rule__Vector__X3Assignment_3 : ( RULE_DOUBLE ) ;
-	public final void rule__Vector__X3Assignment_3() throws RecognitionException {
+	// $ANTLR start "rule__Vector__ZAssignment_3"
+	// InternalMyDsl.g:533:1: rule__Vector__ZAssignment_3 : ( RULE_DOUBLE ) ;
+	public final void rule__Vector__ZAssignment_3() throws RecognitionException {
 
 				int stackSize = keepStackSize();
 			
 		try {
-			// InternalMyDsl.g:877:2: ( ( RULE_DOUBLE ) )
-			// InternalMyDsl.g:878:2: ( RULE_DOUBLE )
+			// InternalMyDsl.g:537:2: ( ( RULE_DOUBLE ) )
+			// InternalMyDsl.g:538:2: ( RULE_DOUBLE )
 			{
-			// InternalMyDsl.g:878:2: ( RULE_DOUBLE )
-			// InternalMyDsl.g:879:3: RULE_DOUBLE
+			// InternalMyDsl.g:538:2: ( RULE_DOUBLE )
+			// InternalMyDsl.g:539:3: RULE_DOUBLE
 			{
-			 before(grammarAccess.getVectorAccess().getX3DOUBLETerminalRuleCall_3_0()); 
+			 before(grammarAccess.getVectorAccess().getZDOUBLETerminalRuleCall_3_0()); 
 			match(input,RULE_DOUBLE,FOLLOW_2); 
-			 after(grammarAccess.getVectorAccess().getX3DOUBLETerminalRuleCall_3_0()); 
+			 after(grammarAccess.getVectorAccess().getZDOUBLETerminalRuleCall_3_0()); 
 			}
 
 			}
@@ -2411,115 +1452,7 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 		}
 	}
-	// $ANTLR end "rule__Vector__X3Assignment_3"
-
-
-
-	// $ANTLR start "rule__Normalvector__X1Assignment_1"
-	// InternalMyDsl.g:888:1: rule__Normalvector__X1Assignment_1 : ( RULE_DOUBLE ) ;
-	public final void rule__Normalvector__X1Assignment_1() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:892:2: ( ( RULE_DOUBLE ) )
-			// InternalMyDsl.g:893:2: ( RULE_DOUBLE )
-			{
-			// InternalMyDsl.g:893:2: ( RULE_DOUBLE )
-			// InternalMyDsl.g:894:3: RULE_DOUBLE
-			{
-			 before(grammarAccess.getNormalvectorAccess().getX1DOUBLETerminalRuleCall_1_0()); 
-			match(input,RULE_DOUBLE,FOLLOW_2); 
-			 after(grammarAccess.getNormalvectorAccess().getX1DOUBLETerminalRuleCall_1_0()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Normalvector__X1Assignment_1"
-
-
-
-	// $ANTLR start "rule__Normalvector__X2Assignment_2"
-	// InternalMyDsl.g:903:1: rule__Normalvector__X2Assignment_2 : ( RULE_DOUBLE ) ;
-	public final void rule__Normalvector__X2Assignment_2() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:907:2: ( ( RULE_DOUBLE ) )
-			// InternalMyDsl.g:908:2: ( RULE_DOUBLE )
-			{
-			// InternalMyDsl.g:908:2: ( RULE_DOUBLE )
-			// InternalMyDsl.g:909:3: RULE_DOUBLE
-			{
-			 before(grammarAccess.getNormalvectorAccess().getX2DOUBLETerminalRuleCall_2_0()); 
-			match(input,RULE_DOUBLE,FOLLOW_2); 
-			 after(grammarAccess.getNormalvectorAccess().getX2DOUBLETerminalRuleCall_2_0()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Normalvector__X2Assignment_2"
-
-
-
-	// $ANTLR start "rule__Normalvector__X3Assignment_3"
-	// InternalMyDsl.g:918:1: rule__Normalvector__X3Assignment_3 : ( RULE_DOUBLE ) ;
-	public final void rule__Normalvector__X3Assignment_3() throws RecognitionException {
-
-				int stackSize = keepStackSize();
-			
-		try {
-			// InternalMyDsl.g:922:2: ( ( RULE_DOUBLE ) )
-			// InternalMyDsl.g:923:2: ( RULE_DOUBLE )
-			{
-			// InternalMyDsl.g:923:2: ( RULE_DOUBLE )
-			// InternalMyDsl.g:924:3: RULE_DOUBLE
-			{
-			 before(grammarAccess.getNormalvectorAccess().getX3DOUBLETerminalRuleCall_3_0()); 
-			match(input,RULE_DOUBLE,FOLLOW_2); 
-			 after(grammarAccess.getNormalvectorAccess().getX3DOUBLETerminalRuleCall_3_0()); 
-			}
-
-			}
-
-		}
-		catch (RecognitionException re) {
-			reportError(re);
-			recover(input,re);
-		}
-		finally {
-			// do for sure before leaving
-
-				restoreStackSize(stackSize);
-
-		}
-	}
-	// $ANTLR end "rule__Normalvector__X3Assignment_3"
+	// $ANTLR end "rule__Vector__ZAssignment_3"
 
 	// Delegated rules
 
@@ -2528,14 +1461,10 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 	public static final BitSet FOLLOW_1 = new BitSet(new long[]{0x0000000000000000L});
 	public static final BitSet FOLLOW_2 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x0000000000008000L});
-	public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000000000004000L});
-	public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000000000008002L});
-	public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000020000L});
-	public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000040000L});
-	public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000010000L});
-	public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000100000L});
-	public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000002000L});
-	public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000001000L});
-	public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x0000000000004000L});
+	public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000000000002000L});
+	public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000000000004002L});
+	public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000008000L});
+	public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000001000L});
+	public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000000020L});
 }

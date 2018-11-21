@@ -14,9 +14,9 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.xtext.example.mydsl.myDsl.Vector#getX1 <em>X1</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.Vector#getX2 <em>X2</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.Vector#getX3 <em>X3</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.Vector#getX <em>X</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.Vector#getY <em>Y</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.Vector#getZ <em>Z</em>}</li>
  * </ul>
  *
  * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getVector()
@@ -26,81 +26,81 @@ import org.eclipse.emf.ecore.EObject;
 public interface Vector extends EObject
 {
   /**
-   * Returns the value of the '<em><b>X1</b></em>' attribute.
+   * Returns the value of the '<em><b>X</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>X1</em>' attribute isn't clear,
+   * If the meaning of the '<em>X</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>X1</em>' attribute.
-   * @see #setX1(double)
-   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getVector_X1()
+   * @return the value of the '<em>X</em>' attribute.
+   * @see #setX(float)
+   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getVector_X()
    * @model
    * @generated
    */
-  double getX1();
+  float getX();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Vector#getX1 <em>X1</em>}' attribute.
+   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Vector#getX <em>X</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>X1</em>' attribute.
-   * @see #getX1()
+   * @param value the new value of the '<em>X</em>' attribute.
+   * @see #getX()
    * @generated
    */
-  void setX1(double value);
+  void setX(float value);
 
   /**
-   * Returns the value of the '<em><b>X2</b></em>' attribute.
+   * Returns the value of the '<em><b>Y</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>X2</em>' attribute isn't clear,
+   * If the meaning of the '<em>Y</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>X2</em>' attribute.
-   * @see #setX2(double)
-   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getVector_X2()
+   * @return the value of the '<em>Y</em>' attribute.
+   * @see #setY(float)
+   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getVector_Y()
    * @model
    * @generated
    */
-  double getX2();
+  float getY();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Vector#getX2 <em>X2</em>}' attribute.
+   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Vector#getY <em>Y</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>X2</em>' attribute.
-   * @see #getX2()
+   * @param value the new value of the '<em>Y</em>' attribute.
+   * @see #getY()
    * @generated
    */
-  void setX2(double value);
+  void setY(float value);
 
   /**
-   * Returns the value of the '<em><b>X3</b></em>' attribute.
+   * Returns the value of the '<em><b>Z</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>X3</em>' attribute isn't clear,
+   * If the meaning of the '<em>Z</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>X3</em>' attribute.
-   * @see #setX3(double)
-   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getVector_X3()
+   * @return the value of the '<em>Z</em>' attribute.
+   * @see #setZ(float)
+   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getVector_Z()
    * @model
    * @generated
    */
-  double getX3();
+  float getZ();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Vector#getX3 <em>X3</em>}' attribute.
+   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Vector#getZ <em>Z</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>X3</em>' attribute.
-   * @see #getX3()
+   * @param value the new value of the '<em>Z</em>' attribute.
+   * @see #getZ()
    * @generated
    */
-  void setX3(double value);
+  void setZ(float value);
 
 } // Vector

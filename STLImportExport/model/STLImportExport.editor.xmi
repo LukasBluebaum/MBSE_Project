@@ -17,111 +17,55 @@
       <source href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
       <target href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </correspondenceTypes>
-    <correspondenceTypes name="NormalToNormal">
-      <source href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
-      <target href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
-    </correspondenceTypes>
   </schema>
   <rules name="EdgeRule" schema="//@schema">
+    <sourcePatterns name="s1">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
     <sourcePatterns name="Name">
       <op value="++"/>
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
-      <linkVariablePatterns target="//@rules.0/@sourcePatterns.1">
-        <op value="++"/>
-        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v1"/>
-      </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.0/@sourcePatterns.2">
         <op value="++"/>
-        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v2"/>
-      </linkVariablePatterns>
-      <linkVariablePatterns target="//@rules.0/@sourcePatterns.3">
-        <op value="++"/>
-        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v3"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/normal"/>
       </linkVariablePatterns>
     </sourcePatterns>
     <sourcePatterns name="vec1">
       <op value="++"/>
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </sourcePatterns>
-    <sourcePatterns name="vec2">
+    <targetPatterns name="s2">
       <op value="++"/>
-      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
-    </sourcePatterns>
-    <sourcePatterns name="vec3">
-      <op value="++"/>
-      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
-    </sourcePatterns>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </targetPatterns>
     <targetPatterns name="facet">
       <op value="++"/>
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
-      <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
-        <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
-      </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.0/@targetPatterns.2">
         <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
-      </linkVariablePatterns>
-      <linkVariablePatterns target="//@rules.0/@targetPatterns.3">
-        <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/normal"/>
       </linkVariablePatterns>
     </targetPatterns>
-    <targetPatterns name="e1">
-      <op value="++"/>
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
-      <linkVariablePatterns target="//@rules.0/@targetPatterns.4">
-        <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
-      </linkVariablePatterns>
-      <linkVariablePatterns target="//@rules.0/@targetPatterns.5">
-        <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
-      </linkVariablePatterns>
-    </targetPatterns>
-    <targetPatterns name="e2">
-      <op value="++"/>
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
-      <linkVariablePatterns target="//@rules.0/@targetPatterns.5">
-        <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
-      </linkVariablePatterns>
-      <linkVariablePatterns target="//@rules.0/@targetPatterns.6">
-        <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
-      </linkVariablePatterns>
-    </targetPatterns>
-    <targetPatterns name="e3">
-      <op value="++"/>
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
-      <linkVariablePatterns target="//@rules.0/@targetPatterns.6">
-        <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
-      </linkVariablePatterns>
-      <linkVariablePatterns target="//@rules.0/@targetPatterns.4">
-        <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
-      </linkVariablePatterns>
-    </targetPatterns>
-    <targetPatterns name="a1">
+    <targetPatterns name="n">
       <op value="++"/>
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </targetPatterns>
-    <targetPatterns name="b1">
-      <op value="++"/>
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
-    </targetPatterns>
-    <targetPatterns name="c1">
-      <op value="++"/>
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
-    </targetPatterns>
-    <correspondencePatterns name="v1v" type="//@schema/@correspondenceTypes.2" source="//@rules.0/@sourcePatterns.1" target="//@rules.0/@targetPatterns.4">
+    <correspondencePatterns name="s1s" type="//@schema/@correspondenceTypes.0" source="//@rules.0/@sourcePatterns.0" target="//@rules.0/@targetPatterns.0">
       <op value="++"/>
     </correspondencePatterns>
-    <correspondencePatterns name="v2v" type="//@schema/@correspondenceTypes.2" source="//@rules.0/@sourcePatterns.2" target="//@rules.0/@targetPatterns.5">
+    <correspondencePatterns name="f1f" type="//@schema/@correspondenceTypes.1" source="//@rules.0/@sourcePatterns.1" target="//@rules.0/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
-    <correspondencePatterns name="v3v" type="//@schema/@correspondenceTypes.2" source="//@rules.0/@sourcePatterns.3" target="//@rules.0/@targetPatterns.6">
+    <correspondencePatterns name="n1n" type="//@schema/@correspondenceTypes.2" source="//@rules.0/@sourcePatterns.2" target="//@rules.0/@targetPatterns.2">
       <op value="++"/>
     </correspondencePatterns>
   </rules>

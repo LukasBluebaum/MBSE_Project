@@ -5,29 +5,18 @@
     complianceLevel="8.0" copyrightFields="false" operationReflection="true">
   <foreignModel>Metamodell.ecore</foreignModel>
   <genPackages prefix="Metamodell" disposableProviderFactory="true" ecorePackage="Metamodell.ecore#/">
+    <genClasses ecoreClass="Metamodell.ecore#//Solid">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Solid/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Solid/facets"/>
+    </genClasses>
     <genClasses ecoreClass="Metamodell.ecore#//Vector3f">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Vector3f/x"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Vector3f/y"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Vector3f/z"/>
     </genClasses>
     <genClasses ecoreClass="Metamodell.ecore#//Facet">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/normal"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/edges"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/color"/>
-    </genClasses>
-    <genClasses ecoreClass="Metamodell.ecore#//Edge">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Edge/a"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Edge/b"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Edge/f"/>
-    </genClasses>
-    <genClasses ecoreClass="Metamodell.ecore#//Solid">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Solid/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Solid/facets"/>
-    </genClasses>
-    <genClasses ecoreClass="Metamodell.ecore#//Color">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Color/r"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Color/g"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Color/b"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/normal"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/solid"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

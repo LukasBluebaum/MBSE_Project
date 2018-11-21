@@ -2,8 +2,6 @@
  */
 package Metamodell.impl;
 
-import Metamodell.Color;
-import Metamodell.Edge;
 import Metamodell.Facet;
 import Metamodell.MetamodellFactory;
 import Metamodell.MetamodellPackage;
@@ -29,6 +27,13 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass solidEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass vector3fEClass = null;
 
 	/**
@@ -37,27 +42,6 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * @generated
 	 */
 	private EClass facetEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass edgeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass solidEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass colorEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -128,6 +112,33 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getSolid() {
+		return solidEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSolid_Name() {
+		return (EAttribute) solidEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSolid_Facets() {
+		return (EReference) solidEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getVector3f() {
 		return vector3fEClass;
 	}
@@ -182,116 +193,8 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFacet_Edges() {
+	public EReference getFacet_Solid() {
 		return (EReference) facetEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getFacet_Color() {
-		return (EReference) facetEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getEdge() {
-		return edgeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getEdge_A() {
-		return (EReference) edgeEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getEdge_B() {
-		return (EReference) edgeEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getEdge_F() {
-		return (EReference) edgeEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getSolid() {
-		return solidEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getSolid_Name() {
-		return (EAttribute) solidEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getSolid_Facets() {
-		return (EReference) solidEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getColor() {
-		return colorEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getColor_R() {
-		return (EAttribute) colorEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getColor_G() {
-		return (EAttribute) colorEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getColor_B() {
-		return (EAttribute) colorEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -323,6 +226,10 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 		isCreated = true;
 
 		// Create classes and their features
+		solidEClass = createEClass(SOLID);
+		createEAttribute(solidEClass, SOLID__NAME);
+		createEReference(solidEClass, SOLID__FACETS);
+
 		vector3fEClass = createEClass(VECTOR3F);
 		createEAttribute(vector3fEClass, VECTOR3F__X);
 		createEAttribute(vector3fEClass, VECTOR3F__Y);
@@ -330,22 +237,7 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 
 		facetEClass = createEClass(FACET);
 		createEReference(facetEClass, FACET__NORMAL);
-		createEReference(facetEClass, FACET__EDGES);
-		createEReference(facetEClass, FACET__COLOR);
-
-		edgeEClass = createEClass(EDGE);
-		createEReference(edgeEClass, EDGE__A);
-		createEReference(edgeEClass, EDGE__B);
-		createEReference(edgeEClass, EDGE__F);
-
-		solidEClass = createEClass(SOLID);
-		createEAttribute(solidEClass, SOLID__NAME);
-		createEReference(solidEClass, SOLID__FACETS);
-
-		colorEClass = createEClass(COLOR);
-		createEAttribute(colorEClass, COLOR__R);
-		createEAttribute(colorEClass, COLOR__G);
-		createEAttribute(colorEClass, COLOR__B);
+		createEReference(facetEClass, FACET__SOLID);
 	}
 
 	/**
@@ -379,6 +271,13 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 		// Add supertypes to classes
 
 		// Initialize classes, features, and operations; add parameters
+		initEClass(solidEClass, Solid.class, "Solid", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSolid_Name(), ecorePackage.getEString(), "name", null, 0, 1, Solid.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSolid_Facets(), this.getFacet(), this.getFacet_Solid(), "facets", null, 0, -1, Solid.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(vector3fEClass, Vector3f.class, "Vector3f", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getVector3f_X(), ecorePackage.getEFloat(), "x", null, 0, 1, Vector3f.class, !IS_TRANSIENT,
@@ -390,37 +289,11 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 
 		initEClass(facetEClass, Facet.class, "Facet", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacet_Normal(), this.getVector3f(), null, "normal", null, 0, 1, Facet.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
-		initEReference(getFacet_Edges(), this.getEdge(), null, "edges", null, 3, 3, Facet.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
-		initEReference(getFacet_Color(), this.getColor(), null, "color", null, 0, 1, Facet.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
-
-		initEClass(edgeEClass, Edge.class, "Edge", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getEdge_A(), this.getVector3f(), null, "a", null, 0, 1, Edge.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEdge_B(), this.getVector3f(), null, "b", null, 0, 1, Edge.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEdge_F(), this.getFacet(), null, "f", null, 1, 2, Edge.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(solidEClass, Solid.class, "Solid", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSolid_Name(), ecorePackage.getEString(), "name", null, 0, 1, Solid.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSolid_Facets(), this.getFacet(), null, "facets", null, 0, -1, Solid.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
-
-		initEClass(colorEClass, Color.class, "Color", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getColor_R(), ecorePackage.getEInt(), "r", null, 0, 1, Color.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getColor_G(), ecorePackage.getEInt(), "g", null, 0, 1, Color.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getColor_B(), ecorePackage.getEInt(), "b", null, 0, 1, Color.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFacet_Solid(), this.getSolid(), this.getSolid_Facets(), "solid", null, 1, 1, Facet.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

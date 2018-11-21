@@ -9,15 +9,18 @@ import Metamodell.Solid;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 // <-- [user defined imports]
 // [user defined imports] -->
 
@@ -57,7 +60,7 @@ public class SolidImpl extends EObjectImpl implements Solid {
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getFacets() <em>Facets</em>}' reference list.
+	 * The cached value of the '{@link #getFacets() <em>Facets</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getFacets()
@@ -113,9 +116,39 @@ public class SolidImpl extends EObjectImpl implements Solid {
 	 */
 	public EList<Facet> getFacets() {
 		if (facets == null) {
-			facets = new EObjectResolvingEList<Facet>(Facet.class, this, MetamodellPackage.SOLID__FACETS);
+			facets = new EObjectContainmentWithInverseEList<Facet>(Facet.class, this, MetamodellPackage.SOLID__FACETS,
+					MetamodellPackage.FACET__SOLID);
 		}
 		return facets;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case MetamodellPackage.SOLID__FACETS:
+			return ((InternalEList<InternalEObject>) (InternalEList<?>) getFacets()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case MetamodellPackage.SOLID__FACETS:
+			return ((InternalEList<?>) getFacets()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**

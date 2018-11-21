@@ -66,6 +66,13 @@ public class MetamodellSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
+		case MetamodellPackage.SOLID: {
+			Solid solid = (Solid) theEObject;
+			T result = caseSolid(solid);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case MetamodellPackage.VECTOR3F: {
 			Vector3f vector3f = (Vector3f) theEObject;
 			T result = caseVector3f(vector3f);
@@ -80,30 +87,24 @@ public class MetamodellSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case MetamodellPackage.EDGE: {
-			Edge edge = (Edge) theEObject;
-			T result = caseEdge(edge);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case MetamodellPackage.SOLID: {
-			Solid solid = (Solid) theEObject;
-			T result = caseSolid(solid);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case MetamodellPackage.COLOR: {
-			Color color = (Color) theEObject;
-			T result = caseColor(color);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		default:
 			return defaultCase(theEObject);
 		}
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Solid</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Solid</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSolid(Solid object) {
+		return null;
 	}
 
 	/**
@@ -133,51 +134,6 @@ public class MetamodellSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseFacet(Facet object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Edge</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Edge</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseEdge(Edge object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Solid</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Solid</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSolid(Solid object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Color</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Color</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseColor(Color object) {
 		return null;
 	}
 

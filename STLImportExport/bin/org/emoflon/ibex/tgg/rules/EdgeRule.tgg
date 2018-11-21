@@ -4,68 +4,54 @@
 #rule EdgeRule #with STLImportExport
 
 #source { 
-	++ Name:myDsl.Facet{
-		++ -v1-> vec1
-		++ -v2-> vec2
-		++ -v3-> vec3
-		
+	
+	++ s1:myDsl.Solid {
+		++-facets->Name
 	}
 	
-	++ vec1:myDsl.Vector
-	++ vec2:myDsl.Vector
-	++ vec3:myDsl.Vector
-	
+	++ Name:myDsl.Facet{
+		++-normal->vec1
+		}
+
+	++ vec1:myDsl.Vector {
+	}
 }
 
 #target {
-	++ facet:Metamodell.Facet {
-		++-edges->e1
-		++-edges->e2
-		++-edges->e3
+	
+	++ s2:Metamodell.Solid {
+		++-facets->facet
 	}
 	
-	++ e1:Metamodell.Edge{
-		++-a->a1
-		++-b->b1
+	++ facet:Metamodell.Facet {		
+		++-normal->n
 	}
 	
 
-	++ e2:Metamodell.Edge{
-		++-a->b1
-		++-b->c1
+	++n:Metamodell.Vector3f {
+		
 	}
-	
-	++ e3:Metamodell.Edge{
-		++-a->c1
-		++-b->a1
-	}
-	
-	
-	++a1:Metamodell.Vector3f
-	++b1:Metamodell.Vector3f
-	++c1:Metamodell.Vector3f
-	
+
 }
 
 #correspondence {
-	++v1v:VectorToVector{
+	
+	++ s1s:SolidToSolid {
+		#src->s1
+		#trg->s2
+	}
+	
+	++ f1f:FacetToFacet{
+		#src->Name
+		#trg->facet
+	}
+	
+	++ n1n:VectorToVector{
 		#src->vec1
-		#trg->a1		
-		
-	}
-	
-	++v2v:VectorToVector{
-		#src->vec2
-		#trg->b1
-	}
-	
-	++v3v:VectorToVector{
-		#src->vec3
-		#trg->c1
-		
+		#trg->n
 	}
 }
 
 #attributeConditions {
-	
+
 }

@@ -67,6 +67,11 @@ public class MetamodellAdapterFactory extends AdapterFactoryImpl {
 	 */
 	protected MetamodellSwitch<Adapter> modelSwitch = new MetamodellSwitch<Adapter>() {
 		@Override
+		public Adapter caseSolid(Solid object) {
+			return createSolidAdapter();
+		}
+
+		@Override
 		public Adapter caseVector3f(Vector3f object) {
 			return createVector3fAdapter();
 		}
@@ -74,21 +79,6 @@ public class MetamodellAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseFacet(Facet object) {
 			return createFacetAdapter();
-		}
-
-		@Override
-		public Adapter caseEdge(Edge object) {
-			return createEdgeAdapter();
-		}
-
-		@Override
-		public Adapter caseSolid(Solid object) {
-			return createSolidAdapter();
-		}
-
-		@Override
-		public Adapter caseColor(Color object) {
-			return createColorAdapter();
 		}
 
 		@Override
@@ -108,6 +98,20 @@ public class MetamodellAdapterFactory extends AdapterFactoryImpl {
 	@Override
 	public Adapter createAdapter(Notifier target) {
 		return modelSwitch.doSwitch((EObject) target);
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Metamodell.Solid <em>Solid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Metamodell.Solid
+	 * @generated
+	 */
+	public Adapter createSolidAdapter() {
+		return null;
 	}
 
 	/**
@@ -135,48 +139,6 @@ public class MetamodellAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFacetAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Metamodell.Edge <em>Edge</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Metamodell.Edge
-	 * @generated
-	 */
-	public Adapter createEdgeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Metamodell.Solid <em>Solid</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Metamodell.Solid
-	 * @generated
-	 */
-	public Adapter createSolidAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Metamodell.Color <em>Color</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Metamodell.Color
-	 * @generated
-	 */
-	public Adapter createColorAdapter() {
 		return null;
 	}
 

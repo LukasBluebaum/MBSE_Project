@@ -21,9 +21,9 @@ import org.xtext.example.mydsl.myDsl.Vector;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.VectorImpl#getX1 <em>X1</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.VectorImpl#getX2 <em>X2</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.VectorImpl#getX3 <em>X3</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.VectorImpl#getX <em>X</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.VectorImpl#getY <em>Y</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.VectorImpl#getZ <em>Z</em>}</li>
  * </ul>
  *
  * @generated
@@ -31,64 +31,64 @@ import org.xtext.example.mydsl.myDsl.Vector;
 public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
 {
   /**
-   * The default value of the '{@link #getX1() <em>X1</em>}' attribute.
+   * The default value of the '{@link #getX() <em>X</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getX1()
+   * @see #getX()
    * @generated
    * @ordered
    */
-  protected static final double X1_EDEFAULT = 0.0;
+  protected static final float X_EDEFAULT = 0.0F;
 
   /**
-   * The cached value of the '{@link #getX1() <em>X1</em>}' attribute.
+   * The cached value of the '{@link #getX() <em>X</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getX1()
+   * @see #getX()
    * @generated
    * @ordered
    */
-  protected double x1 = X1_EDEFAULT;
+  protected float x = X_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getX2() <em>X2</em>}' attribute.
+   * The default value of the '{@link #getY() <em>Y</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getX2()
+   * @see #getY()
    * @generated
    * @ordered
    */
-  protected static final double X2_EDEFAULT = 0.0;
+  protected static final float Y_EDEFAULT = 0.0F;
 
   /**
-   * The cached value of the '{@link #getX2() <em>X2</em>}' attribute.
+   * The cached value of the '{@link #getY() <em>Y</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getX2()
+   * @see #getY()
    * @generated
    * @ordered
    */
-  protected double x2 = X2_EDEFAULT;
+  protected float y = Y_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getX3() <em>X3</em>}' attribute.
+   * The default value of the '{@link #getZ() <em>Z</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getX3()
+   * @see #getZ()
    * @generated
    * @ordered
    */
-  protected static final double X3_EDEFAULT = 0.0;
+  protected static final float Z_EDEFAULT = 0.0F;
 
   /**
-   * The cached value of the '{@link #getX3() <em>X3</em>}' attribute.
+   * The cached value of the '{@link #getZ() <em>Z</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getX3()
+   * @see #getZ()
    * @generated
    * @ordered
    */
-  protected double x3 = X3_EDEFAULT;
+  protected float z = Z_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -116,9 +116,9 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
    * <!-- end-user-doc -->
    * @generated
    */
-  public double getX1()
+  public float getX()
   {
-    return x1;
+    return x;
   }
 
   /**
@@ -126,12 +126,12 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setX1(double newX1)
+  public void setX(float newX)
   {
-    double oldX1 = x1;
-    x1 = newX1;
+    float oldX = x;
+    x = newX;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.VECTOR__X1, oldX1, x1));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.VECTOR__X, oldX, x));
   }
 
   /**
@@ -139,9 +139,9 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
    * <!-- end-user-doc -->
    * @generated
    */
-  public double getX2()
+  public float getY()
   {
-    return x2;
+    return y;
   }
 
   /**
@@ -149,12 +149,12 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setX2(double newX2)
+  public void setY(float newY)
   {
-    double oldX2 = x2;
-    x2 = newX2;
+    float oldY = y;
+    y = newY;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.VECTOR__X2, oldX2, x2));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.VECTOR__Y, oldY, y));
   }
 
   /**
@@ -162,9 +162,9 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
    * <!-- end-user-doc -->
    * @generated
    */
-  public double getX3()
+  public float getZ()
   {
-    return x3;
+    return z;
   }
 
   /**
@@ -172,12 +172,12 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setX3(double newX3)
+  public void setZ(float newZ)
   {
-    double oldX3 = x3;
-    x3 = newX3;
+    float oldZ = z;
+    z = newZ;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.VECTOR__X3, oldX3, x3));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.VECTOR__Z, oldZ, z));
   }
 
   /**
@@ -190,12 +190,12 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
   {
     switch (featureID)
     {
-      case MyDslPackage.VECTOR__X1:
-        return getX1();
-      case MyDslPackage.VECTOR__X2:
-        return getX2();
-      case MyDslPackage.VECTOR__X3:
-        return getX3();
+      case MyDslPackage.VECTOR__X:
+        return getX();
+      case MyDslPackage.VECTOR__Y:
+        return getY();
+      case MyDslPackage.VECTOR__Z:
+        return getZ();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -210,14 +210,14 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
   {
     switch (featureID)
     {
-      case MyDslPackage.VECTOR__X1:
-        setX1((Double)newValue);
+      case MyDslPackage.VECTOR__X:
+        setX((Float)newValue);
         return;
-      case MyDslPackage.VECTOR__X2:
-        setX2((Double)newValue);
+      case MyDslPackage.VECTOR__Y:
+        setY((Float)newValue);
         return;
-      case MyDslPackage.VECTOR__X3:
-        setX3((Double)newValue);
+      case MyDslPackage.VECTOR__Z:
+        setZ((Float)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -233,14 +233,14 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
   {
     switch (featureID)
     {
-      case MyDslPackage.VECTOR__X1:
-        setX1(X1_EDEFAULT);
+      case MyDslPackage.VECTOR__X:
+        setX(X_EDEFAULT);
         return;
-      case MyDslPackage.VECTOR__X2:
-        setX2(X2_EDEFAULT);
+      case MyDslPackage.VECTOR__Y:
+        setY(Y_EDEFAULT);
         return;
-      case MyDslPackage.VECTOR__X3:
-        setX3(X3_EDEFAULT);
+      case MyDslPackage.VECTOR__Z:
+        setZ(Z_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -256,12 +256,12 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
   {
     switch (featureID)
     {
-      case MyDslPackage.VECTOR__X1:
-        return x1 != X1_EDEFAULT;
-      case MyDslPackage.VECTOR__X2:
-        return x2 != X2_EDEFAULT;
-      case MyDslPackage.VECTOR__X3:
-        return x3 != X3_EDEFAULT;
+      case MyDslPackage.VECTOR__X:
+        return x != X_EDEFAULT;
+      case MyDslPackage.VECTOR__Y:
+        return y != Y_EDEFAULT;
+      case MyDslPackage.VECTOR__Z:
+        return z != Z_EDEFAULT;
     }
     return super.eIsSet(featureID);
   }
@@ -277,12 +277,12 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
     if (eIsProxy()) return super.toString();
 
     StringBuilder result = new StringBuilder(super.toString());
-    result.append(" (x1: ");
-    result.append(x1);
-    result.append(", x2: ");
-    result.append(x2);
-    result.append(", x3: ");
-    result.append(x3);
+    result.append(" (x: ");
+    result.append(x);
+    result.append(", y: ");
+    result.append(y);
+    result.append(", z: ");
+    result.append(z);
     result.append(')');
     return result.toString();
   }

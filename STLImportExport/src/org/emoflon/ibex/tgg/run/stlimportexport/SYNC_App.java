@@ -60,8 +60,11 @@ public class SYNC_App extends SYNC {
 		EcoreUtil.resolveAll(rs);
 	}
 	
+	
+	
 	@Override
 	public void saveModels() throws IOException {
-		
+		s.save(null);
+		t.save(null);
 	}
 }
