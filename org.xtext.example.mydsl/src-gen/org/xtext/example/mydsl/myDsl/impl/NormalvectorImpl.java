@@ -11,24 +11,24 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.xtext.example.mydsl.myDsl.MyDslPackage;
-import org.xtext.example.mydsl.myDsl.Vector;
+import org.xtext.example.mydsl.myDsl.Normalvector;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Vector</b></em>'.
+ * An implementation of the model object '<em><b>Normalvector</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.VectorImpl#getX1 <em>X1</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.VectorImpl#getX2 <em>X2</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.VectorImpl#getX3 <em>X3</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.NormalvectorImpl#getX1 <em>X1</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.NormalvectorImpl#getX2 <em>X2</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.NormalvectorImpl#getX3 <em>X3</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
+public class NormalvectorImpl extends MinimalEObjectImpl.Container implements Normalvector
 {
   /**
    * The default value of the '{@link #getX1() <em>X1</em>}' attribute.
@@ -95,7 +95,7 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
    * <!-- end-user-doc -->
    * @generated
    */
-  protected VectorImpl()
+  protected NormalvectorImpl()
   {
     super();
   }
@@ -108,7 +108,7 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
   @Override
   protected EClass eStaticClass()
   {
-    return MyDslPackage.Literals.VECTOR;
+    return MyDslPackage.Literals.NORMALVECTOR;
   }
 
   /**
@@ -131,7 +131,7 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
     float oldX1 = x1;
     x1 = newX1;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.VECTOR__X1, oldX1, x1));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.NORMALVECTOR__X1, oldX1, x1));
   }
 
   /**
@@ -154,7 +154,7 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
     float oldX2 = x2;
     x2 = newX2;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.VECTOR__X2, oldX2, x2));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.NORMALVECTOR__X2, oldX2, x2));
   }
 
   /**
@@ -177,7 +177,7 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
     float oldX3 = x3;
     x3 = newX3;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.VECTOR__X3, oldX3, x3));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.NORMALVECTOR__X3, oldX3, x3));
   }
 
   /**
@@ -190,11 +190,11 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
   {
     switch (featureID)
     {
-      case MyDslPackage.VECTOR__X1:
+      case MyDslPackage.NORMALVECTOR__X1:
         return getX1();
-      case MyDslPackage.VECTOR__X2:
+      case MyDslPackage.NORMALVECTOR__X2:
         return getX2();
-      case MyDslPackage.VECTOR__X3:
+      case MyDslPackage.NORMALVECTOR__X3:
         return getX3();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -210,13 +210,13 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
   {
     switch (featureID)
     {
-      case MyDslPackage.VECTOR__X1:
+      case MyDslPackage.NORMALVECTOR__X1:
         setX1((Float)newValue);
         return;
-      case MyDslPackage.VECTOR__X2:
+      case MyDslPackage.NORMALVECTOR__X2:
         setX2((Float)newValue);
         return;
-      case MyDslPackage.VECTOR__X3:
+      case MyDslPackage.NORMALVECTOR__X3:
         setX3((Float)newValue);
         return;
     }
@@ -233,13 +233,13 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
   {
     switch (featureID)
     {
-      case MyDslPackage.VECTOR__X1:
+      case MyDslPackage.NORMALVECTOR__X1:
         setX1(X1_EDEFAULT);
         return;
-      case MyDslPackage.VECTOR__X2:
+      case MyDslPackage.NORMALVECTOR__X2:
         setX2(X2_EDEFAULT);
         return;
-      case MyDslPackage.VECTOR__X3:
+      case MyDslPackage.NORMALVECTOR__X3:
         setX3(X3_EDEFAULT);
         return;
     }
@@ -256,11 +256,11 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
   {
     switch (featureID)
     {
-      case MyDslPackage.VECTOR__X1:
+      case MyDslPackage.NORMALVECTOR__X1:
         return x1 != X1_EDEFAULT;
-      case MyDslPackage.VECTOR__X2:
+      case MyDslPackage.NORMALVECTOR__X2:
         return x2 != X2_EDEFAULT;
-      case MyDslPackage.VECTOR__X3:
+      case MyDslPackage.NORMALVECTOR__X3:
         return x3 != X3_EDEFAULT;
     }
     return super.eIsSet(featureID);
@@ -287,4 +287,4 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector
     return result.toString();
   }
 
-} //VectorImpl
+} //NormalvectorImpl

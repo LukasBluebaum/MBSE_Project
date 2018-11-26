@@ -13,13 +13,20 @@ Solid:
 
 Facet:
     'facet' 
-    normal=Vector
+    normal=Normalvector 
+    'outer' 'loop' 
+    v1=Vector v2=Vector v3=Vector
+    'endloop' 
     'endfacet' 
 ;
 
-Vector :
-	'normal' x = DOUBLE y = DOUBLE z = DOUBLE ; 
+Vector:
+    'vertex' x1 = FLOAT x2 = FLOAT x3 = FLOAT  ;
+    
+    
+Normalvector :
+	'normal' x1 = FLOAT x2 = FLOAT x3 = FLOAT ; 
 	
 
-terminal DOUBLE returns ecore::EFloat:
+terminal FLOAT returns ecore::EFloat:
 	('-' | '.' | 'e' | INT )+ ;

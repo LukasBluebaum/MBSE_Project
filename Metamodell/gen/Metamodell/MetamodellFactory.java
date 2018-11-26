@@ -22,15 +22,6 @@ public interface MetamodellFactory extends EFactory {
 	MetamodellFactory eINSTANCE = Metamodell.impl.MetamodellFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Solid</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Solid</em>'.
-	 * @generated
-	 */
-	Solid createSolid();
-
-	/**
 	 * Returns a new object of class '<em>Vector3f</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -47,6 +38,33 @@ public interface MetamodellFactory extends EFactory {
 	 * @generated
 	 */
 	Facet createFacet();
+
+	/**
+	 * Returns a new object of class '<em>Edge</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Edge</em>'.
+	 * @generated
+	 */
+	Edge createEdge();
+
+	/**
+	 * Returns a new object of class '<em>Solid</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Solid</em>'.
+	 * @generated
+	 */
+	Solid createSolid();
+
+	/**
+	 * Returns a new object of class '<em>Color</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Color</em>'.
+	 * @generated
+	 */
+	Color createColor();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -51,6 +51,15 @@ public interface MyDslFactory extends EFactory
   Vector createVector();
 
   /**
+   * Returns a new object of class '<em>Normalvector</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Normalvector</em>'.
+   * @generated
+   */
+  Normalvector createNormalvector();
+
+  /**
    * Returns the package supported by this factory.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

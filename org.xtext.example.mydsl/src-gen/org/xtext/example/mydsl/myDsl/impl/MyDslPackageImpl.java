@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.xtext.example.mydsl.myDsl.Facet;
 import org.xtext.example.mydsl.myDsl.MyDslFactory;
 import org.xtext.example.mydsl.myDsl.MyDslPackage;
+import org.xtext.example.mydsl.myDsl.Normalvector;
 import org.xtext.example.mydsl.myDsl.Solid;
 import org.xtext.example.mydsl.myDsl.Vector;
 
@@ -44,6 +45,13 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * @generated
    */
   private EClass vectorEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass normalvectorEClass = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -163,6 +171,36 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EReference getFacet_V1()
+  {
+    return (EReference)facetEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getFacet_V2()
+  {
+    return (EReference)facetEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getFacet_V3()
+  {
+    return (EReference)facetEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getVector()
   {
     return vectorEClass;
@@ -173,7 +211,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getVector_X()
+  public EAttribute getVector_X1()
   {
     return (EAttribute)vectorEClass.getEStructuralFeatures().get(0);
   }
@@ -183,7 +221,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getVector_Y()
+  public EAttribute getVector_X2()
   {
     return (EAttribute)vectorEClass.getEStructuralFeatures().get(1);
   }
@@ -193,9 +231,49 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getVector_Z()
+  public EAttribute getVector_X3()
   {
     return (EAttribute)vectorEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getNormalvector()
+  {
+    return normalvectorEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getNormalvector_X1()
+  {
+    return (EAttribute)normalvectorEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getNormalvector_X2()
+  {
+    return (EAttribute)normalvectorEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getNormalvector_X3()
+  {
+    return (EAttribute)normalvectorEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -234,11 +312,19 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
 
     facetEClass = createEClass(FACET);
     createEReference(facetEClass, FACET__NORMAL);
+    createEReference(facetEClass, FACET__V1);
+    createEReference(facetEClass, FACET__V2);
+    createEReference(facetEClass, FACET__V3);
 
     vectorEClass = createEClass(VECTOR);
-    createEAttribute(vectorEClass, VECTOR__X);
-    createEAttribute(vectorEClass, VECTOR__Y);
-    createEAttribute(vectorEClass, VECTOR__Z);
+    createEAttribute(vectorEClass, VECTOR__X1);
+    createEAttribute(vectorEClass, VECTOR__X2);
+    createEAttribute(vectorEClass, VECTOR__X3);
+
+    normalvectorEClass = createEClass(NORMALVECTOR);
+    createEAttribute(normalvectorEClass, NORMALVECTOR__X1);
+    createEAttribute(normalvectorEClass, NORMALVECTOR__X2);
+    createEAttribute(normalvectorEClass, NORMALVECTOR__X3);
   }
 
   /**
@@ -277,12 +363,20 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
     initEReference(getSolid_Facets(), this.getFacet(), null, "facets", null, 0, -1, Solid.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(facetEClass, Facet.class, "Facet", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getFacet_Normal(), this.getVector(), null, "normal", null, 0, 1, Facet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getFacet_Normal(), this.getNormalvector(), null, "normal", null, 0, 1, Facet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getFacet_V1(), this.getVector(), null, "v1", null, 0, 1, Facet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getFacet_V2(), this.getVector(), null, "v2", null, 0, 1, Facet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getFacet_V3(), this.getVector(), null, "v3", null, 0, 1, Facet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(vectorEClass, Vector.class, "Vector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getVector_X(), ecorePackage.getEFloat(), "x", null, 0, 1, Vector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getVector_Y(), ecorePackage.getEFloat(), "y", null, 0, 1, Vector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getVector_Z(), ecorePackage.getEFloat(), "z", null, 0, 1, Vector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getVector_X1(), ecorePackage.getEFloat(), "x1", null, 0, 1, Vector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getVector_X2(), ecorePackage.getEFloat(), "x2", null, 0, 1, Vector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getVector_X3(), ecorePackage.getEFloat(), "x3", null, 0, 1, Vector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(normalvectorEClass, Normalvector.class, "Normalvector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getNormalvector_X1(), ecorePackage.getEFloat(), "x1", null, 0, 1, Normalvector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getNormalvector_X2(), ecorePackage.getEFloat(), "x2", null, 0, 1, Normalvector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getNormalvector_X3(), ecorePackage.getEFloat(), "x3", null, 0, 1, Normalvector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
     createResource(eNS_URI);

@@ -69,75 +69,154 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cFacetKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNormalAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cNormalVectorParserRuleCall_1_0 = (RuleCall)cNormalAssignment_1.eContents().get(0);
-		private final Keyword cEndfacetKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final RuleCall cNormalNormalvectorParserRuleCall_1_0 = (RuleCall)cNormalAssignment_1.eContents().get(0);
+		private final Keyword cOuterKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Keyword cLoopKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Assignment cV1Assignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final RuleCall cV1VectorParserRuleCall_4_0 = (RuleCall)cV1Assignment_4.eContents().get(0);
+		private final Assignment cV2Assignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final RuleCall cV2VectorParserRuleCall_5_0 = (RuleCall)cV2Assignment_5.eContents().get(0);
+		private final Assignment cV3Assignment_6 = (Assignment)cGroup.eContents().get(6);
+		private final RuleCall cV3VectorParserRuleCall_6_0 = (RuleCall)cV3Assignment_6.eContents().get(0);
+		private final Keyword cEndloopKeyword_7 = (Keyword)cGroup.eContents().get(7);
+		private final Keyword cEndfacetKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		
 		//Facet:
 		//	'facet'
-		//	normal=Vector
+		//	normal=Normalvector
+		//	'outer' 'loop'
+		//	v1=Vector v2=Vector v3=Vector
+		//	'endloop'
 		//	'endfacet';
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'facet' normal=Vector 'endfacet'
+		//'facet' normal=Normalvector 'outer' 'loop' v1=Vector v2=Vector v3=Vector 'endloop' 'endfacet'
 		public Group getGroup() { return cGroup; }
 		
 		//'facet'
 		public Keyword getFacetKeyword_0() { return cFacetKeyword_0; }
 		
-		//normal=Vector
+		//normal=Normalvector
 		public Assignment getNormalAssignment_1() { return cNormalAssignment_1; }
 		
+		//Normalvector
+		public RuleCall getNormalNormalvectorParserRuleCall_1_0() { return cNormalNormalvectorParserRuleCall_1_0; }
+		
+		//'outer'
+		public Keyword getOuterKeyword_2() { return cOuterKeyword_2; }
+		
+		//'loop'
+		public Keyword getLoopKeyword_3() { return cLoopKeyword_3; }
+		
+		//v1=Vector
+		public Assignment getV1Assignment_4() { return cV1Assignment_4; }
+		
 		//Vector
-		public RuleCall getNormalVectorParserRuleCall_1_0() { return cNormalVectorParserRuleCall_1_0; }
+		public RuleCall getV1VectorParserRuleCall_4_0() { return cV1VectorParserRuleCall_4_0; }
+		
+		//v2=Vector
+		public Assignment getV2Assignment_5() { return cV2Assignment_5; }
+		
+		//Vector
+		public RuleCall getV2VectorParserRuleCall_5_0() { return cV2VectorParserRuleCall_5_0; }
+		
+		//v3=Vector
+		public Assignment getV3Assignment_6() { return cV3Assignment_6; }
+		
+		//Vector
+		public RuleCall getV3VectorParserRuleCall_6_0() { return cV3VectorParserRuleCall_6_0; }
+		
+		//'endloop'
+		public Keyword getEndloopKeyword_7() { return cEndloopKeyword_7; }
 		
 		//'endfacet'
-		public Keyword getEndfacetKeyword_2() { return cEndfacetKeyword_2; }
+		public Keyword getEndfacetKeyword_8() { return cEndfacetKeyword_8; }
 	}
 	public class VectorElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.example.mydsl.MyDsl.Vector");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cNormalKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Assignment cXAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cXDOUBLETerminalRuleCall_1_0 = (RuleCall)cXAssignment_1.eContents().get(0);
-		private final Assignment cYAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cYDOUBLETerminalRuleCall_2_0 = (RuleCall)cYAssignment_2.eContents().get(0);
-		private final Assignment cZAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cZDOUBLETerminalRuleCall_3_0 = (RuleCall)cZAssignment_3.eContents().get(0);
+		private final Keyword cVertexKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cX1Assignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cX1FLOATTerminalRuleCall_1_0 = (RuleCall)cX1Assignment_1.eContents().get(0);
+		private final Assignment cX2Assignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cX2FLOATTerminalRuleCall_2_0 = (RuleCall)cX2Assignment_2.eContents().get(0);
+		private final Assignment cX3Assignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cX3FLOATTerminalRuleCall_3_0 = (RuleCall)cX3Assignment_3.eContents().get(0);
 		
 		//Vector:
-		//	'normal' x=DOUBLE y=DOUBLE z=DOUBLE;
+		//	'vertex' x1=FLOAT x2=FLOAT x3=FLOAT;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'normal' x=DOUBLE y=DOUBLE z=DOUBLE
+		//'vertex' x1=FLOAT x2=FLOAT x3=FLOAT
+		public Group getGroup() { return cGroup; }
+		
+		//'vertex'
+		public Keyword getVertexKeyword_0() { return cVertexKeyword_0; }
+		
+		//x1=FLOAT
+		public Assignment getX1Assignment_1() { return cX1Assignment_1; }
+		
+		//FLOAT
+		public RuleCall getX1FLOATTerminalRuleCall_1_0() { return cX1FLOATTerminalRuleCall_1_0; }
+		
+		//x2=FLOAT
+		public Assignment getX2Assignment_2() { return cX2Assignment_2; }
+		
+		//FLOAT
+		public RuleCall getX2FLOATTerminalRuleCall_2_0() { return cX2FLOATTerminalRuleCall_2_0; }
+		
+		//x3=FLOAT
+		public Assignment getX3Assignment_3() { return cX3Assignment_3; }
+		
+		//FLOAT
+		public RuleCall getX3FLOATTerminalRuleCall_3_0() { return cX3FLOATTerminalRuleCall_3_0; }
+	}
+	public class NormalvectorElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.example.mydsl.MyDsl.Normalvector");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cNormalKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cX1Assignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cX1FLOATTerminalRuleCall_1_0 = (RuleCall)cX1Assignment_1.eContents().get(0);
+		private final Assignment cX2Assignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cX2FLOATTerminalRuleCall_2_0 = (RuleCall)cX2Assignment_2.eContents().get(0);
+		private final Assignment cX3Assignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cX3FLOATTerminalRuleCall_3_0 = (RuleCall)cX3Assignment_3.eContents().get(0);
+		
+		//Normalvector:
+		//	'normal' x1=FLOAT x2=FLOAT x3=FLOAT;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'normal' x1=FLOAT x2=FLOAT x3=FLOAT
 		public Group getGroup() { return cGroup; }
 		
 		//'normal'
 		public Keyword getNormalKeyword_0() { return cNormalKeyword_0; }
 		
-		//x=DOUBLE
-		public Assignment getXAssignment_1() { return cXAssignment_1; }
+		//x1=FLOAT
+		public Assignment getX1Assignment_1() { return cX1Assignment_1; }
 		
-		//DOUBLE
-		public RuleCall getXDOUBLETerminalRuleCall_1_0() { return cXDOUBLETerminalRuleCall_1_0; }
+		//FLOAT
+		public RuleCall getX1FLOATTerminalRuleCall_1_0() { return cX1FLOATTerminalRuleCall_1_0; }
 		
-		//y=DOUBLE
-		public Assignment getYAssignment_2() { return cYAssignment_2; }
+		//x2=FLOAT
+		public Assignment getX2Assignment_2() { return cX2Assignment_2; }
 		
-		//DOUBLE
-		public RuleCall getYDOUBLETerminalRuleCall_2_0() { return cYDOUBLETerminalRuleCall_2_0; }
+		//FLOAT
+		public RuleCall getX2FLOATTerminalRuleCall_2_0() { return cX2FLOATTerminalRuleCall_2_0; }
 		
-		//z=DOUBLE
-		public Assignment getZAssignment_3() { return cZAssignment_3; }
+		//x3=FLOAT
+		public Assignment getX3Assignment_3() { return cX3Assignment_3; }
 		
-		//DOUBLE
-		public RuleCall getZDOUBLETerminalRuleCall_3_0() { return cZDOUBLETerminalRuleCall_3_0; }
+		//FLOAT
+		public RuleCall getX3FLOATTerminalRuleCall_3_0() { return cX3FLOATTerminalRuleCall_3_0; }
 	}
 	
 	
 	private final SolidElements pSolid;
 	private final FacetElements pFacet;
 	private final VectorElements pVector;
-	private final TerminalRule tDOUBLE;
+	private final NormalvectorElements pNormalvector;
+	private final TerminalRule tFLOAT;
 	
 	private final Grammar grammar;
 	
@@ -151,7 +230,8 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		this.pSolid = new SolidElements();
 		this.pFacet = new FacetElements();
 		this.pVector = new VectorElements();
-		this.tDOUBLE = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.example.mydsl.MyDsl.DOUBLE");
+		this.pNormalvector = new NormalvectorElements();
+		this.tFLOAT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.example.mydsl.MyDsl.FLOAT");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
@@ -197,7 +277,10 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Facet:
 	//	'facet'
-	//	normal=Vector
+	//	normal=Normalvector
+	//	'outer' 'loop'
+	//	v1=Vector v2=Vector v3=Vector
+	//	'endloop'
 	//	'endfacet';
 	public FacetElements getFacetAccess() {
 		return pFacet;
@@ -208,7 +291,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//Vector:
-	//	'normal' x=DOUBLE y=DOUBLE z=DOUBLE;
+	//	'vertex' x1=FLOAT x2=FLOAT x3=FLOAT;
 	public VectorElements getVectorAccess() {
 		return pVector;
 	}
@@ -217,10 +300,20 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		return getVectorAccess().getRule();
 	}
 	
-	//terminal DOUBLE returns ecore::EFloat:
+	//Normalvector:
+	//	'normal' x1=FLOAT x2=FLOAT x3=FLOAT;
+	public NormalvectorElements getNormalvectorAccess() {
+		return pNormalvector;
+	}
+	
+	public ParserRule getNormalvectorRule() {
+		return getNormalvectorAccess().getRule();
+	}
+	
+	//terminal FLOAT returns ecore::EFloat:
 	//	'-' | '.' | 'e' | INT+;
-	public TerminalRule getDOUBLERule() {
-		return tDOUBLE;
+	public TerminalRule getFLOATRule() {
+		return tFLOAT;
 	}
 	
 	//terminal ID:

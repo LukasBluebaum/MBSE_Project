@@ -16,6 +16,7 @@ import org.eclipse.xtext.serializer.sequencer.AbstractDelegatingSemanticSequence
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransient;
 import org.xtext.example.mydsl.myDsl.Facet;
 import org.xtext.example.mydsl.myDsl.MyDslPackage;
+import org.xtext.example.mydsl.myDsl.Normalvector;
 import org.xtext.example.mydsl.myDsl.Solid;
 import org.xtext.example.mydsl.myDsl.Vector;
 import org.xtext.example.mydsl.services.MyDslGrammarAccess;
@@ -37,6 +38,9 @@ public class MyDslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 			case MyDslPackage.FACET:
 				sequence_Facet(context, (Facet) semanticObject); 
 				return; 
+			case MyDslPackage.NORMALVECTOR:
+				sequence_Normalvector(context, (Normalvector) semanticObject); 
+				return; 
 			case MyDslPackage.SOLID:
 				sequence_Solid(context, (Solid) semanticObject); 
 				return; 
@@ -53,15 +57,48 @@ public class MyDslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	 *     Facet returns Facet
 	 *
 	 * Constraint:
-	 *     normal=Vector
+	 *     (normal=Normalvector v1=Vector v2=Vector v3=Vector)
 	 */
 	protected void sequence_Facet(ISerializationContext context, Facet semanticObject) {
 		if (errorAcceptor != null) {
 			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.FACET__NORMAL) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.FACET__NORMAL));
+			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.FACET__V1) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.FACET__V1));
+			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.FACET__V2) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.FACET__V2));
+			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.FACET__V3) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.FACET__V3));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getFacetAccess().getNormalVectorParserRuleCall_1_0(), semanticObject.getNormal());
+		feeder.accept(grammarAccess.getFacetAccess().getNormalNormalvectorParserRuleCall_1_0(), semanticObject.getNormal());
+		feeder.accept(grammarAccess.getFacetAccess().getV1VectorParserRuleCall_4_0(), semanticObject.getV1());
+		feeder.accept(grammarAccess.getFacetAccess().getV2VectorParserRuleCall_5_0(), semanticObject.getV2());
+		feeder.accept(grammarAccess.getFacetAccess().getV3VectorParserRuleCall_6_0(), semanticObject.getV3());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     Normalvector returns Normalvector
+	 *
+	 * Constraint:
+	 *     (x1=FLOAT x2=FLOAT x3=FLOAT)
+	 */
+	protected void sequence_Normalvector(ISerializationContext context, Normalvector semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.NORMALVECTOR__X1) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.NORMALVECTOR__X1));
+			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.NORMALVECTOR__X2) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.NORMALVECTOR__X2));
+			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.NORMALVECTOR__X3) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.NORMALVECTOR__X3));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getNormalvectorAccess().getX1FLOATTerminalRuleCall_1_0(), semanticObject.getX1());
+		feeder.accept(grammarAccess.getNormalvectorAccess().getX2FLOATTerminalRuleCall_2_0(), semanticObject.getX2());
+		feeder.accept(grammarAccess.getNormalvectorAccess().getX3FLOATTerminalRuleCall_3_0(), semanticObject.getX3());
 		feeder.finish();
 	}
 	
@@ -83,21 +120,21 @@ public class MyDslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	 *     Vector returns Vector
 	 *
 	 * Constraint:
-	 *     (x=DOUBLE y=DOUBLE z=DOUBLE)
+	 *     (x1=FLOAT x2=FLOAT x3=FLOAT)
 	 */
 	protected void sequence_Vector(ISerializationContext context, Vector semanticObject) {
 		if (errorAcceptor != null) {
-			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.VECTOR__X) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.VECTOR__X));
-			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.VECTOR__Y) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.VECTOR__Y));
-			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.VECTOR__Z) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.VECTOR__Z));
+			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.VECTOR__X1) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.VECTOR__X1));
+			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.VECTOR__X2) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.VECTOR__X2));
+			if (transientValues.isValueTransient(semanticObject, MyDslPackage.Literals.VECTOR__X3) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, MyDslPackage.Literals.VECTOR__X3));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getVectorAccess().getXDOUBLETerminalRuleCall_1_0(), semanticObject.getX());
-		feeder.accept(grammarAccess.getVectorAccess().getYDOUBLETerminalRuleCall_2_0(), semanticObject.getY());
-		feeder.accept(grammarAccess.getVectorAccess().getZDOUBLETerminalRuleCall_3_0(), semanticObject.getZ());
+		feeder.accept(grammarAccess.getVectorAccess().getX1FLOATTerminalRuleCall_1_0(), semanticObject.getX1());
+		feeder.accept(grammarAccess.getVectorAccess().getX2FLOATTerminalRuleCall_2_0(), semanticObject.getX2());
+		feeder.accept(grammarAccess.getVectorAccess().getX3FLOATTerminalRuleCall_3_0(), semanticObject.getX3());
 		feeder.finish();
 	}
 	

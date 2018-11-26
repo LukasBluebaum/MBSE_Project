@@ -68,6 +68,7 @@ public class MyDslFactoryImpl extends EFactoryImpl implements MyDslFactory
       case MyDslPackage.SOLID: return createSolid();
       case MyDslPackage.FACET: return createFacet();
       case MyDslPackage.VECTOR: return createVector();
+      case MyDslPackage.NORMALVECTOR: return createNormalvector();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -104,6 +105,17 @@ public class MyDslFactoryImpl extends EFactoryImpl implements MyDslFactory
   {
     VectorImpl vector = new VectorImpl();
     return vector;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Normalvector createNormalvector()
+  {
+    NormalvectorImpl normalvector = new NormalvectorImpl();
+    return normalvector;
   }
 
   /**

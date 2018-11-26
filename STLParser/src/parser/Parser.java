@@ -27,23 +27,24 @@ public class Parser {
 	}
 
 	public static void main(String[] args) throws IOException {
-		RunParser sokParser = new RunParser("test2.stl");
-		Optional<Solid> board = sokParser.parse();
+		RunParser stlParser = new RunParser("test.stl");
+		Optional<Solid> s = stlParser.parse();
+		
 
-		board.ifPresent(b -> {
+		s.ifPresent(b -> {
 			try {
 				initialiseFwdSynchroniser();
 
 				sync.getSourceResource().getContents().add(b);
-				System.out.println(sync.getSourceResource().getContents());
+				//System.out.println(sync.getSourceResource().getContents());
 				
 				sync.forward();
-				System.out.println(sync.getTargetResource().getContents());
+				//System.out.println(sync.getTargetResource().getContents());
 				sync.saveModels();
-
-				Metamodell.Solid sokBoard = (Metamodell.Solid) sync.getTargetResource().getContents().get(0);
-				System.out.println(sokBoard.getFacets().get(0).getNormal());
-
+				
+				Metamodell.Solid solid = (Metamodell.Solid) sync.getTargetResource().getContents().get(0);
+				System.out.println(solid.getFacets().get(0).getEdges().get(0).getA());
+				System.out.println(solid.getFacets().get(0).getEdges().get(0).getB());
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

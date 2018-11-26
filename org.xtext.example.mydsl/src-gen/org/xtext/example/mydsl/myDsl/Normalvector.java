@@ -7,23 +7,23 @@ import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Vector</b></em>'.
+ * A representation of the model object '<em><b>Normalvector</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.xtext.example.mydsl.myDsl.Vector#getX1 <em>X1</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.Vector#getX2 <em>X2</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.Vector#getX3 <em>X3</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.Normalvector#getX1 <em>X1</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.Normalvector#getX2 <em>X2</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.Normalvector#getX3 <em>X3</em>}</li>
  * </ul>
  *
- * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getVector()
+ * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getNormalvector()
  * @model
  * @generated
  */
-public interface Vector extends EObject
+public interface Normalvector extends EObject
 {
   /**
    * Returns the value of the '<em><b>X1</b></em>' attribute.
@@ -35,14 +35,14 @@ public interface Vector extends EObject
    * <!-- end-user-doc -->
    * @return the value of the '<em>X1</em>' attribute.
    * @see #setX1(float)
-   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getVector_X1()
+   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getNormalvector_X1()
    * @model
    * @generated
    */
   float getX1();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Vector#getX1 <em>X1</em>}' attribute.
+   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Normalvector#getX1 <em>X1</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>X1</em>' attribute.
@@ -61,14 +61,14 @@ public interface Vector extends EObject
    * <!-- end-user-doc -->
    * @return the value of the '<em>X2</em>' attribute.
    * @see #setX2(float)
-   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getVector_X2()
+   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getNormalvector_X2()
    * @model
    * @generated
    */
   float getX2();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Vector#getX2 <em>X2</em>}' attribute.
+   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Normalvector#getX2 <em>X2</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>X2</em>' attribute.
@@ -87,14 +87,14 @@ public interface Vector extends EObject
    * <!-- end-user-doc -->
    * @return the value of the '<em>X3</em>' attribute.
    * @see #setX3(float)
-   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getVector_X3()
+   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getNormalvector_X3()
    * @model
    * @generated
    */
   float getX3();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Vector#getX3 <em>X3</em>}' attribute.
+   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Normalvector#getX3 <em>X3</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>X3</em>' attribute.
@@ -103,4 +103,4 @@ public interface Vector extends EObject
    */
   void setX3(float value);
 
-} // Vector
+} // Normalvector

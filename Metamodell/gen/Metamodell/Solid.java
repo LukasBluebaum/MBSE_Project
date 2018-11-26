@@ -53,19 +53,17 @@ public interface Solid extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Facets</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Facets</b></em>' reference list.
 	 * The list contents are of type {@link Metamodell.Facet}.
-	 * It is bidirectional and its opposite is '{@link Metamodell.Facet#getSolid <em>Solid</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Facets</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Facets</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facets</em>' containment reference list.
+	 * @return the value of the '<em>Facets</em>' reference list.
 	 * @see Metamodell.MetamodellPackage#getSolid_Facets()
-	 * @see Metamodell.Facet#getSolid
-	 * @model opposite="solid" containment="true"
+	 * @model
 	 * @generated
 	 */
 	EList<Facet> getFacets();

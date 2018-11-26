@@ -56,25 +56,19 @@ public class MetamodellFactoryImpl extends EFactoryImpl implements MetamodellFac
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-		case MetamodellPackage.SOLID:
-			return createSolid();
 		case MetamodellPackage.VECTOR3F:
 			return createVector3f();
 		case MetamodellPackage.FACET:
 			return createFacet();
+		case MetamodellPackage.EDGE:
+			return createEdge();
+		case MetamodellPackage.SOLID:
+			return createSolid();
+		case MetamodellPackage.COLOR:
+			return createColor();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Solid createSolid() {
-		SolidImpl solid = new SolidImpl();
-		return solid;
 	}
 
 	/**
@@ -95,6 +89,36 @@ public class MetamodellFactoryImpl extends EFactoryImpl implements MetamodellFac
 	public Facet createFacet() {
 		FacetImpl facet = new FacetImpl();
 		return facet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Edge createEdge() {
+		EdgeImpl edge = new EdgeImpl();
+		return edge;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Solid createSolid() {
+		SolidImpl solid = new SolidImpl();
+		return solid;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Color createColor() {
+		ColorImpl color = new ColorImpl();
+		return color;
 	}
 
 	/**
