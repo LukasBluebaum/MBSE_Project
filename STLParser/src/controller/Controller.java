@@ -1,9 +1,16 @@
 package controller;
 
 import Metamodell.*;
+import Metamodell.impl.AreaImpl;
+import Metamodell.impl.MetamodellFactoryImpl;
+
 import org.eclipse.emf.common.util.EList;
 
-public class Controller {
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Controller<E> {
 	
 	
 	public void computeDegree(Edge e) {
@@ -29,5 +36,39 @@ public class Controller {
 		
 		
 	}
+	
+	public void createAreas(Solid s) {
+		
+		Queue<Facet> q = (Queue<Facet>) s.getFacets();
+		Queue<Facet> queue = new LinkedList<Facet>();
+		ArrayList<Area> areas = new ArrayList<Area>();
+		for(Facet f: q)
+		{
+			AreaImpl a = (AreaImpl) MetamodellFactoryImpl.init().createArea();
+			q.remove(f);
+			queue.add(f);
+			for(Facet fac : queue) 
+			{	
+				a.eSet(0, fac);
+				for(Edge e: fac.getEdges()) 
+				{
+					if (e.getDegree() == 0) 
+					{
+						queue.add(e.getF().get(0));
+						queue.add(e.getF().get(0));
+						
+					}
+					
+				}
+				
+			
+			}
+			queue.clear();
+			
+		}
+	}
+	
 
 }
+
+
