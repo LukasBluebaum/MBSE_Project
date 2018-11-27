@@ -217,6 +217,15 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getFacet_Area() {
+		return (EReference) facetEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getEdge() {
 		return edgeEClass;
 	}
@@ -307,6 +316,15 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getSolid_Area() {
+		return (EReference) solidEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getColor() {
 		return colorEClass;
 	}
@@ -377,6 +395,7 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 		createEReference(facetEClass, FACET__NORMAL);
 		createEReference(facetEClass, FACET__EDGES);
 		createEReference(facetEClass, FACET__COLOR);
+		createEReference(facetEClass, FACET__AREA);
 
 		edgeEClass = createEClass(EDGE);
 		createEReference(edgeEClass, EDGE__A);
@@ -390,6 +409,7 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 		solidEClass = createEClass(SOLID);
 		createEAttribute(solidEClass, SOLID__NAME);
 		createEReference(solidEClass, SOLID__FACETS);
+		createEReference(solidEClass, SOLID__AREA);
 
 		colorEClass = createEClass(COLOR);
 		createEAttribute(colorEClass, COLOR__R);
@@ -450,6 +470,9 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 		initEReference(getFacet_Color(), this.getColor(), null, "color", null, 0, 1, Facet.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
+		initEReference(getFacet_Area(), this.getArea(), null, "area", null, 0, 1, Facet.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
 
 		initEClass(edgeEClass, Edge.class, "Edge", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEdge_A(), this.getVector3f(), null, "a", null, 0, 1, Edge.class, !IS_TRANSIENT, !IS_VOLATILE,
@@ -462,9 +485,9 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(areaEClass, Area.class, "Area", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getArea_Facets(), this.getFacet(), null, "facets", null, 0, -1, Area.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
+		initEReference(getArea_Facets(), this.getFacet(), this.getFacet_Area(), "facets", null, 0, -1, Area.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(solidEClass, Solid.class, "Solid", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSolid_Name(), ecorePackage.getEString(), "name", null, 0, 1, Solid.class, !IS_TRANSIENT,
@@ -472,6 +495,9 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 		initEReference(getSolid_Facets(), this.getFacet(), this.getFacet_Solid(), "facets", null, 0, -1, Solid.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSolid_Area(), this.getArea(), null, "area", null, 0, -1, Solid.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
 
 		initEClass(colorEClass, Color.class, "Color", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getColor_R(), ecorePackage.getEInt(), "r", null, 0, 1, Color.class, !IS_TRANSIENT, !IS_VOLATILE,

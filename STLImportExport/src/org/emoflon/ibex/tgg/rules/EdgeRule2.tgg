@@ -5,16 +5,61 @@
 
 #source { 
 	
+	++facet:myDsl.Facet{
+		++-v1->vector1
+		++-v2->vector2
+		++-v3->vector3
+
+	}
+	
+	++vector1:myDsl.Vector
+	++vector2:myDsl.Vector
+	++vector3:myDsl.Vector
+	
 }
 
 #target {
 	
-}
+	edge:Metamodell.Edge{
+		-a->a
+		-b->b
+		++-f->fac
+		-f->fac2
+		}
+		
+		a:Metamodell.Vector3f{
+					
+			
+		}
+		
+		b:Metamodell.Vector3f{
+			
+		}
+		
+		fac2:Metamodell.Facet{
+			-edges->edge
+		}
+		++fac:Metamodell.Facet{
+			++-edges->edge
+		}
+	}
 
 #correspondence {
-	
+	++f2f:FacetToFacet{
+		#src->facet
+		#trg->fac
+	}	
 }
 
 #attributeConditions {
+ 
+   eq_float(vector1.x1,a.x)
+   eq_float(vector1.x2,a.y)
+   eq_float(vector1.x3,a.z)
+   
+   eq_float(vector2.x1,b.x)
+   eq_float(vector2.x2,b.y)
+   eq_float(vector2.x3,b.z)
+	
 	
 }

@@ -161,13 +161,22 @@ public interface MetamodellPackage extends EPackage {
 	int FACET__COLOR = 3;
 
 	/**
+	 * The feature id for the '<em><b>Area</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACET__AREA = 4;
+
+	/**
 	 * The number of structural features of the '<em>Facet</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACET_FEATURE_COUNT = 4;
+	int FACET_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Facet</em>' class.
@@ -253,7 +262,7 @@ public interface MetamodellPackage extends EPackage {
 	int AREA = 3;
 
 	/**
-	 * The feature id for the '<em><b>Facets</b></em>' reference list.
+	 * The feature id for the '<em><b>Facets</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -308,13 +317,22 @@ public interface MetamodellPackage extends EPackage {
 	int SOLID__FACETS = 1;
 
 	/**
+	 * The feature id for the '<em><b>Area</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOLID__AREA = 2;
+
+	/**
 	 * The number of structural features of the '<em>Solid</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SOLID_FEATURE_COUNT = 2;
+	int SOLID_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Solid</em>' class.
@@ -478,6 +496,17 @@ public interface MetamodellPackage extends EPackage {
 	EReference getFacet_Color();
 
 	/**
+	 * Returns the meta object for the reference '{@link Metamodell.Facet#getArea <em>Area</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Area</em>'.
+	 * @see Metamodell.Facet#getArea()
+	 * @see #getFacet()
+	 * @generated
+	 */
+	EReference getFacet_Area();
+
+	/**
 	 * Returns the meta object for class '{@link Metamodell.Edge <em>Edge</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -542,10 +571,10 @@ public interface MetamodellPackage extends EPackage {
 	EClass getArea();
 
 	/**
-	 * Returns the meta object for the reference list '{@link Metamodell.Area#getFacets <em>Facets</em>}'.
+	 * Returns the meta object for the containment reference list '{@link Metamodell.Area#getFacets <em>Facets</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Facets</em>'.
+	 * @return the meta object for the containment reference list '<em>Facets</em>'.
 	 * @see Metamodell.Area#getFacets()
 	 * @see #getArea()
 	 * @generated
@@ -583,6 +612,17 @@ public interface MetamodellPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getSolid_Facets();
+
+	/**
+	 * Returns the meta object for the reference list '{@link Metamodell.Solid#getArea <em>Area</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Area</em>'.
+	 * @see Metamodell.Solid#getArea()
+	 * @see #getSolid()
+	 * @generated
+	 */
+	EReference getSolid_Area();
 
 	/**
 	 * Returns the meta object for class '{@link Metamodell.Color <em>Color</em>}'.
@@ -727,6 +767,14 @@ public interface MetamodellPackage extends EPackage {
 		EReference FACET__COLOR = eINSTANCE.getFacet_Color();
 
 		/**
+		 * The meta object literal for the '<em><b>Area</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACET__AREA = eINSTANCE.getFacet_Area();
+
+		/**
 		 * The meta object literal for the '{@link Metamodell.impl.EdgeImpl <em>Edge</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -779,7 +827,7 @@ public interface MetamodellPackage extends EPackage {
 		EClass AREA = eINSTANCE.getArea();
 
 		/**
-		 * The meta object literal for the '<em><b>Facets</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Facets</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -811,6 +859,14 @@ public interface MetamodellPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SOLID__FACETS = eINSTANCE.getSolid_Facets();
+
+		/**
+		 * The meta object literal for the '<em><b>Area</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SOLID__AREA = eINSTANCE.getSolid_Area();
 
 		/**
 		 * The meta object literal for the '{@link Metamodell.impl.ColorImpl <em>Color</em>}' class.

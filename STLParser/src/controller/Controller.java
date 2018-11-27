@@ -23,8 +23,10 @@ public class Controller {
 						   f2.getNormal().getZ()*f2.getNormal().getZ());
 							
 			
-			e.setDegree(Math.cos(scalar/mult));
+			e.setDegree(Math.acos(scalar/mult));
 		}
+		
+		
 		
 	}
 

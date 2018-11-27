@@ -14,6 +14,7 @@ class Facet {
 	ref Vector3f normal;
 	ref Edge[3] edges;
 	ref Color color;
+	ref Area area;
 }
 
 class Edge {
@@ -25,12 +26,13 @@ class Edge {
 
 class Area {
 	
-	ref Facet[*] facets;
+	val Facet[*] #area facets;
 }
 
 class Solid {
 	attr EString name;
 	val Facet[*] #solid facets;
+	ref Area[*] area;
 }
 
 class Color {

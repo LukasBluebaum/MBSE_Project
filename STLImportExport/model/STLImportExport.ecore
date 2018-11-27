@@ -21,6 +21,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="EdgeRule__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__facet1" lowerBound="1"
         eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__n" lowerBound="1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__s" lowerBound="1"
         eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__vec1" lowerBound="1"
@@ -43,14 +45,40 @@
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__facet2" lowerBound="1"
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__normal" lowerBound="1"
+        eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__solid" lowerBound="1"
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__n2n" lowerBound="1"
+        eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__v1v" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//VectorToVector"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__v2v" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//VectorToVector"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__v3v" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//VectorToVector"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EdgeRule2__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__facet" lowerBound="1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__vector1" lowerBound="1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__vector2" lowerBound="1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__vector3" lowerBound="1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__a" lowerBound="1"
+        eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__b" lowerBound="1"
+        eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__edge" lowerBound="1"
+        eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__fac" lowerBound="1"
+        eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__fac2" lowerBound="1"
+        eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__f2f" lowerBound="1"
+        eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SolidRule__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__s" lowerBound="1"

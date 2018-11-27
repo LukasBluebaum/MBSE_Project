@@ -15,6 +15,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/normal"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/edges"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/color"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/area"/>
     </genClasses>
     <genClasses ecoreClass="Metamodell.ecore#//Edge">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Edge/a"/>
@@ -23,11 +24,12 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Edge/f"/>
     </genClasses>
     <genClasses ecoreClass="Metamodell.ecore#//Area">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Area/facets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Area/facets"/>
     </genClasses>
     <genClasses ecoreClass="Metamodell.ecore#//Solid">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Solid/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Solid/facets"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Solid/area"/>
     </genClasses>
     <genClasses ecoreClass="Metamodell.ecore#//Color">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Color/r"/>

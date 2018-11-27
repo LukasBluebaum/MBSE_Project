@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link Metamodell.Solid#getName <em>Name</em>}</li>
  *   <li>{@link Metamodell.Solid#getFacets <em>Facets</em>}</li>
+ *   <li>{@link Metamodell.Solid#getArea <em>Area</em>}</li>
  * </ul>
  * </p>
  *
@@ -69,6 +70,22 @@ public interface Solid extends EObject {
 	 * @generated
 	 */
 	EList<Facet> getFacets();
+
+	/**
+	 * Returns the value of the '<em><b>Area</b></em>' reference list.
+	 * The list contents are of type {@link Metamodell.Area}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Area</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Area</em>' reference list.
+	 * @see Metamodell.MetamodellPackage#getSolid_Area()
+	 * @model
+	 * @generated
+	 */
+	EList<Area> getArea();
 	// <-- [user code injected with eMoflon]
 
 	// [user code injected with eMoflon] -->

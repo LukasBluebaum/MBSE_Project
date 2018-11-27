@@ -2,6 +2,7 @@
  */
 package Metamodell.impl;
 
+import Metamodell.Area;
 import Metamodell.Color;
 import Metamodell.Edge;
 import Metamodell.Facet;
@@ -38,6 +39,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *   <li>{@link Metamodell.impl.FacetImpl#getNormal <em>Normal</em>}</li>
  *   <li>{@link Metamodell.impl.FacetImpl#getEdges <em>Edges</em>}</li>
  *   <li>{@link Metamodell.impl.FacetImpl#getColor <em>Color</em>}</li>
+ *   <li>{@link Metamodell.impl.FacetImpl#getArea <em>Area</em>}</li>
  * </ul>
  * </p>
  *
@@ -73,6 +75,16 @@ public class FacetImpl extends EObjectImpl implements Facet {
 	 * @ordered
 	 */
 	protected Color color;
+
+	/**
+	 * The cached value of the '{@link #getArea() <em>Area</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getArea()
+	 * @generated
+	 * @ordered
+	 */
+	protected Area area;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -232,6 +244,45 @@ public class FacetImpl extends EObjectImpl implements Facet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Area getArea() {
+		if (area != null && area.eIsProxy()) {
+			InternalEObject oldArea = (InternalEObject) area;
+			area = (Area) eResolveProxy(oldArea);
+			if (area != oldArea) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetamodellPackage.FACET__AREA, oldArea,
+							area));
+			}
+		}
+		return area;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Area basicGetArea() {
+		return area;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setArea(Area newArea) {
+		Area oldArea = area;
+		area = newArea;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MetamodellPackage.FACET__AREA, oldArea, area));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -291,6 +342,10 @@ public class FacetImpl extends EObjectImpl implements Facet {
 			if (resolve)
 				return getColor();
 			return basicGetColor();
+		case MetamodellPackage.FACET__AREA:
+			if (resolve)
+				return getArea();
+			return basicGetArea();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -317,6 +372,9 @@ public class FacetImpl extends EObjectImpl implements Facet {
 		case MetamodellPackage.FACET__COLOR:
 			setColor((Color) newValue);
 			return;
+		case MetamodellPackage.FACET__AREA:
+			setArea((Area) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -341,6 +399,9 @@ public class FacetImpl extends EObjectImpl implements Facet {
 		case MetamodellPackage.FACET__COLOR:
 			setColor((Color) null);
 			return;
+		case MetamodellPackage.FACET__AREA:
+			setArea((Area) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -361,6 +422,8 @@ public class FacetImpl extends EObjectImpl implements Facet {
 			return edges != null && !edges.isEmpty();
 		case MetamodellPackage.FACET__COLOR:
 			return color != null;
+		case MetamodellPackage.FACET__AREA:
+			return area != null;
 		}
 		return super.eIsSet(featureID);
 	}

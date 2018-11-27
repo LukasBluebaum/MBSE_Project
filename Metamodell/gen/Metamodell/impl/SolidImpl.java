@@ -2,6 +2,7 @@
  */
 package Metamodell.impl;
 
+import Metamodell.Area;
 import Metamodell.Facet;
 import Metamodell.MetamodellPackage;
 import Metamodell.Solid;
@@ -20,6 +21,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 // <-- [user defined imports]
 // [user defined imports] -->
@@ -33,6 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link Metamodell.impl.SolidImpl#getName <em>Name</em>}</li>
  *   <li>{@link Metamodell.impl.SolidImpl#getFacets <em>Facets</em>}</li>
+ *   <li>{@link Metamodell.impl.SolidImpl#getArea <em>Area</em>}</li>
  * </ul>
  * </p>
  *
@@ -68,6 +71,16 @@ public class SolidImpl extends EObjectImpl implements Solid {
 	 * @ordered
 	 */
 	protected EList<Facet> facets;
+
+	/**
+	 * The cached value of the '{@link #getArea() <em>Area</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getArea()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Area> area;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -127,6 +140,18 @@ public class SolidImpl extends EObjectImpl implements Solid {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<Area> getArea() {
+		if (area == null) {
+			area = new EObjectResolvingEList<Area>(Area.class, this, MetamodellPackage.SOLID__AREA);
+		}
+		return area;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -163,6 +188,8 @@ public class SolidImpl extends EObjectImpl implements Solid {
 			return getName();
 		case MetamodellPackage.SOLID__FACETS:
 			return getFacets();
+		case MetamodellPackage.SOLID__AREA:
+			return getArea();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -183,6 +210,10 @@ public class SolidImpl extends EObjectImpl implements Solid {
 			getFacets().clear();
 			getFacets().addAll((Collection<? extends Facet>) newValue);
 			return;
+		case MetamodellPackage.SOLID__AREA:
+			getArea().clear();
+			getArea().addAll((Collection<? extends Area>) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -201,6 +232,9 @@ public class SolidImpl extends EObjectImpl implements Solid {
 		case MetamodellPackage.SOLID__FACETS:
 			getFacets().clear();
 			return;
+		case MetamodellPackage.SOLID__AREA:
+			getArea().clear();
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -217,6 +251,8 @@ public class SolidImpl extends EObjectImpl implements Solid {
 			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		case MetamodellPackage.SOLID__FACETS:
 			return facets != null && !facets.isEmpty();
+		case MetamodellPackage.SOLID__AREA:
+			return area != null && !area.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
