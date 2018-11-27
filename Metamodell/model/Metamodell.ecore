@@ -11,6 +11,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="z" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Facet">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solid" lowerBound="1" eType="#//Solid"
+        eOpposite="#//Solid/facets"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="normal" eType="#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="edges" lowerBound="3" upperBound="3"
         eType="#//Edge"/>
@@ -19,13 +21,18 @@
   <eClassifiers xsi:type="ecore:EClass" name="Edge">
     <eStructuralFeatures xsi:type="ecore:EReference" name="a" eType="#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="b" eType="#//Vector3f"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="degree" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="f" lowerBound="1" upperBound="2"
+        eType="#//Facet"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Area">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="facets" upperBound="-1"
         eType="#//Facet"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Solid">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="facets" upperBound="-1"
-        eType="#//Facet"/>
+        eType="#//Facet" containment="true" eOpposite="#//Facet/solid"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Color">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="r" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>

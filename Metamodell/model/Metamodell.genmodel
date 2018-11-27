@@ -11,6 +11,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Vector3f/z"/>
     </genClasses>
     <genClasses ecoreClass="Metamodell.ecore#//Facet">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/solid"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/normal"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/edges"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/color"/>
@@ -18,11 +19,15 @@
     <genClasses ecoreClass="Metamodell.ecore#//Edge">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Edge/a"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Edge/b"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Edge/degree"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Edge/f"/>
+    </genClasses>
+    <genClasses ecoreClass="Metamodell.ecore#//Area">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Area/facets"/>
     </genClasses>
     <genClasses ecoreClass="Metamodell.ecore#//Solid">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Solid/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Solid/facets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Solid/facets"/>
     </genClasses>
     <genClasses ecoreClass="Metamodell.ecore#//Color">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Color/r"/>

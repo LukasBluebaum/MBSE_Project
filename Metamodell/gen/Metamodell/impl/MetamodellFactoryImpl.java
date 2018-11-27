@@ -62,6 +62,8 @@ public class MetamodellFactoryImpl extends EFactoryImpl implements MetamodellFac
 			return createFacet();
 		case MetamodellPackage.EDGE:
 			return createEdge();
+		case MetamodellPackage.AREA:
+			return createArea();
 		case MetamodellPackage.SOLID:
 			return createSolid();
 		case MetamodellPackage.COLOR:
@@ -99,6 +101,16 @@ public class MetamodellFactoryImpl extends EFactoryImpl implements MetamodellFac
 	public Edge createEdge() {
 		EdgeImpl edge = new EdgeImpl();
 		return edge;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Area createArea() {
+		AreaImpl area = new AreaImpl();
+		return area;
 	}
 
 	/**

@@ -14,6 +14,10 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NormalToNormal">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EdgeRule__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__facet1" lowerBound="1"
         eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>

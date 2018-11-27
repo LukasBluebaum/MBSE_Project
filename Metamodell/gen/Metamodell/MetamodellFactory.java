@@ -49,6 +49,15 @@ public interface MetamodellFactory extends EFactory {
 	Edge createEdge();
 
 	/**
+	 * Returns a new object of class '<em>Area</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Area</em>'.
+	 * @generated
+	 */
+	Area createArea();
+
+	/**
 	 * Returns a new object of class '<em>Solid</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

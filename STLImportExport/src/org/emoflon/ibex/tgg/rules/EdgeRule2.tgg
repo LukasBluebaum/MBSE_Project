@@ -1,0 +1,20 @@
+#using STLImportExport.*
+#using AttrCondDefLibrary.*
+
+#rule EdgeRule2 #with STLImportExport
+
+#source { 
+	
+}
+
+#target {
+	
+}
+
+#correspondence {
+	
+}
+
+#attributeConditions {
+	
+}

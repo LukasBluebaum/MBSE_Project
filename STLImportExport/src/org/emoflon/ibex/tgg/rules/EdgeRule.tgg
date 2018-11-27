@@ -11,6 +11,7 @@
 	
 	
     ++ facet1:myDsl.Facet{
+    	++ -normal->n
         ++ -v1-> vec1
         ++ -v2-> vec2
         ++ -v3-> vec3
@@ -20,6 +21,7 @@
     ++ vec1:myDsl.Vector
     ++ vec2:myDsl.Vector
     ++ vec3:myDsl.Vector
+    ++ n:myDsl.Normalvector
     
 }
 
@@ -30,29 +32,37 @@
 	}
 	
     ++ facet2:Metamodell.Facet {
+    	++-normal->normal
         ++-edges->e1
         ++-edges->e2
         ++-edges->e3
     }
     
+    ++normal:Metamodell.Vector3f
+    
     ++ e1:Metamodell.Edge{
+    	++-f->facet2
         ++-a->a1
         ++-b->b1
     }
     
 
     ++ e2:Metamodell.Edge{
+    	++-f->facet2
         ++-a->b1
         ++-b->c1
     }
     
     ++ e3:Metamodell.Edge{
+    	++-f->facet2
         ++-a->c1
         ++-b->a1
     }
     
     
-    ++a1:Metamodell.Vector3f
+    ++a1:Metamodell.Vector3f{
+    	
+    }
     ++b1:Metamodell.Vector3f
     ++c1:Metamodell.Vector3f
     
@@ -74,6 +84,11 @@
         #src->vec3
         #trg->c1
         
+    }
+    
+    ++n2n:NormalToNormal{
+    	#src->n
+    	#trg->normal
     }
 }
 

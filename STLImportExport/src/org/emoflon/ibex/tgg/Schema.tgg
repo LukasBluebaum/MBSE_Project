@@ -26,6 +26,11 @@
 		#src->myDsl.Vector
 		#trg->Metamodell.Vector3f
 	}
+	
+	NormalToNormal {
+		#src->myDsl.Normalvector
+		#trg->Metamodell.Vector3f
+	}
 }
 
 #attributeConditions {

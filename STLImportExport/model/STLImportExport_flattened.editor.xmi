@@ -17,6 +17,10 @@
       <source href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
       <target href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </correspondenceTypes>
+    <correspondenceTypes name="NormalToNormal">
+      <source href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
+      <target href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </correspondenceTypes>
     <attributeCondDefs name="eq_float">
       <params paramName="a">
         <type href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>

@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
+ *   <li>{@link Metamodell.Facet#getSolid <em>Solid</em>}</li>
  *   <li>{@link Metamodell.Facet#getNormal <em>Normal</em>}</li>
  *   <li>{@link Metamodell.Facet#getEdges <em>Edges</em>}</li>
  *   <li>{@link Metamodell.Facet#getColor <em>Color</em>}</li>
@@ -27,6 +28,34 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Facet extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Solid</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link Metamodell.Solid#getFacets <em>Facets</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Solid</em>' container reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Solid</em>' container reference.
+	 * @see #setSolid(Solid)
+	 * @see Metamodell.MetamodellPackage#getFacet_Solid()
+	 * @see Metamodell.Solid#getFacets
+	 * @model opposite="facets" required="true" transient="false"
+	 * @generated
+	 */
+	Solid getSolid();
+
+	/**
+	 * Sets the value of the '{@link Metamodell.Facet#getSolid <em>Solid</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Solid</em>' container reference.
+	 * @see #getSolid()
+	 * @generated
+	 */
+	void setSolid(Solid value);
+
 	/**
 	 * Returns the value of the '<em><b>Normal</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -6,11 +6,13 @@ import Metamodell.Color;
 import Metamodell.Edge;
 import Metamodell.Facet;
 import Metamodell.MetamodellPackage;
+import Metamodell.Solid;
 import Metamodell.Vector3f;
 
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -21,6 +23,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 // <-- [user defined imports]
 // [user defined imports] -->
 
@@ -31,6 +34,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * <p>
  * The following features are implemented:
  * <ul>
+ *   <li>{@link Metamodell.impl.FacetImpl#getSolid <em>Solid</em>}</li>
  *   <li>{@link Metamodell.impl.FacetImpl#getNormal <em>Normal</em>}</li>
  *   <li>{@link Metamodell.impl.FacetImpl#getEdges <em>Edges</em>}</li>
  *   <li>{@link Metamodell.impl.FacetImpl#getColor <em>Color</em>}</li>
@@ -87,6 +91,50 @@ public class FacetImpl extends EObjectImpl implements Facet {
 	@Override
 	protected EClass eStaticClass() {
 		return MetamodellPackage.Literals.FACET;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Solid getSolid() {
+		if (eContainerFeatureID() != MetamodellPackage.FACET__SOLID)
+			return null;
+		return (Solid) eContainer();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetSolid(Solid newSolid, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject) newSolid, MetamodellPackage.FACET__SOLID, msgs);
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setSolid(Solid newSolid) {
+		if (newSolid != eInternalContainer()
+				|| (eContainerFeatureID() != MetamodellPackage.FACET__SOLID && newSolid != null)) {
+			if (EcoreUtil.isAncestor(this, newSolid))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newSolid != null)
+				msgs = ((InternalEObject) newSolid).eInverseAdd(this, MetamodellPackage.SOLID__FACETS, Solid.class,
+						msgs);
+			msgs = basicSetSolid(newSolid, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MetamodellPackage.FACET__SOLID, newSolid, newSolid));
 	}
 
 	/**
@@ -185,8 +233,54 @@ public class FacetImpl extends EObjectImpl implements Facet {
 	 * @generated
 	 */
 	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case MetamodellPackage.FACET__SOLID:
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			return basicSetSolid((Solid) otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case MetamodellPackage.FACET__SOLID:
+			return basicSetSolid(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+		case MetamodellPackage.FACET__SOLID:
+			return eInternalContainer().eInverseRemove(this, MetamodellPackage.SOLID__FACETS, Solid.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+		case MetamodellPackage.FACET__SOLID:
+			return getSolid();
 		case MetamodellPackage.FACET__NORMAL:
 			if (resolve)
 				return getNormal();
@@ -210,6 +304,9 @@ public class FacetImpl extends EObjectImpl implements Facet {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+		case MetamodellPackage.FACET__SOLID:
+			setSolid((Solid) newValue);
+			return;
 		case MetamodellPackage.FACET__NORMAL:
 			setNormal((Vector3f) newValue);
 			return;
@@ -232,6 +329,9 @@ public class FacetImpl extends EObjectImpl implements Facet {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+		case MetamodellPackage.FACET__SOLID:
+			setSolid((Solid) null);
+			return;
 		case MetamodellPackage.FACET__NORMAL:
 			setNormal((Vector3f) null);
 			return;
@@ -253,6 +353,8 @@ public class FacetImpl extends EObjectImpl implements Facet {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+		case MetamodellPackage.FACET__SOLID:
+			return getSolid() != null;
 		case MetamodellPackage.FACET__NORMAL:
 			return normal != null;
 		case MetamodellPackage.FACET__EDGES:

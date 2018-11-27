@@ -6,9 +6,11 @@ class Vector3f {
 	attr EFloat x;
 	attr EFloat y;
 	attr EFloat z;
+
 }
 
 class Facet {
+	ref Solid[1]#facets solid;
 	ref Vector3f normal;
 	ref Edge[3] edges;
 	ref Color color;
@@ -17,12 +19,18 @@ class Facet {
 class Edge {
 	ref Vector3f a;
 	ref Vector3f b;
+	attr EDouble degree;
 	ref Facet[1..2] f;
+}
+
+class Area {
+	
+	ref Facet[*] facets;
 }
 
 class Solid {
 	attr EString name;
-	ref Facet[*] facets;
+	val Facet[*] #solid facets;
 }
 
 class Color {

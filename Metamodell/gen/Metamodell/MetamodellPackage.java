@@ -125,13 +125,22 @@ public interface MetamodellPackage extends EPackage {
 	int FACET = 1;
 
 	/**
+	 * The feature id for the '<em><b>Solid</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACET__SOLID = 0;
+
+	/**
 	 * The feature id for the '<em><b>Normal</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACET__NORMAL = 0;
+	int FACET__NORMAL = 1;
 
 	/**
 	 * The feature id for the '<em><b>Edges</b></em>' reference list.
@@ -140,7 +149,7 @@ public interface MetamodellPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACET__EDGES = 1;
+	int FACET__EDGES = 2;
 
 	/**
 	 * The feature id for the '<em><b>Color</b></em>' reference.
@@ -149,7 +158,7 @@ public interface MetamodellPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACET__COLOR = 2;
+	int FACET__COLOR = 3;
 
 	/**
 	 * The number of structural features of the '<em>Facet</em>' class.
@@ -158,7 +167,7 @@ public interface MetamodellPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACET_FEATURE_COUNT = 3;
+	int FACET_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Facet</em>' class.
@@ -198,13 +207,22 @@ public interface MetamodellPackage extends EPackage {
 	int EDGE__B = 1;
 
 	/**
+	 * The feature id for the '<em><b>Degree</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EDGE__DEGREE = 2;
+
+	/**
 	 * The feature id for the '<em><b>F</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE__F = 2;
+	int EDGE__F = 3;
 
 	/**
 	 * The number of structural features of the '<em>Edge</em>' class.
@@ -213,7 +231,7 @@ public interface MetamodellPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE_FEATURE_COUNT = 3;
+	int EDGE_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Edge</em>' class.
@@ -225,6 +243,43 @@ public interface MetamodellPackage extends EPackage {
 	int EDGE_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link Metamodell.impl.AreaImpl <em>Area</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Metamodell.impl.AreaImpl
+	 * @see Metamodell.impl.MetamodellPackageImpl#getArea()
+	 * @generated
+	 */
+	int AREA = 3;
+
+	/**
+	 * The feature id for the '<em><b>Facets</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AREA__FACETS = 0;
+
+	/**
+	 * The number of structural features of the '<em>Area</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AREA_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Area</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AREA_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link Metamodell.impl.SolidImpl <em>Solid</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -232,7 +287,7 @@ public interface MetamodellPackage extends EPackage {
 	 * @see Metamodell.impl.MetamodellPackageImpl#getSolid()
 	 * @generated
 	 */
-	int SOLID = 3;
+	int SOLID = 4;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -244,7 +299,7 @@ public interface MetamodellPackage extends EPackage {
 	int SOLID__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Facets</b></em>' reference list.
+	 * The feature id for the '<em><b>Facets</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -278,7 +333,7 @@ public interface MetamodellPackage extends EPackage {
 	 * @see Metamodell.impl.MetamodellPackageImpl#getColor()
 	 * @generated
 	 */
-	int COLOR = 4;
+	int COLOR = 5;
 
 	/**
 	 * The feature id for the '<em><b>R</b></em>' attribute.
@@ -379,6 +434,17 @@ public interface MetamodellPackage extends EPackage {
 	EClass getFacet();
 
 	/**
+	 * Returns the meta object for the container reference '{@link Metamodell.Facet#getSolid <em>Solid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Solid</em>'.
+	 * @see Metamodell.Facet#getSolid()
+	 * @see #getFacet()
+	 * @generated
+	 */
+	EReference getFacet_Solid();
+
+	/**
 	 * Returns the meta object for the reference '{@link Metamodell.Facet#getNormal <em>Normal</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -444,6 +510,17 @@ public interface MetamodellPackage extends EPackage {
 	EReference getEdge_B();
 
 	/**
+	 * Returns the meta object for the attribute '{@link Metamodell.Edge#getDegree <em>Degree</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Degree</em>'.
+	 * @see Metamodell.Edge#getDegree()
+	 * @see #getEdge()
+	 * @generated
+	 */
+	EAttribute getEdge_Degree();
+
+	/**
 	 * Returns the meta object for the reference list '{@link Metamodell.Edge#getF <em>F</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -453,6 +530,27 @@ public interface MetamodellPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getEdge_F();
+
+	/**
+	 * Returns the meta object for class '{@link Metamodell.Area <em>Area</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Area</em>'.
+	 * @see Metamodell.Area
+	 * @generated
+	 */
+	EClass getArea();
+
+	/**
+	 * Returns the meta object for the reference list '{@link Metamodell.Area#getFacets <em>Facets</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Facets</em>'.
+	 * @see Metamodell.Area#getFacets()
+	 * @see #getArea()
+	 * @generated
+	 */
+	EReference getArea_Facets();
 
 	/**
 	 * Returns the meta object for class '{@link Metamodell.Solid <em>Solid</em>}'.
@@ -476,10 +574,10 @@ public interface MetamodellPackage extends EPackage {
 	EAttribute getSolid_Name();
 
 	/**
-	 * Returns the meta object for the reference list '{@link Metamodell.Solid#getFacets <em>Facets</em>}'.
+	 * Returns the meta object for the containment reference list '{@link Metamodell.Solid#getFacets <em>Facets</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Facets</em>'.
+	 * @return the meta object for the containment reference list '<em>Facets</em>'.
 	 * @see Metamodell.Solid#getFacets()
 	 * @see #getSolid()
 	 * @generated
@@ -597,6 +695,14 @@ public interface MetamodellPackage extends EPackage {
 		EClass FACET = eINSTANCE.getFacet();
 
 		/**
+		 * The meta object literal for the '<em><b>Solid</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACET__SOLID = eINSTANCE.getFacet_Solid();
+
+		/**
 		 * The meta object literal for the '<em><b>Normal</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -647,12 +753,38 @@ public interface MetamodellPackage extends EPackage {
 		EReference EDGE__B = eINSTANCE.getEdge_B();
 
 		/**
+		 * The meta object literal for the '<em><b>Degree</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EDGE__DEGREE = eINSTANCE.getEdge_Degree();
+
+		/**
 		 * The meta object literal for the '<em><b>F</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference EDGE__F = eINSTANCE.getEdge_F();
+
+		/**
+		 * The meta object literal for the '{@link Metamodell.impl.AreaImpl <em>Area</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Metamodell.impl.AreaImpl
+		 * @see Metamodell.impl.MetamodellPackageImpl#getArea()
+		 * @generated
+		 */
+		EClass AREA = eINSTANCE.getArea();
+
+		/**
+		 * The meta object literal for the '<em><b>Facets</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference AREA__FACETS = eINSTANCE.getArea_Facets();
 
 		/**
 		 * The meta object literal for the '{@link Metamodell.impl.SolidImpl <em>Solid</em>}' class.
@@ -673,7 +805,7 @@ public interface MetamodellPackage extends EPackage {
 		EAttribute SOLID__NAME = eINSTANCE.getSolid_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Facets</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Facets</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

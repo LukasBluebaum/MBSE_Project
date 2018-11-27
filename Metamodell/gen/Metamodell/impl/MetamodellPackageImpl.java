@@ -2,6 +2,7 @@
  */
 package Metamodell.impl;
 
+import Metamodell.Area;
 import Metamodell.Color;
 import Metamodell.Edge;
 import Metamodell.Facet;
@@ -44,6 +45,13 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * @generated
 	 */
 	private EClass edgeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass areaEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,7 +181,7 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFacet_Normal() {
+	public EReference getFacet_Solid() {
 		return (EReference) facetEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -182,7 +190,7 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFacet_Edges() {
+	public EReference getFacet_Normal() {
 		return (EReference) facetEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -191,8 +199,17 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFacet_Color() {
+	public EReference getFacet_Edges() {
 		return (EReference) facetEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFacet_Color() {
+		return (EReference) facetEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -227,8 +244,35 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getEdge_Degree() {
+		return (EAttribute) edgeEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EReference getEdge_F() {
-		return (EReference) edgeEClass.getEStructuralFeatures().get(2);
+		return (EReference) edgeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getArea() {
+		return areaEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getArea_Facets() {
+		return (EReference) areaEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -329,6 +373,7 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 		createEAttribute(vector3fEClass, VECTOR3F__Z);
 
 		facetEClass = createEClass(FACET);
+		createEReference(facetEClass, FACET__SOLID);
 		createEReference(facetEClass, FACET__NORMAL);
 		createEReference(facetEClass, FACET__EDGES);
 		createEReference(facetEClass, FACET__COLOR);
@@ -336,7 +381,11 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 		edgeEClass = createEClass(EDGE);
 		createEReference(edgeEClass, EDGE__A);
 		createEReference(edgeEClass, EDGE__B);
+		createEAttribute(edgeEClass, EDGE__DEGREE);
 		createEReference(edgeEClass, EDGE__F);
+
+		areaEClass = createEClass(AREA);
+		createEReference(areaEClass, AREA__FACETS);
 
 		solidEClass = createEClass(SOLID);
 		createEAttribute(solidEClass, SOLID__NAME);
@@ -389,6 +438,9 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(facetEClass, Facet.class, "Facet", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getFacet_Solid(), this.getSolid(), this.getSolid_Facets(), "solid", null, 1, 1, Facet.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFacet_Normal(), this.getVector3f(), null, "normal", null, 0, 1, Facet.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
@@ -404,15 +456,22 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEdge_B(), this.getVector3f(), null, "b", null, 0, 1, Edge.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEdge_Degree(), ecorePackage.getEDouble(), "degree", null, 0, 1, Edge.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEdge_F(), this.getFacet(), null, "f", null, 1, 2, Edge.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(areaEClass, Area.class, "Area", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getArea_Facets(), this.getFacet(), null, "facets", null, 0, -1, Area.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
 
 		initEClass(solidEClass, Solid.class, "Solid", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSolid_Name(), ecorePackage.getEString(), "name", null, 0, 1, Solid.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSolid_Facets(), this.getFacet(), null, "facets", null, 0, -1, Solid.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
+		initEReference(getSolid_Facets(), this.getFacet(), this.getFacet_Solid(), "facets", null, 0, -1, Solid.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(colorEClass, Color.class, "Color", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getColor_R(), ecorePackage.getEInt(), "r", null, 0, 1, Color.class, !IS_TRANSIENT, !IS_VOLATILE,

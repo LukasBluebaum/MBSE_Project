@@ -3,8 +3,7 @@ package parser;
 import java.io.IOException;
 import java.util.Optional;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+
 import org.emoflon.ibex.tgg.operational.strategies.sync.SYNC;
 import org.emoflon.ibex.tgg.run.stlimportexport.SYNC_App;
 import org.xtext.example.mydsl.api.RunParser;

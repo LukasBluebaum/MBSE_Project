@@ -82,6 +82,11 @@ public class MetamodellAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseArea(Area object) {
+			return createAreaAdapter();
+		}
+
+		@Override
 		public Adapter caseSolid(Solid object) {
 			return createSolidAdapter();
 		}
@@ -149,6 +154,20 @@ public class MetamodellAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEdgeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Metamodell.Area <em>Area</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Metamodell.Area
+	 * @generated
+	 */
+	public Adapter createAreaAdapter() {
 		return null;
 	}
 

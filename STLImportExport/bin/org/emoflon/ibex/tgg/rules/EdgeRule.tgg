@@ -52,7 +52,9 @@
     }
     
     
-    ++a1:Metamodell.Vector3f
+    ++a1:Metamodell.Vector3f{
+    	
+    }
     ++b1:Metamodell.Vector3f
     ++c1:Metamodell.Vector3f
     
