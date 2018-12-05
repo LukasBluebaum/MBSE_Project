@@ -3,40 +3,40 @@
 package Metamodell;
 
 class Vector3f {
-	attr EFloat x;
-	attr EFloat y;
-	attr EFloat z;
+  attr EFloat x;
+  attr EFloat y;
+  attr EFloat z;
 
 }
 
 class Facet {
-	ref Solid[1]#facets solid;
-	ref Vector3f normal;
-	ref Edge[3] edges;
-	ref Color color;
-	ref Area area;
+  ref Solid[1]#facets solid;
+  ref Vector3f normal;
+  ref Edge[3] edges;
+  ref Color color;
+  ref Area area;
 }
 
 class Edge {
-	ref Vector3f a;
-	ref Vector3f b;
-	attr EDouble degree;
-	ref Facet[1..2] f;
+  ref Vector3f a;
+  ref Vector3f b;
+  attr EDouble degree;
+  ref Facet[1..2] f;
 }
 
 class Area {
-	
-	val Facet[*] #area facets;
+  
+  val Facet[*] #area facets;
 }
 
 class Solid {
-	attr EString name;
-	val Facet[*] #solid facets;
-	ref Area[*] area;
+  attr EString name;
+  val Facet[*] #solid facets;
+  ref Area[*] area;
 }
 
 class Color {
-	attr EInt r;
-	attr EInt g;
-	attr EInt b;
+  attr EInt r;
+  attr EInt g;
+  attr EInt b;
 }

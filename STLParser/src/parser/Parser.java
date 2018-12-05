@@ -3,7 +3,7 @@ package parser;
 import java.io.IOException;
 import java.util.Optional;
 
-
+import org.emoflon.ibex.tgg.operational.matches.IMatch;
 import org.emoflon.ibex.tgg.operational.strategies.sync.SYNC;
 import org.emoflon.ibex.tgg.run.stlimportexport.SYNC_App;
 import org.xtext.example.mydsl.api.RunParser;
@@ -18,6 +18,28 @@ public class Parser {
 			sync.terminate();
 
 		sync = new SYNC_App();
+		sync.setUpdatePolicy(matches -> {
+			for(IMatch m: matches.getMatches()) {
+				if(m.getRuleName().equals("SolidRule"))
+					
+					return m;
+				
+				if(m.getRuleName().equals("EdgeRule2")) {
+					System.out.println(m);
+					return m;
+				}
+				
+				if(m.getRuleName().equals("VectorRule2"))
+				{
+					System.out.println(m);
+					return m;
+				}
+				
+				
+				
+			}
+		return matches.getNext();	
+		});
 	}
 
 	private void initialiseBwdSynchroniser() throws IOException {
@@ -40,22 +62,33 @@ public class Parser {
 				sync.forward();
 				//System.out.println(sync.getTargetResource().getContents());
 				sync.saveModels();
-				
+				System.out.println(sync.getTargetResource().getContents());
 				Metamodell.Solid solid = (Metamodell.Solid) sync.getTargetResource().getContents().get(0);
 				System.out.println(solid.getFacets().get(0).getEdges().get(0).getA());
 				System.out.println(solid.getFacets().get(0).getEdges().get(0).getB());
+				System.out.println(solid.getFacets().get(0).getEdges().get(0).getF());
 				System.out.println(solid.getFacets().get(0).getEdges().get(1).getA());
 				System.out.println(solid.getFacets().get(0).getEdges().get(1).getB());
+				System.out.println(solid.getFacets().get(0).getEdges().get(1).getF());
 				System.out.println(solid.getFacets().get(0).getEdges().get(2).getA());
 				System.out.println(solid.getFacets().get(0).getEdges().get(2).getB());
-			
-				System.out.println(solid.getFacets().get(0).getEdges().get(0).getF());
-				System.out.println(solid.getFacets().get(0).getEdges().get(1).getF());
 				System.out.println(solid.getFacets().get(0).getEdges().get(2).getF());
-				
+				System.out.println("-----------------------");
+				System.out.println(solid.getFacets().get(1).getEdges().get(0).getA());
+				System.out.println(solid.getFacets().get(1).getEdges().get(0).getB());
 				System.out.println(solid.getFacets().get(1).getEdges().get(0).getF());
+				System.out.println(solid.getFacets().get(1).getEdges().get(1).getA());
+				System.out.println(solid.getFacets().get(1).getEdges().get(1).getB());
 				System.out.println(solid.getFacets().get(1).getEdges().get(1).getF());
+				System.out.println(solid.getFacets().get(1).getEdges().get(2).getA());
+				System.out.println(solid.getFacets().get(1).getEdges().get(2).getB());
 				System.out.println(solid.getFacets().get(1).getEdges().get(2).getF());
+				
+				
+			
+			
+				
+		
 				
 			} catch (IOException e) {
 				e.printStackTrace();

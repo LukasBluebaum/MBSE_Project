@@ -12,36 +12,51 @@
 
 	}
 	
-	++vector1:myDsl.Vector
-	++vector2:myDsl.Vector
-	++vector3:myDsl.Vector
+	vector1:myDsl.Vector
+	vector2:myDsl.Vector
+	vector3:myDsl.Vector
 	
 }
 
 #target {
 	
-	edge:Metamodell.Edge{
-		-a->a
-		-b->b
+	++edge2:Metamodell.Edge{
 		++-f->fac
-		-f->fac2
+		++-a->b1
+		++-b->c1
+		
+	}
+	
+	
+	++edge3:Metamodell.Edge{
+		++-f->fac
+		++-a->a1
+		++-b->c1
+		
+	}
+	
+	
+	edge:Metamodell.Edge{
+		-a->a1
+		-b->b1
+		++-f->fac	
+			
 		}
 		
-		a:Metamodell.Vector3f{
 					
-			
-		}
 		
-		b:Metamodell.Vector3f{
-			
-		}
 		
-		fac2:Metamodell.Facet{
-			-edges->edge
-		}
+	
 		++fac:Metamodell.Facet{
 			++-edges->edge
+			++-edges->edge2
+			++-edges->edge3
 		}
+		
+	  a1:Metamodell.Vector3f    
+   	  b1:Metamodell.Vector3f
+      c1:Metamodell.Vector3f
+			
 	}
 
 #correspondence {
@@ -49,17 +64,38 @@
 		#src->facet
 		#trg->fac
 	}	
+	
+	v2v:VectorToVector{
+		#src->vector1
+		#trg->a1
+	}
+		
+	
+ 	v3v:VectorToVector{
+		#src->vector2
+		#trg->b1
+	}
+	
+	++v4v:VectorToVector{
+		#src->vector3
+		#trg->c1
+	}
+	
 }
 
 #attributeConditions {
  
-   eq_float(vector1.x1,a.x)
-   eq_float(vector1.x2,a.y)
-   eq_float(vector1.x3,a.z)
+   eq_float(vector1.x1,a1.x)
+   eq_float(vector1.x2,a1.y)
+   eq_float(vector1.x3,a1.z)
    
-   eq_float(vector2.x1,b.x)
-   eq_float(vector2.x2,b.y)
-   eq_float(vector2.x3,b.z)
+   eq_float(vector2.x1,b1.x)
+   eq_float(vector2.x2,b1.y)
+   eq_float(vector2.x3,b1.z)
+   
+   eq_float(vector3.x1,c1.x)
+   eq_float(vector3.x2,c1.y)
+   eq_float(vector3.x3,c1.z)
 	
 	
 }

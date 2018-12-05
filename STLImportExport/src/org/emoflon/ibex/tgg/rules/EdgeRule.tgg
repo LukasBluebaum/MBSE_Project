@@ -19,9 +19,9 @@
         
     }
     
-    ++ vec1:myDsl.Vector
-    ++ vec2:myDsl.Vector
-    ++ vec3:myDsl.Vector
+      vec1:myDsl.Vector
+      vec2:myDsl.Vector
+      vec3:myDsl.Vector
     ++ n:myDsl.Normalvector
     
 }
@@ -61,11 +61,9 @@
     }
     
     
-    ++a1:Metamodell.Vector3f{
-    	
-    }
-    ++b1:Metamodell.Vector3f
-    ++c1:Metamodell.Vector3f
+    a1:Metamodell.Vector3f    
+    b1:Metamodell.Vector3f
+    c1:Metamodell.Vector3f
     
 }
 
@@ -106,4 +104,8 @@
    eq_float(vec3.x1,c1.x)
    eq_float(vec3.x2,c1.y)
    eq_float(vec3.x3,c1.z)
+   
+   eq_float(n.x1,normal.x)
+   eq_float(n.x2,normal.y)
+   eq_float(n.x3,normal.z)
 }

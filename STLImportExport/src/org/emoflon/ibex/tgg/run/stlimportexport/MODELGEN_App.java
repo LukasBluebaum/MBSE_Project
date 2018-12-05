@@ -30,7 +30,10 @@ public class MODELGEN_App extends MODELGEN {
 		
 		MODELGENStopCriterion stop = new MODELGENStopCriterion(generator.getTGG());
 		stop.setTimeOutInMS(1000);
-		stop.setMaxRuleCount("EdgeRule", 1);
+		stop.setMaxRuleCount("VectorRule", 1);
+		stop.setMaxRuleCount("VectorRule2", 1);
+		stop.setMaxRuleCount("SolidRule", 1);
+		stop.setMaxRuleCount("FacetRule", 1);
 		generator.setStopCriterion(stop);
 		
 		tic = System.currentTimeMillis();

@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.BasicConfigurator;
 
 import org.emoflon.ibex.tgg.operational.defaults.IbexOptions;
+import org.emoflon.ibex.tgg.operational.matches.IMatch;
 import org.emoflon.ibex.tgg.operational.strategies.sync.SYNC;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.emoflon.ibex.tgg.compiler.patterns.PatternSuffixes;
@@ -26,6 +27,14 @@ public class INITIAL_FWD_App extends SYNC {
 		logger.info("Starting INITIAL FWD");
 		long tic = System.currentTimeMillis();
 		INITIAL_FWD_App init_fwd = new INITIAL_FWD_App();
+		init_fwd.setUpdatePolicy(matches -> {
+			for(IMatch m: matches.getMatches()) {
+				if(m.getRuleName().equals("VectorRule2"))
+				
+				return m;
+			}
+		return matches.getNext();	
+		});
 		long toc = System.currentTimeMillis();
 		logger.info("Completed init for FWD in: " + (toc - tic) + " ms");
 		
@@ -45,7 +54,7 @@ public class INITIAL_FWD_App extends SYNC {
 	
 	@Override
 	public void loadModels() throws IOException {
-		s = createResource(options.projectPath() + "/instances/src.xmi");
+		s = loadResource(options.projectPath() + "/instances/src.xmi");
 		t = createResource(options.projectPath() + "/instances/trg.xmi");
 		c = createResource(options.projectPath() + "/instances/corr.xmi");
 		p = createResource(options.projectPath() + "/instances/protocol.xmi");
