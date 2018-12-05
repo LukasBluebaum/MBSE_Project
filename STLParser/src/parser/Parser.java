@@ -29,7 +29,14 @@ public class Parser {
 					return m;
 				}
 				
+							
 				if(m.getRuleName().equals("VectorRule2"))
+				{
+					System.out.println(m);
+					return m;
+				}
+				
+				if(m.getRuleName().equals("EdgeRule"))
 				{
 					System.out.println(m);
 					return m;

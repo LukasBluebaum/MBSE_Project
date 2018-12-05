@@ -5,97 +5,109 @@
 
 #source { 
 	
-	++facet:myDsl.Facet{
-		++-v1->vector1
-		++-v2->vector2
-		++-v3->vector3
-
+	s:Solid{
+		++-facets->facet1
 	}
 	
-	vector1:myDsl.Vector
-	vector2:myDsl.Vector
-	vector3:myDsl.Vector
 	
+    ++ facet1:myDsl.Facet{
+    	++ -normal->n
+        ++ -v1-> vec1
+        ++ -v2-> vec2
+        ++ -v3-> vec3
+        
+        
+    }
+    
+      vec1:myDsl.Vector
+      vec2:myDsl.Vector
+      vec3:myDsl.Vector
+    ++ n:myDsl.Normalvector
+    
 }
 
 #target {
 	
-	++edge2:Metamodell.Edge{
-		++-f->fac
-		++-a->b1
-		++-b->c1
-		
+	solid:Solid{
+		++-facets->facet2
 	}
 	
-	
-	++edge3:Metamodell.Edge{
-		++-f->fac
-		++-a->a1
-		++-b->c1
-		
-	}
-	
-	
-	edge:Metamodell.Edge{
-		-a->a1
-		-b->b1
-		++-f->fac	
-			
-		}
-		
-					
-		
-		
-	
-		++fac:Metamodell.Facet{
-			++-edges->edge
-			++-edges->edge2
-			++-edges->edge3
-		}
-		
-	  a1:Metamodell.Vector3f    
-   	  b1:Metamodell.Vector3f
-      c1:Metamodell.Vector3f
-			
-	}
+    ++ facet2:Metamodell.Facet {
+    	++-normal->normal
+        ++ - edges->e1
+
+        ++-edges->e2
+        ++-edges->e3
+    }
+    
+    ++normal:Metamodell.Vector3f
+    
+     e1:Metamodell.Edge{
+    	++-f->facet2
+        -a->a1
+        -b->b1
+        -f->_facet3
+    }
+    
+
+    ++ e2:Metamodell.Edge{
+    	++-f->facet2
+        ++-a->b1
+        ++-b->c1
+    }
+    
+    ++ e3:Metamodell.Edge{
+    	++-f->facet2
+        ++-a->c1
+        ++-b->a1
+    }
+    
+    _facet3:Metamodell.Facet
+    a1:Metamodell.Vector3f    
+    b1:Metamodell.Vector3f
+    c1:Metamodell.Vector3f
+    
+}
 
 #correspondence {
-	++f2f:FacetToFacet{
-		#src->facet
-		#trg->fac
-	}	
-	
-	v2v:VectorToVector{
-		#src->vector1
-		#trg->a1
-	}
-		
-	
- 	v3v:VectorToVector{
-		#src->vector2
-		#trg->b1
-	}
-	
-	++v4v:VectorToVector{
-		#src->vector3
-		#trg->c1
-	}
-	
+    ++v1v:VectorToVector{
+        #src->vec1
+        #trg->a1        
+        
+    }
+    
+    ++v2v:VectorToVector{
+        #src->vec2
+        #trg->b1
+    }
+    
+    ++v3v:VectorToVector{
+        #src->vec3
+        #trg->c1
+        
+    }
+    
+    ++n2n:NormalToNormal{
+    	#src->n
+    	#trg->normal
+    }
 }
 
 #attributeConditions {
- 
-   eq_float(vector1.x1,a1.x)
-   eq_float(vector1.x2,a1.y)
-   eq_float(vector1.x3,a1.z)
+    
+   eq_float(vec1.x1,a1.x)
+   eq_float(vec1.x2,a1.y)
+   eq_float(vec1.x3,a1.z)
    
-   eq_float(vector2.x1,b1.x)
-   eq_float(vector2.x2,b1.y)
-   eq_float(vector2.x3,b1.z)
+   eq_float(vec2.x1,b1.x)
+   eq_float(vec2.x2,b1.y)
+   eq_float(vec2.x3,b1.z)
    
-   eq_float(vector3.x1,c1.x)
-   eq_float(vector3.x2,c1.y)
-   eq_float(vector3.x3,c1.z)
-	
-	
+   eq_float(vec3.x1,c1.x)
+   eq_float(vec3.x2,c1.y)
+   eq_float(vec3.x3,c1.z)
+   
+   eq_float(n.x1,normal.x)
+   eq_float(n.x2,normal.y)
+   eq_float(n.x3,normal.z)
 }
