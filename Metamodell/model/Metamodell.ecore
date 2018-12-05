@@ -20,8 +20,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="area" eType="#//Area"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Edge">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="a" eType="#//Vector3f"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="b" eType="#//Vector3f"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="p" lowerBound="2" upperBound="2"
+        eType="#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="degree" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="f" lowerBound="1" upperBound="2"
         eType="#//Facet"/>

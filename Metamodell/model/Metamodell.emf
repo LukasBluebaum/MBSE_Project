@@ -18,8 +18,8 @@ class Facet {
 }
 
 class Edge {
-  ref Vector3f a;
-  ref Vector3f b;
+  ref Vector3f[2] p;
+
   attr EDouble degree;
   ref Facet[1..2] f;
 }

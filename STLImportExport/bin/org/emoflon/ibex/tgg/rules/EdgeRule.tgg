@@ -43,21 +43,21 @@
     
     ++ e1:Metamodell.Edge{
     	++-f->facet2
-        ++-a->a1
-        ++-b->b1
+        ++-p->a1
+        ++-p->b1
     }
     
 
     ++ e2:Metamodell.Edge{
     	++-f->facet2
-        ++-a->b1
-        ++-b->c1
+        ++-p->b1
+        ++-p->c1
     }
     
     ++ e3:Metamodell.Edge{
     	++-f->facet2
-        ++-a->c1
-        ++-b->a1
+        ++-p->c1
+        ++-p->a1
     }
     
     

@@ -36,12 +36,7 @@ public class Parser {
 					return m;
 				}
 				
-				if(m.getRuleName().equals("EdgeRule"))
-				{
-					System.out.println(m);
-					return m;
-				}
-				
+			
 				
 				
 			}
@@ -71,24 +66,19 @@ public class Parser {
 				sync.saveModels();
 				System.out.println(sync.getTargetResource().getContents());
 				Metamodell.Solid solid = (Metamodell.Solid) sync.getTargetResource().getContents().get(0);
-				System.out.println(solid.getFacets().get(0).getEdges().get(0).getA());
-				System.out.println(solid.getFacets().get(0).getEdges().get(0).getB());
+			
+				System.out.println(solid.getFacets().get(0).getEdges().get(0).getP());
 				System.out.println(solid.getFacets().get(0).getEdges().get(0).getF());
-				System.out.println(solid.getFacets().get(0).getEdges().get(1).getA());
-				System.out.println(solid.getFacets().get(0).getEdges().get(1).getB());
+				System.out.println(solid.getFacets().get(0).getEdges().get(1).getP());
 				System.out.println(solid.getFacets().get(0).getEdges().get(1).getF());
-				System.out.println(solid.getFacets().get(0).getEdges().get(2).getA());
-				System.out.println(solid.getFacets().get(0).getEdges().get(2).getB());
+				System.out.println(solid.getFacets().get(0).getEdges().get(2).getP());
 				System.out.println(solid.getFacets().get(0).getEdges().get(2).getF());
 				System.out.println("-----------------------");
-				System.out.println(solid.getFacets().get(1).getEdges().get(0).getA());
-				System.out.println(solid.getFacets().get(1).getEdges().get(0).getB());
+				System.out.println(solid.getFacets().get(1).getEdges().get(0).getP());
 				System.out.println(solid.getFacets().get(1).getEdges().get(0).getF());
-				System.out.println(solid.getFacets().get(1).getEdges().get(1).getA());
-				System.out.println(solid.getFacets().get(1).getEdges().get(1).getB());
+				System.out.println(solid.getFacets().get(1).getEdges().get(1).getP());
 				System.out.println(solid.getFacets().get(1).getEdges().get(1).getF());
-				System.out.println(solid.getFacets().get(1).getEdges().get(2).getA());
-				System.out.println(solid.getFacets().get(1).getEdges().get(2).getB());
+				System.out.println(solid.getFacets().get(1).getEdges().get(2).getP());
 				System.out.println(solid.getFacets().get(1).getEdges().get(2).getF());
 				
 				

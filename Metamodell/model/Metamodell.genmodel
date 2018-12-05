@@ -18,8 +18,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Facet/area"/>
     </genClasses>
     <genClasses ecoreClass="Metamodell.ecore#//Edge">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Edge/a"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Edge/b"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Edge/p"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Metamodell.ecore#//Edge/degree"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Metamodell.ecore#//Edge/f"/>
     </genClasses>

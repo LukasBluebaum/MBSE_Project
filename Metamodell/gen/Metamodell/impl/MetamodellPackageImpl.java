@@ -235,7 +235,7 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEdge_A() {
+	public EReference getEdge_P() {
 		return (EReference) edgeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -244,17 +244,8 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEdge_B() {
-		return (EReference) edgeEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getEdge_Degree() {
-		return (EAttribute) edgeEClass.getEStructuralFeatures().get(2);
+		return (EAttribute) edgeEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -263,7 +254,7 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * @generated
 	 */
 	public EReference getEdge_F() {
-		return (EReference) edgeEClass.getEStructuralFeatures().get(3);
+		return (EReference) edgeEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -398,8 +389,7 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 		createEReference(facetEClass, FACET__AREA);
 
 		edgeEClass = createEClass(EDGE);
-		createEReference(edgeEClass, EDGE__A);
-		createEReference(edgeEClass, EDGE__B);
+		createEReference(edgeEClass, EDGE__P);
 		createEAttribute(edgeEClass, EDGE__DEGREE);
 		createEReference(edgeEClass, EDGE__F);
 
@@ -475,9 +465,7 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 				IS_ORDERED);
 
 		initEClass(edgeEClass, Edge.class, "Edge", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getEdge_A(), this.getVector3f(), null, "a", null, 0, 1, Edge.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEdge_B(), this.getVector3f(), null, "b", null, 0, 1, Edge.class, !IS_TRANSIENT, !IS_VOLATILE,
+		initEReference(getEdge_P(), this.getVector3f(), null, "p", null, 2, 2, Edge.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEdge_Degree(), ecorePackage.getEDouble(), "degree", null, 0, 1, Edge.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

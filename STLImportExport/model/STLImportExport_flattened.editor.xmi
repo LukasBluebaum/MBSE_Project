@@ -117,11 +117,11 @@
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.0/@targetPatterns.0">
         <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
         <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="e2">
@@ -133,11 +133,11 @@
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
         <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.0/@targetPatterns.2">
         <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="e3">
@@ -149,11 +149,11 @@
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.0/@targetPatterns.2">
         <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.0/@targetPatterns.0">
         <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="facet2">
@@ -359,10 +359,10 @@
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.1/@targetPatterns.1">
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.1/@targetPatterns.2">
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.1/@targetPatterns.0">
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
@@ -377,11 +377,11 @@
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.1/@targetPatterns.2">
         <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.1/@targetPatterns.3">
         <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="e3">
@@ -393,11 +393,11 @@
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.1/@targetPatterns.3">
         <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
       <linkVariablePatterns target="//@rules.1/@targetPatterns.1">
         <op value="++"/>
-        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="facet2">

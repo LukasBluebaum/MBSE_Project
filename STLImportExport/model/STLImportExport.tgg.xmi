@@ -97,29 +97,29 @@
     <edges name="e1__f__facet2_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.9" trgNode="//@rules.0/@nodes.7">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
     </edges>
-    <edges name="e1__a__a1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.9" trgNode="//@rules.0/@nodes.12">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+    <edges name="e1__p__a1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.9" trgNode="//@rules.0/@nodes.12">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
     </edges>
-    <edges name="e1__b__b1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.9" trgNode="//@rules.0/@nodes.13">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
+    <edges name="e1__p__b1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.9" trgNode="//@rules.0/@nodes.13">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
     </edges>
     <edges name="e2__f__facet2_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.10" trgNode="//@rules.0/@nodes.7">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
     </edges>
-    <edges name="e2__a__b1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.10" trgNode="//@rules.0/@nodes.13">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+    <edges name="e2__p__b1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.10" trgNode="//@rules.0/@nodes.13">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
     </edges>
-    <edges name="e2__b__c1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.10" trgNode="//@rules.0/@nodes.14">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
+    <edges name="e2__p__c1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.10" trgNode="//@rules.0/@nodes.14">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
     </edges>
     <edges name="e3__f__facet2_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.11" trgNode="//@rules.0/@nodes.7">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
     </edges>
-    <edges name="e3__a__c1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.11" trgNode="//@rules.0/@nodes.14">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+    <edges name="e3__p__c1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.11" trgNode="//@rules.0/@nodes.14">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
     </edges>
-    <edges name="e3__b__a1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.11" trgNode="//@rules.0/@nodes.12">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
+    <edges name="e3__p__a1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.11" trgNode="//@rules.0/@nodes.12">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
     </edges>
     <edges name="facet2__solid__solid_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.7" trgNode="//@rules.0/@nodes.6">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/solid"/>
@@ -305,11 +305,11 @@
     <edges name="e1__f__facet2_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.9" trgNode="//@rules.1/@nodes.7">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
     </edges>
-    <edges name="e1__a__a1_eMoflonEdge" domainType="TRG" srcNode="//@rules.1/@nodes.9" trgNode="//@rules.1/@nodes.13">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+    <edges name="e1__p__a1_eMoflonEdge" domainType="TRG" srcNode="//@rules.1/@nodes.9" trgNode="//@rules.1/@nodes.13">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
     </edges>
-    <edges name="e1__b__b1_eMoflonEdge" domainType="TRG" srcNode="//@rules.1/@nodes.9" trgNode="//@rules.1/@nodes.14">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
+    <edges name="e1__p__b1_eMoflonEdge" domainType="TRG" srcNode="//@rules.1/@nodes.9" trgNode="//@rules.1/@nodes.14">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
     </edges>
     <edges name="e1__f___facet3_eMoflonEdge" domainType="TRG" srcNode="//@rules.1/@nodes.9" trgNode="//@rules.1/@nodes.12">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
@@ -317,20 +317,20 @@
     <edges name="e2__f__facet2_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.10" trgNode="//@rules.1/@nodes.7">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
     </edges>
-    <edges name="e2__a__b1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.10" trgNode="//@rules.1/@nodes.14">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+    <edges name="e2__p__b1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.10" trgNode="//@rules.1/@nodes.14">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
     </edges>
-    <edges name="e2__b__c1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.10" trgNode="//@rules.1/@nodes.15">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
+    <edges name="e2__p__c1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.10" trgNode="//@rules.1/@nodes.15">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
     </edges>
     <edges name="e3__f__facet2_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.11" trgNode="//@rules.1/@nodes.7">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
     </edges>
-    <edges name="e3__a__c1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.11" trgNode="//@rules.1/@nodes.15">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/a"/>
+    <edges name="e3__p__c1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.11" trgNode="//@rules.1/@nodes.15">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
     </edges>
-    <edges name="e3__b__a1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.11" trgNode="//@rules.1/@nodes.13">
-      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/b"/>
+    <edges name="e3__p__a1_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.11" trgNode="//@rules.1/@nodes.13">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
     </edges>
     <edges name="facet2__solid__solid_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.7" trgNode="//@rules.1/@nodes.6">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/solid"/>

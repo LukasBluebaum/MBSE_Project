@@ -198,22 +198,13 @@ public interface MetamodellPackage extends EPackage {
 	int EDGE = 2;
 
 	/**
-	 * The feature id for the '<em><b>A</b></em>' reference.
+	 * The feature id for the '<em><b>P</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE__A = 0;
-
-	/**
-	 * The feature id for the '<em><b>B</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EDGE__B = 1;
+	int EDGE__P = 0;
 
 	/**
 	 * The feature id for the '<em><b>Degree</b></em>' attribute.
@@ -222,7 +213,7 @@ public interface MetamodellPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE__DEGREE = 2;
+	int EDGE__DEGREE = 1;
 
 	/**
 	 * The feature id for the '<em><b>F</b></em>' reference list.
@@ -231,7 +222,7 @@ public interface MetamodellPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE__F = 3;
+	int EDGE__F = 2;
 
 	/**
 	 * The number of structural features of the '<em>Edge</em>' class.
@@ -240,7 +231,7 @@ public interface MetamodellPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE_FEATURE_COUNT = 4;
+	int EDGE_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Edge</em>' class.
@@ -517,26 +508,15 @@ public interface MetamodellPackage extends EPackage {
 	EClass getEdge();
 
 	/**
-	 * Returns the meta object for the reference '{@link Metamodell.Edge#getA <em>A</em>}'.
+	 * Returns the meta object for the reference list '{@link Metamodell.Edge#getP <em>P</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>A</em>'.
-	 * @see Metamodell.Edge#getA()
+	 * @return the meta object for the reference list '<em>P</em>'.
+	 * @see Metamodell.Edge#getP()
 	 * @see #getEdge()
 	 * @generated
 	 */
-	EReference getEdge_A();
-
-	/**
-	 * Returns the meta object for the reference '{@link Metamodell.Edge#getB <em>B</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>B</em>'.
-	 * @see Metamodell.Edge#getB()
-	 * @see #getEdge()
-	 * @generated
-	 */
-	EReference getEdge_B();
+	EReference getEdge_P();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Metamodell.Edge#getDegree <em>Degree</em>}'.
@@ -785,20 +765,12 @@ public interface MetamodellPackage extends EPackage {
 		EClass EDGE = eINSTANCE.getEdge();
 
 		/**
-		 * The meta object literal for the '<em><b>A</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>P</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference EDGE__A = eINSTANCE.getEdge_A();
-
-		/**
-		 * The meta object literal for the '<em><b>B</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference EDGE__B = eINSTANCE.getEdge_B();
+		EReference EDGE__P = eINSTANCE.getEdge_P();
 
 		/**
 		 * The meta object literal for the '<em><b>Degree</b></em>' attribute feature.
