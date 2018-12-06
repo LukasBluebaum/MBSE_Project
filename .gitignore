@@ -1,3 +1,6 @@
+# Buildpath fix
+*.classpath
+
 # Compiled class file
 *.class
 
