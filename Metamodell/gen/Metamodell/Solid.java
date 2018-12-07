@@ -26,7 +26,8 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Solid extends EObject {
+public interface Solid extends EObject
+{
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -42,7 +43,7 @@ public interface Solid extends EObject {
 	 * @generated
 	 */
 	String getName();
-
+	
 	/**
 	 * Sets the value of the '{@link Metamodell.Solid#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -52,7 +53,7 @@ public interface Solid extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
-
+	
 	/**
 	 * Returns the value of the '<em><b>Facets</b></em>' containment reference list.
 	 * The list contents are of type {@link Metamodell.Facet}.
@@ -70,7 +71,7 @@ public interface Solid extends EObject {
 	 * @generated
 	 */
 	EList<Facet> getFacets();
-
+	
 	/**
 	 * Returns the value of the '<em><b>Area</b></em>' reference list.
 	 * The list contents are of type {@link Metamodell.Area}.
@@ -87,6 +88,6 @@ public interface Solid extends EObject {
 	 */
 	EList<Area> getArea();
 	// <-- [user code injected with eMoflon]
-
+	
 	// [user code injected with eMoflon] -->
 } // Solid

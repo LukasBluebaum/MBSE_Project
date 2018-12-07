@@ -1,5 +1,0 @@
-import "platform:/resource/Metamodell/model/Metamodell.ecore"
-
-pattern examplePattern() {
-	edge: Edge
-}
