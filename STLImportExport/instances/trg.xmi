@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Metamodell="platform:/resource/Metamodell/model/Metamodell.ecore">
   <Metamodell:Solid>
-    <facets normal="/8" edges="/5 /6 /7"/>
-    <facets normal="/11" edges="/5 /9 /10"/>
+    <facets normal="/9" edges="/6 /7 /8"/>
+    <facets normal="/12" edges="/7 /10 /11"/>
+    <facets normal="/14" edges="/8 /10 /13"/>
+    <facets normal="/17" edges="/6 /15 /16"/>
   </Metamodell:Solid>
-  <Metamodell:Vector3f x="1.0" y="1.0" z="1.0"/>
-  <Metamodell:Vector3f x="3.0" y="3.0" z="3.0"/>
-  <Metamodell:Vector3f x="4.0" y="4.0" z="4.0"/>
   <Metamodell:Vector3f x="2.0" y="2.0" z="2.0"/>
-  <Metamodell:Edge p="/1 /4" f="/0/@facets.0 /0/@facets.1"/>
-  <Metamodell:Edge p="/4 /3" f="/0/@facets.0"/>
-  <Metamodell:Edge p="/3 /1" f="/0/@facets.0"/>
-  <Metamodell:Vector3f x="6.0" y="6.0" z="6.0"/>
-  <Metamodell:Edge p="/4 /2" f="/0/@facets.1"/>
-  <Metamodell:Edge p="/2 /1" f="/0/@facets.1"/>
   <Metamodell:Vector3f x="5.0" y="5.0" z="5.0"/>
+  <Metamodell:Vector3f x="1.0" y="1.0" z="1.0"/>
+  <Metamodell:Vector3f x="4.0" y="4.0" z="4.0"/>
+  <Metamodell:Vector3f x="3.0" y="3.0" z="3.0"/>
+  <Metamodell:Edge p="/3 /1" f="/0/@facets.0 /0/@facets.3"/>
+  <Metamodell:Edge p="/1 /5" f="/0/@facets.0 /0/@facets.1"/>
+  <Metamodell:Edge p="/5 /3" f="/0/@facets.0 /0/@facets.2"/>
+  <Metamodell:Vector3f x="5.0" y="5.0" z="5.0"/>
+  <Metamodell:Edge p="/5 /9" f="/0/@facets.1 /0/@facets.2"/>
+  <Metamodell:Edge p="/9 /1" f="/0/@facets.1"/>
+  <Metamodell:Vector3f x="6.0" y="6.0" z="6.0"/>
+  <Metamodell:Edge p="/9 /3" f="/0/@facets.2"/>
+  <Metamodell:Vector3f x="6.0" y="6.0" z="6.0"/>
+  <Metamodell:Edge p="/1 /4" f="/0/@facets.3"/>
+  <Metamodell:Edge p="/4 /3" f="/0/@facets.3"/>
+  <Metamodell:Vector3f x="6.0" y="6.0" z="6.0"/>
 </xmi:XMI>

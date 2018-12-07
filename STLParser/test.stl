@@ -8,9 +8,23 @@ solid OpenSCAD_Model
    endfacet       
   facet normal 6 6 6
     outer loop
-      vertex 1 1 1
       vertex 2 2 2
       vertex 4 4 4
+      vertex 1 1 1
+     endloop
+   endfacet    
+   facet normal 6 6 6
+    outer loop
+      vertex 2 2 2
+      vertex 3 3 3
+      vertex 5 5 5
+     endloop
+   endfacet 
+    facet normal 6 6 6   
+      outer loop
+      vertex 1 1 1
+      vertex 3 3 3
+      vertex 5 5 5
      endloop
    endfacet    
  endsolid OpenSCAD_Model

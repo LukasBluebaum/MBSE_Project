@@ -26,17 +26,30 @@ public class Parser
 		
 		sync = new SYNC_App();
 		sync.setUpdatePolicy(matches -> {
+			IMatch rule = null;
 			for (IMatch m : matches.getMatches())
 			{
+				
+				if(m.getRuleName().equals("EdgeRule8"))
+					return m;
+				
 				if (m.getRuleName().equals("SolidRule"))
 					
 					return m;
 				
-				if (m.getRuleName().equals("EdgeRule2"))
+				if ( m.getRuleName().equals("EdgeRule2") || m.getRuleName().equals("EdgeRule3") || m.getRuleName().equals("EdgeRule4")) 
+					
 				{
-					System.out.println(m);
-					return m;
+					if(rule == null || (!rule.getRuleName().equals("EdgeRule5") && !rule.getRuleName().equals("EdgeRule6") && !rule.getRuleName().equals("EdgeRule7")))
+					rule = m;
 				}
+				
+				if ( m.getRuleName().equals("EdgeRule5") || m.getRuleName().equals("EdgeRule6") || m.getRuleName().equals("EdgeRule7"))
+				{
+					
+					rule = m;
+				}
+				
 				
 				if (m.getRuleName().equals("VectorRule2"))
 				{
@@ -45,6 +58,8 @@ public class Parser
 				}
 				
 			}
+			if(rule != null)
+				return rule;
 			return matches.getNext();
 		});
 	}
@@ -87,25 +102,39 @@ public class Parser
 				System.out.println(solid.getFacets().get(1).getEdges().get(1).getF());
 				System.out.println(solid.getFacets().get(1).getEdges().get(2).getP());
 				System.out.println(solid.getFacets().get(1).getEdges().get(2).getF());
-				
-				Controller ctrl = new Controller();
-				System.out.println("<computeDegree>");
-				for (Facet face : solid.getFacets())
-				{
-					for (Edge e : face.getEdges())
-					{
-						ctrl.computeDegree(e);
-					}
-				}
-				System.out.println("</computeDegree>");
-				System.out.println("<createAreas>");
-//				ctrl.createAreas(solid);
-				System.out.println("</createAreas>");
+				System.out.println("-----------------------------------------------");
+				System.out.println(solid.getFacets().get(2).getEdges().get(0).getP());
+				System.out.println(solid.getFacets().get(2).getEdges().get(0).getF());
+				System.out.println(solid.getFacets().get(2).getEdges().get(1).getP());
+				System.out.println(solid.getFacets().get(2).getEdges().get(1).getF());
+				System.out.println(solid.getFacets().get(2).getEdges().get(2).getP());
+				System.out.println(solid.getFacets().get(2).getEdges().get(2).getF());
+				System.out.println("-----------------------------------------------");
+				System.out.println(solid.getFacets().get(3).getEdges().get(0).getP());
+				System.out.println(solid.getFacets().get(3).getEdges().get(0).getF());
+				System.out.println(solid.getFacets().get(3).getEdges().get(1).getP());
+				System.out.println(solid.getFacets().get(3).getEdges().get(1).getF());
+				System.out.println(solid.getFacets().get(3).getEdges().get(2).getP());
+				System.out.println(solid.getFacets().get(3).getEdges().get(2).getF());
+//				Controller ctrl = new Controller();
+//				System.out.println("<computeDegree>");
+//				for (Facet face : solid.getFacets())
+//				{
+//					for (Edge e : face.getEdges())
+//					{
+//						ctrl.computeDegree(e);
+//					}
+//				}
+//				System.out.println("</computeDegree>");
+//				System.out.println("<createAreas>");
+////				ctrl.createAreas(solid);
+//				System.out.println("</createAreas>");
 			}
 			catch (IOException e)
 			{
 				e.printStackTrace();
 			}
-		});
+		}
+		);
 	}
 }

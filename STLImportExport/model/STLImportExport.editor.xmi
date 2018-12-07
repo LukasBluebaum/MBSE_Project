@@ -540,6 +540,1467 @@
       </values>
     </attrConditions>
   </rules>
+  <rules name="EdgeRule3" schema="//@schema">
+    <sourcePatterns name="s">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="facet1">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/normal"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v1"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v2"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v3"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="vec1">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="vec2">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="vec3">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="n">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
+    </sourcePatterns>
+    <targetPatterns name="solid">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="facet2">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/normal"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="normal">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="e1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.7">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.8">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.6">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="e2">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.8">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.9">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="e3">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.9">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.7">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="_facet3">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    </targetPatterns>
+    <targetPatterns name="a1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="b1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="c1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <correspondencePatterns name="v1v" type="//@schema/@correspondenceTypes.2" source="//@rules.2/@sourcePatterns.3" target="//@rules.2/@targetPatterns.7">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="v2v" type="//@schema/@correspondenceTypes.2" source="//@rules.2/@sourcePatterns.4" target="//@rules.2/@targetPatterns.8">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="v3v" type="//@schema/@correspondenceTypes.2" source="//@rules.2/@sourcePatterns.2" target="//@rules.2/@targetPatterns.9">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.2/@sourcePatterns.5" target="//@rules.2/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.7">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.7">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.7">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+  </rules>
+  <rules name="EdgeRule4" schema="//@schema">
+    <sourcePatterns name="s">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="facet1">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/normal"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v1"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v2"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v3"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="vec1">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="vec2">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="vec3">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="n">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
+    </sourcePatterns>
+    <targetPatterns name="solid">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="facet2">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/normal"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="normal">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="e1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.7">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.8">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.6">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="e2">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.8">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.9">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="e3">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.9">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.7">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="_facet3">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    </targetPatterns>
+    <targetPatterns name="a1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="b1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="c1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <correspondencePatterns name="v1v" type="//@schema/@correspondenceTypes.2" source="//@rules.3/@sourcePatterns.4" target="//@rules.3/@targetPatterns.7">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="v2v" type="//@schema/@correspondenceTypes.2" source="//@rules.3/@sourcePatterns.2" target="//@rules.3/@targetPatterns.8">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="v3v" type="//@schema/@correspondenceTypes.2" source="//@rules.3/@sourcePatterns.3" target="//@rules.3/@targetPatterns.9">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.3/@sourcePatterns.5" target="//@rules.3/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.7">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.7">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.7">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+  </rules>
+  <rules name="EdgeRule5" schema="//@schema">
+    <sourcePatterns name="s">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="facet1">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/normal"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v1"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v2"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v3"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="vec1">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="vec2">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="vec3">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="n">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
+    </sourcePatterns>
+    <targetPatterns name="solid">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="facet2">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/normal"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="normal">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="e1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.8">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.9">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.6">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="e2">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.9">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.10">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.7">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="e3">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.10">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.8">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="_facet3">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    </targetPatterns>
+    <targetPatterns name="_facet4">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    </targetPatterns>
+    <targetPatterns name="a1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="b1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="c1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <correspondencePatterns name="v1v" type="//@schema/@correspondenceTypes.2" source="//@rules.4/@sourcePatterns.2" target="//@rules.4/@targetPatterns.8">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="v2v" type="//@schema/@correspondenceTypes.2" source="//@rules.4/@sourcePatterns.3" target="//@rules.4/@targetPatterns.9">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="v3v" type="//@schema/@correspondenceTypes.2" source="//@rules.4/@sourcePatterns.4" target="//@rules.4/@targetPatterns.10">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.4/@sourcePatterns.5" target="//@rules.4/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.10">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.10">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.10">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+  </rules>
+  <rules name="EdgeRule6" schema="//@schema">
+    <sourcePatterns name="s">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.5/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="facet1">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
+      <linkVariablePatterns target="//@rules.5/@sourcePatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/normal"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v1"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v2"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@sourcePatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v3"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="vec1">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="vec2">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="vec3">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="n">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
+    </sourcePatterns>
+    <targetPatterns name="solid">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="facet2">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/normal"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="normal">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="e1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.8">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.9">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.7">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="e2">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.9">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.10">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.6">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="e3">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.10">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.8">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="_facet4">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    </targetPatterns>
+    <targetPatterns name="_facet3">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    </targetPatterns>
+    <targetPatterns name="a1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="b1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="c1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <correspondencePatterns name="v1v" type="//@schema/@correspondenceTypes.2" source="//@rules.5/@sourcePatterns.3" target="//@rules.5/@targetPatterns.8">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="v2v" type="//@schema/@correspondenceTypes.2" source="//@rules.5/@sourcePatterns.4" target="//@rules.5/@targetPatterns.9">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="v3v" type="//@schema/@correspondenceTypes.2" source="//@rules.5/@sourcePatterns.2" target="//@rules.5/@targetPatterns.10">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.5/@sourcePatterns.5" target="//@rules.5/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@targetPatterns.10">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@targetPatterns.10">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@targetPatterns.10">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+  </rules>
+  <rules name="EdgeRule7" schema="//@schema">
+    <sourcePatterns name="s">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="facet1">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/normal"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v1"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v2"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v3"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="vec1">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="vec2">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="vec3">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="n">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
+    </sourcePatterns>
+    <targetPatterns name="solid">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="facet2">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/normal"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="normal">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="e1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.8">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.9">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.7">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="e2">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.9">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.10">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.6">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="e3">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.10">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.8">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="_facet4">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    </targetPatterns>
+    <targetPatterns name="_facet3">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    </targetPatterns>
+    <targetPatterns name="a1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="b1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="c1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <correspondencePatterns name="v1v" type="//@schema/@correspondenceTypes.2" source="//@rules.6/@sourcePatterns.4" target="//@rules.6/@targetPatterns.8">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="v2v" type="//@schema/@correspondenceTypes.2" source="//@rules.6/@sourcePatterns.2" target="//@rules.6/@targetPatterns.9">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="v3v" type="//@schema/@correspondenceTypes.2" source="//@rules.6/@sourcePatterns.3" target="//@rules.6/@targetPatterns.10">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.6/@sourcePatterns.5" target="//@rules.6/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@targetPatterns.8">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@targetPatterns.10">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@targetPatterns.10">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@targetPatterns.10">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+  </rules>
+  <rules name="EdgeRule8" schema="//@schema">
+    <sourcePatterns name="s">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.7/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="facet1">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
+      <linkVariablePatterns target="//@rules.7/@sourcePatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/normal"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v1"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v2"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@sourcePatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet/v3"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="vec1">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="vec2">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="vec3">
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
+    </sourcePatterns>
+    <sourcePatterns name="n">
+      <op value="++"/>
+      <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
+    </sourcePatterns>
+    <targetPatterns name="solid">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid/facets"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="facet2">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/normal"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="normal">
+      <op value="++"/>
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="e1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.9">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.10">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.7">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="e2">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.10">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.11">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.6">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="e3">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.11">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.9">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.8">
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="_facet4">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    </targetPatterns>
+    <targetPatterns name="_facet3">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    </targetPatterns>
+    <targetPatterns name="_facet5">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
+    </targetPatterns>
+    <targetPatterns name="a1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="b1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <targetPatterns name="c1">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
+    <correspondencePatterns name="v1v" type="//@schema/@correspondenceTypes.2" source="//@rules.7/@sourcePatterns.3" target="//@rules.7/@targetPatterns.9">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="v2v" type="//@schema/@correspondenceTypes.2" source="//@rules.7/@sourcePatterns.4" target="//@rules.7/@targetPatterns.10">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="v3v" type="//@schema/@correspondenceTypes.2" source="//@rules.7/@sourcePatterns.2" target="//@rules.7/@targetPatterns.11">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.7/@sourcePatterns.5" target="//@rules.7/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.3">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@targetPatterns.9">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@targetPatterns.10">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@targetPatterns.10">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.4">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@targetPatterns.10">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@targetPatterns.11">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@targetPatterns.11">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.2">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@targetPatterns.11">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x1"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x2"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@sourcePatterns.5">
+        <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector/x3"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.7/@targetPatterns.2">
+        <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
+      </values>
+    </attrConditions>
+  </rules>
   <rules name="SolidRule" schema="//@schema">
     <sourcePatterns name="s">
       <op value="++"/>
@@ -549,7 +2010,7 @@
       <op value="++"/>
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
     </targetPatterns>
-    <correspondencePatterns name="s2s" type="//@schema/@correspondenceTypes.0" source="//@rules.2/@sourcePatterns.0" target="//@rules.2/@targetPatterns.0">
+    <correspondencePatterns name="s2s" type="//@schema/@correspondenceTypes.0" source="//@rules.8/@sourcePatterns.0" target="//@rules.8/@targetPatterns.0">
       <op value="++"/>
     </correspondencePatterns>
   </rules>
@@ -562,30 +2023,30 @@
       <op value="++"/>
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </targetPatterns>
-    <correspondencePatterns name="vek2vek" type="//@schema/@correspondenceTypes.2" source="//@rules.3/@sourcePatterns.0" target="//@rules.3/@targetPatterns.0">
+    <correspondencePatterns name="vek2vek" type="//@schema/@correspondenceTypes.2" source="//@rules.9/@sourcePatterns.0" target="//@rules.9/@targetPatterns.0">
       <op value="++"/>
     </correspondencePatterns>
     <attrConditions name="//@schema/@attributeCondDefs.0">
-      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.9/@sourcePatterns.0">
         <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
       </values>
-      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.9/@targetPatterns.0">
         <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
       </values>
     </attrConditions>
     <attrConditions name="//@schema/@attributeCondDefs.0">
-      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.9/@sourcePatterns.0">
         <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
       </values>
-      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.9/@targetPatterns.0">
         <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
       </values>
     </attrConditions>
     <attrConditions name="//@schema/@attributeCondDefs.0">
-      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@sourcePatterns.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.9/@sourcePatterns.0">
         <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
       </values>
-      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.3/@targetPatterns.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.9/@targetPatterns.0">
         <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
       </values>
     </attrConditions>
@@ -598,30 +2059,30 @@
     <targetPatterns name="vector">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </targetPatterns>
-    <correspondencePatterns name="vek2vek" type="//@schema/@correspondenceTypes.2" source="//@rules.4/@sourcePatterns.0" target="//@rules.4/@targetPatterns.0">
+    <correspondencePatterns name="vek2vek" type="//@schema/@correspondenceTypes.2" source="//@rules.10/@sourcePatterns.0" target="//@rules.10/@targetPatterns.0">
       <op value="++"/>
     </correspondencePatterns>
     <attrConditions name="//@schema/@attributeCondDefs.0">
-      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.10/@sourcePatterns.0">
         <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
       </values>
-      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.10/@targetPatterns.0">
         <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/x"/>
       </values>
     </attrConditions>
     <attrConditions name="//@schema/@attributeCondDefs.0">
-      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.10/@sourcePatterns.0">
         <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x2"/>
       </values>
-      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.10/@targetPatterns.0">
         <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/y"/>
       </values>
     </attrConditions>
     <attrConditions name="//@schema/@attributeCondDefs.0">
-      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.10/@sourcePatterns.0">
         <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x3"/>
       </values>
-      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.10/@targetPatterns.0">
         <attribute href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f/z"/>
       </values>
     </attrConditions>
