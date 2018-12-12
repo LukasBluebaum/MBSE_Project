@@ -26,8 +26,7 @@ import org.eclipse.emf.ecore.EReference;
  * @model kind="package"
  * @generated
  */
-public interface MetamodellPackage extends EPackage
-{
+public interface MetamodellPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
@@ -35,7 +34,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	String eNAME = "Metamodell";
-	
+
 	/**
 	 * The package namespace URI.
 	 * <!-- begin-user-doc -->
@@ -43,7 +42,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	String eNS_URI = "platform:/resource/Metamodell/model/Metamodell.ecore";
-	
+
 	/**
 	 * The package namespace name.
 	 * <!-- begin-user-doc -->
@@ -51,7 +50,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	String eNS_PREFIX = "Metamodell";
-	
+
 	/**
 	 * The singleton instance of the package.
 	 * <!-- begin-user-doc -->
@@ -59,7 +58,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	MetamodellPackage eINSTANCE = Metamodell.impl.MetamodellPackageImpl.init();
-	
+
 	/**
 	 * The meta object id for the '{@link Metamodell.impl.Vector3fImpl <em>Vector3f</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -69,7 +68,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	int VECTOR3F = 0;
-	
+
 	/**
 	 * The feature id for the '<em><b>X</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -78,7 +77,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int VECTOR3F__X = 0;
-	
+
 	/**
 	 * The feature id for the '<em><b>Y</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -87,7 +86,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int VECTOR3F__Y = 1;
-	
+
 	/**
 	 * The feature id for the '<em><b>Z</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -96,7 +95,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int VECTOR3F__Z = 2;
-	
+
 	/**
 	 * The number of structural features of the '<em>Vector3f</em>' class.
 	 * <!-- begin-user-doc -->
@@ -105,7 +104,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int VECTOR3F_FEATURE_COUNT = 3;
-	
+
 	/**
 	 * The number of operations of the '<em>Vector3f</em>' class.
 	 * <!-- begin-user-doc -->
@@ -114,7 +113,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int VECTOR3F_OPERATION_COUNT = 0;
-	
+
 	/**
 	 * The meta object id for the '{@link Metamodell.impl.FacetImpl <em>Facet</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -124,16 +123,16 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	int FACET = 1;
-	
+
 	/**
-	 * The feature id for the '<em><b>Solid</b></em>' container reference.
+	 * The feature id for the '<em><b>Solid</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
 	int FACET__SOLID = 0;
-	
+
 	/**
 	 * The feature id for the '<em><b>Normal</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -142,7 +141,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int FACET__NORMAL = 1;
-	
+
 	/**
 	 * The feature id for the '<em><b>Edges</b></em>' reference list.
 	 * <!-- begin-user-doc -->
@@ -151,7 +150,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int FACET__EDGES = 2;
-	
+
 	/**
 	 * The feature id for the '<em><b>Color</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -160,16 +159,16 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int FACET__COLOR = 3;
-	
+
 	/**
-	 * The feature id for the '<em><b>Area</b></em>' reference.
+	 * The feature id for the '<em><b>Area</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
 	int FACET__AREA = 4;
-	
+
 	/**
 	 * The number of structural features of the '<em>Facet</em>' class.
 	 * <!-- begin-user-doc -->
@@ -178,7 +177,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int FACET_FEATURE_COUNT = 5;
-	
+
 	/**
 	 * The number of operations of the '<em>Facet</em>' class.
 	 * <!-- begin-user-doc -->
@@ -187,7 +186,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int FACET_OPERATION_COUNT = 0;
-	
+
 	/**
 	 * The meta object id for the '{@link Metamodell.impl.EdgeImpl <em>Edge</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -197,7 +196,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	int EDGE = 2;
-	
+
 	/**
 	 * The feature id for the '<em><b>P</b></em>' reference list.
 	 * <!-- begin-user-doc -->
@@ -206,7 +205,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int EDGE__P = 0;
-	
+
 	/**
 	 * The feature id for the '<em><b>Degree</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -215,7 +214,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int EDGE__DEGREE = 1;
-	
+
 	/**
 	 * The feature id for the '<em><b>F</b></em>' reference list.
 	 * <!-- begin-user-doc -->
@@ -224,7 +223,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int EDGE__F = 2;
-	
+
 	/**
 	 * The number of structural features of the '<em>Edge</em>' class.
 	 * <!-- begin-user-doc -->
@@ -233,7 +232,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int EDGE_FEATURE_COUNT = 3;
-	
+
 	/**
 	 * The number of operations of the '<em>Edge</em>' class.
 	 * <!-- begin-user-doc -->
@@ -242,7 +241,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int EDGE_OPERATION_COUNT = 0;
-	
+
 	/**
 	 * The meta object id for the '{@link Metamodell.impl.AreaImpl <em>Area</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -252,7 +251,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	int AREA = 3;
-	
+
 	/**
 	 * The feature id for the '<em><b>Facets</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -261,7 +260,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int AREA__FACETS = 0;
-	
+
 	/**
 	 * The number of structural features of the '<em>Area</em>' class.
 	 * <!-- begin-user-doc -->
@@ -270,7 +269,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int AREA_FEATURE_COUNT = 1;
-	
+
 	/**
 	 * The number of operations of the '<em>Area</em>' class.
 	 * <!-- begin-user-doc -->
@@ -279,7 +278,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int AREA_OPERATION_COUNT = 0;
-	
+
 	/**
 	 * The meta object id for the '{@link Metamodell.impl.SolidImpl <em>Solid</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -289,7 +288,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	int SOLID = 4;
-	
+
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -298,7 +297,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int SOLID__NAME = 0;
-	
+
 	/**
 	 * The feature id for the '<em><b>Facets</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -307,7 +306,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int SOLID__FACETS = 1;
-	
+
 	/**
 	 * The feature id for the '<em><b>Area</b></em>' reference list.
 	 * <!-- begin-user-doc -->
@@ -316,7 +315,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int SOLID__AREA = 2;
-	
+
 	/**
 	 * The number of structural features of the '<em>Solid</em>' class.
 	 * <!-- begin-user-doc -->
@@ -325,7 +324,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int SOLID_FEATURE_COUNT = 3;
-	
+
 	/**
 	 * The number of operations of the '<em>Solid</em>' class.
 	 * <!-- begin-user-doc -->
@@ -334,7 +333,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int SOLID_OPERATION_COUNT = 0;
-	
+
 	/**
 	 * The meta object id for the '{@link Metamodell.impl.ColorImpl <em>Color</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -344,7 +343,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	int COLOR = 5;
-	
+
 	/**
 	 * The feature id for the '<em><b>R</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -353,7 +352,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int COLOR__R = 0;
-	
+
 	/**
 	 * The feature id for the '<em><b>G</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -362,7 +361,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int COLOR__G = 1;
-	
+
 	/**
 	 * The feature id for the '<em><b>B</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -371,7 +370,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int COLOR__B = 2;
-	
+
 	/**
 	 * The number of structural features of the '<em>Color</em>' class.
 	 * <!-- begin-user-doc -->
@@ -380,7 +379,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int COLOR_FEATURE_COUNT = 3;
-	
+
 	/**
 	 * The number of operations of the '<em>Color</em>' class.
 	 * <!-- begin-user-doc -->
@@ -389,7 +388,7 @@ public interface MetamodellPackage extends EPackage
 	 * @ordered
 	 */
 	int COLOR_OPERATION_COUNT = 0;
-	
+
 	/**
 	 * Returns the meta object for class '{@link Metamodell.Vector3f <em>Vector3f</em>}'.
 	 * <!-- begin-user-doc -->
@@ -399,7 +398,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EClass getVector3f();
-	
+
 	/**
 	 * Returns the meta object for the attribute '{@link Metamodell.Vector3f#getX <em>X</em>}'.
 	 * <!-- begin-user-doc -->
@@ -410,7 +409,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EAttribute getVector3f_X();
-	
+
 	/**
 	 * Returns the meta object for the attribute '{@link Metamodell.Vector3f#getY <em>Y</em>}'.
 	 * <!-- begin-user-doc -->
@@ -421,7 +420,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EAttribute getVector3f_Y();
-	
+
 	/**
 	 * Returns the meta object for the attribute '{@link Metamodell.Vector3f#getZ <em>Z</em>}'.
 	 * <!-- begin-user-doc -->
@@ -432,7 +431,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EAttribute getVector3f_Z();
-	
+
 	/**
 	 * Returns the meta object for class '{@link Metamodell.Facet <em>Facet</em>}'.
 	 * <!-- begin-user-doc -->
@@ -442,18 +441,18 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EClass getFacet();
-	
+
 	/**
-	 * Returns the meta object for the container reference '{@link Metamodell.Facet#getSolid <em>Solid</em>}'.
+	 * Returns the meta object for the reference '{@link Metamodell.Facet#getSolid <em>Solid</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the container reference '<em>Solid</em>'.
+	 * @return the meta object for the reference '<em>Solid</em>'.
 	 * @see Metamodell.Facet#getSolid()
 	 * @see #getFacet()
 	 * @generated
 	 */
 	EReference getFacet_Solid();
-	
+
 	/**
 	 * Returns the meta object for the reference '{@link Metamodell.Facet#getNormal <em>Normal</em>}'.
 	 * <!-- begin-user-doc -->
@@ -464,7 +463,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EReference getFacet_Normal();
-	
+
 	/**
 	 * Returns the meta object for the reference list '{@link Metamodell.Facet#getEdges <em>Edges</em>}'.
 	 * <!-- begin-user-doc -->
@@ -475,7 +474,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EReference getFacet_Edges();
-	
+
 	/**
 	 * Returns the meta object for the reference '{@link Metamodell.Facet#getColor <em>Color</em>}'.
 	 * <!-- begin-user-doc -->
@@ -486,18 +485,18 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EReference getFacet_Color();
-	
+
 	/**
-	 * Returns the meta object for the reference '{@link Metamodell.Facet#getArea <em>Area</em>}'.
+	 * Returns the meta object for the container reference '{@link Metamodell.Facet#getArea <em>Area</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Area</em>'.
+	 * @return the meta object for the container reference '<em>Area</em>'.
 	 * @see Metamodell.Facet#getArea()
 	 * @see #getFacet()
 	 * @generated
 	 */
 	EReference getFacet_Area();
-	
+
 	/**
 	 * Returns the meta object for class '{@link Metamodell.Edge <em>Edge</em>}'.
 	 * <!-- begin-user-doc -->
@@ -507,7 +506,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EClass getEdge();
-	
+
 	/**
 	 * Returns the meta object for the reference list '{@link Metamodell.Edge#getP <em>P</em>}'.
 	 * <!-- begin-user-doc -->
@@ -518,7 +517,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EReference getEdge_P();
-	
+
 	/**
 	 * Returns the meta object for the attribute '{@link Metamodell.Edge#getDegree <em>Degree</em>}'.
 	 * <!-- begin-user-doc -->
@@ -529,7 +528,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EAttribute getEdge_Degree();
-	
+
 	/**
 	 * Returns the meta object for the reference list '{@link Metamodell.Edge#getF <em>F</em>}'.
 	 * <!-- begin-user-doc -->
@@ -540,7 +539,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EReference getEdge_F();
-	
+
 	/**
 	 * Returns the meta object for class '{@link Metamodell.Area <em>Area</em>}'.
 	 * <!-- begin-user-doc -->
@@ -550,7 +549,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EClass getArea();
-	
+
 	/**
 	 * Returns the meta object for the containment reference list '{@link Metamodell.Area#getFacets <em>Facets</em>}'.
 	 * <!-- begin-user-doc -->
@@ -561,7 +560,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EReference getArea_Facets();
-	
+
 	/**
 	 * Returns the meta object for class '{@link Metamodell.Solid <em>Solid</em>}'.
 	 * <!-- begin-user-doc -->
@@ -571,7 +570,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EClass getSolid();
-	
+
 	/**
 	 * Returns the meta object for the attribute '{@link Metamodell.Solid#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
@@ -582,7 +581,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EAttribute getSolid_Name();
-	
+
 	/**
 	 * Returns the meta object for the containment reference list '{@link Metamodell.Solid#getFacets <em>Facets</em>}'.
 	 * <!-- begin-user-doc -->
@@ -593,7 +592,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EReference getSolid_Facets();
-	
+
 	/**
 	 * Returns the meta object for the reference list '{@link Metamodell.Solid#getArea <em>Area</em>}'.
 	 * <!-- begin-user-doc -->
@@ -604,7 +603,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EReference getSolid_Area();
-	
+
 	/**
 	 * Returns the meta object for class '{@link Metamodell.Color <em>Color</em>}'.
 	 * <!-- begin-user-doc -->
@@ -614,7 +613,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EClass getColor();
-	
+
 	/**
 	 * Returns the meta object for the attribute '{@link Metamodell.Color#getR <em>R</em>}'.
 	 * <!-- begin-user-doc -->
@@ -625,7 +624,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EAttribute getColor_R();
-	
+
 	/**
 	 * Returns the meta object for the attribute '{@link Metamodell.Color#getG <em>G</em>}'.
 	 * <!-- begin-user-doc -->
@@ -636,7 +635,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EAttribute getColor_G();
-	
+
 	/**
 	 * Returns the meta object for the attribute '{@link Metamodell.Color#getB <em>B</em>}'.
 	 * <!-- begin-user-doc -->
@@ -647,7 +646,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	EAttribute getColor_B();
-	
+
 	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
@@ -656,7 +655,7 @@ public interface MetamodellPackage extends EPackage
 	 * @generated
 	 */
 	MetamodellFactory getMetamodellFactory();
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * Defines literals for the meta objects that represent
@@ -670,8 +669,7 @@ public interface MetamodellPackage extends EPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	interface Literals
-	{
+	interface Literals {
 		/**
 		 * The meta object literal for the '{@link Metamodell.impl.Vector3fImpl <em>Vector3f</em>}' class.
 		 * <!-- begin-user-doc -->
@@ -681,7 +679,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EClass VECTOR3F = eINSTANCE.getVector3f();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>X</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
@@ -689,7 +687,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EAttribute VECTOR3F__X = eINSTANCE.getVector3f_X();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>Y</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
@@ -697,7 +695,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EAttribute VECTOR3F__Y = eINSTANCE.getVector3f_Y();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>Z</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
@@ -705,7 +703,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EAttribute VECTOR3F__Z = eINSTANCE.getVector3f_Z();
-		
+
 		/**
 		 * The meta object literal for the '{@link Metamodell.impl.FacetImpl <em>Facet</em>}' class.
 		 * <!-- begin-user-doc -->
@@ -715,15 +713,15 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EClass FACET = eINSTANCE.getFacet();
-		
+
 		/**
-		 * The meta object literal for the '<em><b>Solid</b></em>' container reference feature.
+		 * The meta object literal for the '<em><b>Solid</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference FACET__SOLID = eINSTANCE.getFacet_Solid();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>Normal</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
@@ -731,7 +729,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EReference FACET__NORMAL = eINSTANCE.getFacet_Normal();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>Edges</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
@@ -739,7 +737,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EReference FACET__EDGES = eINSTANCE.getFacet_Edges();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>Color</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
@@ -747,15 +745,15 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EReference FACET__COLOR = eINSTANCE.getFacet_Color();
-		
+
 		/**
-		 * The meta object literal for the '<em><b>Area</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Area</b></em>' container reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference FACET__AREA = eINSTANCE.getFacet_Area();
-		
+
 		/**
 		 * The meta object literal for the '{@link Metamodell.impl.EdgeImpl <em>Edge</em>}' class.
 		 * <!-- begin-user-doc -->
@@ -765,7 +763,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EClass EDGE = eINSTANCE.getEdge();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>P</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
@@ -773,7 +771,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EReference EDGE__P = eINSTANCE.getEdge_P();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>Degree</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
@@ -781,7 +779,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EAttribute EDGE__DEGREE = eINSTANCE.getEdge_Degree();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>F</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
@@ -789,7 +787,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EReference EDGE__F = eINSTANCE.getEdge_F();
-		
+
 		/**
 		 * The meta object literal for the '{@link Metamodell.impl.AreaImpl <em>Area</em>}' class.
 		 * <!-- begin-user-doc -->
@@ -799,7 +797,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EClass AREA = eINSTANCE.getArea();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>Facets</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
@@ -807,7 +805,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EReference AREA__FACETS = eINSTANCE.getArea_Facets();
-		
+
 		/**
 		 * The meta object literal for the '{@link Metamodell.impl.SolidImpl <em>Solid</em>}' class.
 		 * <!-- begin-user-doc -->
@@ -817,7 +815,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EClass SOLID = eINSTANCE.getSolid();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
@@ -825,7 +823,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EAttribute SOLID__NAME = eINSTANCE.getSolid_Name();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>Facets</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
@@ -833,7 +831,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EReference SOLID__FACETS = eINSTANCE.getSolid_Facets();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>Area</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
@@ -841,7 +839,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EReference SOLID__AREA = eINSTANCE.getSolid_Area();
-		
+
 		/**
 		 * The meta object literal for the '{@link Metamodell.impl.ColorImpl <em>Color</em>}' class.
 		 * <!-- begin-user-doc -->
@@ -851,7 +849,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EClass COLOR = eINSTANCE.getColor();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>R</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
@@ -859,7 +857,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EAttribute COLOR__R = eINSTANCE.getColor_R();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>G</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
@@ -867,7 +865,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EAttribute COLOR__G = eINSTANCE.getColor_G();
-		
+
 		/**
 		 * The meta object literal for the '<em><b>B</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
@@ -875,7 +873,7 @@ public interface MetamodellPackage extends EPackage
 		 * @generated
 		 */
 		EAttribute COLOR__B = eINSTANCE.getColor_B();
-		
+
 	}
-	
+
 } //MetamodellPackage

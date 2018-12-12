@@ -3,6 +3,8 @@ package controller;
 import Metamodell.*;
 import Metamodell.impl.AreaImpl;
 import Metamodell.impl.MetamodellFactoryImpl;
+import Metamodell.impl.MetamodellPackageImpl;
+
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 import java.util.HashMap;
@@ -27,6 +29,8 @@ public class Controller
 	
 	public void createAreas(Solid s)
 	{
+		MetamodellPackageImpl.init();
+		
 		EList<Facet> q = s.getFacets();
 		HashMap<EqVec, EList<Facet>> areas = new HashMap<EqVec, EList<Facet>>();
 		// Go through all Facet-Objects
@@ -52,7 +56,8 @@ public class Controller
 			// Create Area for each list in HashMap
 			// System.out.println("Controller.createAreas(Solid): created Area");
 			AreaImpl a = (AreaImpl) MetamodellFactoryImpl.init().createArea();
-			a.eSet(MetamodellPackage.AREA__FACETS, list);
+//			a.eSet(MetamodellPackage.AREA__FACETS, list);
+			a.getFacets().addAll(list);
 			result.add(a);
 			for(Facet f : list)
 			{

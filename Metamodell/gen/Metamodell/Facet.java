@@ -28,36 +28,33 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Facet extends EObject
-{
+public interface Facet extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Solid</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link Metamodell.Solid#getFacets <em>Facets</em>}'.
+	 * Returns the value of the '<em><b>Solid</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Solid</em>' container reference isn't clear,
+	 * If the meaning of the '<em>Solid</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Solid</em>' container reference.
+	 * @return the value of the '<em>Solid</em>' reference.
 	 * @see #setSolid(Solid)
 	 * @see Metamodell.MetamodellPackage#getFacet_Solid()
-	 * @see Metamodell.Solid#getFacets
-	 * @model opposite="facets" required="true" transient="false"
+	 * @model required="true"
 	 * @generated
 	 */
 	Solid getSolid();
-	
+
 	/**
-	 * Sets the value of the '{@link Metamodell.Facet#getSolid <em>Solid</em>}' container reference.
+	 * Sets the value of the '{@link Metamodell.Facet#getSolid <em>Solid</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Solid</em>' container reference.
+	 * @param value the new value of the '<em>Solid</em>' reference.
 	 * @see #getSolid()
 	 * @generated
 	 */
 	void setSolid(Solid value);
-	
+
 	/**
 	 * Returns the value of the '<em><b>Normal</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -73,7 +70,7 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	Vector3f getNormal();
-	
+
 	/**
 	 * Sets the value of the '{@link Metamodell.Facet#getNormal <em>Normal</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -83,7 +80,7 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	void setNormal(Vector3f value);
-	
+
 	/**
 	 * Returns the value of the '<em><b>Edges</b></em>' reference list.
 	 * The list contents are of type {@link Metamodell.Edge}.
@@ -99,7 +96,7 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	EList<Edge> getEdges();
-	
+
 	/**
 	 * Returns the value of the '<em><b>Color</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -115,7 +112,7 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	Color getColor();
-	
+
 	/**
 	 * Sets the value of the '{@link Metamodell.Facet#getColor <em>Color</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -125,33 +122,35 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	void setColor(Color value);
-	
+
 	/**
-	 * Returns the value of the '<em><b>Area</b></em>' reference.
+	 * Returns the value of the '<em><b>Area</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link Metamodell.Area#getFacets <em>Facets</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Area</em>' reference isn't clear,
+	 * If the meaning of the '<em>Area</em>' container reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Area</em>' reference.
+	 * @return the value of the '<em>Area</em>' container reference.
 	 * @see #setArea(Area)
 	 * @see Metamodell.MetamodellPackage#getFacet_Area()
-	 * @model
+	 * @see Metamodell.Area#getFacets
+	 * @model opposite="facets" transient="false"
 	 * @generated
 	 */
 	Area getArea();
-	
+
 	/**
-	 * Sets the value of the '{@link Metamodell.Facet#getArea <em>Area</em>}' reference.
+	 * Sets the value of the '{@link Metamodell.Facet#getArea <em>Area</em>}' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Area</em>' reference.
+	 * @param value the new value of the '<em>Area</em>' container reference.
 	 * @see #getArea()
 	 * @generated
 	 */
 	void setArea(Area value);
 	// <-- [user code injected with eMoflon]
-	
+
 	// [user code injected with eMoflon] -->
 } // Facet

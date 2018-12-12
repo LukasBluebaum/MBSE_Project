@@ -45,8 +45,17 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *
  * @generated
  */
-public class FacetImpl extends EObjectImpl implements Facet
-{
+public class FacetImpl extends EObjectImpl implements Facet {
+	/**
+	 * The cached value of the '{@link #getSolid() <em>Solid</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSolid()
+	 * @generated
+	 * @ordered
+	 */
+	protected Solid solid;
+
 	/**
 	 * The cached value of the '{@link #getNormal() <em>Normal</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -56,7 +65,7 @@ public class FacetImpl extends EObjectImpl implements Facet
 	 * @ordered
 	 */
 	protected Vector3f normal;
-	
+
 	/**
 	 * The cached value of the '{@link #getEdges() <em>Edges</em>}' reference list.
 	 * <!-- begin-user-doc -->
@@ -66,7 +75,7 @@ public class FacetImpl extends EObjectImpl implements Facet
 	 * @ordered
 	 */
 	protected EList<Edge> edges;
-	
+
 	/**
 	 * The cached value of the '{@link #getColor() <em>Color</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -76,308 +85,270 @@ public class FacetImpl extends EObjectImpl implements Facet
 	 * @ordered
 	 */
 	protected Color color;
-	
-	/**
-	 * The cached value of the '{@link #getArea() <em>Area</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getArea()
-	 * @generated
-	 * @ordered
-	 */
-	protected Area area;
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FacetImpl()
-	{
+	protected FacetImpl() {
 		super();
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass()
-	{
+	protected EClass eStaticClass() {
 		return MetamodellPackage.Literals.FACET;
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Solid getSolid()
-	{
-		if (eContainerFeatureID() != MetamodellPackage.FACET__SOLID)
-			return null;
-		return (Solid) eContainer();
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetSolid(Solid newSolid, NotificationChain msgs)
-	{
-		msgs = eBasicSetContainer((InternalEObject) newSolid, MetamodellPackage.FACET__SOLID, msgs);
-		return msgs;
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setSolid(Solid newSolid)
-	{
-		if (newSolid != eInternalContainer() || (eContainerFeatureID() != MetamodellPackage.FACET__SOLID && newSolid != null))
-		{
-			if (EcoreUtil.isAncestor(this, newSolid))
-				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
-			NotificationChain msgs = null;
-			if (eInternalContainer() != null)
-				msgs = eBasicRemoveFromContainer(msgs);
-			if (newSolid != null)
-				msgs = ((InternalEObject) newSolid).eInverseAdd(this, MetamodellPackage.SOLID__FACETS, Solid.class, msgs);
-			msgs = basicSetSolid(newSolid, msgs);
-			if (msgs != null)
-				msgs.dispatch();
+	public Solid getSolid() {
+		if (solid != null && solid.eIsProxy()) {
+			InternalEObject oldSolid = (InternalEObject) solid;
+			solid = (Solid) eResolveProxy(oldSolid);
+			if (solid != oldSolid) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetamodellPackage.FACET__SOLID, oldSolid,
+							solid));
+			}
 		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetamodellPackage.FACET__SOLID, newSolid, newSolid));
+		return solid;
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Vector3f getNormal()
-	{
-		if (normal != null && normal.eIsProxy())
-		{
+	public Solid basicGetSolid() {
+		return solid;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setSolid(Solid newSolid) {
+		Solid oldSolid = solid;
+		solid = newSolid;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MetamodellPackage.FACET__SOLID, oldSolid, solid));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Vector3f getNormal() {
+		if (normal != null && normal.eIsProxy()) {
 			InternalEObject oldNormal = (InternalEObject) normal;
 			normal = (Vector3f) eResolveProxy(oldNormal);
-			if (normal != oldNormal)
-			{
+			if (normal != oldNormal) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetamodellPackage.FACET__NORMAL, oldNormal, normal));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetamodellPackage.FACET__NORMAL,
+							oldNormal, normal));
 			}
 		}
 		return normal;
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Vector3f basicGetNormal()
-	{
+	public Vector3f basicGetNormal() {
 		return normal;
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNormal(Vector3f newNormal)
-	{
+	public void setNormal(Vector3f newNormal) {
 		Vector3f oldNormal = normal;
 		normal = newNormal;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, MetamodellPackage.FACET__NORMAL, oldNormal, normal));
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Edge> getEdges()
-	{
-		if (edges == null)
-		{
+	public EList<Edge> getEdges() {
+		if (edges == null) {
 			edges = new EObjectResolvingEList<Edge>(Edge.class, this, MetamodellPackage.FACET__EDGES);
 		}
 		return edges;
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Color getColor()
-	{
-		if (color != null && color.eIsProxy())
-		{
+	public Color getColor() {
+		if (color != null && color.eIsProxy()) {
 			InternalEObject oldColor = (InternalEObject) color;
 			color = (Color) eResolveProxy(oldColor);
-			if (color != oldColor)
-			{
+			if (color != oldColor) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetamodellPackage.FACET__COLOR, oldColor, color));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetamodellPackage.FACET__COLOR, oldColor,
+							color));
 			}
 		}
 		return color;
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Color basicGetColor()
-	{
+	public Color basicGetColor() {
 		return color;
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setColor(Color newColor)
-	{
+	public void setColor(Color newColor) {
 		Color oldColor = color;
 		color = newColor;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, MetamodellPackage.FACET__COLOR, oldColor, color));
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Area getArea()
-	{
-		if (area != null && area.eIsProxy())
-		{
-			InternalEObject oldArea = (InternalEObject) area;
-			area = (Area) eResolveProxy(oldArea);
-			if (area != oldArea)
-			{
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetamodellPackage.FACET__AREA, oldArea, area));
-			}
-		}
-		return area;
+	public Area getArea() {
+		if (eContainerFeatureID() != MetamodellPackage.FACET__AREA)
+			return null;
+		return (Area) eContainer();
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Area basicGetArea()
-	{
-		return area;
+	public NotificationChain basicSetArea(Area newArea, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject) newArea, MetamodellPackage.FACET__AREA, msgs);
+		return msgs;
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setArea(Area newArea)
-	{
-		Area oldArea = area;
-		area = newArea;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetamodellPackage.FACET__AREA, oldArea, area));
+	public void setArea(Area newArea) {
+		if (newArea != eInternalContainer()
+				|| (eContainerFeatureID() != MetamodellPackage.FACET__AREA && newArea != null)) {
+			if (EcoreUtil.isAncestor(this, newArea))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newArea != null)
+				msgs = ((InternalEObject) newArea).eInverseAdd(this, MetamodellPackage.AREA__FACETS, Area.class, msgs);
+			msgs = basicSetArea(newArea, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MetamodellPackage.FACET__AREA, newArea, newArea));
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
-			case MetamodellPackage.FACET__SOLID:
-				if (eInternalContainer() != null)
-					msgs = eBasicRemoveFromContainer(msgs);
-				return basicSetSolid((Solid) otherEnd, msgs);
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case MetamodellPackage.FACET__AREA:
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			return basicSetArea((Area) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-	{
-		switch (featureID)
-		{
-			case MetamodellPackage.FACET__SOLID:
-				return basicSetSolid(null, msgs);
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case MetamodellPackage.FACET__AREA:
+			return basicSetArea(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs)
-	{
-		switch (eContainerFeatureID())
-		{
-			case MetamodellPackage.FACET__SOLID:
-				return eInternalContainer().eInverseRemove(this, MetamodellPackage.SOLID__FACETS, Solid.class, msgs);
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+		case MetamodellPackage.FACET__AREA:
+			return eInternalContainer().eInverseRemove(this, MetamodellPackage.AREA__FACETS, Area.class, msgs);
 		}
 		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType)
-	{
-		switch (featureID)
-		{
-			case MetamodellPackage.FACET__SOLID:
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case MetamodellPackage.FACET__SOLID:
+			if (resolve)
 				return getSolid();
-			case MetamodellPackage.FACET__NORMAL:
-				if (resolve)
-					return getNormal();
-				return basicGetNormal();
-			case MetamodellPackage.FACET__EDGES:
-				return getEdges();
-			case MetamodellPackage.FACET__COLOR:
-				if (resolve)
-					return getColor();
-				return basicGetColor();
-			case MetamodellPackage.FACET__AREA:
-				if (resolve)
-					return getArea();
-				return basicGetArea();
+			return basicGetSolid();
+		case MetamodellPackage.FACET__NORMAL:
+			if (resolve)
+				return getNormal();
+			return basicGetNormal();
+		case MetamodellPackage.FACET__EDGES:
+			return getEdges();
+		case MetamodellPackage.FACET__COLOR:
+			if (resolve)
+				return getColor();
+			return basicGetColor();
+		case MetamodellPackage.FACET__AREA:
+			return getArea();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -385,83 +356,77 @@ public class FacetImpl extends EObjectImpl implements Facet
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void eSet(int featureID, Object newValue)
-	{
-		switch (featureID)
-		{
-			case MetamodellPackage.FACET__SOLID:
-				setSolid((Solid) newValue);
-				return;
-			case MetamodellPackage.FACET__NORMAL:
-				setNormal((Vector3f) newValue);
-				return;
-			case MetamodellPackage.FACET__EDGES:
-				getEdges().clear();
-				getEdges().addAll((Collection<? extends Edge>) newValue);
-				return;
-			case MetamodellPackage.FACET__COLOR:
-				setColor((Color) newValue);
-				return;
-			case MetamodellPackage.FACET__AREA:
-				setArea((Area) newValue);
-				return;
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case MetamodellPackage.FACET__SOLID:
+			setSolid((Solid) newValue);
+			return;
+		case MetamodellPackage.FACET__NORMAL:
+			setNormal((Vector3f) newValue);
+			return;
+		case MetamodellPackage.FACET__EDGES:
+			getEdges().clear();
+			getEdges().addAll((Collection<? extends Edge>) newValue);
+			return;
+		case MetamodellPackage.FACET__COLOR:
+			setColor((Color) newValue);
+			return;
+		case MetamodellPackage.FACET__AREA:
+			setArea((Area) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID)
-	{
-		switch (featureID)
-		{
-			case MetamodellPackage.FACET__SOLID:
-				setSolid((Solid) null);
-				return;
-			case MetamodellPackage.FACET__NORMAL:
-				setNormal((Vector3f) null);
-				return;
-			case MetamodellPackage.FACET__EDGES:
-				getEdges().clear();
-				return;
-			case MetamodellPackage.FACET__COLOR:
-				setColor((Color) null);
-				return;
-			case MetamodellPackage.FACET__AREA:
-				setArea((Area) null);
-				return;
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case MetamodellPackage.FACET__SOLID:
+			setSolid((Solid) null);
+			return;
+		case MetamodellPackage.FACET__NORMAL:
+			setNormal((Vector3f) null);
+			return;
+		case MetamodellPackage.FACET__EDGES:
+			getEdges().clear();
+			return;
+		case MetamodellPackage.FACET__COLOR:
+			setColor((Color) null);
+			return;
+		case MetamodellPackage.FACET__AREA:
+			setArea((Area) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID)
-	{
-		switch (featureID)
-		{
-			case MetamodellPackage.FACET__SOLID:
-				return getSolid() != null;
-			case MetamodellPackage.FACET__NORMAL:
-				return normal != null;
-			case MetamodellPackage.FACET__EDGES:
-				return edges != null && !edges.isEmpty();
-			case MetamodellPackage.FACET__COLOR:
-				return color != null;
-			case MetamodellPackage.FACET__AREA:
-				return area != null;
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case MetamodellPackage.FACET__SOLID:
+			return solid != null;
+		case MetamodellPackage.FACET__NORMAL:
+			return normal != null;
+		case MetamodellPackage.FACET__EDGES:
+			return edges != null && !edges.isEmpty();
+		case MetamodellPackage.FACET__COLOR:
+			return color != null;
+		case MetamodellPackage.FACET__AREA:
+			return getArea() != null;
 		}
 		return super.eIsSet(featureID);
 	}
 	// <-- [user code injected with eMoflon]
-	
+
 	// [user code injected with eMoflon] -->
 } //FacetImpl

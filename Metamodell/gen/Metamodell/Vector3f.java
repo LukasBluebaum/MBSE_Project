@@ -24,8 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Vector3f extends EObject
-{
+public interface Vector3f extends EObject {
 	/**
 	 * Returns the value of the '<em><b>X</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -41,7 +40,7 @@ public interface Vector3f extends EObject
 	 * @generated
 	 */
 	float getX();
-	
+
 	/**
 	 * Sets the value of the '{@link Metamodell.Vector3f#getX <em>X</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -51,7 +50,7 @@ public interface Vector3f extends EObject
 	 * @generated
 	 */
 	void setX(float value);
-	
+
 	/**
 	 * Returns the value of the '<em><b>Y</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -67,7 +66,7 @@ public interface Vector3f extends EObject
 	 * @generated
 	 */
 	float getY();
-	
+
 	/**
 	 * Sets the value of the '{@link Metamodell.Vector3f#getY <em>Y</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -77,7 +76,7 @@ public interface Vector3f extends EObject
 	 * @generated
 	 */
 	void setY(float value);
-	
+
 	/**
 	 * Returns the value of the '<em><b>Z</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -93,7 +92,7 @@ public interface Vector3f extends EObject
 	 * @generated
 	 */
 	float getZ();
-	
+
 	/**
 	 * Sets the value of the '{@link Metamodell.Vector3f#getZ <em>Z</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -104,6 +103,6 @@ public interface Vector3f extends EObject
 	 */
 	void setZ(float value);
 	// <-- [user code injected with eMoflon]
-	
+
 	// [user code injected with eMoflon] -->
 } // Vector3f
