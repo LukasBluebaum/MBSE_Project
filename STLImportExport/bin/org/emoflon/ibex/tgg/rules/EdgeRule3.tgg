@@ -35,9 +35,9 @@
     ++ facet2:Metamodell.Facet {
     	++-normal->normal
         ++ - edges->e1
-
         ++-edges->e2
         ++-edges->e3
+        ++-solid->solid
     }
     
     ++normal:Metamodell.Vector3f

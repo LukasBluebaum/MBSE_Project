@@ -16,7 +16,6 @@
 	++s2s:SolidToSolid{
 		#src->s
 		#trg->solid
-		
 	}
 }
 

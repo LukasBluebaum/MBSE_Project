@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 @SuppressWarnings("all")
+@SuppressWarnings("all")
 public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 	public static final String[] tokenNames = new String[] {
 		"<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ANY_OTHER", "RULE_FLOAT", 

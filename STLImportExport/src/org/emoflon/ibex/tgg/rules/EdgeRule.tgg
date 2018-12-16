@@ -15,8 +15,6 @@
         ++ -v1-> vec1
         ++ -v2-> vec2
         ++ -v3-> vec3
-        
-        
     }
     
       vec1:myDsl.Vector
@@ -37,6 +35,7 @@
         ++-edges->e1
         ++-edges->e2
         ++-edges->e3
+        ++-solid->solid
     }
     
     ++normal:Metamodell.Vector3f

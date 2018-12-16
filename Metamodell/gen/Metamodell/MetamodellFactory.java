@@ -12,7 +12,8 @@ import org.eclipse.emf.ecore.EFactory;
  * @see Metamodell.MetamodellPackage
  * @generated
  */
-public interface MetamodellFactory extends EFactory {
+public interface MetamodellFactory extends EFactory
+{
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
@@ -20,7 +21,7 @@ public interface MetamodellFactory extends EFactory {
 	 * @generated
 	 */
 	MetamodellFactory eINSTANCE = Metamodell.impl.MetamodellFactoryImpl.init();
-
+	
 	/**
 	 * Returns a new object of class '<em>Vector3f</em>'.
 	 * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ public interface MetamodellFactory extends EFactory {
 	 * @generated
 	 */
 	Vector3f createVector3f();
-
+	
 	/**
 	 * Returns a new object of class '<em>Facet</em>'.
 	 * <!-- begin-user-doc -->
@@ -38,7 +39,7 @@ public interface MetamodellFactory extends EFactory {
 	 * @generated
 	 */
 	Facet createFacet();
-
+	
 	/**
 	 * Returns a new object of class '<em>Edge</em>'.
 	 * <!-- begin-user-doc -->
@@ -47,7 +48,7 @@ public interface MetamodellFactory extends EFactory {
 	 * @generated
 	 */
 	Edge createEdge();
-
+	
 	/**
 	 * Returns a new object of class '<em>Area</em>'.
 	 * <!-- begin-user-doc -->
@@ -56,7 +57,7 @@ public interface MetamodellFactory extends EFactory {
 	 * @generated
 	 */
 	Area createArea();
-
+	
 	/**
 	 * Returns a new object of class '<em>Solid</em>'.
 	 * <!-- begin-user-doc -->
@@ -65,7 +66,7 @@ public interface MetamodellFactory extends EFactory {
 	 * @generated
 	 */
 	Solid createSolid();
-
+	
 	/**
 	 * Returns a new object of class '<em>Color</em>'.
 	 * <!-- begin-user-doc -->
@@ -74,7 +75,7 @@ public interface MetamodellFactory extends EFactory {
 	 * @generated
 	 */
 	Color createColor();
-
+	
 	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
@@ -83,5 +84,5 @@ public interface MetamodellFactory extends EFactory {
 	 * @generated
 	 */
 	MetamodellPackage getMetamodellPackage();
-
+	
 } //MetamodellFactory

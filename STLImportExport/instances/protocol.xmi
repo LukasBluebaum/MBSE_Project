@@ -11,104 +11,114 @@
     <CREATE__CORR__s2s href="corr.xmi#/1"/>
   </STLImportExport:SolidRule__Marker>
   <STLImportExport:VectorRule__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/1/@facets.2/@v1"/>
+    <CREATE__SRC__vec href="src.xmi#/1/@facets.0/@v3"/>
     <CREATE__TRG__vector href="trg.xmi#/2"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/2"/>
   </STLImportExport:VectorRule__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/0/@facets.0/@v2"/>
+    <CREATE__SRC__vec href="src.xmi#/1/@facets.3/@v2"/>
     <CONTEXT__TRG__vector href="trg.xmi#/2"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/3"/>
   </STLImportExport:VectorRule2__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/1/@facets.0/@v2"/>
+    <CREATE__SRC__vec href="src.xmi#/1/@facets.2/@v2"/>
     <CONTEXT__TRG__vector href="trg.xmi#/2"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/4"/>
   </STLImportExport:VectorRule2__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/0/@facets.2/@v1"/>
+    <CREATE__SRC__vec href="src.xmi#/0/@facets.0/@v3"/>
     <CONTEXT__TRG__vector href="trg.xmi#/2"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/5"/>
   </STLImportExport:VectorRule2__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/1/@facets.1/@v1"/>
+    <CREATE__SRC__vec href="src.xmi#/0/@facets.3/@v2"/>
     <CONTEXT__TRG__vector href="trg.xmi#/2"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/6"/>
   </STLImportExport:VectorRule2__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/0/@facets.1/@v1"/>
+    <CREATE__SRC__vec href="src.xmi#/0/@facets.2/@v2"/>
     <CONTEXT__TRG__vector href="trg.xmi#/2"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/7"/>
   </STLImportExport:VectorRule2__Marker>
   <STLImportExport:VectorRule__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/0/@facets.3/@v3"/>
+    <CREATE__SRC__vec href="src.xmi#/1/@facets.1/@v3"/>
     <CREATE__TRG__vector href="trg.xmi#/3"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/8"/>
   </STLImportExport:VectorRule__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/1/@facets.3/@v3"/>
+    <CREATE__SRC__vec href="src.xmi#/1/@facets.0/@v1"/>
     <CONTEXT__TRG__vector href="trg.xmi#/3"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/9"/>
   </STLImportExport:VectorRule2__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/0/@facets.2/@v3"/>
+    <CREATE__SRC__vec href="src.xmi#/0/@facets.1/@v3"/>
     <CONTEXT__TRG__vector href="trg.xmi#/3"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/10"/>
   </STLImportExport:VectorRule2__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/1/@facets.2/@v3"/>
+    <CREATE__SRC__vec href="src.xmi#/0/@facets.0/@v1"/>
     <CONTEXT__TRG__vector href="trg.xmi#/3"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/11"/>
   </STLImportExport:VectorRule2__Marker>
-  <STLImportExport:VectorRule__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/1/@facets.1/@v2"/>
-    <CREATE__TRG__vector href="trg.xmi#/4"/>
-    <CREATE__CORR__vek2vek href="corr.xmi#/12"/>
-  </STLImportExport:VectorRule__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/0/@facets.1/@v2"/>
-    <CONTEXT__TRG__vector href="trg.xmi#/4"/>
+    <CREATE__SRC__vec href="src.xmi#/1/@facets.3/@v1"/>
+    <CONTEXT__TRG__vector href="trg.xmi#/3"/>
+    <CREATE__CORR__vek2vek href="corr.xmi#/12"/>
+  </STLImportExport:VectorRule2__Marker>
+  <STLImportExport:VectorRule2__Marker final="true">
+    <CREATE__SRC__vec href="src.xmi#/0/@facets.3/@v1"/>
+    <CONTEXT__TRG__vector href="trg.xmi#/3"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/13"/>
   </STLImportExport:VectorRule2__Marker>
   <STLImportExport:VectorRule__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/1/@facets.3/@v2"/>
-    <CREATE__TRG__vector href="trg.xmi#/5"/>
+    <CREATE__SRC__vec href="src.xmi#/0/@facets.1/@v2"/>
+    <CREATE__TRG__vector href="trg.xmi#/4"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/14"/>
   </STLImportExport:VectorRule__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/0/@facets.0/@v3"/>
-    <CONTEXT__TRG__vector href="trg.xmi#/5"/>
+    <CREATE__SRC__vec href="src.xmi#/1/@facets.1/@v2"/>
+    <CONTEXT__TRG__vector href="trg.xmi#/4"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/15"/>
   </STLImportExport:VectorRule2__Marker>
-  <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/1/@facets.2/@v2"/>
-    <CONTEXT__TRG__vector href="trg.xmi#/5"/>
+  <STLImportExport:VectorRule__Marker final="true">
+    <CREATE__SRC__vec href="src.xmi#/1/@facets.2/@v1"/>
+    <CREATE__TRG__vector href="trg.xmi#/5"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/16"/>
-  </STLImportExport:VectorRule2__Marker>
+  </STLImportExport:VectorRule__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/1/@facets.0/@v3"/>
+    <CREATE__SRC__vec href="src.xmi#/0/@facets.1/@v1"/>
     <CONTEXT__TRG__vector href="trg.xmi#/5"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/17"/>
   </STLImportExport:VectorRule2__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/0/@facets.2/@v2"/>
+    <CREATE__SRC__vec href="src.xmi#/0/@facets.0/@v2"/>
     <CONTEXT__TRG__vector href="trg.xmi#/5"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/18"/>
   </STLImportExport:VectorRule2__Marker>
   <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/0/@facets.3/@v2"/>
+    <CREATE__SRC__vec href="src.xmi#/1/@facets.0/@v2"/>
     <CONTEXT__TRG__vector href="trg.xmi#/5"/>
     <CREATE__CORR__vek2vek href="corr.xmi#/19"/>
   </STLImportExport:VectorRule2__Marker>
+  <STLImportExport:VectorRule2__Marker final="true">
+    <CREATE__SRC__vec href="src.xmi#/1/@facets.1/@v1"/>
+    <CONTEXT__TRG__vector href="trg.xmi#/5"/>
+    <CREATE__CORR__vek2vek href="corr.xmi#/20"/>
+  </STLImportExport:VectorRule2__Marker>
+  <STLImportExport:VectorRule2__Marker final="true">
+    <CREATE__SRC__vec href="src.xmi#/0/@facets.2/@v1"/>
+    <CONTEXT__TRG__vector href="trg.xmi#/5"/>
+    <CREATE__CORR__vek2vek href="corr.xmi#/21"/>
+  </STLImportExport:VectorRule2__Marker>
   <STLImportExport:EdgeRule__Marker final="true">
-    <CREATE__SRC__facet1 href="src.xmi#/0/@facets.2"/>
-    <CREATE__SRC__n href="src.xmi#/0/@facets.2/@normal"/>
-    <CONTEXT__SRC__s href="src.xmi#/0"/>
-    <CONTEXT__SRC__vec1 href="src.xmi#/0/@facets.2/@v1"/>
-    <CONTEXT__SRC__vec2 href="src.xmi#/0/@facets.2/@v2"/>
-    <CONTEXT__SRC__vec3 href="src.xmi#/0/@facets.2/@v3"/>
-    <CONTEXT__TRG__a1 href="trg.xmi#/2"/>
-    <CONTEXT__TRG__b1 href="trg.xmi#/5"/>
+    <CREATE__SRC__facet1 href="src.xmi#/1/@facets.1"/>
+    <CREATE__SRC__n href="src.xmi#/1/@facets.1/@normal"/>
+    <CONTEXT__SRC__s href="src.xmi#/1"/>
+    <CONTEXT__SRC__vec1 href="src.xmi#/1/@facets.1/@v1"/>
+    <CONTEXT__SRC__vec2 href="src.xmi#/1/@facets.1/@v2"/>
+    <CONTEXT__SRC__vec3 href="src.xmi#/1/@facets.1/@v3"/>
+    <CONTEXT__TRG__a1 href="trg.xmi#/5"/>
+    <CONTEXT__TRG__b1 href="trg.xmi#/4"/>
     <CONTEXT__TRG__c1 href="trg.xmi#/3"/>
     <CREATE__TRG__e1 href="trg.xmi#/6"/>
     <CREATE__TRG__e2 href="trg.xmi#/7"/>
@@ -116,65 +126,35 @@
     <CREATE__TRG__facet2 href="trg.xmi#/0/@facets.0"/>
     <CREATE__TRG__normal href="trg.xmi#/9"/>
     <CONTEXT__TRG__solid href="trg.xmi#/0"/>
-    <CREATE__CORR__f2f href="corr.xmi#/20"/>
-    <CREATE__CORR__n2n href="corr.xmi#/21"/>
-    <CREATE__CORR__v1v href="corr.xmi#/22"/>
-    <CREATE__CORR__v2v href="corr.xmi#/23"/>
-    <CREATE__CORR__v3v href="corr.xmi#/24"/>
+    <CREATE__CORR__f2f href="corr.xmi#/22"/>
+    <CREATE__CORR__n2n href="corr.xmi#/23"/>
+    <CREATE__CORR__v1v href="corr.xmi#/24"/>
+    <CREATE__CORR__v2v href="corr.xmi#/25"/>
+    <CREATE__CORR__v3v href="corr.xmi#/26"/>
   </STLImportExport:EdgeRule__Marker>
-  <STLImportExport:EdgeRule4__Marker final="true">
-    <CREATE__SRC__facet1 href="src.xmi#/1/@facets.2"/>
-    <CREATE__SRC__n href="src.xmi#/1/@facets.2/@normal"/>
-    <CONTEXT__SRC__s href="src.xmi#/1"/>
-    <CONTEXT__SRC__vec1 href="src.xmi#/1/@facets.2/@v1"/>
-    <CONTEXT__SRC__vec2 href="src.xmi#/1/@facets.2/@v2"/>
-    <CONTEXT__SRC__vec3 href="src.xmi#/1/@facets.2/@v3"/>
+  <STLImportExport:EdgeRule3__Marker final="true">
+    <CREATE__SRC__facet1 href="src.xmi#/0/@facets.1"/>
+    <CREATE__SRC__n href="src.xmi#/0/@facets.1/@normal"/>
+    <CONTEXT__SRC__s href="src.xmi#/0"/>
+    <CONTEXT__SRC__vec1 href="src.xmi#/0/@facets.1/@v1"/>
+    <CONTEXT__SRC__vec2 href="src.xmi#/0/@facets.1/@v2"/>
+    <CONTEXT__SRC__vec3 href="src.xmi#/0/@facets.1/@v3"/>
     <CONTEXT__TRG___facet3 href="trg.xmi#/0/@facets.0"/>
-    <CONTEXT__TRG__a1 href="trg.xmi#/3"/>
-    <CONTEXT__TRG__b1 href="trg.xmi#/2"/>
+    <CONTEXT__TRG__a1 href="trg.xmi#/4"/>
+    <CONTEXT__TRG__b1 href="trg.xmi#/3"/>
     <CONTEXT__TRG__c1 href="trg.xmi#/5"/>
-    <CONTEXT__TRG__e1 href="trg.xmi#/8"/>
+    <CONTEXT__TRG__e1 href="trg.xmi#/7"/>
     <CREATE__TRG__e2 href="trg.xmi#/10"/>
     <CREATE__TRG__e3 href="trg.xmi#/11"/>
     <CREATE__TRG__facet2 href="trg.xmi#/0/@facets.1"/>
     <CREATE__TRG__normal href="trg.xmi#/12"/>
     <CONTEXT__TRG__solid href="trg.xmi#/0"/>
-    <CREATE__CORR__n2n href="corr.xmi#/25"/>
-    <CREATE__CORR__v1v href="corr.xmi#/26"/>
-    <CREATE__CORR__v2v href="corr.xmi#/27"/>
-    <CREATE__CORR__v3v href="corr.xmi#/28"/>
-  </STLImportExport:EdgeRule4__Marker>
-  <STLImportExport:VectorRule__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/1/@facets.1/@v3"/>
-    <CREATE__TRG__vector href="trg.xmi#/13"/>
-    <CREATE__CORR__vek2vek href="corr.xmi#/29"/>
-  </STLImportExport:VectorRule__Marker>
-  <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/0/@facets.0/@v1"/>
-    <CONTEXT__TRG__vector href="trg.xmi#/13"/>
-    <CREATE__CORR__vek2vek href="corr.xmi#/30"/>
-  </STLImportExport:VectorRule2__Marker>
-  <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/0/@facets.3/@v1"/>
-    <CONTEXT__TRG__vector href="trg.xmi#/13"/>
-    <CREATE__CORR__vek2vek href="corr.xmi#/31"/>
-  </STLImportExport:VectorRule2__Marker>
-  <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/1/@facets.3/@v1"/>
-    <CONTEXT__TRG__vector href="trg.xmi#/13"/>
-    <CREATE__CORR__vek2vek href="corr.xmi#/32"/>
-  </STLImportExport:VectorRule2__Marker>
-  <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/1/@facets.0/@v1"/>
-    <CONTEXT__TRG__vector href="trg.xmi#/13"/>
-    <CREATE__CORR__vek2vek href="corr.xmi#/33"/>
-  </STLImportExport:VectorRule2__Marker>
-  <STLImportExport:VectorRule2__Marker final="true">
-    <CREATE__SRC__vec href="src.xmi#/0/@facets.1/@v3"/>
-    <CONTEXT__TRG__vector href="trg.xmi#/13"/>
-    <CREATE__CORR__vek2vek href="corr.xmi#/34"/>
-  </STLImportExport:VectorRule2__Marker>
-  <STLImportExport:EdgeRule3__Marker final="true">
+    <CREATE__CORR__n2n href="corr.xmi#/27"/>
+    <CREATE__CORR__v1v href="corr.xmi#/28"/>
+    <CREATE__CORR__v2v href="corr.xmi#/29"/>
+    <CREATE__CORR__v3v href="corr.xmi#/30"/>
+  </STLImportExport:EdgeRule3__Marker>
+  <STLImportExport:EdgeRule2__Marker final="true">
     <CREATE__SRC__facet1 href="src.xmi#/0/@facets.0"/>
     <CREATE__SRC__n href="src.xmi#/0/@facets.0/@normal"/>
     <CONTEXT__SRC__s href="src.xmi#/0"/>
@@ -182,67 +162,41 @@
     <CONTEXT__SRC__vec2 href="src.xmi#/0/@facets.0/@v2"/>
     <CONTEXT__SRC__vec3 href="src.xmi#/0/@facets.0/@v3"/>
     <CONTEXT__TRG___facet3 href="trg.xmi#/0/@facets.1"/>
-    <CONTEXT__TRG__a1 href="trg.xmi#/2"/>
+    <CONTEXT__TRG__a1 href="trg.xmi#/3"/>
     <CONTEXT__TRG__b1 href="trg.xmi#/5"/>
-    <CONTEXT__TRG__c1 href="trg.xmi#/13"/>
+    <CONTEXT__TRG__c1 href="trg.xmi#/2"/>
     <CONTEXT__TRG__e1 href="trg.xmi#/10"/>
-    <CREATE__TRG__e2 href="trg.xmi#/14"/>
-    <CREATE__TRG__e3 href="trg.xmi#/15"/>
+    <CREATE__TRG__e2 href="trg.xmi#/13"/>
+    <CREATE__TRG__e3 href="trg.xmi#/14"/>
     <CREATE__TRG__facet2 href="trg.xmi#/0/@facets.2"/>
-    <CREATE__TRG__normal href="trg.xmi#/16"/>
+    <CREATE__TRG__normal href="trg.xmi#/15"/>
     <CONTEXT__TRG__solid href="trg.xmi#/0"/>
-    <CREATE__CORR__n2n href="corr.xmi#/35"/>
-    <CREATE__CORR__v1v href="corr.xmi#/36"/>
-    <CREATE__CORR__v2v href="corr.xmi#/37"/>
-    <CREATE__CORR__v3v href="corr.xmi#/38"/>
-  </STLImportExport:EdgeRule3__Marker>
+    <CREATE__CORR__n2n href="corr.xmi#/31"/>
+    <CREATE__CORR__v1v href="corr.xmi#/32"/>
+    <CREATE__CORR__v2v href="corr.xmi#/33"/>
+    <CREATE__CORR__v3v href="corr.xmi#/34"/>
+  </STLImportExport:EdgeRule2__Marker>
+  <STLImportExport:VectorRule2__Marker final="true">
+    <CREATE__SRC__vec href="src.xmi#/0/@facets.2/@v3"/>
+    <CONTEXT__TRG__vector href="trg.xmi#/15"/>
+    <CREATE__CORR__vek2vek href="corr.xmi#/35"/>
+  </STLImportExport:VectorRule2__Marker>
+  <STLImportExport:VectorRule2__Marker final="true">
+    <CREATE__SRC__vec href="src.xmi#/0/@facets.3/@v3"/>
+    <CONTEXT__TRG__vector href="trg.xmi#/15"/>
+    <CREATE__CORR__vek2vek href="corr.xmi#/36"/>
+  </STLImportExport:VectorRule2__Marker>
+  <STLImportExport:VectorRule2__Marker final="true">
+    <CREATE__SRC__vec href="src.xmi#/1/@facets.2/@v3"/>
+    <CONTEXT__TRG__vector href="trg.xmi#/15"/>
+    <CREATE__CORR__vek2vek href="corr.xmi#/37"/>
+  </STLImportExport:VectorRule2__Marker>
+  <STLImportExport:VectorRule2__Marker final="true">
+    <CREATE__SRC__vec href="src.xmi#/1/@facets.3/@v3"/>
+    <CONTEXT__TRG__vector href="trg.xmi#/15"/>
+    <CREATE__CORR__vek2vek href="corr.xmi#/38"/>
+  </STLImportExport:VectorRule2__Marker>
   <STLImportExport:EdgeRule5__Marker final="true">
-    <CREATE__SRC__facet1 href="src.xmi#/1/@facets.3"/>
-    <CREATE__SRC__n href="src.xmi#/1/@facets.3/@normal"/>
-    <CONTEXT__SRC__s href="src.xmi#/1"/>
-    <CONTEXT__SRC__vec1 href="src.xmi#/1/@facets.3/@v1"/>
-    <CONTEXT__SRC__vec2 href="src.xmi#/1/@facets.3/@v2"/>
-    <CONTEXT__SRC__vec3 href="src.xmi#/1/@facets.3/@v3"/>
-    <CONTEXT__TRG___facet3 href="trg.xmi#/0/@facets.2"/>
-    <CONTEXT__TRG___facet4 href="trg.xmi#/0/@facets.1"/>
-    <CONTEXT__TRG__a1 href="trg.xmi#/13"/>
-    <CONTEXT__TRG__b1 href="trg.xmi#/5"/>
-    <CONTEXT__TRG__c1 href="trg.xmi#/3"/>
-    <CONTEXT__TRG__e1 href="trg.xmi#/14"/>
-    <CONTEXT__TRG__e2 href="trg.xmi#/11"/>
-    <CREATE__TRG__e3 href="trg.xmi#/17"/>
-    <CREATE__TRG__facet2 href="trg.xmi#/1/@facets.0"/>
-    <CREATE__TRG__normal href="trg.xmi#/18"/>
-    <CONTEXT__TRG__solid href="trg.xmi#/1"/>
-    <CREATE__CORR__n2n href="corr.xmi#/39"/>
-    <CREATE__CORR__v1v href="corr.xmi#/40"/>
-    <CREATE__CORR__v2v href="corr.xmi#/41"/>
-    <CREATE__CORR__v3v href="corr.xmi#/42"/>
-  </STLImportExport:EdgeRule5__Marker>
-  <STLImportExport:EdgeRule6__Marker final="true">
-    <CREATE__SRC__facet1 href="src.xmi#/0/@facets.3"/>
-    <CREATE__SRC__n href="src.xmi#/0/@facets.3/@normal"/>
-    <CONTEXT__SRC__s href="src.xmi#/0"/>
-    <CONTEXT__SRC__vec1 href="src.xmi#/0/@facets.3/@v1"/>
-    <CONTEXT__SRC__vec2 href="src.xmi#/0/@facets.3/@v2"/>
-    <CONTEXT__SRC__vec3 href="src.xmi#/0/@facets.3/@v3"/>
-    <CONTEXT__TRG___facet3 href="trg.xmi#/0/@facets.0"/>
-    <CONTEXT__TRG___facet4 href="trg.xmi#/1/@facets.0"/>
-    <CONTEXT__TRG__a1 href="trg.xmi#/5"/>
-    <CONTEXT__TRG__b1 href="trg.xmi#/3"/>
-    <CONTEXT__TRG__c1 href="trg.xmi#/13"/>
-    <CONTEXT__TRG__e1 href="trg.xmi#/7"/>
-    <CONTEXT__TRG__e2 href="trg.xmi#/17"/>
-    <CREATE__TRG__e3 href="trg.xmi#/19"/>
-    <CREATE__TRG__facet2 href="trg.xmi#/1/@facets.1"/>
-    <CREATE__TRG__normal href="trg.xmi#/20"/>
-    <CONTEXT__TRG__solid href="trg.xmi#/1"/>
-    <CREATE__CORR__n2n href="corr.xmi#/43"/>
-    <CREATE__CORR__v1v href="corr.xmi#/44"/>
-    <CREATE__CORR__v2v href="corr.xmi#/45"/>
-    <CREATE__CORR__v3v href="corr.xmi#/46"/>
-  </STLImportExport:EdgeRule6__Marker>
-  <STLImportExport:EdgeRule8__Marker final="true">
     <CREATE__SRC__facet1 href="src.xmi#/1/@facets.0"/>
     <CREATE__SRC__n href="src.xmi#/1/@facets.0/@normal"/>
     <CONTEXT__SRC__s href="src.xmi#/1"/>
@@ -250,64 +204,109 @@
     <CONTEXT__SRC__vec2 href="src.xmi#/1/@facets.0/@v2"/>
     <CONTEXT__SRC__vec3 href="src.xmi#/1/@facets.0/@v3"/>
     <CONTEXT__TRG___facet3 href="trg.xmi#/0/@facets.0"/>
-    <CONTEXT__TRG___facet4 href="trg.xmi#/1/@facets.1"/>
-    <CONTEXT__TRG___facet5 href="trg.xmi#/0/@facets.2"/>
-    <CONTEXT__TRG__a1 href="trg.xmi#/2"/>
+    <CONTEXT__TRG___facet4 href="trg.xmi#/0/@facets.2"/>
+    <CONTEXT__TRG__a1 href="trg.xmi#/3"/>
     <CONTEXT__TRG__b1 href="trg.xmi#/5"/>
-    <CONTEXT__TRG__c1 href="trg.xmi#/13"/>
-    <CONTEXT__TRG__e1 href="trg.xmi#/6"/>
-    <CONTEXT__TRG__e2 href="trg.xmi#/19"/>
-    <CONTEXT__TRG__e3 href="trg.xmi#/15"/>
+    <CONTEXT__TRG__c1 href="trg.xmi#/2"/>
+    <CONTEXT__TRG__e1 href="trg.xmi#/8"/>
+    <CONTEXT__TRG__e2 href="trg.xmi#/13"/>
+    <CREATE__TRG__e3 href="trg.xmi#/16"/>
+    <CREATE__TRG__facet2 href="trg.xmi#/1/@facets.0"/>
+    <CREATE__TRG__normal href="trg.xmi#/17"/>
+    <CONTEXT__TRG__solid href="trg.xmi#/1"/>
+    <CREATE__CORR__n2n href="corr.xmi#/39"/>
+    <CREATE__CORR__v1v href="corr.xmi#/40"/>
+    <CREATE__CORR__v2v href="corr.xmi#/41"/>
+    <CREATE__CORR__v3v href="corr.xmi#/42"/>
+  </STLImportExport:EdgeRule5__Marker>
+  <STLImportExport:EdgeRule2__Marker final="true">
+    <CREATE__SRC__facet1 href="src.xmi#/0/@facets.3"/>
+    <CREATE__SRC__n href="src.xmi#/0/@facets.3/@normal"/>
+    <CONTEXT__SRC__s href="src.xmi#/0"/>
+    <CONTEXT__SRC__vec1 href="src.xmi#/0/@facets.3/@v1"/>
+    <CONTEXT__SRC__vec2 href="src.xmi#/0/@facets.3/@v2"/>
+    <CONTEXT__SRC__vec3 href="src.xmi#/0/@facets.3/@v3"/>
+    <CONTEXT__TRG___facet3 href="trg.xmi#/0/@facets.2"/>
+    <CONTEXT__TRG__a1 href="trg.xmi#/3"/>
+    <CONTEXT__TRG__b1 href="trg.xmi#/2"/>
+    <CONTEXT__TRG__c1 href="trg.xmi#/15"/>
+    <CONTEXT__TRG__e1 href="trg.xmi#/14"/>
+    <CREATE__TRG__e2 href="trg.xmi#/18"/>
+    <CREATE__TRG__e3 href="trg.xmi#/19"/>
     <CREATE__TRG__facet2 href="trg.xmi#/0/@facets.3"/>
-    <CREATE__TRG__normal href="trg.xmi#/21"/>
+    <CREATE__TRG__normal href="trg.xmi#/20"/>
     <CONTEXT__TRG__solid href="trg.xmi#/0"/>
+    <CREATE__CORR__n2n href="corr.xmi#/43"/>
+    <CREATE__CORR__v1v href="corr.xmi#/44"/>
+    <CREATE__CORR__v2v href="corr.xmi#/45"/>
+    <CREATE__CORR__v3v href="corr.xmi#/46"/>
+  </STLImportExport:EdgeRule2__Marker>
+  <STLImportExport:EdgeRule7__Marker final="true">
+    <CREATE__SRC__facet1 href="src.xmi#/1/@facets.3"/>
+    <CREATE__SRC__n href="src.xmi#/1/@facets.3/@normal"/>
+    <CONTEXT__SRC__s href="src.xmi#/1"/>
+    <CONTEXT__SRC__vec1 href="src.xmi#/1/@facets.3/@v1"/>
+    <CONTEXT__SRC__vec2 href="src.xmi#/1/@facets.3/@v2"/>
+    <CONTEXT__SRC__vec3 href="src.xmi#/1/@facets.3/@v3"/>
+    <CONTEXT__TRG___facet3 href="trg.xmi#/0/@facets.3"/>
+    <CONTEXT__TRG___facet4 href="trg.xmi#/1/@facets.0"/>
+    <CONTEXT__TRG__a1 href="trg.xmi#/15"/>
+    <CONTEXT__TRG__b1 href="trg.xmi#/3"/>
+    <CONTEXT__TRG__c1 href="trg.xmi#/2"/>
+    <CONTEXT__TRG__e1 href="trg.xmi#/19"/>
+    <CONTEXT__TRG__e2 href="trg.xmi#/16"/>
+    <CREATE__TRG__e3 href="trg.xmi#/21"/>
+    <CREATE__TRG__facet2 href="trg.xmi#/1/@facets.1"/>
+    <CREATE__TRG__normal href="trg.xmi#/22"/>
+    <CONTEXT__TRG__solid href="trg.xmi#/1"/>
     <CREATE__CORR__n2n href="corr.xmi#/47"/>
     <CREATE__CORR__v1v href="corr.xmi#/48"/>
     <CREATE__CORR__v2v href="corr.xmi#/49"/>
     <CREATE__CORR__v3v href="corr.xmi#/50"/>
-  </STLImportExport:EdgeRule8__Marker>
-  <STLImportExport:EdgeRule__Marker final="true">
-    <CREATE__SRC__facet1 href="src.xmi#/0/@facets.1"/>
-    <CREATE__SRC__n href="src.xmi#/0/@facets.1/@normal"/>
-    <CONTEXT__SRC__s href="src.xmi#/0"/>
-    <CONTEXT__SRC__vec1 href="src.xmi#/0/@facets.1/@v1"/>
-    <CONTEXT__SRC__vec2 href="src.xmi#/0/@facets.1/@v2"/>
-    <CONTEXT__SRC__vec3 href="src.xmi#/0/@facets.1/@v3"/>
+  </STLImportExport:EdgeRule7__Marker>
+  <STLImportExport:EdgeRule3__Marker final="true">
+    <CREATE__SRC__facet1 href="src.xmi#/1/@facets.2"/>
+    <CREATE__SRC__n href="src.xmi#/1/@facets.2/@normal"/>
+    <CONTEXT__SRC__s href="src.xmi#/1"/>
+    <CONTEXT__SRC__vec1 href="src.xmi#/1/@facets.2/@v1"/>
+    <CONTEXT__SRC__vec2 href="src.xmi#/1/@facets.2/@v2"/>
+    <CONTEXT__SRC__vec3 href="src.xmi#/1/@facets.2/@v3"/>
+    <CONTEXT__TRG___facet3 href="trg.xmi#/1/@facets.1"/>
     <CONTEXT__TRG__a1 href="trg.xmi#/2"/>
-    <CONTEXT__TRG__b1 href="trg.xmi#/4"/>
-    <CONTEXT__TRG__c1 href="trg.xmi#/13"/>
-    <CREATE__TRG__e1 href="trg.xmi#/22"/>
+    <CONTEXT__TRG__b1 href="trg.xmi#/15"/>
+    <CONTEXT__TRG__c1 href="trg.xmi#/5"/>
+    <CONTEXT__TRG__e1 href="trg.xmi#/21"/>
     <CREATE__TRG__e2 href="trg.xmi#/23"/>
     <CREATE__TRG__e3 href="trg.xmi#/24"/>
-    <CREATE__TRG__facet2 href="trg.xmi#/0/@facets.4"/>
-    <CREATE__TRG__normal href="trg.xmi#/25"/>
-    <CONTEXT__TRG__solid href="trg.xmi#/0"/>
-    <CREATE__CORR__f2f href="corr.xmi#/51"/>
-    <CREATE__CORR__n2n href="corr.xmi#/52"/>
-    <CREATE__CORR__v1v href="corr.xmi#/53"/>
-    <CREATE__CORR__v2v href="corr.xmi#/54"/>
-    <CREATE__CORR__v3v href="corr.xmi#/55"/>
-  </STLImportExport:EdgeRule__Marker>
-  <STLImportExport:EdgeRule3__Marker final="true">
-    <CREATE__SRC__facet1 href="src.xmi#/1/@facets.1"/>
-    <CREATE__SRC__n href="src.xmi#/1/@facets.1/@normal"/>
-    <CONTEXT__SRC__s href="src.xmi#/1"/>
-    <CONTEXT__SRC__vec1 href="src.xmi#/1/@facets.1/@v1"/>
-    <CONTEXT__SRC__vec2 href="src.xmi#/1/@facets.1/@v2"/>
-    <CONTEXT__SRC__vec3 href="src.xmi#/1/@facets.1/@v3"/>
-    <CONTEXT__TRG___facet3 href="trg.xmi#/0/@facets.4"/>
-    <CONTEXT__TRG__a1 href="trg.xmi#/4"/>
-    <CONTEXT__TRG__b1 href="trg.xmi#/13"/>
-    <CONTEXT__TRG__c1 href="trg.xmi#/2"/>
-    <CONTEXT__TRG__e1 href="trg.xmi#/23"/>
-    <CREATE__TRG__e2 href="trg.xmi#/26"/>
-    <CREATE__TRG__e3 href="trg.xmi#/27"/>
     <CREATE__TRG__facet2 href="trg.xmi#/1/@facets.2"/>
-    <CREATE__TRG__normal href="trg.xmi#/28"/>
+    <CREATE__TRG__normal href="trg.xmi#/25"/>
     <CONTEXT__TRG__solid href="trg.xmi#/1"/>
-    <CREATE__CORR__n2n href="corr.xmi#/56"/>
-    <CREATE__CORR__v1v href="corr.xmi#/57"/>
-    <CREATE__CORR__v2v href="corr.xmi#/58"/>
-    <CREATE__CORR__v3v href="corr.xmi#/59"/>
+    <CREATE__CORR__n2n href="corr.xmi#/51"/>
+    <CREATE__CORR__v1v href="corr.xmi#/52"/>
+    <CREATE__CORR__v2v href="corr.xmi#/53"/>
+    <CREATE__CORR__v3v href="corr.xmi#/54"/>
   </STLImportExport:EdgeRule3__Marker>
+  <STLImportExport:EdgeRule6__Marker final="true">
+    <CREATE__SRC__facet1 href="src.xmi#/0/@facets.2"/>
+    <CREATE__SRC__n href="src.xmi#/0/@facets.2/@normal"/>
+    <CONTEXT__SRC__s href="src.xmi#/0"/>
+    <CONTEXT__SRC__vec1 href="src.xmi#/0/@facets.2/@v1"/>
+    <CONTEXT__SRC__vec2 href="src.xmi#/0/@facets.2/@v2"/>
+    <CONTEXT__SRC__vec3 href="src.xmi#/0/@facets.2/@v3"/>
+    <CONTEXT__TRG___facet3 href="trg.xmi#/0/@facets.3"/>
+    <CONTEXT__TRG___facet4 href="trg.xmi#/1/@facets.2"/>
+    <CONTEXT__TRG__a1 href="trg.xmi#/2"/>
+    <CONTEXT__TRG__b1 href="trg.xmi#/15"/>
+    <CONTEXT__TRG__c1 href="trg.xmi#/5"/>
+    <CONTEXT__TRG__e1 href="trg.xmi#/18"/>
+    <CONTEXT__TRG__e2 href="trg.xmi#/23"/>
+    <CREATE__TRG__e3 href="trg.xmi#/26"/>
+    <CREATE__TRG__facet2 href="trg.xmi#/0/@facets.4"/>
+    <CREATE__TRG__normal href="trg.xmi#/27"/>
+    <CONTEXT__TRG__solid href="trg.xmi#/0"/>
+    <CREATE__CORR__n2n href="corr.xmi#/55"/>
+    <CREATE__CORR__v1v href="corr.xmi#/56"/>
+    <CREATE__CORR__v2v href="corr.xmi#/57"/>
+    <CREATE__CORR__v3v href="corr.xmi#/58"/>
+  </STLImportExport:EdgeRule6__Marker>
 </xmi:XMI>

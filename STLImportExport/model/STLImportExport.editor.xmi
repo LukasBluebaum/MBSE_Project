@@ -125,6 +125,10 @@
         <op value="++"/>
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
       </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/solid"/>
+      </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="normal">
       <op value="++"/>
@@ -365,6 +369,10 @@
       <linkVariablePatterns target="//@rules.1/@targetPatterns.5">
         <op value="++"/>
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/solid"/>
       </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="normal">
@@ -607,6 +615,10 @@
         <op value="++"/>
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
       </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/solid"/>
+      </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="normal">
       <op value="++"/>
@@ -848,6 +860,10 @@
         <op value="++"/>
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
       </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/solid"/>
+      </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="normal">
       <op value="++"/>
@@ -1088,6 +1104,10 @@
       <linkVariablePatterns target="//@rules.4/@targetPatterns.5">
         <op value="++"/>
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/solid"/>
       </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="normal">
@@ -1333,6 +1353,10 @@
         <op value="++"/>
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
       </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/solid"/>
+      </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="normal">
       <op value="++"/>
@@ -1577,6 +1601,10 @@
         <op value="++"/>
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
       </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/solid"/>
+      </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="normal">
       <op value="++"/>
@@ -1820,6 +1848,10 @@
       <linkVariablePatterns target="//@rules.7/@targetPatterns.5">
         <op value="++"/>
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/edges"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/solid"/>
       </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="normal">

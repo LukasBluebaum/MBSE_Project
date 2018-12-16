@@ -9,235 +9,231 @@
     <target href="trg.xmi#/1"/>
   </STLImportExport:SolidToSolid>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.2/@v1"/>
+    <source href="src.xmi#/1/@facets.0/@v3"/>
     <target href="trg.xmi#/2"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.0/@v2"/>
+    <source href="src.xmi#/1/@facets.3/@v2"/>
     <target href="trg.xmi#/2"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.0/@v2"/>
+    <source href="src.xmi#/1/@facets.2/@v2"/>
     <target href="trg.xmi#/2"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.2/@v1"/>
+    <source href="src.xmi#/0/@facets.0/@v3"/>
     <target href="trg.xmi#/2"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.1/@v1"/>
+    <source href="src.xmi#/0/@facets.3/@v2"/>
     <target href="trg.xmi#/2"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.1/@v1"/>
+    <source href="src.xmi#/0/@facets.2/@v2"/>
     <target href="trg.xmi#/2"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.3/@v3"/>
+    <source href="src.xmi#/1/@facets.1/@v3"/>
     <target href="trg.xmi#/3"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.3/@v3"/>
+    <source href="src.xmi#/1/@facets.0/@v1"/>
     <target href="trg.xmi#/3"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.2/@v3"/>
+    <source href="src.xmi#/0/@facets.1/@v3"/>
     <target href="trg.xmi#/3"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.2/@v3"/>
+    <source href="src.xmi#/0/@facets.0/@v1"/>
     <target href="trg.xmi#/3"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.1/@v2"/>
-    <target href="trg.xmi#/4"/>
+    <source href="src.xmi#/1/@facets.3/@v1"/>
+    <target href="trg.xmi#/3"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/0/@facets.3/@v1"/>
+    <target href="trg.xmi#/3"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
     <source href="src.xmi#/0/@facets.1/@v2"/>
     <target href="trg.xmi#/4"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.3/@v2"/>
+    <source href="src.xmi#/1/@facets.1/@v2"/>
+    <target href="trg.xmi#/4"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/1/@facets.2/@v1"/>
+    <target href="trg.xmi#/5"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/0/@facets.1/@v1"/>
+    <target href="trg.xmi#/5"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/0/@facets.0/@v2"/>
+    <target href="trg.xmi#/5"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/1/@facets.0/@v2"/>
+    <target href="trg.xmi#/5"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/1/@facets.1/@v1"/>
+    <target href="trg.xmi#/5"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/0/@facets.2/@v1"/>
+    <target href="trg.xmi#/5"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:FacetToFacet>
+    <source href="src.xmi#/1/@facets.1"/>
+    <target href="trg.xmi#/0/@facets.0"/>
+  </STLImportExport:FacetToFacet>
+  <STLImportExport:NormalToNormal>
+    <source href="src.xmi#/1/@facets.1/@normal"/>
+    <target href="trg.xmi#/9"/>
+  </STLImportExport:NormalToNormal>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/1/@facets.1/@v1"/>
+    <target href="trg.xmi#/5"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/1/@facets.1/@v2"/>
+    <target href="trg.xmi#/4"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/1/@facets.1/@v3"/>
+    <target href="trg.xmi#/3"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:NormalToNormal>
+    <source href="src.xmi#/0/@facets.1/@normal"/>
+    <target href="trg.xmi#/12"/>
+  </STLImportExport:NormalToNormal>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/0/@facets.1/@v2"/>
+    <target href="trg.xmi#/4"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/0/@facets.1/@v3"/>
+    <target href="trg.xmi#/3"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/0/@facets.1/@v1"/>
+    <target href="trg.xmi#/5"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:NormalToNormal>
+    <source href="src.xmi#/0/@facets.0/@normal"/>
+    <target href="trg.xmi#/15"/>
+  </STLImportExport:NormalToNormal>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/0/@facets.0/@v1"/>
+    <target href="trg.xmi#/3"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/0/@facets.0/@v2"/>
     <target href="trg.xmi#/5"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
     <source href="src.xmi#/0/@facets.0/@v3"/>
-    <target href="trg.xmi#/5"/>
+    <target href="trg.xmi#/2"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.2/@v2"/>
+    <source href="src.xmi#/0/@facets.2/@v3"/>
+    <target href="trg.xmi#/15"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/0/@facets.3/@v3"/>
+    <target href="trg.xmi#/15"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/1/@facets.2/@v3"/>
+    <target href="trg.xmi#/15"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/1/@facets.3/@v3"/>
+    <target href="trg.xmi#/15"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:NormalToNormal>
+    <source href="src.xmi#/1/@facets.0/@normal"/>
+    <target href="trg.xmi#/17"/>
+  </STLImportExport:NormalToNormal>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/1/@facets.0/@v1"/>
+    <target href="trg.xmi#/3"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/1/@facets.0/@v2"/>
     <target href="trg.xmi#/5"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
     <source href="src.xmi#/1/@facets.0/@v3"/>
-    <target href="trg.xmi#/5"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.2/@v2"/>
-    <target href="trg.xmi#/5"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.3/@v2"/>
-    <target href="trg.xmi#/5"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:FacetToFacet>
-    <source href="src.xmi#/0/@facets.2"/>
-    <target href="trg.xmi#/0/@facets.0"/>
-  </STLImportExport:FacetToFacet>
-  <STLImportExport:NormalToNormal>
-    <source href="src.xmi#/0/@facets.2/@normal"/>
-    <target href="trg.xmi#/9"/>
-  </STLImportExport:NormalToNormal>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.2/@v1"/>
     <target href="trg.xmi#/2"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.2/@v2"/>
-    <target href="trg.xmi#/5"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.2/@v3"/>
-    <target href="trg.xmi#/3"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:NormalToNormal>
-    <source href="src.xmi#/1/@facets.2/@normal"/>
-    <target href="trg.xmi#/12"/>
-  </STLImportExport:NormalToNormal>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.2/@v3"/>
-    <target href="trg.xmi#/3"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.2/@v1"/>
-    <target href="trg.xmi#/2"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.2/@v2"/>
-    <target href="trg.xmi#/5"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.1/@v3"/>
-    <target href="trg.xmi#/13"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.0/@v1"/>
-    <target href="trg.xmi#/13"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.3/@v1"/>
-    <target href="trg.xmi#/13"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.3/@v1"/>
-    <target href="trg.xmi#/13"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.0/@v1"/>
-    <target href="trg.xmi#/13"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.1/@v3"/>
-    <target href="trg.xmi#/13"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:NormalToNormal>
-    <source href="src.xmi#/0/@facets.0/@normal"/>
-    <target href="trg.xmi#/16"/>
-  </STLImportExport:NormalToNormal>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.0/@v2"/>
-    <target href="trg.xmi#/2"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.0/@v3"/>
-    <target href="trg.xmi#/5"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.0/@v1"/>
-    <target href="trg.xmi#/13"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:NormalToNormal>
-    <source href="src.xmi#/1/@facets.3/@normal"/>
-    <target href="trg.xmi#/18"/>
-  </STLImportExport:NormalToNormal>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.3/@v1"/>
-    <target href="trg.xmi#/13"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.3/@v2"/>
-    <target href="trg.xmi#/5"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.3/@v3"/>
-    <target href="trg.xmi#/3"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:NormalToNormal>
     <source href="src.xmi#/0/@facets.3/@normal"/>
     <target href="trg.xmi#/20"/>
   </STLImportExport:NormalToNormal>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.3/@v2"/>
-    <target href="trg.xmi#/5"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.3/@v3"/>
+    <source href="src.xmi#/0/@facets.3/@v1"/>
     <target href="trg.xmi#/3"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.3/@v1"/>
-    <target href="trg.xmi#/13"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:NormalToNormal>
-    <source href="src.xmi#/1/@facets.0/@normal"/>
-    <target href="trg.xmi#/21"/>
-  </STLImportExport:NormalToNormal>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.0/@v2"/>
+    <source href="src.xmi#/0/@facets.3/@v2"/>
     <target href="trg.xmi#/2"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.0/@v3"/>
-    <target href="trg.xmi#/5"/>
+    <source href="src.xmi#/0/@facets.3/@v3"/>
+    <target href="trg.xmi#/15"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:NormalToNormal>
+    <source href="src.xmi#/1/@facets.3/@normal"/>
+    <target href="trg.xmi#/22"/>
+  </STLImportExport:NormalToNormal>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/1/@facets.3/@v3"/>
+    <target href="trg.xmi#/15"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.0/@v1"/>
-    <target href="trg.xmi#/13"/>
+    <source href="src.xmi#/1/@facets.3/@v1"/>
+    <target href="trg.xmi#/3"/>
   </STLImportExport:VectorToVector>
-  <STLImportExport:FacetToFacet>
-    <source href="src.xmi#/0/@facets.1"/>
-    <target href="trg.xmi#/0/@facets.4"/>
-  </STLImportExport:FacetToFacet>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/1/@facets.3/@v2"/>
+    <target href="trg.xmi#/2"/>
+  </STLImportExport:VectorToVector>
   <STLImportExport:NormalToNormal>
-    <source href="src.xmi#/0/@facets.1/@normal"/>
+    <source href="src.xmi#/1/@facets.2/@normal"/>
     <target href="trg.xmi#/25"/>
   </STLImportExport:NormalToNormal>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.1/@v1"/>
+    <source href="src.xmi#/1/@facets.2/@v2"/>
     <target href="trg.xmi#/2"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.1/@v2"/>
-    <target href="trg.xmi#/4"/>
+    <source href="src.xmi#/1/@facets.2/@v3"/>
+    <target href="trg.xmi#/15"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/0/@facets.1/@v3"/>
-    <target href="trg.xmi#/13"/>
+    <source href="src.xmi#/1/@facets.2/@v1"/>
+    <target href="trg.xmi#/5"/>
   </STLImportExport:VectorToVector>
   <STLImportExport:NormalToNormal>
-    <source href="src.xmi#/1/@facets.1/@normal"/>
-    <target href="trg.xmi#/28"/>
+    <source href="src.xmi#/0/@facets.2/@normal"/>
+    <target href="trg.xmi#/27"/>
   </STLImportExport:NormalToNormal>
   <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.1/@v2"/>
-    <target href="trg.xmi#/4"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.1/@v3"/>
-    <target href="trg.xmi#/13"/>
-  </STLImportExport:VectorToVector>
-  <STLImportExport:VectorToVector>
-    <source href="src.xmi#/1/@facets.1/@v1"/>
+    <source href="src.xmi#/0/@facets.2/@v2"/>
     <target href="trg.xmi#/2"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/0/@facets.2/@v3"/>
+    <target href="trg.xmi#/15"/>
+  </STLImportExport:VectorToVector>
+  <STLImportExport:VectorToVector>
+    <source href="src.xmi#/0/@facets.2/@v1"/>
+    <target href="trg.xmi#/5"/>
   </STLImportExport:VectorToVector>
 </xmi:XMI>

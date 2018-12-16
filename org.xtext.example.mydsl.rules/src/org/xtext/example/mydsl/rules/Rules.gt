@@ -1,5 +1,14 @@
 import "platform:/resource/Metamodell/model/Metamodell.ecore"
 
 pattern examplePattern() {
+	solid: Solid
 	edge: Edge
+	facet1: Facet {
+		-solid -> solid
+		-edges -> edge
+	}
+	facet2: Facet {
+		-solid -> solid
+		-edges -> edge
+	}
 }

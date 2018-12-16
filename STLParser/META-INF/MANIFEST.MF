@@ -20,3 +20,4 @@ Require-Bundle: org.apache.log4j,
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: STLParser
 Bundle-Vendor: STLParser
+Import-Package: org.xtext.example.mydsl.rules

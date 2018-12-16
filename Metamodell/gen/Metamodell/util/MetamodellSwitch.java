@@ -22,7 +22,8 @@ import org.eclipse.emf.ecore.util.Switch;
  * @see Metamodell.MetamodellPackage
  * @generated
  */
-public class MetamodellSwitch<T> extends Switch<T> {
+public class MetamodellSwitch<T> extends Switch<T>
+{
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -30,19 +31,21 @@ public class MetamodellSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	protected static MetamodellPackage modelPackage;
-
+	
 	/**
 	 * Creates an instance of the switch.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MetamodellSwitch() {
-		if (modelPackage == null) {
+	public MetamodellSwitch()
+	{
+		if (modelPackage == null)
+		{
 			modelPackage = MetamodellPackage.eINSTANCE;
 		}
 	}
-
+	
 	/**
 	 * Checks whether this is a switch for the given package.
 	 * <!-- begin-user-doc -->
@@ -52,10 +55,11 @@ public class MetamodellSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	@Override
-	protected boolean isSwitchFor(EPackage ePackage) {
+	protected boolean isSwitchFor(EPackage ePackage)
+	{
 		return ePackage == modelPackage;
 	}
-
+	
 	/**
 	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
 	 * <!-- begin-user-doc -->
@@ -64,55 +68,63 @@ public class MetamodellSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	@Override
-	protected T doSwitch(int classifierID, EObject theEObject) {
-		switch (classifierID) {
-		case MetamodellPackage.VECTOR3F: {
-			Vector3f vector3f = (Vector3f) theEObject;
-			T result = caseVector3f(vector3f);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case MetamodellPackage.FACET: {
-			Facet facet = (Facet) theEObject;
-			T result = caseFacet(facet);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case MetamodellPackage.EDGE: {
-			Edge edge = (Edge) theEObject;
-			T result = caseEdge(edge);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case MetamodellPackage.AREA: {
-			Area area = (Area) theEObject;
-			T result = caseArea(area);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case MetamodellPackage.SOLID: {
-			Solid solid = (Solid) theEObject;
-			T result = caseSolid(solid);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case MetamodellPackage.COLOR: {
-			Color color = (Color) theEObject;
-			T result = caseColor(color);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		default:
-			return defaultCase(theEObject);
+	protected T doSwitch(int classifierID, EObject theEObject)
+	{
+		switch (classifierID)
+		{
+			case MetamodellPackage.VECTOR3F:
+			{
+				Vector3f vector3f = (Vector3f) theEObject;
+				T result = caseVector3f(vector3f);
+				if (result == null)
+					result = defaultCase(theEObject);
+				return result;
+			}
+			case MetamodellPackage.FACET:
+			{
+				Facet facet = (Facet) theEObject;
+				T result = caseFacet(facet);
+				if (result == null)
+					result = defaultCase(theEObject);
+				return result;
+			}
+			case MetamodellPackage.EDGE:
+			{
+				Edge edge = (Edge) theEObject;
+				T result = caseEdge(edge);
+				if (result == null)
+					result = defaultCase(theEObject);
+				return result;
+			}
+			case MetamodellPackage.AREA:
+			{
+				Area area = (Area) theEObject;
+				T result = caseArea(area);
+				if (result == null)
+					result = defaultCase(theEObject);
+				return result;
+			}
+			case MetamodellPackage.SOLID:
+			{
+				Solid solid = (Solid) theEObject;
+				T result = caseSolid(solid);
+				if (result == null)
+					result = defaultCase(theEObject);
+				return result;
+			}
+			case MetamodellPackage.COLOR:
+			{
+				Color color = (Color) theEObject;
+				T result = caseColor(color);
+				if (result == null)
+					result = defaultCase(theEObject);
+				return result;
+			}
+			default:
+				return defaultCase(theEObject);
 		}
 	}
-
+	
 	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Vector3f</em>'.
 	 * <!-- begin-user-doc -->
@@ -124,10 +136,11 @@ public class MetamodellSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVector3f(Vector3f object) {
+	public T caseVector3f(Vector3f object)
+	{
 		return null;
 	}
-
+	
 	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Facet</em>'.
 	 * <!-- begin-user-doc -->
@@ -139,10 +152,11 @@ public class MetamodellSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFacet(Facet object) {
+	public T caseFacet(Facet object)
+	{
 		return null;
 	}
-
+	
 	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Edge</em>'.
 	 * <!-- begin-user-doc -->
@@ -154,10 +168,11 @@ public class MetamodellSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEdge(Edge object) {
+	public T caseEdge(Edge object)
+	{
 		return null;
 	}
-
+	
 	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Area</em>'.
 	 * <!-- begin-user-doc -->
@@ -169,10 +184,11 @@ public class MetamodellSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArea(Area object) {
+	public T caseArea(Area object)
+	{
 		return null;
 	}
-
+	
 	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Solid</em>'.
 	 * <!-- begin-user-doc -->
@@ -184,10 +200,11 @@ public class MetamodellSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSolid(Solid object) {
+	public T caseSolid(Solid object)
+	{
 		return null;
 	}
-
+	
 	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Color</em>'.
 	 * <!-- begin-user-doc -->
@@ -199,10 +216,11 @@ public class MetamodellSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseColor(Color object) {
+	public T caseColor(Color object)
+	{
 		return null;
 	}
-
+	
 	/**
 	 * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
 	 * <!-- begin-user-doc -->
@@ -215,8 +233,9 @@ public class MetamodellSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	@Override
-	public T defaultCase(EObject object) {
+	public T defaultCase(EObject object)
+	{
 		return null;
 	}
-
+	
 } //MetamodellSwitch

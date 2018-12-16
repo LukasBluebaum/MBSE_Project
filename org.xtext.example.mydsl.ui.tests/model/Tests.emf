@@ -1,0 +1,3 @@
+@GenModel(documentation="TODO: Add documentation for Blup")
+@namespace(uri="platform:/resource/org.xtext.example.mydsl.ui.tests/model/Tests.ecore", prefix="org.xtext.example.mydsl.ui.tests")
+package tests;

@@ -11,7 +11,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="z" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Facet">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="solid" lowerBound="1" eType="#//Solid"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solid" eType="#//Solid"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="normal" eType="#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="edges" lowerBound="3" upperBound="3"
         eType="#//Edge"/>
