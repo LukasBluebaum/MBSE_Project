@@ -212,34 +212,34 @@
     </attributeConditionLibrary>
   </rules>
   <rules name="EdgeRule2">
-    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.1/@edges.4" outgoingEdges="//@rules.1/@edges.0 //@rules.1/@edges.1 //@rules.1/@edges.2 //@rules.1/@edges.3">
+    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.1/@edges.4" outgoingEdges="//@rules.1/@edges.0 //@rules.1/@edges.1 //@rules.1/@edges.2 //@rules.1/@edges.3" incomingCorrsSource="//@rules.1/@nodes.16">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
     </nodes>
-    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.1/@edges.0" incomingCorrsSource="//@rules.1/@nodes.16">
+    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.1/@edges.0" incomingCorrsSource="//@rules.1/@nodes.17">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
     </nodes>
     <nodes name="s" outgoingEdges="//@rules.1/@edges.4">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
     </nodes>
-    <nodes name="vec1" incomingEdges="//@rules.1/@edges.1" incomingCorrsSource="//@rules.1/@nodes.17">
+    <nodes name="vec1" incomingEdges="//@rules.1/@edges.1" incomingCorrsSource="//@rules.1/@nodes.18">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec2" incomingEdges="//@rules.1/@edges.2" incomingCorrsSource="//@rules.1/@nodes.18">
+    <nodes name="vec2" incomingEdges="//@rules.1/@edges.2" incomingCorrsSource="//@rules.1/@nodes.19">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec3" incomingEdges="//@rules.1/@edges.3" incomingCorrsSource="//@rules.1/@nodes.19">
+    <nodes name="vec3" incomingEdges="//@rules.1/@edges.3" incomingCorrsSource="//@rules.1/@nodes.20">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
     <nodes name="_facet3" domainType="TRG" incomingEdges="//@rules.1/@edges.8">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.1/@edges.6 //@rules.1/@edges.14" incomingCorrsTarget="//@rules.1/@nodes.17">
+    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.1/@edges.6 //@rules.1/@edges.14" incomingCorrsTarget="//@rules.1/@nodes.18">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.1/@edges.7 //@rules.1/@edges.10" incomingCorrsTarget="//@rules.1/@nodes.18">
+    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.1/@edges.7 //@rules.1/@edges.10" incomingCorrsTarget="//@rules.1/@nodes.19">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.1/@edges.11 //@rules.1/@edges.13" incomingCorrsTarget="//@rules.1/@nodes.19">
+    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.1/@edges.11 //@rules.1/@edges.13" incomingCorrsTarget="//@rules.1/@nodes.20">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="e1" domainType="TRG" incomingEdges="//@rules.1/@edges.16" outgoingEdges="//@rules.1/@edges.5 //@rules.1/@edges.6 //@rules.1/@edges.7 //@rules.1/@edges.8">
@@ -251,14 +251,17 @@
     <nodes name="e3" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.1/@edges.18" outgoingEdges="//@rules.1/@edges.12 //@rules.1/@edges.13 //@rules.1/@edges.14">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
     </nodes>
-    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.1/@edges.5 //@rules.1/@edges.9 //@rules.1/@edges.12 //@rules.1/@edges.20" outgoingEdges="//@rules.1/@edges.15 //@rules.1/@edges.16 //@rules.1/@edges.17 //@rules.1/@edges.18 //@rules.1/@edges.19">
+    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.1/@edges.5 //@rules.1/@edges.9 //@rules.1/@edges.12 //@rules.1/@edges.20" outgoingEdges="//@rules.1/@edges.15 //@rules.1/@edges.16 //@rules.1/@edges.17 //@rules.1/@edges.18 //@rules.1/@edges.19" incomingCorrsTarget="//@rules.1/@nodes.16">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.1/@edges.15" incomingCorrsTarget="//@rules.1/@nodes.16">
+    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.1/@edges.15" incomingCorrsTarget="//@rules.1/@nodes.17">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="solid" domainType="TRG" incomingEdges="//@rules.1/@edges.19" outgoingEdges="//@rules.1/@edges.20">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="f2f" domainType="CORR" bindingType="CREATE" source="//@rules.1/@nodes.0" target="//@rules.1/@nodes.13">
+      <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="n2n" domainType="CORR" bindingType="CREATE" source="//@rules.1/@nodes.1" target="//@rules.1/@nodes.14">
       <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
@@ -423,34 +426,34 @@
     </attributeConditionLibrary>
   </rules>
   <rules name="EdgeRule3">
-    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.2/@edges.4" outgoingEdges="//@rules.2/@edges.0 //@rules.2/@edges.1 //@rules.2/@edges.2 //@rules.2/@edges.3">
+    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.2/@edges.4" outgoingEdges="//@rules.2/@edges.0 //@rules.2/@edges.1 //@rules.2/@edges.2 //@rules.2/@edges.3" incomingCorrsSource="//@rules.2/@nodes.16">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
     </nodes>
-    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.2/@edges.0" incomingCorrsSource="//@rules.2/@nodes.16">
+    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.2/@edges.0" incomingCorrsSource="//@rules.2/@nodes.17">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
     </nodes>
     <nodes name="s" outgoingEdges="//@rules.2/@edges.4">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
     </nodes>
-    <nodes name="vec1" incomingEdges="//@rules.2/@edges.1" incomingCorrsSource="//@rules.2/@nodes.19">
+    <nodes name="vec1" incomingEdges="//@rules.2/@edges.1" incomingCorrsSource="//@rules.2/@nodes.20">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec2" incomingEdges="//@rules.2/@edges.2" incomingCorrsSource="//@rules.2/@nodes.17">
+    <nodes name="vec2" incomingEdges="//@rules.2/@edges.2" incomingCorrsSource="//@rules.2/@nodes.18">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec3" incomingEdges="//@rules.2/@edges.3" incomingCorrsSource="//@rules.2/@nodes.18">
+    <nodes name="vec3" incomingEdges="//@rules.2/@edges.3" incomingCorrsSource="//@rules.2/@nodes.19">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
     <nodes name="_facet3" domainType="TRG" incomingEdges="//@rules.2/@edges.8">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.2/@edges.6 //@rules.2/@edges.14" incomingCorrsTarget="//@rules.2/@nodes.17">
+    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.2/@edges.6 //@rules.2/@edges.14" incomingCorrsTarget="//@rules.2/@nodes.18">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.2/@edges.7 //@rules.2/@edges.10" incomingCorrsTarget="//@rules.2/@nodes.18">
+    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.2/@edges.7 //@rules.2/@edges.10" incomingCorrsTarget="//@rules.2/@nodes.19">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.2/@edges.11 //@rules.2/@edges.13" incomingCorrsTarget="//@rules.2/@nodes.19">
+    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.2/@edges.11 //@rules.2/@edges.13" incomingCorrsTarget="//@rules.2/@nodes.20">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="e1" domainType="TRG" incomingEdges="//@rules.2/@edges.16" outgoingEdges="//@rules.2/@edges.5 //@rules.2/@edges.6 //@rules.2/@edges.7 //@rules.2/@edges.8">
@@ -462,14 +465,17 @@
     <nodes name="e3" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.2/@edges.18" outgoingEdges="//@rules.2/@edges.12 //@rules.2/@edges.13 //@rules.2/@edges.14">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
     </nodes>
-    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.2/@edges.5 //@rules.2/@edges.9 //@rules.2/@edges.12 //@rules.2/@edges.20" outgoingEdges="//@rules.2/@edges.15 //@rules.2/@edges.16 //@rules.2/@edges.17 //@rules.2/@edges.18 //@rules.2/@edges.19">
+    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.2/@edges.5 //@rules.2/@edges.9 //@rules.2/@edges.12 //@rules.2/@edges.20" outgoingEdges="//@rules.2/@edges.15 //@rules.2/@edges.16 //@rules.2/@edges.17 //@rules.2/@edges.18 //@rules.2/@edges.19" incomingCorrsTarget="//@rules.2/@nodes.16">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.2/@edges.15" incomingCorrsTarget="//@rules.2/@nodes.16">
+    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.2/@edges.15" incomingCorrsTarget="//@rules.2/@nodes.17">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="solid" domainType="TRG" incomingEdges="//@rules.2/@edges.19" outgoingEdges="//@rules.2/@edges.20">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="f2f" domainType="CORR" bindingType="CREATE" source="//@rules.2/@nodes.0" target="//@rules.2/@nodes.13">
+      <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="n2n" domainType="CORR" bindingType="CREATE" source="//@rules.2/@nodes.1" target="//@rules.2/@nodes.14">
       <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
@@ -634,34 +640,34 @@
     </attributeConditionLibrary>
   </rules>
   <rules name="EdgeRule4">
-    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.3/@edges.4" outgoingEdges="//@rules.3/@edges.0 //@rules.3/@edges.1 //@rules.3/@edges.2 //@rules.3/@edges.3">
+    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.3/@edges.4" outgoingEdges="//@rules.3/@edges.0 //@rules.3/@edges.1 //@rules.3/@edges.2 //@rules.3/@edges.3" incomingCorrsSource="//@rules.3/@nodes.16">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
     </nodes>
-    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.3/@edges.0" incomingCorrsSource="//@rules.3/@nodes.16">
+    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.3/@edges.0" incomingCorrsSource="//@rules.3/@nodes.17">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
     </nodes>
     <nodes name="s" outgoingEdges="//@rules.3/@edges.4">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
     </nodes>
-    <nodes name="vec1" incomingEdges="//@rules.3/@edges.1" incomingCorrsSource="//@rules.3/@nodes.18">
+    <nodes name="vec1" incomingEdges="//@rules.3/@edges.1" incomingCorrsSource="//@rules.3/@nodes.19">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec2" incomingEdges="//@rules.3/@edges.2" incomingCorrsSource="//@rules.3/@nodes.19">
+    <nodes name="vec2" incomingEdges="//@rules.3/@edges.2" incomingCorrsSource="//@rules.3/@nodes.20">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec3" incomingEdges="//@rules.3/@edges.3" incomingCorrsSource="//@rules.3/@nodes.17">
+    <nodes name="vec3" incomingEdges="//@rules.3/@edges.3" incomingCorrsSource="//@rules.3/@nodes.18">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
     <nodes name="_facet3" domainType="TRG" incomingEdges="//@rules.3/@edges.8">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.3/@edges.6 //@rules.3/@edges.14" incomingCorrsTarget="//@rules.3/@nodes.17">
+    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.3/@edges.6 //@rules.3/@edges.14" incomingCorrsTarget="//@rules.3/@nodes.18">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.3/@edges.7 //@rules.3/@edges.10" incomingCorrsTarget="//@rules.3/@nodes.18">
+    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.3/@edges.7 //@rules.3/@edges.10" incomingCorrsTarget="//@rules.3/@nodes.19">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.3/@edges.11 //@rules.3/@edges.13" incomingCorrsTarget="//@rules.3/@nodes.19">
+    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.3/@edges.11 //@rules.3/@edges.13" incomingCorrsTarget="//@rules.3/@nodes.20">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="e1" domainType="TRG" incomingEdges="//@rules.3/@edges.16" outgoingEdges="//@rules.3/@edges.5 //@rules.3/@edges.6 //@rules.3/@edges.7 //@rules.3/@edges.8">
@@ -673,14 +679,17 @@
     <nodes name="e3" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.3/@edges.18" outgoingEdges="//@rules.3/@edges.12 //@rules.3/@edges.13 //@rules.3/@edges.14">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
     </nodes>
-    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.3/@edges.5 //@rules.3/@edges.9 //@rules.3/@edges.12 //@rules.3/@edges.20" outgoingEdges="//@rules.3/@edges.15 //@rules.3/@edges.16 //@rules.3/@edges.17 //@rules.3/@edges.18 //@rules.3/@edges.19">
+    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.3/@edges.5 //@rules.3/@edges.9 //@rules.3/@edges.12 //@rules.3/@edges.20" outgoingEdges="//@rules.3/@edges.15 //@rules.3/@edges.16 //@rules.3/@edges.17 //@rules.3/@edges.18 //@rules.3/@edges.19" incomingCorrsTarget="//@rules.3/@nodes.16">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.3/@edges.15" incomingCorrsTarget="//@rules.3/@nodes.16">
+    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.3/@edges.15" incomingCorrsTarget="//@rules.3/@nodes.17">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="solid" domainType="TRG" incomingEdges="//@rules.3/@edges.19" outgoingEdges="//@rules.3/@edges.20">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="f2f" domainType="CORR" bindingType="CREATE" source="//@rules.3/@nodes.0" target="//@rules.3/@nodes.13">
+      <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="n2n" domainType="CORR" bindingType="CREATE" source="//@rules.3/@nodes.1" target="//@rules.3/@nodes.14">
       <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
@@ -845,22 +854,22 @@
     </attributeConditionLibrary>
   </rules>
   <rules name="EdgeRule5">
-    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.4/@edges.4" outgoingEdges="//@rules.4/@edges.0 //@rules.4/@edges.1 //@rules.4/@edges.2 //@rules.4/@edges.3">
+    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.4/@edges.4" outgoingEdges="//@rules.4/@edges.0 //@rules.4/@edges.1 //@rules.4/@edges.2 //@rules.4/@edges.3" incomingCorrsSource="//@rules.4/@nodes.17">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
     </nodes>
-    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.4/@edges.0" incomingCorrsSource="//@rules.4/@nodes.17">
+    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.4/@edges.0" incomingCorrsSource="//@rules.4/@nodes.18">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
     </nodes>
     <nodes name="s" outgoingEdges="//@rules.4/@edges.4">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
     </nodes>
-    <nodes name="vec1" incomingEdges="//@rules.4/@edges.1" incomingCorrsSource="//@rules.4/@nodes.18">
+    <nodes name="vec1" incomingEdges="//@rules.4/@edges.1" incomingCorrsSource="//@rules.4/@nodes.19">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec2" incomingEdges="//@rules.4/@edges.2" incomingCorrsSource="//@rules.4/@nodes.19">
+    <nodes name="vec2" incomingEdges="//@rules.4/@edges.2" incomingCorrsSource="//@rules.4/@nodes.20">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec3" incomingEdges="//@rules.4/@edges.3" incomingCorrsSource="//@rules.4/@nodes.20">
+    <nodes name="vec3" incomingEdges="//@rules.4/@edges.3" incomingCorrsSource="//@rules.4/@nodes.21">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
     <nodes name="_facet3" domainType="TRG" incomingEdges="//@rules.4/@edges.8">
@@ -869,13 +878,13 @@
     <nodes name="_facet4" domainType="TRG" incomingEdges="//@rules.4/@edges.12">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.4/@edges.6 //@rules.4/@edges.15" incomingCorrsTarget="//@rules.4/@nodes.18">
+    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.4/@edges.6 //@rules.4/@edges.15" incomingCorrsTarget="//@rules.4/@nodes.19">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.4/@edges.7 //@rules.4/@edges.10" incomingCorrsTarget="//@rules.4/@nodes.19">
+    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.4/@edges.7 //@rules.4/@edges.10" incomingCorrsTarget="//@rules.4/@nodes.20">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.4/@edges.11 //@rules.4/@edges.14" incomingCorrsTarget="//@rules.4/@nodes.20">
+    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.4/@edges.11 //@rules.4/@edges.14" incomingCorrsTarget="//@rules.4/@nodes.21">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="e1" domainType="TRG" incomingEdges="//@rules.4/@edges.17" outgoingEdges="//@rules.4/@edges.5 //@rules.4/@edges.6 //@rules.4/@edges.7 //@rules.4/@edges.8">
@@ -887,14 +896,17 @@
     <nodes name="e3" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.4/@edges.19" outgoingEdges="//@rules.4/@edges.13 //@rules.4/@edges.14 //@rules.4/@edges.15">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
     </nodes>
-    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.4/@edges.5 //@rules.4/@edges.9 //@rules.4/@edges.13 //@rules.4/@edges.21" outgoingEdges="//@rules.4/@edges.16 //@rules.4/@edges.17 //@rules.4/@edges.18 //@rules.4/@edges.19 //@rules.4/@edges.20">
+    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.4/@edges.5 //@rules.4/@edges.9 //@rules.4/@edges.13 //@rules.4/@edges.21" outgoingEdges="//@rules.4/@edges.16 //@rules.4/@edges.17 //@rules.4/@edges.18 //@rules.4/@edges.19 //@rules.4/@edges.20" incomingCorrsTarget="//@rules.4/@nodes.17">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.4/@edges.16" incomingCorrsTarget="//@rules.4/@nodes.17">
+    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.4/@edges.16" incomingCorrsTarget="//@rules.4/@nodes.18">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="solid" domainType="TRG" incomingEdges="//@rules.4/@edges.20" outgoingEdges="//@rules.4/@edges.21">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="f2f" domainType="CORR" bindingType="CREATE" source="//@rules.4/@nodes.0" target="//@rules.4/@nodes.14">
+      <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="n2n" domainType="CORR" bindingType="CREATE" source="//@rules.4/@nodes.1" target="//@rules.4/@nodes.15">
       <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
@@ -1062,22 +1074,22 @@
     </attributeConditionLibrary>
   </rules>
   <rules name="EdgeRule6">
-    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.5/@edges.4" outgoingEdges="//@rules.5/@edges.0 //@rules.5/@edges.1 //@rules.5/@edges.2 //@rules.5/@edges.3">
+    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.5/@edges.4" outgoingEdges="//@rules.5/@edges.0 //@rules.5/@edges.1 //@rules.5/@edges.2 //@rules.5/@edges.3" incomingCorrsSource="//@rules.5/@nodes.17">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
     </nodes>
-    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.5/@edges.0" incomingCorrsSource="//@rules.5/@nodes.17">
+    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.5/@edges.0" incomingCorrsSource="//@rules.5/@nodes.18">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
     </nodes>
     <nodes name="s" outgoingEdges="//@rules.5/@edges.4">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
     </nodes>
-    <nodes name="vec1" incomingEdges="//@rules.5/@edges.1" incomingCorrsSource="//@rules.5/@nodes.20">
+    <nodes name="vec1" incomingEdges="//@rules.5/@edges.1" incomingCorrsSource="//@rules.5/@nodes.21">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec2" incomingEdges="//@rules.5/@edges.2" incomingCorrsSource="//@rules.5/@nodes.18">
+    <nodes name="vec2" incomingEdges="//@rules.5/@edges.2" incomingCorrsSource="//@rules.5/@nodes.19">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec3" incomingEdges="//@rules.5/@edges.3" incomingCorrsSource="//@rules.5/@nodes.19">
+    <nodes name="vec3" incomingEdges="//@rules.5/@edges.3" incomingCorrsSource="//@rules.5/@nodes.20">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
     <nodes name="_facet3" domainType="TRG" incomingEdges="//@rules.5/@edges.8">
@@ -1086,13 +1098,13 @@
     <nodes name="_facet4" domainType="TRG" incomingEdges="//@rules.5/@edges.12">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.5/@edges.6 //@rules.5/@edges.15" incomingCorrsTarget="//@rules.5/@nodes.18">
+    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.5/@edges.6 //@rules.5/@edges.15" incomingCorrsTarget="//@rules.5/@nodes.19">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.5/@edges.7 //@rules.5/@edges.10" incomingCorrsTarget="//@rules.5/@nodes.19">
+    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.5/@edges.7 //@rules.5/@edges.10" incomingCorrsTarget="//@rules.5/@nodes.20">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.5/@edges.11 //@rules.5/@edges.14" incomingCorrsTarget="//@rules.5/@nodes.20">
+    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.5/@edges.11 //@rules.5/@edges.14" incomingCorrsTarget="//@rules.5/@nodes.21">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="e1" domainType="TRG" incomingEdges="//@rules.5/@edges.17" outgoingEdges="//@rules.5/@edges.5 //@rules.5/@edges.6 //@rules.5/@edges.7 //@rules.5/@edges.8">
@@ -1104,14 +1116,17 @@
     <nodes name="e3" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.5/@edges.19" outgoingEdges="//@rules.5/@edges.13 //@rules.5/@edges.14 //@rules.5/@edges.15">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
     </nodes>
-    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.5/@edges.5 //@rules.5/@edges.9 //@rules.5/@edges.13 //@rules.5/@edges.21" outgoingEdges="//@rules.5/@edges.16 //@rules.5/@edges.17 //@rules.5/@edges.18 //@rules.5/@edges.19 //@rules.5/@edges.20">
+    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.5/@edges.5 //@rules.5/@edges.9 //@rules.5/@edges.13 //@rules.5/@edges.21" outgoingEdges="//@rules.5/@edges.16 //@rules.5/@edges.17 //@rules.5/@edges.18 //@rules.5/@edges.19 //@rules.5/@edges.20" incomingCorrsTarget="//@rules.5/@nodes.17">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.5/@edges.16" incomingCorrsTarget="//@rules.5/@nodes.17">
+    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.5/@edges.16" incomingCorrsTarget="//@rules.5/@nodes.18">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="solid" domainType="TRG" incomingEdges="//@rules.5/@edges.20" outgoingEdges="//@rules.5/@edges.21">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="f2f" domainType="CORR" bindingType="CREATE" source="//@rules.5/@nodes.0" target="//@rules.5/@nodes.14">
+      <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="n2n" domainType="CORR" bindingType="CREATE" source="//@rules.5/@nodes.1" target="//@rules.5/@nodes.15">
       <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
@@ -1279,22 +1294,22 @@
     </attributeConditionLibrary>
   </rules>
   <rules name="EdgeRule7">
-    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.6/@edges.4" outgoingEdges="//@rules.6/@edges.0 //@rules.6/@edges.1 //@rules.6/@edges.2 //@rules.6/@edges.3">
+    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.6/@edges.4" outgoingEdges="//@rules.6/@edges.0 //@rules.6/@edges.1 //@rules.6/@edges.2 //@rules.6/@edges.3" incomingCorrsSource="//@rules.6/@nodes.17">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
     </nodes>
-    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.6/@edges.0" incomingCorrsSource="//@rules.6/@nodes.17">
+    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.6/@edges.0" incomingCorrsSource="//@rules.6/@nodes.18">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
     </nodes>
     <nodes name="s" outgoingEdges="//@rules.6/@edges.4">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
     </nodes>
-    <nodes name="vec1" incomingEdges="//@rules.6/@edges.1" incomingCorrsSource="//@rules.6/@nodes.19">
+    <nodes name="vec1" incomingEdges="//@rules.6/@edges.1" incomingCorrsSource="//@rules.6/@nodes.20">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec2" incomingEdges="//@rules.6/@edges.2" incomingCorrsSource="//@rules.6/@nodes.20">
+    <nodes name="vec2" incomingEdges="//@rules.6/@edges.2" incomingCorrsSource="//@rules.6/@nodes.21">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec3" incomingEdges="//@rules.6/@edges.3" incomingCorrsSource="//@rules.6/@nodes.18">
+    <nodes name="vec3" incomingEdges="//@rules.6/@edges.3" incomingCorrsSource="//@rules.6/@nodes.19">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
     <nodes name="_facet3" domainType="TRG" incomingEdges="//@rules.6/@edges.8">
@@ -1303,13 +1318,13 @@
     <nodes name="_facet4" domainType="TRG" incomingEdges="//@rules.6/@edges.12">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.6/@edges.6 //@rules.6/@edges.15" incomingCorrsTarget="//@rules.6/@nodes.18">
+    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.6/@edges.6 //@rules.6/@edges.15" incomingCorrsTarget="//@rules.6/@nodes.19">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.6/@edges.7 //@rules.6/@edges.10" incomingCorrsTarget="//@rules.6/@nodes.19">
+    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.6/@edges.7 //@rules.6/@edges.10" incomingCorrsTarget="//@rules.6/@nodes.20">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.6/@edges.11 //@rules.6/@edges.14" incomingCorrsTarget="//@rules.6/@nodes.20">
+    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.6/@edges.11 //@rules.6/@edges.14" incomingCorrsTarget="//@rules.6/@nodes.21">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="e1" domainType="TRG" incomingEdges="//@rules.6/@edges.17" outgoingEdges="//@rules.6/@edges.5 //@rules.6/@edges.6 //@rules.6/@edges.7 //@rules.6/@edges.8">
@@ -1321,14 +1336,17 @@
     <nodes name="e3" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.6/@edges.19" outgoingEdges="//@rules.6/@edges.13 //@rules.6/@edges.14 //@rules.6/@edges.15">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
     </nodes>
-    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.6/@edges.5 //@rules.6/@edges.9 //@rules.6/@edges.13 //@rules.6/@edges.21" outgoingEdges="//@rules.6/@edges.16 //@rules.6/@edges.17 //@rules.6/@edges.18 //@rules.6/@edges.19 //@rules.6/@edges.20">
+    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.6/@edges.5 //@rules.6/@edges.9 //@rules.6/@edges.13 //@rules.6/@edges.21" outgoingEdges="//@rules.6/@edges.16 //@rules.6/@edges.17 //@rules.6/@edges.18 //@rules.6/@edges.19 //@rules.6/@edges.20" incomingCorrsTarget="//@rules.6/@nodes.17">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.6/@edges.16" incomingCorrsTarget="//@rules.6/@nodes.17">
+    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.6/@edges.16" incomingCorrsTarget="//@rules.6/@nodes.18">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="solid" domainType="TRG" incomingEdges="//@rules.6/@edges.20" outgoingEdges="//@rules.6/@edges.21">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="f2f" domainType="CORR" bindingType="CREATE" source="//@rules.6/@nodes.0" target="//@rules.6/@nodes.14">
+      <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="n2n" domainType="CORR" bindingType="CREATE" source="//@rules.6/@nodes.1" target="//@rules.6/@nodes.15">
       <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
@@ -1496,22 +1514,22 @@
     </attributeConditionLibrary>
   </rules>
   <rules name="EdgeRule8">
-    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.7/@edges.4" outgoingEdges="//@rules.7/@edges.0 //@rules.7/@edges.1 //@rules.7/@edges.2 //@rules.7/@edges.3">
+    <nodes name="facet1" bindingType="CREATE" incomingEdges="//@rules.7/@edges.4" outgoingEdges="//@rules.7/@edges.0 //@rules.7/@edges.1 //@rules.7/@edges.2 //@rules.7/@edges.3" incomingCorrsSource="//@rules.7/@nodes.18">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Facet"/>
     </nodes>
-    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.7/@edges.0" incomingCorrsSource="//@rules.7/@nodes.18">
+    <nodes name="n" bindingType="CREATE" incomingEdges="//@rules.7/@edges.0" incomingCorrsSource="//@rules.7/@nodes.19">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Normalvector"/>
     </nodes>
     <nodes name="s" outgoingEdges="//@rules.7/@edges.4">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Solid"/>
     </nodes>
-    <nodes name="vec1" incomingEdges="//@rules.7/@edges.1" incomingCorrsSource="//@rules.7/@nodes.21">
+    <nodes name="vec1" incomingEdges="//@rules.7/@edges.1" incomingCorrsSource="//@rules.7/@nodes.22">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec2" incomingEdges="//@rules.7/@edges.2" incomingCorrsSource="//@rules.7/@nodes.19">
+    <nodes name="vec2" incomingEdges="//@rules.7/@edges.2" incomingCorrsSource="//@rules.7/@nodes.20">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
-    <nodes name="vec3" incomingEdges="//@rules.7/@edges.3" incomingCorrsSource="//@rules.7/@nodes.20">
+    <nodes name="vec3" incomingEdges="//@rules.7/@edges.3" incomingCorrsSource="//@rules.7/@nodes.21">
       <type href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector"/>
     </nodes>
     <nodes name="_facet3" domainType="TRG" incomingEdges="//@rules.7/@edges.8">
@@ -1523,13 +1541,13 @@
     <nodes name="_facet5" domainType="TRG" incomingEdges="//@rules.7/@edges.16">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.7/@edges.6 //@rules.7/@edges.15" incomingCorrsTarget="//@rules.7/@nodes.19">
+    <nodes name="a1" domainType="TRG" incomingEdges="//@rules.7/@edges.6 //@rules.7/@edges.15" incomingCorrsTarget="//@rules.7/@nodes.20">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.7/@edges.7 //@rules.7/@edges.10" incomingCorrsTarget="//@rules.7/@nodes.20">
+    <nodes name="b1" domainType="TRG" incomingEdges="//@rules.7/@edges.7 //@rules.7/@edges.10" incomingCorrsTarget="//@rules.7/@nodes.21">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
-    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.7/@edges.11 //@rules.7/@edges.14" incomingCorrsTarget="//@rules.7/@nodes.21">
+    <nodes name="c1" domainType="TRG" incomingEdges="//@rules.7/@edges.11 //@rules.7/@edges.14" incomingCorrsTarget="//@rules.7/@nodes.22">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="e1" domainType="TRG" incomingEdges="//@rules.7/@edges.18" outgoingEdges="//@rules.7/@edges.5 //@rules.7/@edges.6 //@rules.7/@edges.7 //@rules.7/@edges.8">
@@ -1541,14 +1559,17 @@
     <nodes name="e3" domainType="TRG" incomingEdges="//@rules.7/@edges.20" outgoingEdges="//@rules.7/@edges.13 //@rules.7/@edges.14 //@rules.7/@edges.15 //@rules.7/@edges.16">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
     </nodes>
-    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.7/@edges.5 //@rules.7/@edges.9 //@rules.7/@edges.13 //@rules.7/@edges.22" outgoingEdges="//@rules.7/@edges.17 //@rules.7/@edges.18 //@rules.7/@edges.19 //@rules.7/@edges.20 //@rules.7/@edges.21">
+    <nodes name="facet2" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.7/@edges.5 //@rules.7/@edges.9 //@rules.7/@edges.13 //@rules.7/@edges.22" outgoingEdges="//@rules.7/@edges.17 //@rules.7/@edges.18 //@rules.7/@edges.19 //@rules.7/@edges.20 //@rules.7/@edges.21" incomingCorrsTarget="//@rules.7/@nodes.18">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </nodes>
-    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.7/@edges.17" incomingCorrsTarget="//@rules.7/@nodes.18">
+    <nodes name="normal" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.7/@edges.17" incomingCorrsTarget="//@rules.7/@nodes.19">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </nodes>
     <nodes name="solid" domainType="TRG" incomingEdges="//@rules.7/@edges.21" outgoingEdges="//@rules.7/@edges.22">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="f2f" domainType="CORR" bindingType="CREATE" source="//@rules.7/@nodes.0" target="//@rules.7/@nodes.15">
+      <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="n2n" domainType="CORR" bindingType="CREATE" source="//@rules.7/@nodes.1" target="//@rules.7/@nodes.16">
       <type href="platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>

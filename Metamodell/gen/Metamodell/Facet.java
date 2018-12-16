@@ -28,8 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Facet extends EObject
-{
+public interface Facet extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Solid</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -45,7 +44,7 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	Solid getSolid();
-	
+
 	/**
 	 * Sets the value of the '{@link Metamodell.Facet#getSolid <em>Solid</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -55,7 +54,7 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	void setSolid(Solid value);
-	
+
 	/**
 	 * Returns the value of the '<em><b>Normal</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -71,7 +70,7 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	Vector3f getNormal();
-	
+
 	/**
 	 * Sets the value of the '{@link Metamodell.Facet#getNormal <em>Normal</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -81,7 +80,7 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	void setNormal(Vector3f value);
-	
+
 	/**
 	 * Returns the value of the '<em><b>Edges</b></em>' reference list.
 	 * The list contents are of type {@link Metamodell.Edge}.
@@ -97,7 +96,7 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	EList<Edge> getEdges();
-	
+
 	/**
 	 * Returns the value of the '<em><b>Color</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -113,7 +112,7 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	Color getColor();
-	
+
 	/**
 	 * Sets the value of the '{@link Metamodell.Facet#getColor <em>Color</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -123,7 +122,7 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	void setColor(Color value);
-	
+
 	/**
 	 * Returns the value of the '<em><b>Area</b></em>' container reference.
 	 * It is bidirectional and its opposite is '{@link Metamodell.Area#getFacets <em>Facets</em>}'.
@@ -141,7 +140,7 @@ public interface Facet extends EObject
 	 * @generated
 	 */
 	Area getArea();
-	
+
 	/**
 	 * Sets the value of the '{@link Metamodell.Facet#getArea <em>Area</em>}' container reference.
 	 * <!-- begin-user-doc -->
@@ -152,6 +151,6 @@ public interface Facet extends EObject
 	 */
 	void setArea(Area value);
 	// <-- [user code injected with eMoflon]
-	
+
 	// [user code injected with eMoflon] -->
 } // Facet

@@ -10,7 +10,7 @@ import java.util.Stack;
 import java.util.List;
 import java.util.ArrayList;
 
-@SuppressWarnings("all")
+
 @SuppressWarnings("all")
 public class InternalMyDslLexer extends Lexer {
 	public static final int EOF=-1;

@@ -451,6 +451,9 @@
     <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.1/@sourcePatterns.5" target="//@rules.1/@targetPatterns.2">
       <op value="++"/>
     </correspondencePatterns>
+    <correspondencePatterns name="f2f" type="//@schema/@correspondenceTypes.1" source="//@rules.1/@sourcePatterns.1" target="//@rules.1/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
     <attrConditions name="//@schema/@attributeCondDefs.0">
       <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.1/@sourcePatterns.2">
         <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
@@ -696,6 +699,9 @@
     <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.2/@sourcePatterns.5" target="//@rules.2/@targetPatterns.2">
       <op value="++"/>
     </correspondencePatterns>
+    <correspondencePatterns name="f2f" type="//@schema/@correspondenceTypes.1" source="//@rules.2/@sourcePatterns.1" target="//@rules.2/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
     <attrConditions name="//@schema/@attributeCondDefs.0">
       <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.2/@sourcePatterns.3">
         <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
@@ -939,6 +945,9 @@
       <op value="++"/>
     </correspondencePatterns>
     <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.3/@sourcePatterns.5" target="//@rules.3/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="f2f" type="//@schema/@correspondenceTypes.1" source="//@rules.3/@sourcePatterns.1" target="//@rules.3/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
     <attrConditions name="//@schema/@attributeCondDefs.0">
@@ -1189,6 +1198,9 @@
     <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.4/@sourcePatterns.5" target="//@rules.4/@targetPatterns.2">
       <op value="++"/>
     </correspondencePatterns>
+    <correspondencePatterns name="f2f" type="//@schema/@correspondenceTypes.1" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
     <attrConditions name="//@schema/@attributeCondDefs.0">
       <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@sourcePatterns.2">
         <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
@@ -1437,6 +1449,9 @@
     <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.5/@sourcePatterns.5" target="//@rules.5/@targetPatterns.2">
       <op value="++"/>
     </correspondencePatterns>
+    <correspondencePatterns name="f2f" type="//@schema/@correspondenceTypes.1" source="//@rules.5/@sourcePatterns.1" target="//@rules.5/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
     <attrConditions name="//@schema/@attributeCondDefs.0">
       <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.3">
         <attribute href="platform:/resource/org.xtext.example.mydsl/model/generated/MyDsl.ecore#//Vector/x1"/>
@@ -1683,6 +1698,9 @@
       <op value="++"/>
     </correspondencePatterns>
     <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.6/@sourcePatterns.5" target="//@rules.6/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="f2f" type="//@schema/@correspondenceTypes.1" source="//@rules.6/@sourcePatterns.1" target="//@rules.6/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
     <attrConditions name="//@schema/@attributeCondDefs.0">
@@ -1934,6 +1952,9 @@
       <op value="++"/>
     </correspondencePatterns>
     <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.7/@sourcePatterns.5" target="//@rules.7/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="f2f" type="//@schema/@correspondenceTypes.1" source="//@rules.7/@sourcePatterns.1" target="//@rules.7/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
     <attrConditions name="//@schema/@attributeCondDefs.0">

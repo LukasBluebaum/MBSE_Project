@@ -93,6 +93,8 @@
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__solid" lowerBound="1"
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__f2f" lowerBound="1"
+        eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__n2n" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__v1v" lowerBound="1"
@@ -135,6 +137,8 @@
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__solid" lowerBound="1"
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__f2f" lowerBound="1"
+        eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__n2n" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__v1v" lowerBound="1"
@@ -177,6 +181,8 @@
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__solid" lowerBound="1"
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__f2f" lowerBound="1"
+        eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__n2n" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__v1v" lowerBound="1"
@@ -221,6 +227,8 @@
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__solid" lowerBound="1"
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__f2f" lowerBound="1"
+        eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__n2n" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__v1v" lowerBound="1"
@@ -265,6 +273,8 @@
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__solid" lowerBound="1"
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__f2f" lowerBound="1"
+        eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__n2n" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__v1v" lowerBound="1"
@@ -309,6 +319,8 @@
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__solid" lowerBound="1"
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__f2f" lowerBound="1"
+        eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__n2n" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__v1v" lowerBound="1"
@@ -355,6 +367,8 @@
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__solid" lowerBound="1"
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Solid"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__f2f" lowerBound="1"
+        eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__n2n" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//NormalToNormal"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__v1v" lowerBound="1"

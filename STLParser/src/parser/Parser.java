@@ -33,36 +33,44 @@ public class Parser
 		sync.setUpdatePolicy(matches -> {
 			IMatch rule = null;
 			Set<IMatch> _matches_ = matches.getMatches();
+			System.out.println(_matches_.size());
 			for (IMatch m : _matches_)
 			{
 				if (m.getRuleName().equals("EdgeRule8"))
-				{
+				{ 
+					//System.out.println(m);
 					return m;
 				}
 				if (m.getRuleName().equals("SolidRule"))
-				{
+				{	
+					//System.out.println(m);
 					return m;
 				}
 				if (m.getRuleName().equals("EdgeRule2") || m.getRuleName().equals("EdgeRule3") || m.getRuleName().equals("EdgeRule4"))
 				{
 					if (rule == null || (!rule.getRuleName().equals("EdgeRule5") && !rule.getRuleName().equals("EdgeRule6") && !rule.getRuleName().equals("EdgeRule7")))
 					{
+						
 						rule = m;
 					}
 				}
 				if (m.getRuleName().equals("EdgeRule5") || m.getRuleName().equals("EdgeRule6") || m.getRuleName().equals("EdgeRule7"))
-				{
+				{	
+			
 					rule = m;
 				}
 				if (m.getRuleName().equals("VectorRule2"))
 				{
+					//System.out.println(m);
 					return m;
 				}
 			}
 			if (rule != null)
-			{
+			{	
+				//System.out.println(rule);
 				return rule;
 			}
+			//System.out.println(matches.getNext());
 			return matches.getNext();
 		});
 	}
@@ -77,16 +85,18 @@ public class Parser
 	
 	public static void main(String[] args) throws IOException
 	{
-		RunParser stlParser = new RunParser("cube.stl");
+		RunParser stlParser = new RunParser("Cube.stl");
 		Optional<Solid> s = stlParser.parse();
 		s.ifPresent(b -> {
 			try
 			{
 				Controller ctrl = new Controller();
 				System.out.println(1);
+				
 				initialiseFwdSynchroniser();
 				System.out.println(2);
 				sync.getSourceResource().getContents().add(b);
+				System.out.println(b.getFacets().size());
 				System.out.println(3);
 				// System.out.println(sync.getSourceResource().getContents());
 				sync.forward();

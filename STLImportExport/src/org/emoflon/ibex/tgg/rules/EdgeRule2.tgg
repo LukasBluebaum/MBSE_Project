@@ -91,6 +91,11 @@
     	#src->n
     	#trg->normal
     }
+    
+     ++f2f:FacetToFacet{
+    	#src->facet1
+    	#trg->facet2
+    }
 }
 
 #attributeConditions {
