@@ -33,7 +33,7 @@ public class Parser
 		sync.setUpdatePolicy(matches -> {
 			IMatch rule = null;
 			Set<IMatch> _matches_ = matches.getMatches();
-			System.out.println(_matches_.size());
+			// System.out.println(_matches_.size());
 			for (IMatch m : _matches_)
 			{
 				if (m.getRuleName().equals("EdgeRule8"))
@@ -96,7 +96,7 @@ public class Parser
 				initialiseFwdSynchroniser();
 				System.out.println(2);
 				sync.getSourceResource().getContents().add(b);
-				System.out.println(b.getFacets().size());
+				// System.out.println(b.getFacets().size());
 				System.out.println(3);
 				// System.out.println(sync.getSourceResource().getContents());
 				sync.forward();
