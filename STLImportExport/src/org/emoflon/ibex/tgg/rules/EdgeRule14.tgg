@@ -1,0 +1,98 @@
+#using STLImportExport.*
+#using AttrCondDefLibrary.*
+
+#rule EdgeRule14 #with STLImportExport
+#source { 
+	
+	f:myDsl.Facet{	
+		++-normal->n
+		-v1->vec1
+		-v2->vec2
+		-v3->vec3
+		
+		
+	}
+	++n:myDsl.Normalvector
+	vec1:myDsl.Vector
+    vec2:myDsl.Vector
+	vec3:myDsl.Vector
+}
+
+#target {
+	
+		f1:Metamodell.Facet{
+		++-edges->e
+		++-normal->n1
+		
+	}
+	++e:Metamodell.Edge{
+		++-f->f1
+		++-p->p1
+		++-p->p2
+		
+	}
+	
+	++n1:Metamodell.Vector3f
+	
+	p1:Metamodell.Vector3f
+	p2:Metamodell.Vector3f
+	
+	
+}
+
+#correspondence {
+	v2v1:VectorToVector{
+		#src->vec1
+		#trg->p1
+		
+	}
+	
+	v2v2:VectorToVector{
+		#src->vec3
+		#trg->p2
+		
+	}
+	
+	f2f:FacetToFacet{
+		#src->f
+		#trg->f1
+	}
+	
+		++n2n:NormalToNormal{
+		#src->n
+		#trg->n1
+	}
+	
+	}
+
+#attributeConditions {
+	
+	eq_float(n.x1,n1.x)
+	eq_float(n.x2,n1.y)
+	eq_float(n.x3,n1.z)
+	
+	eq_float(vec1.x1,p1.x)
+	eq_float(vec1.x2,p1.y)
+	eq_float(vec1.x3,p1.z)
+	
+	
+	eq_float(vec3.x1,p2.x)
+	eq_float(vec3.x2,p2.y)
+	eq_float(vec3.x3,p2.z)
+
+	
+}
+
+#nac forbidEdge #for EdgeRule14
+#target{
+	e1:Edge{
+		-p->p1
+		-p->p2
+	}
+	p1:Metamodell.Vector3f
+	p2:Metamodell.Vector3f
+}
+
+
+
+

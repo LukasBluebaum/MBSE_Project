@@ -18,11 +18,12 @@ public class INITIAL_FWD_App extends SYNC {
 	public INITIAL_FWD_App() throws IOException {
 		super(createIbexOptions());
 		registerBlackInterpreter(new DemoclesTGGEngine());
+	
 	}
 
 	public static void main(String[] args) throws IOException {
 		BasicConfigurator.configure();
-		Logger.getRootLogger().setLevel(Level.INFO);
+		Logger.getRootLogger().setLevel(Level.DEBUG);
 
 		logger.info("Starting INITIAL FWD");
 		long tic = System.currentTimeMillis();

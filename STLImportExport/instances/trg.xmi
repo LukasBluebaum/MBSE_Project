@@ -1,203 +1,199 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Metamodell="platform:/resource/Metamodell/model/Metamodell.ecore">
   <Metamodell:Solid>
-    <facets solid="/0" normal="/23" edges="/20 /21 /22"/>
-    <facets solid="/0" normal="/26" edges="/20 /24 /25"/>
-    <facets solid="/0" normal="/29" edges="/21 /27 /28"/>
-    <facets solid="/0" normal="/31" edges="/27 /25 /30"/>
-    <facets solid="/0" normal="/34" edges="/28 /32 /33"/>
-    <facets solid="/0" normal="/37" edges="/30 /35 /36"/>
-    <facets solid="/0" normal="/40" edges="/24 /38 /39"/>
-    <facets solid="/0" normal="/43" edges="/38 /41 /42"/>
-    <facets solid="/0" normal="/46" edges="/42 /44 /45"/>
-    <facets solid="/0" normal="/49" edges="/45 /47 /48"/>
-    <facets solid="/0" normal="/52" edges="/33 /50 /51"/>
-    <facets solid="/0" normal="/55" edges="/47 /53 /54"/>
-    <facets solid="/0" normal="/58" edges="/53 /56 /57"/>
-    <facets solid="/0" normal="/61" edges="/57 /59 /60"/>
-    <facets solid="/0" normal="/65" edges="/62 /63 /64"/>
-    <facets solid="/0" normal="/69" edges="/56 /67 /68"/>
-    <facets solid="/0" normal="/71" edges="/67 /44 /70"/>
-    <facets solid="/0" normal="/73" edges="/70 /41 /72"/>
-    <facets solid="/0" normal="/75" edges="/72 /22 /74"/>
-    <facets solid="/0" normal="/77" edges="/74 /51 /76"/>
-    <facets solid="/0" normal="/79" edges="/68 /76 /78"/>
-    <facets solid="/0" normal="/83" edges="/39 /81 /82"/>
-    <facets solid="/0" normal="/85" edges="/35 /82 /84"/>
-    <facets solid="/0" normal="/87" edges="/81 /48 /86"/>
-    <facets solid="/0" normal="/90" edges="/86 /88 /89"/>
-    <facets solid="/0" normal="/92" edges="/89 /64 /91"/>
-    <facets solid="/0" normal="/96" edges="/88 /94 /95"/>
-    <facets solid="/0" normal="/98" edges="/94 /54 /97"/>
-    <facets solid="/0" normal="/100" edges="/97 /60 /99"/>
-    <facets solid="/0" normal="/103" edges="/99 /101 /102"/>
-    <facets solid="/0" normal="/107" edges="/104 /105 /106"/>
-    <facets solid="/0" normal="/111" edges="/101 /109 /110"/>
-    <facets solid="/0" normal="/114" edges="/105 /112 /113"/>
-    <facets solid="/0" normal="/118" edges="/109 /116 /117"/>
-    <facets solid="/0" normal="/120" edges="/116 /59 /119"/>
-    <facets solid="/0" normal="/122" edges="/119 /78 /121"/>
-    <facets solid="/0" normal="/124" edges="/121 /50 /123"/>
-    <facets solid="/0" normal="/126" edges="/113 /117 /125"/>
-    <facets solid="/0" normal="/128" edges="/125 /123 /127"/>
-    <facets solid="/0" normal="/132" edges="/95 /130 /131"/>
-    <facets solid="/0" normal="/134" edges="/130 /102 /133"/>
-    <facets solid="/0" normal="/136" edges="/62 /131 /135"/>
-    <facets solid="/0" normal="/138" edges="/104 /135 /137"/>
-    <facets solid="/0" normal="/142" edges="/32 /140 /141"/>
-    <facets solid="/0" normal="/144" edges="/127 /141 /143"/>
-    <facets solid="/0" normal="/146" edges="/140 /36 /145"/>
-    <facets solid="/0" normal="/148" edges="/106 /143 /147"/>
-    <facets solid="/0" normal="/150" edges="/63 /147 /149"/>
+    <facets normal="/106" edges="/27 /104 /105"/>
+    <facets normal="/78" edges="/75 /62 /77"/>
+    <facets normal="/94" edges="/86 /48 /64"/>
+    <facets normal="/110" edges="/108 /18 /109"/>
+    <facets normal="/53" edges="/18 /22 /52"/>
+    <facets normal="/146" edges="/84 /85 /73"/>
+    <facets normal="/96" edges="/95 /54 /85"/>
+    <facets normal="/51" edges="/49 /27 /50"/>
+    <facets normal="/93" edges="/77 /91 /92"/>
+    <facets normal="/141" edges="/32 /140 /41"/>
+    <facets normal="/123" edges="/61 /118 /122"/>
+    <facets normal="/56" edges="/54 /55 /38"/>
+    <facets normal="/132" edges="/28 /97 /131"/>
+    <facets normal="/79" edges="/74 /39 /43"/>
+    <facets normal="/121" edges="/48 /120 /112"/>
+    <facets normal="/34" edges="/31 /32 /33"/>
+    <facets normal="/116" edges="/35 /114 /115"/>
+    <facets normal="/130" edges="/29 /129 /68"/>
+    <facets normal="/66" edges="/36 /50 /57"/>
+    <facets normal="/102" edges="/52 /42 /101"/>
+    <facets normal="/139" edges="/91 /124 /128"/>
+    <facets normal="/40" edges="/38 /36 /39"/>
+    <facets normal="/98" edges="/41 /42 /97"/>
+    <facets normal="/46" edges="/43 /44 /45"/>
+    <facets normal="/63" edges="/47 /61 /62"/>
+    <facets normal="/65" edges="/55 /64 /49"/>
+    <facets normal="/90" edges="/88 /33 /89"/>
+    <facets normal="/60" edges="/57 /58 /59"/>
+    <facets normal="/70" edges="/67 /68 /69"/>
+    <facets normal="/87" edges="/71 /72 /86"/>
+    <facets normal="/76" edges="/73 /74 /75"/>
+    <facets normal="/119" edges="/69 /80 /118"/>
+    <facets normal="/83" edges="/81 /67 /82"/>
+    <facets normal="/103" edges="/45 /82 /47"/>
+    <facets normal="/111" edges="/80 /99 /108"/>
+    <facets normal="/100" edges="/89 /28 /72"/>
+    <facets normal="/113" edges="/107 /35 /99"/>
+    <facets normal="/117" edges="/112 /114 /104"/>
+    <facets normal="/125" edges="/122 /109 /124"/>
+    <facets normal="/127" edges="/115 /126 /22"/>
+    <facets normal="/142" edges="/128 /101 /140"/>
+    <facets normal="/133" edges="/88 /71 /95"/>
+    <facets normal="/136" edges="/105 /134 /135"/>
+    <facets normal="/137" edges="/44 /59 /81"/>
+    <facets normal="/138" edges="/129 /134 /107"/>
+    <facets normal="/143" edges="/84 /92 /31"/>
+    <facets normal="/144" edges="/131 /126 /120"/>
+    <facets normal="/145" edges="/58 /135 /29"/>
   </Metamodell:Solid>
-  <Metamodell:Vector3f x="-1.0" y="-1.0"/>
-  <Metamodell:Vector3f x="1.0" y="1.0" z="1.0"/>
-  <Metamodell:Vector3f x="-1.0" y="1.0" z="1.0"/>
-  <Metamodell:Vector3f x="-1.0" y="1.0"/>
-  <Metamodell:Vector3f y="-1.0" z="-1.0"/>
-  <Metamodell:Vector3f x="1.0" y="1.0" z="-1.0"/>
-  <Metamodell:Vector3f y="-1.0" z="1.0"/>
-  <Metamodell:Vector3f z="1.0"/>
-  <Metamodell:Vector3f x="1.0" z="1.0"/>
-  <Metamodell:Vector3f x="-1.0"/>
-  <Metamodell:Vector3f x="1.0"/>
   <Metamodell:Vector3f z="-1.0"/>
-  <Metamodell:Vector3f y="1.0"/>
-  <Metamodell:Vector3f x="1.0" y="-1.0"/>
-  <Metamodell:Vector3f y="1.0" z="1.0"/>
-  <Metamodell:Vector3f x="-1.0" z="-1.0"/>
-  <Metamodell:Vector3f x="1.0" z="-1.0"/>
-  <Metamodell:Vector3f y="-1.0"/>
-  <Metamodell:Vector3f x="1.0" y="-1.0" z="-1.0"/>
-  <Metamodell:Edge p="/11 /19" f="/0/@facets.0 /0/@facets.1"/>
-  <Metamodell:Edge p="/19 /17" f="/0/@facets.0 /0/@facets.2"/>
-  <Metamodell:Edge p="/17 /11" f="/0/@facets.0 /0/@facets.18"/>
-  <Metamodell:Vector3f x="1.0"/>
-  <Metamodell:Edge p="/11 /14" f="/0/@facets.1 /0/@facets.6"/>
-  <Metamodell:Edge p="/14 /19" f="/0/@facets.1 /0/@facets.3"/>
-  <Metamodell:Vector3f x="1.0"/>
-  <Metamodell:Edge p="/19 /5" f="/0/@facets.2 /0/@facets.3"/>
-  <Metamodell:Edge p="/5 /17" f="/0/@facets.2 /0/@facets.4"/>
-  <Metamodell:Vector3f z="-1.0"/>
-  <Metamodell:Edge p="/14 /5" f="/0/@facets.3 /0/@facets.5"/>
-  <Metamodell:Vector3f y="-1.0"/>
-  <Metamodell:Edge p="/5 /29" f="/0/@facets.4 /0/@facets.43"/>
-  <Metamodell:Edge p="/29 /17" f="/0/@facets.4 /0/@facets.10"/>
-  <Metamodell:Vector3f z="-1.0"/>
-  <Metamodell:Edge p="/14 /31" f="/0/@facets.5 /0/@facets.22"/>
-  <Metamodell:Edge p="/31 /5" f="/0/@facets.5 /0/@facets.45"/>
-  <Metamodell:Vector3f y="-1.0"/>
-  <Metamodell:Edge p="/11 /9" f="/0/@facets.6 /0/@facets.7"/>
-  <Metamodell:Edge p="/9 /14" f="/0/@facets.6 /0/@facets.21"/>
-  <Metamodell:Vector3f x="1.0"/>
-  <Metamodell:Edge p="/11 /2" f="/0/@facets.7 /0/@facets.17"/>
-  <Metamodell:Edge p="/2 /9" f="/0/@facets.7 /0/@facets.8"/>
-  <Metamodell:Vector3f x="1.0"/>
-  <Metamodell:Edge p="/2 /15" f="/0/@facets.8 /0/@facets.16"/>
-  <Metamodell:Edge p="/15 /9" f="/0/@facets.8 /0/@facets.9"/>
-  <Metamodell:Vector3f z="1.0"/>
-  <Metamodell:Edge p="/15 /46" f="/0/@facets.9 /0/@facets.11"/>
-  <Metamodell:Edge p="/46 /9" f="/0/@facets.9 /0/@facets.23"/>
-  <Metamodell:Vector3f z="1.0"/>
-  <Metamodell:Edge p="/29 /6" f="/0/@facets.10 /0/@facets.36"/>
-  <Metamodell:Edge p="/6 /17" f="/0/@facets.10 /0/@facets.19"/>
-  <Metamodell:Vector3f z="-1.0"/>
-  <Metamodell:Edge p="/15 /3" f="/0/@facets.11 /0/@facets.12"/>
-  <Metamodell:Edge p="/3 /46" f="/0/@facets.11 /0/@facets.27"/>
-  <Metamodell:Vector3f z="1.0"/>
-  <Metamodell:Edge p="/15 /13" f="/0/@facets.12 /0/@facets.15"/>
-  <Metamodell:Edge p="/13 /3" f="/0/@facets.12 /0/@facets.13"/>
-  <Metamodell:Vector3f y="1.0"/>
-  <Metamodell:Edge p="/13 /4" f="/0/@facets.13 /0/@facets.34"/>
-  <Metamodell:Edge p="/4 /3" f="/0/@facets.13 /0/@facets.28"/>
-  <Metamodell:Vector3f y="1.0"/>
-  <Metamodell:Edge p="/7 /1" f="/0/@facets.14 /0/@facets.41"/>
-  <Metamodell:Edge p="/1 /37" f="/0/@facets.14 /0/@facets.47"/>
-  <Metamodell:Edge p="/37 /7" f="/0/@facets.14 /0/@facets.25"/>
-  <Metamodell:Vector3f y="-1.0"/>
-  <Metamodell:Vector3f x="1.0" y="1.0"/>
-  <Metamodell:Edge p="/15 /66" f="/0/@facets.15 /0/@facets.16"/>
-  <Metamodell:Edge p="/66 /13" f="/0/@facets.15 /0/@facets.20"/>
-  <Metamodell:Vector3f y="1.0"/>
-  <Metamodell:Edge p="/2 /66" f="/0/@facets.16 /0/@facets.17"/>
-  <Metamodell:Vector3f y="1.0"/>
-  <Metamodell:Edge p="/11 /66" f="/0/@facets.17 /0/@facets.18"/>
-  <Metamodell:Vector3f x="1.0"/>
-  <Metamodell:Edge p="/17 /66" f="/0/@facets.18 /0/@facets.19"/>
-  <Metamodell:Vector3f x="1.0"/>
-  <Metamodell:Edge p="/6 /66" f="/0/@facets.19 /0/@facets.20"/>
-  <Metamodell:Vector3f x="1.0"/>
-  <Metamodell:Edge p="/6 /13" f="/0/@facets.20 /0/@facets.35"/>
-  <Metamodell:Vector3f y="1.0"/>
-  <Metamodell:Vector3f x="1.0" y="-1.0" z="1.0"/>
-  <Metamodell:Edge p="/9 /80" f="/0/@facets.21 /0/@facets.23"/>
-  <Metamodell:Edge p="/80 /14" f="/0/@facets.21 /0/@facets.22"/>
-  <Metamodell:Vector3f x="1.0"/>
-  <Metamodell:Edge p="/80 /31" f="/0/@facets.22"/>
-  <Metamodell:Vector3f y="-1.0"/>
-  <Metamodell:Edge p="/46 /80" f="/0/@facets.23 /0/@facets.24"/>
-  <Metamodell:Vector3f z="1.0"/>
-  <Metamodell:Edge p="/46 /7" f="/0/@facets.24 /0/@facets.26"/>
-  <Metamodell:Edge p="/7 /80" f="/0/@facets.24 /0/@facets.25"/>
-  <Metamodell:Vector3f z="1.0"/>
-  <Metamodell:Edge p="/37 /80" f="/0/@facets.25"/>
-  <Metamodell:Vector3f y="-1.0"/>
-  <Metamodell:Vector3f x="-1.0" z="1.0"/>
-  <Metamodell:Edge p="/46 /93" f="/0/@facets.26 /0/@facets.27"/>
-  <Metamodell:Edge p="/93 /7" f="/0/@facets.26 /0/@facets.39"/>
-  <Metamodell:Vector3f z="1.0"/>
-  <Metamodell:Edge p="/3 /93" f="/0/@facets.27 /0/@facets.28"/>
-  <Metamodell:Vector3f z="1.0"/>
-  <Metamodell:Edge p="/4 /93" f="/0/@facets.28 /0/@facets.29"/>
-  <Metamodell:Vector3f x="-1.0"/>
-  <Metamodell:Edge p="/4 /10" f="/0/@facets.29 /0/@facets.31"/>
-  <Metamodell:Edge p="/10 /93" f="/0/@facets.29 /0/@facets.40"/>
-  <Metamodell:Vector3f x="-1.0"/>
-  <Metamodell:Edge p="/1 /100" f="/0/@facets.30 /0/@facets.42"/>
-  <Metamodell:Edge p="/100 /16" f="/0/@facets.30 /0/@facets.32"/>
-  <Metamodell:Edge p="/16 /1" f="/0/@facets.30 /0/@facets.46"/>
-  <Metamodell:Vector3f x="-1.0"/>
-  <Metamodell:Vector3f x="-1.0" y="1.0" z="-1.0"/>
-  <Metamodell:Edge p="/4 /108" f="/0/@facets.31 /0/@facets.33"/>
-  <Metamodell:Edge p="/108 /10" f="/0/@facets.31"/>
-  <Metamodell:Vector3f x="-1.0"/>
-  <Metamodell:Edge p="/100 /108" f="/0/@facets.32"/>
-  <Metamodell:Edge p="/108 /16" f="/0/@facets.32 /0/@facets.37"/>
-  <Metamodell:Vector3f x="-1.0"/>
   <Metamodell:Vector3f y="1.0" z="-1.0"/>
-  <Metamodell:Edge p="/4 /115" f="/0/@facets.33 /0/@facets.34"/>
-  <Metamodell:Edge p="/115 /108" f="/0/@facets.33 /0/@facets.37"/>
-  <Metamodell:Vector3f y="1.0"/>
-  <Metamodell:Edge p="/13 /115" f="/0/@facets.34 /0/@facets.35"/>
-  <Metamodell:Vector3f y="1.0"/>
-  <Metamodell:Edge p="/6 /115" f="/0/@facets.35 /0/@facets.36"/>
-  <Metamodell:Vector3f y="1.0"/>
-  <Metamodell:Edge p="/29 /115" f="/0/@facets.36 /0/@facets.38"/>
-  <Metamodell:Vector3f z="-1.0"/>
-  <Metamodell:Edge p="/115 /16" f="/0/@facets.37 /0/@facets.38"/>
-  <Metamodell:Vector3f z="-1.0"/>
-  <Metamodell:Edge p="/29 /16" f="/0/@facets.38 /0/@facets.44"/>
-  <Metamodell:Vector3f z="-1.0"/>
-  <Metamodell:Vector3f x="-1.0" y="-1.0" z="1.0"/>
-  <Metamodell:Edge p="/93 /129" f="/0/@facets.39 /0/@facets.40"/>
-  <Metamodell:Edge p="/129 /7" f="/0/@facets.39 /0/@facets.41"/>
-  <Metamodell:Vector3f z="1.0"/>
-  <Metamodell:Edge p="/10 /129" f="/0/@facets.40"/>
   <Metamodell:Vector3f x="-1.0"/>
-  <Metamodell:Edge p="/129 /1" f="/0/@facets.41 /0/@facets.42"/>
-  <Metamodell:Vector3f y="-1.0"/>
-  <Metamodell:Edge p="/129 /100" f="/0/@facets.42"/>
-  <Metamodell:Vector3f x="-1.0"/>
+  <Metamodell:Vector3f y="-1.0" z="1.0"/>
   <Metamodell:Vector3f x="-1.0" y="-1.0" z="-1.0"/>
-  <Metamodell:Edge p="/5 /139" f="/0/@facets.43 /0/@facets.45"/>
-  <Metamodell:Edge p="/139 /29" f="/0/@facets.43 /0/@facets.44"/>
-  <Metamodell:Vector3f z="-1.0"/>
-  <Metamodell:Edge p="/139 /16" f="/0/@facets.44 /0/@facets.46"/>
-  <Metamodell:Vector3f z="-1.0"/>
-  <Metamodell:Edge p="/31 /139" f="/0/@facets.45"/>
+  <Metamodell:Vector3f y="-1.0" z="-1.0"/>
+  <Metamodell:Vector3f x="-1.0" y="-1.0"/>
+  <Metamodell:Vector3f x="-1.0" z="-1.0"/>
+  <Metamodell:Vector3f x="1.0" z="1.0"/>
+  <Metamodell:Vector3f x="1.0" y="1.0"/>
+  <Metamodell:Vector3f x="-1.0" y="1.0" z="-1.0"/>
   <Metamodell:Vector3f y="-1.0"/>
-  <Metamodell:Edge p="/139 /1" f="/0/@facets.46 /0/@facets.47"/>
+  <Metamodell:Vector3f x="-1.0" y="-1.0" z="1.0"/>
+  <Metamodell:Vector3f x="1.0" y="-1.0" z="-1.0"/>
+  <Metamodell:Vector3f x="-1.0" z="1.0"/>
+  <Metamodell:Vector3f x="1.0" y="-1.0"/>
+  <Metamodell:Vector3f x="1.0" y="-1.0" z="1.0"/>
+  <Metamodell:Edge p="/2 /1" f="/0/@facets.4 /0/@facets.3"/>
+  <Metamodell:Vector3f x="1.0" y="1.0" z="-1.0"/>
+  <Metamodell:Vector3f y="1.0" z="1.0"/>
+  <Metamodell:Vector3f x="1.0" y="1.0" z="1.0"/>
+  <Metamodell:Edge p="/1 /8" f="/0/@facets.4 /0/@facets.39"/>
+  <Metamodell:Vector3f z="1.0"/>
+  <Metamodell:Vector3f x="1.0"/>
+  <Metamodell:Vector3f x="-1.0" y="1.0" z="1.0"/>
+  <Metamodell:Vector3f x="1.0" z="-1.0"/>
+  <Metamodell:Edge p="/16 /12" f="/0/@facets.0 /0/@facets.7"/>
+  <Metamodell:Edge p="/7 /3" f="/0/@facets.12 /0/@facets.35"/>
+  <Metamodell:Edge p="/24 /14" f="/0/@facets.17 /0/@facets.47"/>
+  <Metamodell:Vector3f x="-1.0" y="1.0"/>
+  <Metamodell:Edge p="/15 /30" f="/0/@facets.15 /0/@facets.45"/>
+  <Metamodell:Edge p="/30 /3" f="/0/@facets.15 /0/@facets.9"/>
+  <Metamodell:Edge p="/15 /3" f="/0/@facets.15 /0/@facets.26"/>
   <Metamodell:Vector3f x="-1.0"/>
-  <Metamodell:Edge p="/139 /37" f="/0/@facets.47"/>
+  <Metamodell:Edge p="/1 /6" f="/0/@facets.16 /0/@facets.36"/>
+  <Metamodell:Edge p="/9 /17" f="/0/@facets.18 /0/@facets.21"/>
+  <Metamodell:Vector3f y="1.0"/>
+  <Metamodell:Edge p="/23 /17" f="/0/@facets.21 /0/@facets.11"/>
+  <Metamodell:Edge p="/23 /9" f="/0/@facets.21 /0/@facets.13"/>
+  <Metamodell:Vector3f z="1.0"/>
+  <Metamodell:Edge p="/3 /11" f="/0/@facets.22 /0/@facets.9"/>
+  <Metamodell:Edge p="/11 /8" f="/0/@facets.22 /0/@facets.19"/>
+  <Metamodell:Edge p="/20 /9" f="/0/@facets.23 /0/@facets.13"/>
+  <Metamodell:Edge p="/9 /21" f="/0/@facets.23 /0/@facets.43"/>
+  <Metamodell:Edge p="/20 /21" f="/0/@facets.23 /0/@facets.33"/>
+  <Metamodell:Vector3f z="1.0"/>
+  <Metamodell:Edge p="/20 /10" f="/0/@facets.24 /0/@facets.33"/>
+  <Metamodell:Edge p="/12 /7" f="/0/@facets.14 /0/@facets.2"/>
+  <Metamodell:Edge p="/17 /12" f="/0/@facets.7 /0/@facets.25"/>
+  <Metamodell:Edge p="/17 /16" f="/0/@facets.7 /0/@facets.18"/>
   <Metamodell:Vector3f y="-1.0"/>
+  <Metamodell:Edge p="/2 /8" f="/0/@facets.4 /0/@facets.19"/>
+  <Metamodell:Vector3f z="-1.0"/>
+  <Metamodell:Edge p="/23 /4" f="/0/@facets.11 /0/@facets.6"/>
+  <Metamodell:Edge p="/4 /17" f="/0/@facets.11 /0/@facets.25"/>
+  <Metamodell:Vector3f z="1.0"/>
+  <Metamodell:Edge p="/9 /16" f="/0/@facets.27 /0/@facets.18"/>
+  <Metamodell:Edge p="/16 /24" f="/0/@facets.27 /0/@facets.47"/>
+  <Metamodell:Edge p="/9 /24" f="/0/@facets.27 /0/@facets.43"/>
+  <Metamodell:Vector3f x="1.0"/>
+  <Metamodell:Edge p="/10 /37" f="/0/@facets.24 /0/@facets.10"/>
+  <Metamodell:Edge p="/20 /37" f="/0/@facets.24 /0/@facets.1"/>
+  <Metamodell:Vector3f y="1.0"/>
+  <Metamodell:Edge p="/4 /12" f="/0/@facets.25 /0/@facets.2"/>
+  <Metamodell:Vector3f y="-1.0"/>
+  <Metamodell:Vector3f x="1.0"/>
+  <Metamodell:Edge p="/10 /24" f="/0/@facets.28 /0/@facets.32"/>
+  <Metamodell:Edge p="/24 /26" f="/0/@facets.28 /0/@facets.17"/>
+  <Metamodell:Edge p="/10 /26" f="/0/@facets.28 /0/@facets.31"/>
+  <Metamodell:Vector3f x="1.0"/>
+  <Metamodell:Edge p="/4 /13" f="/0/@facets.29 /0/@facets.41"/>
+  <Metamodell:Edge p="/13 /7" f="/0/@facets.29 /0/@facets.35"/>
+  <Metamodell:Edge p="/25 /23" f="/0/@facets.30 /0/@facets.5"/>
+  <Metamodell:Edge p="/23 /20" f="/0/@facets.30 /0/@facets.13"/>
+  <Metamodell:Edge p="/25 /20" f="/0/@facets.30 /0/@facets.1"/>
+  <Metamodell:Vector3f z="1.0"/>
+  <Metamodell:Edge p="/25 /37" f="/0/@facets.1 /0/@facets.8"/>
+  <Metamodell:Vector3f y="1.0"/>
+  <Metamodell:Vector3f z="1.0"/>
+  <Metamodell:Edge p="/26 /19" f="/0/@facets.31 /0/@facets.34"/>
+  <Metamodell:Edge p="/21 /24" f="/0/@facets.32 /0/@facets.43"/>
+  <Metamodell:Edge p="/21 /10" f="/0/@facets.32 /0/@facets.33"/>
+  <Metamodell:Vector3f x="1.0"/>
+  <Metamodell:Edge p="/25 /15" f="/0/@facets.5 /0/@facets.45"/>
+  <Metamodell:Edge p="/15 /23" f="/0/@facets.5 /0/@facets.6"/>
+  <Metamodell:Edge p="/4 /7" f="/0/@facets.2 /0/@facets.29"/>
+  <Metamodell:Vector3f y="-1.0"/>
+  <Metamodell:Edge p="/13 /15" f="/0/@facets.26 /0/@facets.41"/>
+  <Metamodell:Edge p="/13 /3" f="/0/@facets.26 /0/@facets.35"/>
+  <Metamodell:Vector3f x="-1.0"/>
+  <Metamodell:Edge p="/37 /30" f="/0/@facets.8 /0/@facets.20"/>
+  <Metamodell:Edge p="/25 /30" f="/0/@facets.8 /0/@facets.45"/>
+  <Metamodell:Vector3f y="1.0"/>
+  <Metamodell:Vector3f y="-1.0"/>
+  <Metamodell:Edge p="/15 /4" f="/0/@facets.6 /0/@facets.41"/>
+  <Metamodell:Vector3f z="1.0"/>
+  <Metamodell:Edge p="/3 /8" f="/0/@facets.22 /0/@facets.12"/>
+  <Metamodell:Vector3f x="-1.0"/>
+  <Metamodell:Edge p="/26 /1" f="/0/@facets.34 /0/@facets.36"/>
+  <Metamodell:Vector3f x="-1.0"/>
+  <Metamodell:Edge p="/2 /11" f="/0/@facets.19 /0/@facets.40"/>
+  <Metamodell:Vector3f z="-1.0"/>
+  <Metamodell:Vector3f y="1.0"/>
+  <Metamodell:Edge p="/12 /6" f="/0/@facets.0 /0/@facets.37"/>
+  <Metamodell:Edge p="/16 /6" f="/0/@facets.0 /0/@facets.42"/>
+  <Metamodell:Vector3f y="-1.0"/>
+  <Metamodell:Edge p="/26 /6" f="/0/@facets.36 /0/@facets.44"/>
+  <Metamodell:Edge p="/19 /1" f="/0/@facets.3 /0/@facets.34"/>
+  <Metamodell:Edge p="/19 /2" f="/0/@facets.3 /0/@facets.38"/>
+  <Metamodell:Vector3f z="-1.0"/>
+  <Metamodell:Vector3f z="-1.0"/>
+  <Metamodell:Edge p="/12 /5" f="/0/@facets.37 /0/@facets.14"/>
+  <Metamodell:Vector3f z="-1.0"/>
+  <Metamodell:Edge p="/6 /5" f="/0/@facets.16 /0/@facets.37"/>
+  <Metamodell:Edge p="/1 /5" f="/0/@facets.16 /0/@facets.39"/>
+  <Metamodell:Vector3f z="-1.0"/>
+  <Metamodell:Vector3f y="-1.0"/>
+  <Metamodell:Edge p="/10 /19" f="/0/@facets.10 /0/@facets.31"/>
+  <Metamodell:Vector3f x="1.0"/>
+  <Metamodell:Edge p="/7 /5" f="/0/@facets.14 /0/@facets.46"/>
+  <Metamodell:Vector3f y="-1.0"/>
+  <Metamodell:Edge p="/37 /19" f="/0/@facets.38 /0/@facets.10"/>
+  <Metamodell:Vector3f y="1.0"/>
+  <Metamodell:Edge p="/37 /2" f="/0/@facets.38 /0/@facets.20"/>
+  <Metamodell:Vector3f y="1.0"/>
+  <Metamodell:Edge p="/5 /8" f="/0/@facets.39 /0/@facets.46"/>
+  <Metamodell:Vector3f z="-1.0"/>
+  <Metamodell:Edge p="/30 /2" f="/0/@facets.40 /0/@facets.20"/>
+  <Metamodell:Edge p="/14 /26" f="/0/@facets.17 /0/@facets.44"/>
+  <Metamodell:Vector3f x="1.0"/>
+  <Metamodell:Edge p="/7 /8" f="/0/@facets.12 /0/@facets.46"/>
+  <Metamodell:Vector3f x="-1.0"/>
+  <Metamodell:Vector3f z="1.0"/>
+  <Metamodell:Edge p="/6 /14" f="/0/@facets.42 /0/@facets.44"/>
+  <Metamodell:Edge p="/16 /14" f="/0/@facets.42 /0/@facets.47"/>
+  <Metamodell:Vector3f y="-1.0"/>
+  <Metamodell:Vector3f x="1.0"/>
+  <Metamodell:Vector3f z="-1.0"/>
+  <Metamodell:Vector3f y="1.0"/>
+  <Metamodell:Edge p="/30 /11" f="/0/@facets.9 /0/@facets.40"/>
+  <Metamodell:Vector3f x="-1.0"/>
+  <Metamodell:Vector3f y="1.0"/>
+  <Metamodell:Vector3f x="-1.0"/>
+  <Metamodell:Vector3f x="-1.0"/>
+  <Metamodell:Vector3f x="1.0"/>
+  <Metamodell:Vector3f z="1.0"/>
 </xmi:XMI>

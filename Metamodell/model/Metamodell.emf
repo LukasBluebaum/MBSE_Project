@@ -13,7 +13,7 @@ class Facet {
   ref Solid solid;
   ref Vector3f normal;
   ref Edge[3] edges;
-  ref Color color;
+  ref Color[0..1] color;
   ref Area #facets area;
 }
 

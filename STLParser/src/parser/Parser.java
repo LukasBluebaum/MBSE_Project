@@ -9,12 +9,20 @@ import org.emoflon.ibex.tgg.operational.strategies.sync.SYNC;
 import org.emoflon.ibex.tgg.run.stlimportexport.INITIAL_FWD_App;
 import org.emoflon.ibex.tgg.run.stlimportexport.SYNC_App;
 import org.xtext.example.mydsl.api.RunParser;
+import org.xtext.example.mydsl.api.RunSerialiser;
 import org.xtext.example.mydsl.myDsl.Solid;
 import org.xtext.example.mydsl.rules.STLRules;
 
+import Metamodell.Color;
 import Metamodell.Edge;
 import Metamodell.Facet;
+import Metamodell.MetamodellFactory;
+import Metamodell.MetamodellPackage;
 import Metamodell.Vector3f;
+import Metamodell.impl.ColorImpl;
+import Metamodell.impl.FacetImpl;
+import Metamodell.impl.MetamodellFactoryImpl;
+import Metamodell.impl.MetamodellPackageImpl;
 import Metamodell.impl.SolidImpl;
 import controller.Controller;
 
@@ -36,40 +44,40 @@ public class Parser
 			// System.out.println(_matches_.size());
 			for (IMatch m : _matches_)
 			{
-				if (m.getRuleName().equals("EdgeRule8"))
-				{ 
-					//System.out.println(m);
-					return m;
-				}
+//				if (m.getRuleName().equals("EdgeRule8"))
+//				{ 
+//					//System.out.println(m);
+//					return m;
+//				}
 				if (m.getRuleName().equals("SolidRule"))
 				{	
 					//System.out.println(m);
 					return m;
 				}
-				if (m.getRuleName().equals("EdgeRule2") || m.getRuleName().equals("EdgeRule3") || m.getRuleName().equals("EdgeRule4"))
-				{
-					if (rule == null || (!rule.getRuleName().equals("EdgeRule5") && !rule.getRuleName().equals("EdgeRule6") && !rule.getRuleName().equals("EdgeRule7")))
-					{
-						
-						rule = m;
-					}
-				}
-				if (m.getRuleName().equals("EdgeRule5") || m.getRuleName().equals("EdgeRule6") || m.getRuleName().equals("EdgeRule7"))
-				{	
-			
-					rule = m;
-				}
+//				if (m.getRuleName().equals("EdgeRule2") || m.getRuleName().equals("EdgeRule3") || m.getRuleName().equals("EdgeRule4"))
+//				{
+//					if (rule == null || (!rule.getRuleName().equals("EdgeRule5") && !rule.getRuleName().equals("EdgeRule6") && !rule.getRuleName().equals("EdgeRule7")))
+//					{
+//						
+//						rule = m;
+//					}
+//				}
+//				if (m.getRuleName().equals("EdgeRule5") || m.getRuleName().equals("EdgeRule6") || m.getRuleName().equals("EdgeRule7"))
+//				{	
+//			
+//					rule = m;
+//				}
 				if (m.getRuleName().equals("VectorRule2"))
 				{
 					//System.out.println(m);
 					return m;
 				}
 			}
-			if (rule != null)
-			{	
-				//System.out.println(rule);
-				return rule;
-			}
+//			if (rule != null)
+//			{	
+//				//System.out.println(rule);
+//				return rule;
+//			}
 			//System.out.println(matches.getNext());
 			return matches.getNext();
 		});
@@ -85,6 +93,7 @@ public class Parser
 	
 	public static void main(String[] args) throws IOException
 	{
+	
 		RunParser stlParser = new RunParser("Cube.stl");
 		Optional<Solid> s = stlParser.parse();
 		s.ifPresent(b -> {
@@ -104,14 +113,56 @@ public class Parser
 				// System.out.println(sync.getTargetResource().getContents());
 				sync.saveModels();
 				System.out.println(sync.getTargetResource().getContents());
-				Metamodell.Solid solid = (Metamodell.Solid) sync.getTargetResource().getContents().get(0);
+				Metamodell.Solid solid =  (Metamodell.Solid) sync.getTargetResource().getContents().get(0);
 		
 				printSolid((SolidImpl) solid);
+				System.out.println(solid.getFacets().get(0).getEdges().get(0).getP());
+				System.out.println(solid.getFacets().get(0).getEdges().get(0).getF());
+				System.out.println(solid.getFacets().get(0).getEdges().get(1).getP());
+				System.out.println(solid.getFacets().get(0).getEdges().get(1).getF());
+				System.out.println(solid.getFacets().get(0).getEdges().get(2).getP());
+				System.out.println(solid.getFacets().get(0).getEdges().get(2).getF());
+				System.out.println("-----------------------------------------------");
+				System.out.println(solid.getFacets().get(1).getEdges().get(0).getP());
+				System.out.println(solid.getFacets().get(1).getEdges().get(0).getF());
+				System.out.println(solid.getFacets().get(1).getEdges().get(1).getP());
+				System.out.println(solid.getFacets().get(1).getEdges().get(1).getF());
+				System.out.println(solid.getFacets().get(1).getEdges().get(2).getP());
+				System.out.println(solid.getFacets().get(1).getEdges().get(2).getF());
+				System.out.println("-----------------------------------------------");
+				System.out.println(solid.getFacets().get(2).getEdges().get(0).getP());
+				System.out.println(solid.getFacets().get(2).getEdges().get(0).getF());
+				System.out.println(solid.getFacets().get(2).getEdges().get(1).getP());
+				System.out.println(solid.getFacets().get(2).getEdges().get(1).getF());
+				System.out.println(solid.getFacets().get(2).getEdges().get(2).getP());
+				System.out.println(solid.getFacets().get(2).getEdges().get(2).getF());
+				System.out.println("-----------------------------------------------");
+				System.out.println(solid.getFacets().get(3).getEdges().get(0).getP());
+				System.out.println(solid.getFacets().get(3).getEdges().get(0).getF());
+				System.out.println(solid.getFacets().get(3).getEdges().get(1).getP());
+				System.out.println(solid.getFacets().get(3).getEdges().get(1).getF());
+				System.out.println(solid.getFacets().get(3).getEdges().get(2).getP());
+				System.out.println(solid.getFacets().get(3).getEdges().get(2).getF());
 				
+//				 MetamodellFactory f = new MetamodellFactoryImpl();
+//				 Color c = f.createColor();
+//				 Vector3f v = f.createVector3f();
+//				 c.setR(30);
+//				 c.setG(20);
+//				 c.setB(20);
+//				 Facet fac = (FacetImpl) f.createFacet();
+//				 fac.setColor(c);
+//				
+//				 solid.getFacets().get(0).eSetDeliver(false);
+//				 solid.getFacets().get(0).setColor(c);
+				
+						
 				ctrl.createAreas(solid);
 				STLRules rules = new STLRules(solid);
+				RunSerialiser rSerialiser = new RunSerialiser();
+				// rSerialiser.unparse("example.bin", solid);
 				
-				System.out.println("Matches: " + rules.validateSolid(solid));
+				//System.out.println("Matches: " + rules.validateSolid(solid));
 			}
 			catch (IOException e)
 			{
