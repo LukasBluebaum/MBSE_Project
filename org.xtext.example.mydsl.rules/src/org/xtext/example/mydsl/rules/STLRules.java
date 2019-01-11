@@ -15,6 +15,10 @@ public class STLRules
 		
 	public long validateSolid(Solid solid)
 	{
+		System.out.println("exPattern: "+api.exPattern().countMatches());
+		System.out.println("examplePattern: "+api.examplePattern().countMatches());
+		System.out.println("degree: "+api.degree().countMatches());
+				
 		return api.examplePattern().countMatches();
 	}
 }

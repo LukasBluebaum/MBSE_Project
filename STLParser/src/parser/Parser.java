@@ -94,7 +94,7 @@ public class Parser
 	public static void main(String[] args) throws IOException
 	{
 	
-		RunParser stlParser = new RunParser("Cube.stl");
+		RunParser stlParser = new RunParser("test.stl");
 		Optional<Solid> s = stlParser.parse();
 		s.ifPresent(b -> {
 			try
@@ -156,9 +156,13 @@ public class Parser
 //				 solid.getFacets().get(0).eSetDeliver(false);
 //				 solid.getFacets().get(0).setColor(c);
 				
-						
+
+	
 				ctrl.createAreas(solid);
+				System.out.println(solid.getArea());
 				STLRules rules = new STLRules(solid);
+				rules.validateSolid(solid);			
+
 				RunSerialiser rSerialiser = new RunSerialiser();
 				// rSerialiser.unparse("example.bin", solid);
 				
@@ -198,8 +202,11 @@ public class Parser
 				System.out.println("\tColor: " + f.getColor());
 				System.out.println("\tNormal: " + f.getNormal());
 				System.out.println("\tEdge");
+				
 				for (Edge e : f.getEdges())
 				{
+					Controller ctrl = new Controller();
+					ctrl.computeDegree(e);
 					System.out.println("\t\t" + toString(e));
 				}
 			}
