@@ -1,0 +1,85 @@
+#using STLImportExport.*
+#using AttrCondDefLibrary.*
+
+#rule EdgeRule13 #with STLImportExport
+
+#source { 
+	
+	f:myDsl.Facet{	
+		
+		-v2->vec2
+		++-v3->vec3
+		
+		
+	}
+	
+	vec2:myDsl.Vector
+	vec3:myDsl.Vector
+}
+
+#target {
+	
+	f1:Metamodell.Facet{
+	
+		++-edges->e
+		
+	}
+	++e:Metamodell.Edge{
+		++-f->f1
+		++-p->p1
+		++-p->p2
+		
+	}
+	
+	p1:Metamodell.Vector3f
+	p2:Metamodell.Vector3f
+	
+	
+}
+
+#correspondence {
+	v2v1:VectorToVector{
+		#src->vec2
+		#trg->p1
+		
+	}
+	
+	v2v2:VectorToVector{
+		#src->vec3
+		#trg->p2
+		
+	}
+	
+	f2f:FacetToFacet{
+		#src->f
+		#trg->f1
+	}
+	
+	}
+
+#attributeConditions {
+	
+	eq_float(vec2.x1,p1.x)
+	eq_float(vec2.x2,p1.y)
+	eq_float(vec2.x3,p1.z)
+	
+	
+	eq_float(vec3.x1,p2.x)
+	eq_float(vec3.x2,p2.y)
+	eq_float(vec3.x3,p2.z)
+	
+}
+
+#nac forbidEdge #for EdgeRule13
+#target{
+	e1:Edge{
+		-p->p1
+		-p->p2
+	}
+	p1:Metamodell.Vector3f
+	p2:Metamodell.Vector3f
+}
+
+
+
+

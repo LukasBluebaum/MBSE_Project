@@ -144,22 +144,22 @@ public class Parser
 //				System.out.println(solid.getFacets().get(3).getEdges().get(2).getP());
 //				System.out.println(solid.getFacets().get(3).getEdges().get(2).getF());
 				
-				 MetamodellFactory f = new MetamodellFactoryImpl();
-				 Color c = f.createColor();
-				 Vector3f v = f.createVector3f();
-				 c.setR(30);
-				 c.setG(20);
-				 c.setB(20);
-				 Facet fac = (FacetImpl) f.createFacet();
-				 fac.setColor(c);
-				
-				 solid.getFacets().get(0).eSetDeliver(false);
-				 solid.getFacets().get(0).setColor(c);
+//				 MetamodellFactory f = new MetamodellFactoryImpl();
+//				 Color c = f.createColor();
+//				 Vector3f v = f.createVector3f();
+//				 c.setR(30);
+//				 c.setG(20);
+//				 c.setB(20);
+//				 Facet fac = (FacetImpl) f.createFacet();
+//				 fac.setColor(c);
+//				
+//				 solid.getFacets().get(0).eSetDeliver(false);
+//				 solid.getFacets().get(0).setColor(c);
 				
 
 	
-				ctrl.createAreas(solid);
-				System.out.println(solid.getArea());
+				//ctrl.createAreas(solid);
+				//System.out.println(solid.getArea());
 //				STLRules rules = new STLRules(solid);
 //				rules.validateSolid(solid);			
 
