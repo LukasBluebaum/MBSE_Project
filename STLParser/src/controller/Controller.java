@@ -26,8 +26,11 @@ public class Controller
 			Facet f1 = (Facet) facets.get(0);
 			Facet f2 = (Facet) facets.get(1);
 			double scalar = f1.getNormal().getX() * f2.getNormal().getX() + f1.getNormal().getY() * f2.getNormal().getY() + f1.getNormal().getZ() * f2.getNormal().getZ();
+			System.out.println(scalar);
 			double mult = Math.sqrt(f1.getNormal().getX() * f1.getNormal().getX() + f1.getNormal().getY() * f1.getNormal().getY() + f1.getNormal().getZ() * f1.getNormal().getZ()) * Math.sqrt(f2.getNormal().getX() * f2.getNormal().getX() + f2.getNormal().getY() * f2.getNormal().getY() + f2.getNormal().getZ() * f2.getNormal().getZ());
-			e.setDegree((float) Math.acos(scalar / mult));
+			
+			double x = Math.toDegrees(Math.acos((Math.abs(scalar)/mult)));
+			e.setDegree(x);
 		}
 	}
 	

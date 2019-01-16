@@ -144,27 +144,27 @@ public class Parser
 //				System.out.println(solid.getFacets().get(3).getEdges().get(2).getP());
 //				System.out.println(solid.getFacets().get(3).getEdges().get(2).getF());
 				
-				 MetamodellFactory f = new MetamodellFactoryImpl();
-				 Color c = f.createColor();
-				 c.setR(0);
-				 c.setG(40);
-				 c.setB(0);
-						
-				 solid.getFacets().get(0).eSetDeliver(false);
-				 solid.getFacets().get(0).setColor(c);
-				
-				 Color c2 = f.createColor();
-				 c2.setR(40);
-				 c2.setG(0);
-				 c2.setB(0);
-				 solid.getFacets().get(3).eSetDeliver(false);
-				 solid.getFacets().get(3).setColor(c2);
+//				 MetamodellFactory f = new MetamodellFactoryImpl();
+//				 Color c = f.createColor();
+//				 c.setR(0);
+//				 c.setG(40);
+//				 c.setB(0);
+//						
+//				 solid.getFacets().get(0).eSetDeliver(false);
+//				 solid.getFacets().get(0).setColor(c);
+//				
+//				 Color c2 = f.createColor();
+//				 c2.setR(40);
+//				 c2.setG(0);
+//				 c2.setB(0);
+//				 solid.getFacets().get(3).eSetDeliver(false);
+//				 solid.getFacets().get(3).setColor(c2);
 
 	
 				//ctrl.createAreas(solid);
 				//System.out.println(solid.getArea());
-//				STLRules rules = new STLRules(solid);
-//				rules.validateSolid(solid);			
+				STLRules rules = new STLRules(solid);
+				rules.validateSolid(solid);			
 
 				RunSerialiser rSerialiser = new RunSerialiser();
 		

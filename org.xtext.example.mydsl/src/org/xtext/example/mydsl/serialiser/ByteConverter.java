@@ -109,7 +109,6 @@ public class ByteConverter {
 	public static byte[] createBinary(Facet f) {
 			
 		ArrayList<Vector3f> vecs = getVectors(f);
-		System.out.println(vecs);
 		ByteBuffer bb = ByteBuffer.allocate(50);
 		bb.order(ByteOrder.LITTLE_ENDIAN);
 		bb.putFloat(f.getNormal().getX()).putFloat(f.getNormal().getY()).putFloat(f.getNormal().getZ());
@@ -117,13 +116,11 @@ public class ByteConverter {
 		bb.putFloat(vecs.get(1).getX()).putFloat(vecs.get(1).getY()).putFloat(vecs.get(1).getZ());
 		bb.putFloat(vecs.get(2).getX()).putFloat(vecs.get(2).getY()).putFloat(vecs.get(2).getZ());	
 		if(f.getColor() != null) {
-			System.out.println(Integer.toBinaryString(f.getColor().getG()));
-			System.out.println(Integer.toBinaryString(f.getColor().getR()));
-			System.out.println(Integer.toBinaryString(f.getColor().getB()));
+		
 			int x = (f.getColor().getG() << 5) | f.getColor().getR();
 			int y = ((f.getColor().getB() << 10) | x) ;
 			int z = y | (0 << 16);
-			System.out.println(Integer.toBinaryString(z));
+		
 			bb.putShort((short) z);
 			
 		}			
