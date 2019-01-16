@@ -51,8 +51,8 @@ public class STLRules
 				
 				 m.getE().getF().get(0).eSetDeliver(false);
 		 		 m.getE().getF().get(0).setColor(c);
-		 		 m.getE().getF().get(0).eSetDeliver(false);
-		 		 m.getE().getF().get(0).setColor(c);
+		 		 m.getE().getF().get(1).eSetDeliver(false);
+		 		 m.getE().getF().get(1).setColor(c);
 		 	}
 		}
 		
