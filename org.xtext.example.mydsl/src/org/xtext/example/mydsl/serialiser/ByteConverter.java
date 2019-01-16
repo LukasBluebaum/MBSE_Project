@@ -78,14 +78,17 @@ public class ByteConverter {
 	
 	public static ArrayList<Vector3f> getVectors(Facet f) {
 		ArrayList<Vector3f> vec = new ArrayList<Vector3f>();
-		for(Edge e : f.getEdges()) {
-			if(!vec.contains(e.getP().get(0))) {
-				vec.add(e.getP().get(0));
-			}
-			if(!vec.contains(e.getP().get(1))) {
-				vec.add(e.getP().get(1));
-			}
-		}
+//		for(Edge e : f.getEdges()) {
+//			if(!vec.contains(e.getP().get(0))) {
+//				vec.add(e.getP().get(0));
+//			}
+//			if(!vec.contains(e.getP().get(1))) {
+//				vec.add(e.getP().get(1));
+//			}
+//		}
+		vec.add(f.getX());
+		vec.add(f.getY());
+		vec.add(f.getZ());
 		return vec;
 		
 	}
@@ -106,13 +109,29 @@ public class ByteConverter {
 	public static byte[] createBinary(Facet f) {
 			
 		ArrayList<Vector3f> vecs = getVectors(f);
+		System.out.println(vecs);
 		ByteBuffer bb = ByteBuffer.allocate(50);
 		bb.order(ByteOrder.LITTLE_ENDIAN);
 		bb.putFloat(f.getNormal().getX()).putFloat(f.getNormal().getY()).putFloat(f.getNormal().getZ());
 		bb.putFloat(vecs.get(0).getX()).putFloat(vecs.get(0).getY()).putFloat(vecs.get(0).getZ());
 		bb.putFloat(vecs.get(1).getX()).putFloat(vecs.get(1).getY()).putFloat(vecs.get(1).getZ());
 		bb.putFloat(vecs.get(2).getX()).putFloat(vecs.get(2).getY()).putFloat(vecs.get(2).getZ());	
-		bb.putShort((short) 0);
+		if(f.getColor() != null) {
+			System.out.println(Integer.toBinaryString(f.getColor().getG()));
+			System.out.println(Integer.toBinaryString(f.getColor().getR()));
+			System.out.println(Integer.toBinaryString(f.getColor().getB()));
+			int x = (f.getColor().getG() << 5) | f.getColor().getR();
+			int y = ((f.getColor().getB() << 10) | x) ;
+			int z = y | (0 << 16);
+			System.out.println(Integer.toBinaryString(z));
+			bb.putShort((short) z);
+			
+		}			
+		else {
+		bb.putShort((short) 65535);
+		}
+		
+			
 		
 	//	return new String(bb.array());
 		return bb.array();

@@ -295,6 +295,18 @@
         <op value="++"/>
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/normal"/>
       </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/x"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/y"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/z"/>
+      </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="e">
       <op value="++"/>
@@ -322,8 +334,12 @@
     <targetPatterns name="p2">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </targetPatterns>
+    <targetPatterns name="p3">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
     <correspondencePatterns name="v2v1" type="//@schema/@correspondenceTypes.2" source="//@rules.2/@sourcePatterns.2" target="//@rules.2/@targetPatterns.3"/>
     <correspondencePatterns name="v2v2" type="//@schema/@correspondenceTypes.2" source="//@rules.2/@sourcePatterns.4" target="//@rules.2/@targetPatterns.4"/>
+    <correspondencePatterns name="v2v3" type="//@schema/@correspondenceTypes.2" source="//@rules.2/@sourcePatterns.3" target="//@rules.2/@targetPatterns.5"/>
     <correspondencePatterns name="f2f" type="//@schema/@correspondenceTypes.1" source="//@rules.2/@sourcePatterns.0" target="//@rules.2/@targetPatterns.0"/>
     <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.2/@sourcePatterns.1" target="//@rules.2/@targetPatterns.2">
       <op value="++"/>
@@ -644,6 +660,18 @@
         <op value="++"/>
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/normal"/>
       </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/x"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/y"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet/z"/>
+      </linkVariablePatterns>
     </targetPatterns>
     <targetPatterns name="e">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge"/>
@@ -657,7 +685,7 @@
       <linkVariablePatterns target="//@rules.5/@targetPatterns.4">
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/p"/>
       </linkVariablePatterns>
-      <linkVariablePatterns target="//@rules.5/@targetPatterns.5">
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.6">
         <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Edge/f"/>
       </linkVariablePatterns>
     </targetPatterns>
@@ -671,11 +699,15 @@
     <targetPatterns name="p2">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     </targetPatterns>
+    <targetPatterns name="p3">
+      <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    </targetPatterns>
     <targetPatterns name="f2">
       <type href="platform:/resource/Metamodell/model/Metamodell.ecore#//Facet"/>
     </targetPatterns>
     <correspondencePatterns name="v2v1" type="//@schema/@correspondenceTypes.2" source="//@rules.5/@sourcePatterns.2" target="//@rules.5/@targetPatterns.3"/>
     <correspondencePatterns name="v2v2" type="//@schema/@correspondenceTypes.2" source="//@rules.5/@sourcePatterns.4" target="//@rules.5/@targetPatterns.4"/>
+    <correspondencePatterns name="v2v3" type="//@schema/@correspondenceTypes.2" source="//@rules.5/@sourcePatterns.3" target="//@rules.5/@targetPatterns.5"/>
     <correspondencePatterns name="f2f" type="//@schema/@correspondenceTypes.1" source="//@rules.5/@sourcePatterns.0" target="//@rules.5/@targetPatterns.0"/>
     <correspondencePatterns name="n2n" type="//@schema/@correspondenceTypes.3" source="//@rules.5/@sourcePatterns.1" target="//@rules.5/@targetPatterns.2">
       <op value="++"/>

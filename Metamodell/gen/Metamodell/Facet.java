@@ -21,6 +21,9 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Metamodell.Facet#getEdges <em>Edges</em>}</li>
  *   <li>{@link Metamodell.Facet#getColor <em>Color</em>}</li>
  *   <li>{@link Metamodell.Facet#getArea <em>Area</em>}</li>
+ *   <li>{@link Metamodell.Facet#getX <em>X</em>}</li>
+ *   <li>{@link Metamodell.Facet#getY <em>Y</em>}</li>
+ *   <li>{@link Metamodell.Facet#getZ <em>Z</em>}</li>
  * </ul>
  * </p>
  *
@@ -150,6 +153,84 @@ public interface Facet extends EObject {
 	 * @generated
 	 */
 	void setArea(Area value);
+
+	/**
+	 * Returns the value of the '<em><b>X</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>X</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>X</em>' reference.
+	 * @see #setX(Vector3f)
+	 * @see Metamodell.MetamodellPackage#getFacet_X()
+	 * @model
+	 * @generated
+	 */
+	Vector3f getX();
+
+	/**
+	 * Sets the value of the '{@link Metamodell.Facet#getX <em>X</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>X</em>' reference.
+	 * @see #getX()
+	 * @generated
+	 */
+	void setX(Vector3f value);
+
+	/**
+	 * Returns the value of the '<em><b>Y</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Y</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Y</em>' reference.
+	 * @see #setY(Vector3f)
+	 * @see Metamodell.MetamodellPackage#getFacet_Y()
+	 * @model
+	 * @generated
+	 */
+	Vector3f getY();
+
+	/**
+	 * Sets the value of the '{@link Metamodell.Facet#getY <em>Y</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Y</em>' reference.
+	 * @see #getY()
+	 * @generated
+	 */
+	void setY(Vector3f value);
+
+	/**
+	 * Returns the value of the '<em><b>Z</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Z</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Z</em>' reference.
+	 * @see #setZ(Vector3f)
+	 * @see Metamodell.MetamodellPackage#getFacet_Z()
+	 * @model
+	 * @generated
+	 */
+	Vector3f getZ();
+
+	/**
+	 * Sets the value of the '{@link Metamodell.Facet#getZ <em>Z</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Z</em>' reference.
+	 * @see #getZ()
+	 * @generated
+	 */
+	void setZ(Vector3f value);
 	// <-- [user code injected with eMoflon]
 
 	// [user code injected with eMoflon] -->

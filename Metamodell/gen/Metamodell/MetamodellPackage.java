@@ -170,13 +170,40 @@ public interface MetamodellPackage extends EPackage {
 	int FACET__AREA = 4;
 
 	/**
+	 * The feature id for the '<em><b>X</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACET__X = 5;
+
+	/**
+	 * The feature id for the '<em><b>Y</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACET__Y = 6;
+
+	/**
+	 * The feature id for the '<em><b>Z</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACET__Z = 7;
+
+	/**
 	 * The number of structural features of the '<em>Facet</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACET_FEATURE_COUNT = 5;
+	int FACET_FEATURE_COUNT = 8;
 
 	/**
 	 * The number of operations of the '<em>Facet</em>' class.
@@ -498,6 +525,39 @@ public interface MetamodellPackage extends EPackage {
 	EReference getFacet_Area();
 
 	/**
+	 * Returns the meta object for the reference '{@link Metamodell.Facet#getX <em>X</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>X</em>'.
+	 * @see Metamodell.Facet#getX()
+	 * @see #getFacet()
+	 * @generated
+	 */
+	EReference getFacet_X();
+
+	/**
+	 * Returns the meta object for the reference '{@link Metamodell.Facet#getY <em>Y</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Y</em>'.
+	 * @see Metamodell.Facet#getY()
+	 * @see #getFacet()
+	 * @generated
+	 */
+	EReference getFacet_Y();
+
+	/**
+	 * Returns the meta object for the reference '{@link Metamodell.Facet#getZ <em>Z</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Z</em>'.
+	 * @see Metamodell.Facet#getZ()
+	 * @see #getFacet()
+	 * @generated
+	 */
+	EReference getFacet_Z();
+
+	/**
 	 * Returns the meta object for class '{@link Metamodell.Edge <em>Edge</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -753,6 +813,30 @@ public interface MetamodellPackage extends EPackage {
 		 * @generated
 		 */
 		EReference FACET__AREA = eINSTANCE.getFacet_Area();
+
+		/**
+		 * The meta object literal for the '<em><b>X</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACET__X = eINSTANCE.getFacet_X();
+
+		/**
+		 * The meta object literal for the '<em><b>Y</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACET__Y = eINSTANCE.getFacet_Y();
+
+		/**
+		 * The meta object literal for the '<em><b>Z</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACET__Z = eINSTANCE.getFacet_Z();
 
 		/**
 		 * The meta object literal for the '{@link Metamodell.impl.EdgeImpl <em>Edge</em>}' class.

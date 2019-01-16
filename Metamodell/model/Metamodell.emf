@@ -15,6 +15,9 @@ class Facet {
   ref Edge[3] edges;
   ref Color[0..1] color;
   ref Area #facets area;
+  ref Vector3f x;
+  ref Vector3f y;
+  ref Vector3f z;
 }
 
 class Edge {

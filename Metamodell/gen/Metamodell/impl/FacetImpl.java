@@ -40,6 +40,9 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *   <li>{@link Metamodell.impl.FacetImpl#getEdges <em>Edges</em>}</li>
  *   <li>{@link Metamodell.impl.FacetImpl#getColor <em>Color</em>}</li>
  *   <li>{@link Metamodell.impl.FacetImpl#getArea <em>Area</em>}</li>
+ *   <li>{@link Metamodell.impl.FacetImpl#getX <em>X</em>}</li>
+ *   <li>{@link Metamodell.impl.FacetImpl#getY <em>Y</em>}</li>
+ *   <li>{@link Metamodell.impl.FacetImpl#getZ <em>Z</em>}</li>
  * </ul>
  * </p>
  *
@@ -85,6 +88,36 @@ public class FacetImpl extends EObjectImpl implements Facet {
 	 * @ordered
 	 */
 	protected Color color;
+
+	/**
+	 * The cached value of the '{@link #getX() <em>X</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getX()
+	 * @generated
+	 * @ordered
+	 */
+	protected Vector3f x;
+
+	/**
+	 * The cached value of the '{@link #getY() <em>Y</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getY()
+	 * @generated
+	 * @ordered
+	 */
+	protected Vector3f y;
+
+	/**
+	 * The cached value of the '{@link #getZ() <em>Z</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getZ()
+	 * @generated
+	 * @ordered
+	 */
+	protected Vector3f z;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,6 +315,120 @@ public class FacetImpl extends EObjectImpl implements Facet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Vector3f getX() {
+		if (x != null && x.eIsProxy()) {
+			InternalEObject oldX = (InternalEObject) x;
+			x = (Vector3f) eResolveProxy(oldX);
+			if (x != oldX) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetamodellPackage.FACET__X, oldX, x));
+			}
+		}
+		return x;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Vector3f basicGetX() {
+		return x;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setX(Vector3f newX) {
+		Vector3f oldX = x;
+		x = newX;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MetamodellPackage.FACET__X, oldX, x));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Vector3f getY() {
+		if (y != null && y.eIsProxy()) {
+			InternalEObject oldY = (InternalEObject) y;
+			y = (Vector3f) eResolveProxy(oldY);
+			if (y != oldY) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetamodellPackage.FACET__Y, oldY, y));
+			}
+		}
+		return y;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Vector3f basicGetY() {
+		return y;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setY(Vector3f newY) {
+		Vector3f oldY = y;
+		y = newY;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MetamodellPackage.FACET__Y, oldY, y));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Vector3f getZ() {
+		if (z != null && z.eIsProxy()) {
+			InternalEObject oldZ = (InternalEObject) z;
+			z = (Vector3f) eResolveProxy(oldZ);
+			if (z != oldZ) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetamodellPackage.FACET__Z, oldZ, z));
+			}
+		}
+		return z;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Vector3f basicGetZ() {
+		return z;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setZ(Vector3f newZ) {
+		Vector3f oldZ = z;
+		z = newZ;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MetamodellPackage.FACET__Z, oldZ, z));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -345,6 +492,18 @@ public class FacetImpl extends EObjectImpl implements Facet {
 			return basicGetColor();
 		case MetamodellPackage.FACET__AREA:
 			return getArea();
+		case MetamodellPackage.FACET__X:
+			if (resolve)
+				return getX();
+			return basicGetX();
+		case MetamodellPackage.FACET__Y:
+			if (resolve)
+				return getY();
+			return basicGetY();
+		case MetamodellPackage.FACET__Z:
+			if (resolve)
+				return getZ();
+			return basicGetZ();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -374,6 +533,15 @@ public class FacetImpl extends EObjectImpl implements Facet {
 		case MetamodellPackage.FACET__AREA:
 			setArea((Area) newValue);
 			return;
+		case MetamodellPackage.FACET__X:
+			setX((Vector3f) newValue);
+			return;
+		case MetamodellPackage.FACET__Y:
+			setY((Vector3f) newValue);
+			return;
+		case MetamodellPackage.FACET__Z:
+			setZ((Vector3f) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -401,6 +569,15 @@ public class FacetImpl extends EObjectImpl implements Facet {
 		case MetamodellPackage.FACET__AREA:
 			setArea((Area) null);
 			return;
+		case MetamodellPackage.FACET__X:
+			setX((Vector3f) null);
+			return;
+		case MetamodellPackage.FACET__Y:
+			setY((Vector3f) null);
+			return;
+		case MetamodellPackage.FACET__Z:
+			setZ((Vector3f) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -423,6 +600,12 @@ public class FacetImpl extends EObjectImpl implements Facet {
 			return color != null;
 		case MetamodellPackage.FACET__AREA:
 			return getArea() != null;
+		case MetamodellPackage.FACET__X:
+			return x != null;
+		case MetamodellPackage.FACET__Y:
+			return y != null;
+		case MetamodellPackage.FACET__Z:
+			return z != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -94,7 +94,7 @@ public class Parser
 	public static void main(String[] args) throws IOException
 	{
 	
-		RunParser stlParser = new RunParser("Sphericon.stl");
+		RunParser stlParser = new RunParser("Cube.stl");
 		Optional<Solid> s = stlParser.parse();
 		s.ifPresent(b -> {
 			try
@@ -144,18 +144,21 @@ public class Parser
 //				System.out.println(solid.getFacets().get(3).getEdges().get(2).getP());
 //				System.out.println(solid.getFacets().get(3).getEdges().get(2).getF());
 				
-//				 MetamodellFactory f = new MetamodellFactoryImpl();
-//				 Color c = f.createColor();
-//				 Vector3f v = f.createVector3f();
-//				 c.setR(30);
-//				 c.setG(20);
-//				 c.setB(20);
-//				 Facet fac = (FacetImpl) f.createFacet();
-//				 fac.setColor(c);
-//				
-//				 solid.getFacets().get(0).eSetDeliver(false);
-//				 solid.getFacets().get(0).setColor(c);
+				 MetamodellFactory f = new MetamodellFactoryImpl();
+				 Color c = f.createColor();
+				 c.setR(0);
+				 c.setG(40);
+				 c.setB(0);
+						
+				 solid.getFacets().get(0).eSetDeliver(false);
+				 solid.getFacets().get(0).setColor(c);
 				
+				 Color c2 = f.createColor();
+				 c2.setR(40);
+				 c2.setG(0);
+				 c2.setB(0);
+				 solid.getFacets().get(3).eSetDeliver(false);
+				 solid.getFacets().get(3).setColor(c2);
 
 	
 				//ctrl.createAreas(solid);
@@ -203,6 +206,7 @@ public class Parser
 				System.out.println("\tColor: " + f.getColor());
 				System.out.println("\tNormal: " + f.getNormal());
 				System.out.println("\tEdge");
+						
 				
 				for (Edge e : f.getEdges())
 				{
@@ -210,6 +214,9 @@ public class Parser
 					ctrl.computeDegree(e);
 					System.out.println("\t\t" + toString(e));
 				}
+				System.out.println("\tVector " + f.getX());
+				System.out.println("\tVector " + f.getY());
+				System.out.println("\tVector " + f.getZ());
 			}
 //			System.out.println(solid.getFacets().get(0).getEdges().get(0).getP());
 //			System.out.println(solid.getFacets().get(0).getEdges().get(0).getF());

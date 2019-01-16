@@ -83,6 +83,8 @@
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__p2" lowerBound="1"
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__p3" lowerBound="1"
+        eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__f2f" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__n2n" lowerBound="1"
@@ -90,6 +92,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__v2v1" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//VectorToVector"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__v2v2" lowerBound="1"
+        eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//VectorToVector"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__v2v3" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//VectorToVector"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EdgeRule15__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
@@ -163,6 +167,8 @@
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__p2" lowerBound="1"
         eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__p3" lowerBound="1"
+        eType="ecore:EClass platform:/resource/Metamodell/model/Metamodell.ecore#//Vector3f"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__f2f" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//FacetToFacet"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__n2n" lowerBound="1"
@@ -170,6 +176,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__v2v1" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//VectorToVector"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__v2v2" lowerBound="1"
+        eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//VectorToVector"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__v2v3" lowerBound="1"
         eType="ecore:EClass platform:/resource/STLImportExport/model/STLImportExport.ecore#//VectorToVector"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FacetRule__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">

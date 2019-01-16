@@ -226,6 +226,33 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getFacet_X() {
+		return (EReference) facetEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFacet_Y() {
+		return (EReference) facetEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFacet_Z() {
+		return (EReference) facetEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getEdge() {
 		return edgeEClass;
 	}
@@ -387,6 +414,9 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 		createEReference(facetEClass, FACET__EDGES);
 		createEReference(facetEClass, FACET__COLOR);
 		createEReference(facetEClass, FACET__AREA);
+		createEReference(facetEClass, FACET__X);
+		createEReference(facetEClass, FACET__Y);
+		createEReference(facetEClass, FACET__Z);
 
 		edgeEClass = createEClass(EDGE);
 		createEReference(edgeEClass, EDGE__P);
@@ -463,6 +493,15 @@ public class MetamodellPackageImpl extends EPackageImpl implements MetamodellPac
 		initEReference(getFacet_Area(), this.getArea(), this.getArea_Facets(), "area", null, 0, 1, Facet.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFacet_X(), this.getVector3f(), null, "x", null, 0, 1, Facet.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getFacet_Y(), this.getVector3f(), null, "y", null, 0, 1, Facet.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getFacet_Z(), this.getVector3f(), null, "z", null, 0, 1, Facet.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
 
 		initEClass(edgeEClass, Edge.class, "Edge", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEdge_P(), this.getVector3f(), null, "p", null, 2, 2, Edge.class, !IS_TRANSIENT, !IS_VOLATILE,

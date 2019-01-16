@@ -23,6 +23,9 @@
 		f1:Metamodell.Facet{
 		++-edges->e
 		++-normal->n1
+		++-x->p1
+		++-y->p3
+		++-z->p2
 		
 	}
 	++e:Metamodell.Edge{
@@ -36,6 +39,7 @@
 	
 	p1:Metamodell.Vector3f
 	p2:Metamodell.Vector3f
+	p3:Metamodell.Vector3f
 	
 	
 }
@@ -50,6 +54,12 @@
 	v2v2:VectorToVector{
 		#src->vec3
 		#trg->p2
+		
+	}
+	
+	v2v3:VectorToVector{
+		#src->vec2
+		#trg->p3
 		
 	}
 	

@@ -29,9 +29,9 @@ public class RunSerialiser {
 			 out.write("COLOR=".getBytes());
 			 out.write(ByteConverter.setBytes(127,127,127,32));
 			 out.write("MATERIAL=".getBytes());
-			 out.write(ByteConverter.setBytes(0,0,0,0));
-			 out.write(ByteConverter.setBytes(0,0,0,0));
-			 out.write(ByteConverter.setBytes(0,0,0,0));
+			 out.write(ByteConverter.setBytes(127,127,127,32));
+			 out.write(ByteConverter.setBytes(127,127,127,32));
+			 out.write(ByteConverter.setBytes(127,127,127,32));
 			 out.write("                                                 ".getBytes());
 			 out.write(ByteConverter.intToByte(s.getFacets().size()));
 			 for(Facet f: s.getFacets()) {

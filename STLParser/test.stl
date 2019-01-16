@@ -1,9 +1,30 @@
 solid OpenSCAD_Model
-facet normal -1 0 0
+facet normal 1 1 1
 outer loop
-vertex -1 0 1
-vertex -1 1 0
-vertex -1 0 0
+vertex  1 1 1
+vertex  2 2 2
+vertex  3 3 3
+endloop
+endfacet
+facet normal 1 1 1
+outer loop
+vertex  1 1 1
+vertex  4 4 4
+vertex  3 3 3
+endloop
+endfacet
+facet normal 1 1 1
+outer loop
+vertex  5 5 5
+vertex  4 4 4
+vertex  3 3 3
+endloop
+endfacet
+facet normal 1 1 1
+outer loop
+vertex  1 1 1
+vertex  6 6 6
+vertex  3 3 3
 endloop
 endfacet
 endsolid OpenSCAD_Model
