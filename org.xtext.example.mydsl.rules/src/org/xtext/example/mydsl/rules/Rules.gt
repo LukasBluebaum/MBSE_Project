@@ -14,13 +14,9 @@ pattern examplePattern() {
 }
 
 pattern degree(){
-	solid:Solid{
-		-facets -> f
-		
+
+	e: Edge{
+		.degree >= 90
 	}
-	f:Facet{
-		-edges-> e
-	}
-	e: Edge
 }
 
