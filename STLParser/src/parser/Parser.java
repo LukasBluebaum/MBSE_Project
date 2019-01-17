@@ -50,8 +50,8 @@ public class Parser
 //					return m;
 //				}
 				if (m.getRuleName().equals("SolidRule"))
-				{	
-					//System.out.println(m);
+				{
+					// System.out.println(m);
 					return m;
 				}
 //				if (m.getRuleName().equals("EdgeRule2") || m.getRuleName().equals("EdgeRule3") || m.getRuleName().equals("EdgeRule4"))
@@ -69,7 +69,7 @@ public class Parser
 //				}
 				if (m.getRuleName().equals("VectorRule2"))
 				{
-					//System.out.println(m);
+					// System.out.println(m);
 					return m;
 				}
 			}
@@ -78,7 +78,7 @@ public class Parser
 //				//System.out.println(rule);
 //				return rule;
 //			}
-			//System.out.println(matches.getNext());
+			// System.out.println(matches.getNext());
 			return matches.getNext();
 		});
 	}
@@ -93,57 +93,33 @@ public class Parser
 	
 	public static void main(String[] args) throws IOException
 	{
-	
+		
 		RunParser stlParser = new RunParser("Cube.stl");
 		Optional<Solid> s = stlParser.parse();
 		s.ifPresent(b -> {
 			try
 			{
-				Controller ctrl = new Controller();
-				System.out.println(1);
+//				Controller ctrl = new Controller();
+//				System.out.println(1);
 				
 				initialiseFwdSynchroniser();
-				System.out.println(2);
+//				System.out.println(2);
 				sync.getSourceResource().getContents().add(b);
 				// System.out.println(b.getFacets().size());
-				System.out.println(3);
+//				System.out.println(3);
 				// System.out.println(sync.getSourceResource().getContents());
 				sync.forward();
-				System.out.println(4);
+//				System.out.println(4);
 				// System.out.println(sync.getTargetResource().getContents());
 				sync.saveModels();
 				System.out.println(sync.getTargetResource().getContents());
-				Metamodell.Solid solid =  (Metamodell.Solid) sync.getTargetResource().getContents().get(0);
-		
-				printSolid((SolidImpl) solid);
-//				System.out.println(solid.getFacets().get(0).getEdges().get(0).getP());
-//				System.out.println(solid.getFacets().get(0).getEdges().get(0).getF());
-//				System.out.println(solid.getFacets().get(0).getEdges().get(1).getP());
-//				System.out.println(solid.getFacets().get(0).getEdges().get(1).getF());
-//				System.out.println(solid.getFacets().get(0).getEdges().get(2).getP());
-//				System.out.println(solid.getFacets().get(0).getEdges().get(2).getF());
-//				System.out.println("-----------------------------------------------");
-//				System.out.println(solid.getFacets().get(1).getEdges().get(0).getP());
-//				System.out.println(solid.getFacets().get(1).getEdges().get(0).getF());
-//				System.out.println(solid.getFacets().get(1).getEdges().get(1).getP());
-//				System.out.println(solid.getFacets().get(1).getEdges().get(1).getF());
-//				System.out.println(solid.getFacets().get(1).getEdges().get(2).getP());
-//				System.out.println(solid.getFacets().get(1).getEdges().get(2).getF());
-//				System.out.println("-----------------------------------------------");
-//				System.out.println(solid.getFacets().get(2).getEdges().get(0).getP());
-//				System.out.println(solid.getFacets().get(2).getEdges().get(0).getF());
-//				System.out.println(solid.getFacets().get(2).getEdges().get(1).getP());
-//				System.out.println(solid.getFacets().get(2).getEdges().get(1).getF());
-//				System.out.println(solid.getFacets().get(2).getEdges().get(2).getP());
-//				System.out.println(solid.getFacets().get(2).getEdges().get(2).getF());
-//				System.out.println("-----------------------------------------------");
-//				System.out.println(solid.getFacets().get(3).getEdges().get(0).getP());
-//				System.out.println(solid.getFacets().get(3).getEdges().get(0).getF());
-//				System.out.println(solid.getFacets().get(3).getEdges().get(1).getP());
-//				System.out.println(solid.getFacets().get(3).getEdges().get(1).getF());
-//				System.out.println(solid.getFacets().get(3).getEdges().get(2).getP());
-//				System.out.println(solid.getFacets().get(3).getEdges().get(2).getF());
+				Metamodell.Solid solid = (Metamodell.Solid) sync.getTargetResource().getContents().get(0);
 				
+				computeDegrees((SolidImpl) solid, false);
+				mergeNormals((SolidImpl) solid);
+		
+//				printSolid((SolidImpl) solid);
+		
 //				 MetamodellFactory f = new MetamodellFactoryImpl();
 //				 Color c = f.createColor();
 //				 c.setR(0);
@@ -159,18 +135,17 @@ public class Parser
 //				 c2.setB(0);
 //				 solid.getFacets().get(3).eSetDeliver(false);
 //				 solid.getFacets().get(3).setColor(c2);
-
-	
-				//ctrl.createAreas(solid);
-				//System.out.println(solid.getArea());
+				
+				// ctrl.createAreas(solid);
+				// System.out.println(solid.getArea());
 				STLRules rules = new STLRules(solid);
-				rules.validateSolid(solid);			
-
+				rules.validateSolid(solid);
+				
 				RunSerialiser rSerialiser = new RunSerialiser();
-		
+				
 				rSerialiser.unparse("example.stl", solid);
 				
-				//System.out.println("Matches: " + rules.validateSolid(solid));
+				// System.out.println("Matches: " + rules.validateSolid(solid));
 			}
 			catch (IOException e)
 			{
@@ -179,76 +154,60 @@ public class Parser
 		});
 	}
 	
-	private static String toString(final Vector3f vec)
+	private static void mergeNormals(SolidImpl solid)
 	{
-		return "<Vector>" + vec.getX() + ", " + vec.getY() + ", " + vec.getZ() + "</Vector>";
+		final float EPSILON = 0.0000001f;
+		for (Facet f1 : solid.getFacets())
+		{
+			Vector3f n1 = f1.getNormal();
+			for (Facet f2 : solid.getFacets())
+			{
+				Vector3f n2 = f2.getNormal();
+				if (f1 == f2 || Math.abs(n1.getX() - n2.getX()) > EPSILON || Math.abs(n1.getY() - n2.getY()) > EPSILON || Math.abs(n1.getZ() - n2.getZ()) > EPSILON)
+				{
+					continue;
+				}
+				f2.setNormal(n1);
+			}
+		}
 	}
 	
-	private static String toString(final Edge edge)
+	private static void computeDegrees(final SolidImpl solid, final boolean debug)
 	{
-		String result = "<Edge>";
-		for(Vector3f v : edge.getP())
+		for (Facet f : solid.getFacets())
 		{
-			result += toString(v);
+			for (Edge e : f.getEdges())
+			{
+				Controller.computeDegree(e, debug);
+			}
 		}
-		return result + "</Edge>";
 	}
 	
 	private static void printSolid(final SolidImpl solid)
 	{
-		try
+		System.out.println("Facets: " + solid.getFacets().size());
+		for (Facet f : solid.getFacets())
 		{
-			System.out.println("Facets: " + solid.getFacets().size());
-			for (Facet f : solid.getFacets())
+			System.out.println("Facet: " + f);
+			System.out.println("\tSolid: " + f.getSolid());
+			System.out.println("\tColor: " + f.getColor());
+			System.out.println("\tNormal: " + vectorToString(f.getNormal()));
+			System.out.println("\tEdges:");
+			for (Edge e : f.getEdges())
 			{
-				System.out.println("Facet: " + f);
-				System.out.println("\tSolid: " + f.getSolid());
-				System.out.println("\tColor: " + f.getColor());
-				System.out.println("\tNormal: " + f.getNormal());
-				System.out.println("\tEdge");
-						
-				
-				for (Edge e : f.getEdges())
+				for (Vector3f v : e.getP())
 				{
-					Controller ctrl = new Controller();
-					ctrl.computeDegree(e);
-					System.out.println("\t\t" + toString(e));
+					System.out.println("\t\t" + vectorToString(v));
 				}
-				System.out.println("\tVector " + f.getX());
-				System.out.println("\tVector " + f.getY());
-				System.out.println("\tVector " + f.getZ());
 			}
-//			System.out.println(solid.getFacets().get(0).getEdges().get(0).getP());
-//			System.out.println(solid.getFacets().get(0).getEdges().get(0).getF());
-//			System.out.println(solid.getFacets().get(0).getEdges().get(1).getP());
-//			System.out.println(solid.getFacets().get(0).getEdges().get(1).getF());
-//			System.out.println(solid.getFacets().get(0).getEdges().get(2).getP());
-//			System.out.println(solid.getFacets().get(0).getEdges().get(2).getF());
-//			System.out.println("-----------------------------------------------");
-//			System.out.println(solid.getFacets().get(1).getEdges().get(0).getP());
-//			System.out.println(solid.getFacets().get(1).getEdges().get(0).getF());
-//			System.out.println(solid.getFacets().get(1).getEdges().get(1).getP());
-//			System.out.println(solid.getFacets().get(1).getEdges().get(1).getF());
-//			System.out.println(solid.getFacets().get(1).getEdges().get(2).getP());
-//			System.out.println(solid.getFacets().get(1).getEdges().get(2).getF());
-//			System.out.println("-----------------------------------------------");
-//			System.out.println(solid.getFacets().get(2).getEdges().get(0).getP());
-//			System.out.println(solid.getFacets().get(2).getEdges().get(0).getF());
-//			System.out.println(solid.getFacets().get(2).getEdges().get(1).getP());
-//			System.out.println(solid.getFacets().get(2).getEdges().get(1).getF());
-//			System.out.println(solid.getFacets().get(2).getEdges().get(2).getP());
-//			System.out.println(solid.getFacets().get(2).getEdges().get(2).getF());
-//			System.out.println("-----------------------------------------------");
-//			System.out.println(solid.getFacets().get(3).getEdges().get(0).getP());
-//			System.out.println(solid.getFacets().get(3).getEdges().get(0).getF());
-//			System.out.println(solid.getFacets().get(3).getEdges().get(1).getP());
-//			System.out.println(solid.getFacets().get(3).getEdges().get(1).getF());
-//			System.out.println(solid.getFacets().get(3).getEdges().get(2).getP());
-//			System.out.println(solid.getFacets().get(3).getEdges().get(2).getF());
+			System.out.println("\tVector " + vectorToString(f.getX()));
+			System.out.println("\tVector " + vectorToString(f.getY()));
+			System.out.println("\tVector " + vectorToString(f.getZ()));
 		}
-		catch (Exception e)
-		{
-			e.printStackTrace();
-		}
+	}
+	
+	private static String vectorToString(final Vector3f normal)
+	{
+		return normal.getX() + ", " + normal.getY() + ", " + normal.getZ();
 	}
 }

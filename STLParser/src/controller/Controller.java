@@ -17,9 +17,12 @@ import java.util.Set;
 public class Controller
 {
 	
-	public void computeDegree(Edge e)
+	public static void computeDegree(Edge e, boolean debug)
 	{
-		System.out.println("\t" + this.getClass().getSimpleName() + ".computeDegree(Edge" + e + ")");
+		if (debug)
+		{
+			System.out.println("\tController.computeDegree(Edge" + e + ")");
+		}
 		EList<Facet> facets = e.getF();
 		if (facets.size() == 2)
 		{
@@ -28,7 +31,7 @@ public class Controller
 			double scalar = f1.getNormal().getX() * f2.getNormal().getX() + f1.getNormal().getY() * f2.getNormal().getY() + f1.getNormal().getZ() * f2.getNormal().getZ();
 			double mult = Math.sqrt(f1.getNormal().getX() * f1.getNormal().getX() + f1.getNormal().getY() * f1.getNormal().getY() + f1.getNormal().getZ() * f1.getNormal().getZ()) * Math.sqrt(f2.getNormal().getX() * f2.getNormal().getX() + f2.getNormal().getY() * f2.getNormal().getY() + f2.getNormal().getZ() * f2.getNormal().getZ());
 			
-			double x = Math.toDegrees(Math.acos((Math.abs(scalar)/mult)));
+			double x = Math.toDegrees(Math.acos((Math.abs(scalar) / mult)));
 			e.setDegree(x);
 		}
 	}
@@ -39,28 +42,28 @@ public class Controller
 		Queue<Facet> queue = new LinkedList<Facet>();
 		Set<Facet> marked = new HashSet<Facet>();
 		queue.add(s.getFacets().get(0));
-		HashMap<EqVec, HashMap<Facet, List<Facet>>> areas = new HashMap<EqVec, HashMap<Facet, List<Facet>>>(); 
-		while(!queue.isEmpty())
+		HashMap<EqVec, HashMap<Facet, List<Facet>>> areas = new HashMap<EqVec, HashMap<Facet, List<Facet>>>();
+		while (!queue.isEmpty())
 		{
 			Facet current = queue.poll();
 			EqVec normalVector = new EqVec(current.getNormal());
 			// Iterate through all neighbours
-			for(Edge e : current.getEdges())
+			for (Edge e : current.getEdges())
 			{
 				List<Facet> neighbours = e.getF();
-				for(Facet neighbour : neighbours)
+				for (Facet neighbour : neighbours)
 				{
 					EqVec n = new EqVec(neighbour.getNormal());
-					if(normalVector.equals(n))
+					if (normalVector.equals(n))
 					{
 						HashMap<Facet, List<Facet>> tmp = areas.get(normalVector);
-						if(tmp == null)
+						if (tmp == null)
 						{
 							tmp = new HashMap<Facet, List<Facet>>();
 							areas.put(normalVector, tmp);
 						}
 					}
-					else if(!marked.contains(neighbour))
+					else if (!marked.contains(neighbour))
 					{
 						queue.add(neighbour);
 					}
@@ -71,7 +74,7 @@ public class Controller
 		}
 	}
 	
-	public void createIndependendAreas(Solid s)
+	public void createIndependendAreas(Solid s, boolean debug)
 	{
 		MetamodellPackageImpl.init();
 		
@@ -108,8 +111,11 @@ public class Controller
 			}
 		}
 //		s.eSet(MetamodellPackage.SOLID__AREA, result);
-		System.out.println(getClass().getSimpleName() + ".createAreas(Solid " + s + ")");
-		System.out.println("\tcreated " + result.size() + " Area-Objects");
+		if (debug)
+		{
+			System.out.println(getClass().getSimpleName() + ".createAreas(Solid " + s + ")");
+			System.out.println("\tcreated " + result.size() + " Area-Objects");
+		}
 	}
 	
 	private static class EqVec

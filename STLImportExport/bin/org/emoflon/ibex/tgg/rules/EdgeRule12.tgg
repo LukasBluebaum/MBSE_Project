@@ -21,9 +21,8 @@
 
 #target {
 	
-		f1:Metamodell.Facet{
+	f1:Metamodell.Facet{
 		++-edges->e
-		
 	}
 	++e:Metamodell.Edge{
 		++-f->f1

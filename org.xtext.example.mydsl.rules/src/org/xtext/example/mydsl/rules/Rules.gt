@@ -1,22 +1,44 @@
 import "platform:/resource/Metamodell/model/Metamodell.ecore"
 
-//48 facets
+// 48 facets
 
-pattern exPattern(){
+pattern exPattern() {
 	e:Edge
 }
 
 pattern examplePattern() {
-	solid:Solid{
+	solid:Solid {
 		-area->a
 	}
 	a:Area
 }
 
-pattern degree(){
-
-	e: Edge{
+pattern degree() {
+	e: Edge {
 		.degree >= 90
 	}
 }
 
+pattern facet() {
+	solid:Solid {
+		-facets->f
+	}
+	f:Facet
+}
+
+pattern area() {
+	normal:Vector3f
+	solid:Solid {
+		-facets->fA
+		-facets->fB
+	}
+	fA:Facet {
+		-normal->normal
+		-edges->edge
+	}
+	fB:Facet {
+		-normal->normal
+		-edges->edge
+	}
+	edge:Edge
+}
