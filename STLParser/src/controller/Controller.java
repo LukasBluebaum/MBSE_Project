@@ -36,43 +36,43 @@ public class Controller
 		}
 	}
 	
-	public void createAreas(final Solid s)
-	{
-		MetamodellPackageImpl.init();
-		Queue<Facet> queue = new LinkedList<Facet>();
-		Set<Facet> marked = new HashSet<Facet>();
-		queue.add(s.getFacets().get(0));
-		HashMap<EqVec, HashMap<Facet, List<Facet>>> areas = new HashMap<EqVec, HashMap<Facet, List<Facet>>>();
-		while (!queue.isEmpty())
-		{
-			Facet current = queue.poll();
-			EqVec normalVector = new EqVec(current.getNormal());
-			// Iterate through all neighbours
-			for (Edge e : current.getEdges())
-			{
-				List<Facet> neighbours = e.getF();
-				for (Facet neighbour : neighbours)
-				{
-					EqVec n = new EqVec(neighbour.getNormal());
-					if (normalVector.equals(n))
-					{
-						HashMap<Facet, List<Facet>> tmp = areas.get(normalVector);
-						if (tmp == null)
-						{
-							tmp = new HashMap<Facet, List<Facet>>();
-							areas.put(normalVector, tmp);
-						}
-					}
-					else if (!marked.contains(neighbour))
-					{
-						queue.add(neighbour);
-					}
-				}
-			}
-			//
-			
-		}
-	}
+//	public void createAreas(final Solid s)
+//	{
+//		MetamodellPackageImpl.init();
+//		Queue<Facet> queue = new LinkedList<Facet>();
+//		Set<Facet> marked = new HashSet<Facet>();
+//		queue.add(s.getFacets().get(0));
+//		HashMap<EqVec, HashMap<Facet, List<Facet>>> areas = new HashMap<EqVec, HashMap<Facet, List<Facet>>>();
+//		while (!queue.isEmpty())
+//		{
+//			Facet current = queue.poll();
+//			EqVec normalVector = new EqVec(current.getNormal());
+//			// Iterate through all neighbours
+//			for (Edge e : current.getEdges())
+//			{
+//				List<Facet> neighbours = e.getF();
+//				for (Facet neighbour : neighbours)
+//				{
+//					EqVec n = new EqVec(neighbour.getNormal());
+//					if (normalVector.equals(n))
+//					{
+//						HashMap<Facet, List<Facet>> tmp = areas.get(normalVector);
+//						if (tmp == null)
+//						{
+//							tmp = new HashMap<Facet, List<Facet>>();
+//							areas.put(normalVector, tmp);
+//						}
+//					}
+//					else if (!marked.contains(neighbour))
+//					{
+//						queue.add(neighbour);
+//					}
+//				}
+//			}
+//			//
+//			
+//		}
+//	}
 	
 	public void createIndependendAreas(Solid s, boolean debug)
 	{
