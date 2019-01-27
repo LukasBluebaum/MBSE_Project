@@ -1,24 +1,60 @@
 import "platform:/resource/Metamodell/model/Metamodell.ecore"
 
-// 48 facets
-
-pattern exPattern() {
+// Edge-Pattern
+pattern edge() {
 	e:Edge
-}
+} 
 
-pattern examplePattern() {
-	solid:Solid {
-		-area->a
-	}
-	a:Area
-}
-
+// Degree-Pattern
 pattern degree() {
 	e: Edge {
 		.degree >= 90
 	}
 }
 
+// Vertex-Pattern
+pattern vertex() {
+	v:Vector3f
+} when isFirstVector || isSecondVector || isThirdVector
+
+condition isFirstVector = enforce isFirstVectorOfFacet
+abstract pattern isFirstVectorOfFacet {
+	f:Facet {
+		-x->v
+	}
+	v:Vector3f
+}
+
+condition isSecondVector = enforce isSecondVectorOfFacet
+abstract pattern isSecondVectorOfFacet {
+	f:Facet {
+		-y->v
+	}
+	v:Vector3f
+}
+
+condition isThirdVector = enforce isThirdVectorOfFacet
+abstract pattern isThirdVectorOfFacet {
+	f:Facet {
+		-z->v
+	}
+	v:Vector3f
+}
+
+// Normal-Pattern
+pattern normal() {
+	n:Vector3f
+} when isNormalVector
+
+condition isNormalVector = enforce isNormalOfFacet
+abstract pattern isNormalOfFacet {
+	f:Facet {
+		-normal->n
+	}
+	n:Vector3f
+}
+
+// Facet-Pattern
 pattern facet() {
 	solid:Solid {
 		-facets->f
@@ -26,6 +62,7 @@ pattern facet() {
 	f:Facet
 }
 
+// Area-Pattern
 pattern area() {
 	normal:Vector3f
 	solid:Solid {
